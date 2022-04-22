@@ -1,0 +1,9 @@
+D:\BCA\C#(.Net)\studentresult\studentresult\bin\Debug\studentresult.exe.config
+D:\BCA\C#(.Net)\studentresult\studentresult\bin\Debug\studentresult.exe
+D:\BCA\C#(.Net)\studentresult\studentresult\bin\Debug\studentresult.pdb
+D:\BCA\C#(.Net)\studentresult\studentresult\obj\Debug\studentresult.csprojResolveAssemblyReference.cache
+D:\BCA\C#(.Net)\studentresult\studentresult\obj\Debug\studentresult.btnsubmit.resources
+D:\BCA\C#(.Net)\studentresult\studentresult\obj\Debug\studentresult.Properties.Resources.resources
+D:\BCA\C#(.Net)\studentresult\studentresult\obj\Debug\studentresult.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\studentresult\studentresult\obj\Debug\studentresult.exe
+D:\BCA\C#(.Net)\studentresult\studentresult\obj\Debug\studentresult.pdb

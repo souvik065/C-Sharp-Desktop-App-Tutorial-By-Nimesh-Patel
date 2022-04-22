@@ -1,0 +1,9 @@
+D:\BCA\C#(.Net)\restaurantmenu\restaurantmenu\bin\Debug\restaurantmenu.exe.config
+D:\BCA\C#(.Net)\restaurantmenu\restaurantmenu\bin\Debug\restaurantmenu.exe
+D:\BCA\C#(.Net)\restaurantmenu\restaurantmenu\bin\Debug\restaurantmenu.pdb
+D:\BCA\C#(.Net)\restaurantmenu\restaurantmenu\obj\Debug\restaurantmenu.csprojResolveAssemblyReference.cache
+D:\BCA\C#(.Net)\restaurantmenu\restaurantmenu\obj\Debug\restaurantmenu.Form1.resources
+D:\BCA\C#(.Net)\restaurantmenu\restaurantmenu\obj\Debug\restaurantmenu.Properties.Resources.resources
+D:\BCA\C#(.Net)\restaurantmenu\restaurantmenu\obj\Debug\restaurantmenu.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\restaurantmenu\restaurantmenu\obj\Debug\restaurantmenu.exe
+D:\BCA\C#(.Net)\restaurantmenu\restaurantmenu\obj\Debug\restaurantmenu.pdb

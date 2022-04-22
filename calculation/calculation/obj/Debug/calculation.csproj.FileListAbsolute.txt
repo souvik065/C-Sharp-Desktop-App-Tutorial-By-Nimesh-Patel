@@ -1,0 +1,8 @@
+D:\BCA\C#(.Net)\calculation\calculation\bin\Debug\calculation.exe.config
+D:\BCA\C#(.Net)\calculation\calculation\bin\Debug\calculation.exe
+D:\BCA\C#(.Net)\calculation\calculation\bin\Debug\calculation.pdb
+D:\BCA\C#(.Net)\calculation\calculation\obj\Debug\calculation.Form1.resources
+D:\BCA\C#(.Net)\calculation\calculation\obj\Debug\calculation.Properties.Resources.resources
+D:\BCA\C#(.Net)\calculation\calculation\obj\Debug\calculation.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\calculation\calculation\obj\Debug\calculation.exe
+D:\BCA\C#(.Net)\calculation\calculation\obj\Debug\calculation.pdb

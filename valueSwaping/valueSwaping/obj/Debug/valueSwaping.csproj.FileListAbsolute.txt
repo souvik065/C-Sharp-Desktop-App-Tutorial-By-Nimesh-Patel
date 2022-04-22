@@ -1,0 +1,9 @@
+D:\BCA\C#(.Net)\valueSwaping\valueSwaping\bin\Debug\valueSwaping.exe.config
+D:\BCA\C#(.Net)\valueSwaping\valueSwaping\bin\Debug\valueSwaping.exe
+D:\BCA\C#(.Net)\valueSwaping\valueSwaping\bin\Debug\valueSwaping.pdb
+D:\BCA\C#(.Net)\valueSwaping\valueSwaping\obj\Debug\valueSwaping.csprojResolveAssemblyReference.cache
+D:\BCA\C#(.Net)\valueSwaping\valueSwaping\obj\Debug\valueSwaping.Form1.resources
+D:\BCA\C#(.Net)\valueSwaping\valueSwaping\obj\Debug\valueSwaping.Properties.Resources.resources
+D:\BCA\C#(.Net)\valueSwaping\valueSwaping\obj\Debug\valueSwaping.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\valueSwaping\valueSwaping\obj\Debug\valueSwaping.exe
+D:\BCA\C#(.Net)\valueSwaping\valueSwaping\obj\Debug\valueSwaping.pdb

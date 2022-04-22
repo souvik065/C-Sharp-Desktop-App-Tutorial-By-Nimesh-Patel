@@ -1,0 +1,9 @@
+D:\BCA\C#(.Net)\dailogboxes\dailogboxes\bin\Debug\dailogboxes.exe.config
+D:\BCA\C#(.Net)\dailogboxes\dailogboxes\bin\Debug\dailogboxes.exe
+D:\BCA\C#(.Net)\dailogboxes\dailogboxes\bin\Debug\dailogboxes.pdb
+D:\BCA\C#(.Net)\dailogboxes\dailogboxes\obj\Debug\dailogboxes.csprojResolveAssemblyReference.cache
+D:\BCA\C#(.Net)\dailogboxes\dailogboxes\obj\Debug\dailogboxes.Form1.resources
+D:\BCA\C#(.Net)\dailogboxes\dailogboxes\obj\Debug\dailogboxes.Properties.Resources.resources
+D:\BCA\C#(.Net)\dailogboxes\dailogboxes\obj\Debug\dailogboxes.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\dailogboxes\dailogboxes\obj\Debug\dailogboxes.exe
+D:\BCA\C#(.Net)\dailogboxes\dailogboxes\obj\Debug\dailogboxes.pdb

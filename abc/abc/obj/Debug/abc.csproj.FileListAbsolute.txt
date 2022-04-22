@@ -1,0 +1,9 @@
+D:\BCA\C#(.Net)\abc\abc\bin\Debug\abc.exe.config
+D:\BCA\C#(.Net)\abc\abc\bin\Debug\abc.exe
+D:\BCA\C#(.Net)\abc\abc\bin\Debug\abc.pdb
+D:\BCA\C#(.Net)\abc\abc\obj\Debug\abc.csprojResolveAssemblyReference.cache
+D:\BCA\C#(.Net)\abc\abc\obj\Debug\abc.Form1.resources
+D:\BCA\C#(.Net)\abc\abc\obj\Debug\abc.Properties.Resources.resources
+D:\BCA\C#(.Net)\abc\abc\obj\Debug\abc.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\abc\abc\obj\Debug\abc.exe
+D:\BCA\C#(.Net)\abc\abc\obj\Debug\abc.pdb

@@ -1,0 +1,9 @@
+D:\BCA\C#(.Net)\simpleInterest\simpleInterest\bin\Debug\simpleInterest.exe.config
+D:\BCA\C#(.Net)\simpleInterest\simpleInterest\bin\Debug\simpleInterest.exe
+D:\BCA\C#(.Net)\simpleInterest\simpleInterest\bin\Debug\simpleInterest.pdb
+D:\BCA\C#(.Net)\simpleInterest\simpleInterest\obj\Debug\simpleInterest.csprojResolveAssemblyReference.cache
+D:\BCA\C#(.Net)\simpleInterest\simpleInterest\obj\Debug\simpleInterest.Form1.resources
+D:\BCA\C#(.Net)\simpleInterest\simpleInterest\obj\Debug\simpleInterest.Properties.Resources.resources
+D:\BCA\C#(.Net)\simpleInterest\simpleInterest\obj\Debug\simpleInterest.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\simpleInterest\simpleInterest\obj\Debug\simpleInterest.exe
+D:\BCA\C#(.Net)\simpleInterest\simpleInterest\obj\Debug\simpleInterest.pdb

@@ -1,0 +1,8 @@
+D:\BCA\C#(.Net)\notepad\notepad\bin\Debug\notepad.exe.config
+D:\BCA\C#(.Net)\notepad\notepad\obj\Debug\notepad.Form1.resources
+D:\BCA\C#(.Net)\notepad\notepad\obj\Debug\notepad.Properties.Resources.resources
+D:\BCA\C#(.Net)\notepad\notepad\obj\Debug\notepad.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\notepad\notepad\bin\Debug\notepad.exe
+D:\BCA\C#(.Net)\notepad\notepad\bin\Debug\notepad.pdb
+D:\BCA\C#(.Net)\notepad\notepad\obj\Debug\notepad.exe
+D:\BCA\C#(.Net)\notepad\notepad\obj\Debug\notepad.pdb
