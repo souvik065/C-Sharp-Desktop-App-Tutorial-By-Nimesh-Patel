@@ -6,3 +6,6 @@ D:\BCA\C#(.Net)\notepad\notepad\bin\Debug\notepad.exe
 D:\BCA\C#(.Net)\notepad\notepad\bin\Debug\notepad.pdb
 D:\BCA\C#(.Net)\notepad\notepad\obj\Debug\notepad.exe
 D:\BCA\C#(.Net)\notepad\notepad\obj\Debug\notepad.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\notepad\notepad\bin\Debug\notepad.exe.config
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\notepad\notepad\obj\Debug\notepad.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\notepad\notepad\obj\Debug\notepad.pdb

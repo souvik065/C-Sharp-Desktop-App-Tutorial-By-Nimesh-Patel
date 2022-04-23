@@ -10,3 +10,17 @@ D:\BCA\C#(.Net)\loginform\loginform\obj\Debug\loginform.pdb
 D:\BCA\C#(.Net)\loginform\loginform\obj\Debug\loginform.Dashboard.resources
 D:\BCA\C#(.Net)\loginform\loginform\obj\Debug\loginform.SimpleCalculator.resources
 D:\BCA\C#(.Net)\loginform\loginform\obj\Debug\loginform.Calculator.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\bin\Debug\loginform.exe.config
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.csprojResolveAssemblyReference.cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.Calculator.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.Dashboard.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.Form1.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.Properties.Resources.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.RestaurantMenuList.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.SimpleCalculator.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\bin\Debug\loginform.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\bin\Debug\loginform.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.Notepade.resources

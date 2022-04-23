@@ -63,34 +63,35 @@
             // simpleCalculationToolStripMenuItem
             // 
             this.simpleCalculationToolStripMenuItem.Name = "simpleCalculationToolStripMenuItem";
-            this.simpleCalculationToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.simpleCalculationToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.simpleCalculationToolStripMenuItem.Text = "Simple calculation";
             this.simpleCalculationToolStripMenuItem.Click += new System.EventHandler(this.simpleCalculationToolStripMenuItem_Click);
             // 
             // calculatorToolStripMenuItem
             // 
             this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
-            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.calculatorToolStripMenuItem.Text = "Calculator";
             this.calculatorToolStripMenuItem.Click += new System.EventHandler(this.calculatorToolStripMenuItem_Click);
             // 
             // dialogBoxToolStripMenuItem
             // 
             this.dialogBoxToolStripMenuItem.Name = "dialogBoxToolStripMenuItem";
-            this.dialogBoxToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.dialogBoxToolStripMenuItem.Text = "Dailog Box";
+            this.dialogBoxToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.dialogBoxToolStripMenuItem.Text = "Notepad";
             this.dialogBoxToolStripMenuItem.Click += new System.EventHandler(this.dialogBoxToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(168, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(182, 6);
             // 
             // restaurantToolStripMenuItem
             // 
             this.restaurantToolStripMenuItem.Name = "restaurantToolStripMenuItem";
-            this.restaurantToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.restaurantToolStripMenuItem.Text = "Restaurant";
+            this.restaurantToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.restaurantToolStripMenuItem.Text = "Restaurant Menu List";
+            this.restaurantToolStripMenuItem.Click += new System.EventHandler(this.restaurantToolStripMenuItem_Click);
             // 
             // Dashboard
             // 

@@ -21,7 +21,8 @@ namespace loginform
 
         private void dialogBoxToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Notepade note = new Notepade();
+            note.ShowDialog();
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
@@ -39,6 +40,12 @@ namespace loginform
         {
             Calculator cal = new Calculator();
             cal.ShowDialog();
+        }
+
+        private void restaurantToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RestaurantMenuList res = new RestaurantMenuList();
+            res.ShowDialog();
         }
     }
 }

@@ -49,7 +49,15 @@
             this.btn8 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
             this.result = new System.Windows.Forms.TextBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.simpleCalculationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dialogBoxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.restaurantToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,7 +82,7 @@
             this.panel1.Controls.Add(this.btn4);
             this.panel1.Controls.Add(this.btn8);
             this.panel1.Controls.Add(this.btn7);
-            this.panel1.Location = new System.Drawing.Point(53, 99);
+            this.panel1.Location = new System.Drawing.Point(53, 110);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(373, 412);
             this.panel1.TabIndex = 3;
@@ -285,22 +293,81 @@
             // 
             // result
             // 
-            this.result.Location = new System.Drawing.Point(53, 24);
+            this.result.Location = new System.Drawing.Point(53, 35);
             this.result.Multiline = true;
             this.result.Name = "result";
             this.result.Size = new System.Drawing.Size(373, 57);
             this.result.TabIndex = 2;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(474, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.simpleCalculationToolStripMenuItem,
+            this.calculatorToolStripMenuItem,
+            this.dialogBoxToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.restaurantToolStripMenuItem});
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.menuToolStripMenuItem.Text = "&Menu";
+            // 
+            // simpleCalculationToolStripMenuItem
+            // 
+            this.simpleCalculationToolStripMenuItem.Name = "simpleCalculationToolStripMenuItem";
+            this.simpleCalculationToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.simpleCalculationToolStripMenuItem.Text = "Simple calculation";
+            this.simpleCalculationToolStripMenuItem.Click += new System.EventHandler(this.simpleCalculationToolStripMenuItem_Click);
+            // 
+            // calculatorToolStripMenuItem
+            // 
+            this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.calculatorToolStripMenuItem.Text = "Calculator";
+            this.calculatorToolStripMenuItem.Click += new System.EventHandler(this.calculatorToolStripMenuItem_Click);
+            // 
+            // dialogBoxToolStripMenuItem
+            // 
+            this.dialogBoxToolStripMenuItem.Name = "dialogBoxToolStripMenuItem";
+            this.dialogBoxToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.dialogBoxToolStripMenuItem.Text = "Notepade";
+            this.dialogBoxToolStripMenuItem.Click += new System.EventHandler(this.dialogBoxToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(182, 6);
+            // 
+            // restaurantToolStripMenuItem
+            // 
+            this.restaurantToolStripMenuItem.Name = "restaurantToolStripMenuItem";
+            this.restaurantToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.restaurantToolStripMenuItem.Text = "Restaurant Menu List";
+            this.restaurantToolStripMenuItem.Click += new System.EventHandler(this.restaurantToolStripMenuItem_Click);
             // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(474, 538);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.result);
             this.Name = "Calculator";
             this.Text = "Calculator";
+            this.Load += new System.EventHandler(this.Calculator_Load);
             this.panel1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -329,5 +396,12 @@
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.TextBox result;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem simpleCalculationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calculatorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dialogBoxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem restaurantToolStripMenuItem;
     }
 }

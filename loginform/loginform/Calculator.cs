@@ -129,6 +129,34 @@ namespace loginform
         {
             result.Text += btn9.Text;
         }
+
+        private void Calculator_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleCalculationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SimpleCalculator simpcal = new SimpleCalculator();
+            simpcal.ShowDialog();
+        }
+
+        private void calculatorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Calculator cal = new Calculator();
+            cal.ShowDialog();
+        }
+
+        private void dialogBoxToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void restaurantToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RestaurantMenuList res = new RestaurantMenuList();
+            res.ShowDialog();
+        }
         }
     }
 

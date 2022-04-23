@@ -7,3 +7,6 @@ D:\BCA\C#(.Net)\restaurantmenu\restaurantmenu\obj\Debug\restaurantmenu.Propertie
 D:\BCA\C#(.Net)\restaurantmenu\restaurantmenu\obj\Debug\restaurantmenu.csproj.GenerateResource.Cache
 D:\BCA\C#(.Net)\restaurantmenu\restaurantmenu\obj\Debug\restaurantmenu.exe
 D:\BCA\C#(.Net)\restaurantmenu\restaurantmenu\obj\Debug\restaurantmenu.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\restaurantmenu\restaurantmenu\bin\Debug\restaurantmenu.exe.config
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\restaurantmenu\restaurantmenu\obj\Debug\restaurantmenu.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\restaurantmenu\restaurantmenu\obj\Debug\restaurantmenu.pdb
