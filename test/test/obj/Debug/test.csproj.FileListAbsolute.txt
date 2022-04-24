@@ -4,3 +4,6 @@ D:\BCA\C#(.Net)\test\test\bin\Debug\test.pdb
 D:\BCA\C#(.Net)\test\test\obj\Debug\test.csprojResolveAssemblyReference.cache
 D:\BCA\C#(.Net)\test\test\obj\Debug\test.exe
 D:\BCA\C#(.Net)\test\test\obj\Debug\test.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\test\test\bin\Debug\test.exe.config
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\test\test\obj\Debug\test.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\test\test\obj\Debug\test.pdb

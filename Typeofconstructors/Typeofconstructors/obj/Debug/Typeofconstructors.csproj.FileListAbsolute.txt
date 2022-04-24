@@ -1,6 +1,0 @@
-D:\BCA\C#(.Net)\Typeofconstructors\Typeofconstructors\bin\Debug\Typeofconstructors.exe.config
-D:\BCA\C#(.Net)\Typeofconstructors\Typeofconstructors\bin\Debug\Typeofconstructors.exe
-D:\BCA\C#(.Net)\Typeofconstructors\Typeofconstructors\bin\Debug\Typeofconstructors.pdb
-D:\BCA\C#(.Net)\Typeofconstructors\Typeofconstructors\obj\Debug\Typeofconstructors.csprojResolveAssemblyReference.cache
-D:\BCA\C#(.Net)\Typeofconstructors\Typeofconstructors\obj\Debug\Typeofconstructors.exe
-D:\BCA\C#(.Net)\Typeofconstructors\Typeofconstructors\obj\Debug\Typeofconstructors.pdb

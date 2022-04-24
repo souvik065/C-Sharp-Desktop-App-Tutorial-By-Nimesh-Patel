@@ -1,3 +1,0 @@
-C# Language Tutorial | Garbage Collection in C# | How to Destroy Objects in C# by Sandeep Soni
-
-Link : -  https://www.youtube.com/watch?v=D8LTtK3iGj0&list=PLo80fWiInSIPRB6O3O1H38sWg5mbsexIZ&index=4
