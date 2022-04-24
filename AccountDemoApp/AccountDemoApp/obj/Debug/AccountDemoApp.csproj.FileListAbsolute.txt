@@ -7,3 +7,12 @@ D:\BCA\C#(.Net)\AccountDemoApp\AccountDemoApp\obj\Debug\AccountDemoApp.Propertie
 D:\BCA\C#(.Net)\AccountDemoApp\AccountDemoApp\obj\Debug\AccountDemoApp.csproj.GenerateResource.Cache
 D:\BCA\C#(.Net)\AccountDemoApp\AccountDemoApp\obj\Debug\AccountDemoApp.exe
 D:\BCA\C#(.Net)\AccountDemoApp\AccountDemoApp\obj\Debug\AccountDemoApp.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\AccountDemoApp\AccountDemoApp\bin\Debug\AccountDemoApp.exe.config
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\AccountDemoApp\AccountDemoApp\obj\Debug\AccountDemoApp.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\AccountDemoApp\AccountDemoApp\obj\Debug\AccountDemoApp.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\AccountDemoApp\AccountDemoApp\bin\Debug\AccountDemoApp.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\AccountDemoApp\AccountDemoApp\bin\Debug\AccountDemoApp.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\AccountDemoApp\AccountDemoApp\obj\Debug\AccountDemoApp.csprojResolveAssemblyReference.cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\AccountDemoApp\AccountDemoApp\obj\Debug\AccountDemoApp.AccountFrom.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\AccountDemoApp\AccountDemoApp\obj\Debug\AccountDemoApp.Properties.Resources.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\AccountDemoApp\AccountDemoApp\obj\Debug\AccountDemoApp.csproj.GenerateResource.Cache

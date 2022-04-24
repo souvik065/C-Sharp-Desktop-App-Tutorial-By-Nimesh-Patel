@@ -162,6 +162,7 @@
             this.btntemp.TabIndex = 3;
             this.btntemp.Text = "Temp";
             this.btntemp.UseVisualStyleBackColor = true;
+            this.btntemp.Click += new System.EventHandler(this.btntemp_Click);
             // 
             // btngenerated
             // 
@@ -171,6 +172,7 @@
             this.btngenerated.TabIndex = 3;
             this.btngenerated.Text = "Get Generated";
             this.btngenerated.UseVisualStyleBackColor = true;
+            this.btngenerated.Click += new System.EventHandler(this.btngenerated_Click);
             // 
             // AccountFrom
             // 

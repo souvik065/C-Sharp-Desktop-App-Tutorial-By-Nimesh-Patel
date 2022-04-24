@@ -74,5 +74,17 @@ namespace AccountDemoApp
         {
             GC.Collect();
         }
+
+        private void btntemp_Click(object sender, EventArgs e)
+        {
+            Account a1;
+            a1 = new Account();
+            a = a1;
+        }
+
+        private void btngenerated_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(GC.GetGeneration(a).ToString());
+        }
     }
 }
