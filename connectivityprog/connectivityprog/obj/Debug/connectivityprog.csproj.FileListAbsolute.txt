@@ -1,0 +1,9 @@
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\connectivityprog\connectivityprog\bin\Debug\connectivityprog.exe.config
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\connectivityprog\connectivityprog\bin\Debug\connectivityprog.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\connectivityprog\connectivityprog\bin\Debug\connectivityprog.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\connectivityprog\connectivityprog\obj\Debug\connectivityprog.csprojResolveAssemblyReference.cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\connectivityprog\connectivityprog\obj\Debug\connectivityprog.Form1.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\connectivityprog\connectivityprog\obj\Debug\connectivityprog.Properties.Resources.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\connectivityprog\connectivityprog\obj\Debug\connectivityprog.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\connectivityprog\connectivityprog\obj\Debug\connectivityprog.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\connectivityprog\connectivityprog\obj\Debug\connectivityprog.pdb

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace loginform
+namespace connectivityprog
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace loginform
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Connectivity());
+            Application.Run(new Form1());
         }
     }
 }

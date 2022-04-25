@@ -24,3 +24,4 @@ D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.cs
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\bin\Debug\loginform.exe
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\bin\Debug\loginform.pdb
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.Notepade.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\loginform\loginform\obj\Debug\loginform.Connectivity.resources
