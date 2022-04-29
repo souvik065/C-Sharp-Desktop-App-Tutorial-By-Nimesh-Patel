@@ -18,6 +18,9 @@ namespace connectivityprog
     {
         string gender;
         SqlConnection con = new SqlConnection("Data Source=DESKTOP-KP7KMGJ;Initial Catalog=StudentMaster;User ID=sa;Password=123456");
+        SqlDataAdapter da;
+        DataSet ds;
+        DataTable dt;
         SqlCommand cmd;
         public Form1()
         {
@@ -82,6 +85,83 @@ namespace connectivityprog
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void richTextBoxAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnview_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            cmd = new SqlCommand("SELECT * FROM StudentRegistration",con);
+            da = new SqlDataAdapter(cmd);
+            ds = new DataSet();
+            //dt = new DataTable();
+
+            da.Fill(ds);
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                dataGridView1.DataSource = ds.Tables[0];
+            }
+            
+
+            con.Close();
+        }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            if (radioButtonMale.Checked == true)
+            {
+                gender = radioButtonMale.Text;
+            }
+            else if (radioButtonFemale.Checked == true)
+            {
+                gender = radioButtonFemale.Text;
+            }
+
+            con.Open();
+            cmd = new SqlCommand("UPDATE StudentRegistration SET FullName = '"+txtfullname.Text+"',Gender = '"+gender+"',DOB = '"+dateTimePicker1.Text+"',Course = '"+comboBoxCourse.Text+"',Semester = '"+comboBoxSemester.Text+"',Address = '"+richTextBoxAddress.Text+"',MobileNo = '"+txtmobile.Text+"' WHERE StudentID = "+txtfullname.Tag+"",con);
+            cmd.ExecuteNonQuery();
+            cmd.Dispose();
+            con.Close();
+        }
+
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            cmd = new SqlCommand("DELETE FROM StudentRegistration WHERE StudentID = "+txtfullname.Tag+"",con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+        }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            txtfullname.Tag = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            txtfullname.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+
+            //gender = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            //txtmobile.Text = gender;
+            if (dataGridView1.CurrentRow.Cells[2].Value.ToString() == "Male ")
+            {
+                radioButtonMale.Checked = true;
+            }
+            else if (dataGridView1.CurrentRow.Cells[2].Value.ToString() == "Female")
+            {
+                radioButtonFemale.Checked = true;
+            }
+
+
+
+            dateTimePicker1.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            comboBoxCourse.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            comboBoxSemester.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            richTextBoxAddress.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            txtmobile.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
 
         }
     }

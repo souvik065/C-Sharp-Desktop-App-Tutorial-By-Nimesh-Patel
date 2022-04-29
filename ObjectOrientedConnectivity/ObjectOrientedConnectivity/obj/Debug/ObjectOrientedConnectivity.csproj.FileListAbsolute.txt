@@ -1,0 +1,9 @@
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\ObjectOrientedConnectivity\ObjectOrientedConnectivity\bin\Debug\ObjectOrientedConnectivity.exe.config
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\ObjectOrientedConnectivity\ObjectOrientedConnectivity\bin\Debug\ObjectOrientedConnectivity.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\ObjectOrientedConnectivity\ObjectOrientedConnectivity\bin\Debug\ObjectOrientedConnectivity.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\ObjectOrientedConnectivity\ObjectOrientedConnectivity\obj\Debug\ObjectOrientedConnectivity.csprojResolveAssemblyReference.cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\ObjectOrientedConnectivity\ObjectOrientedConnectivity\obj\Debug\ObjectOrientedConnectivity.Form1.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\ObjectOrientedConnectivity\ObjectOrientedConnectivity\obj\Debug\ObjectOrientedConnectivity.Properties.Resources.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\ObjectOrientedConnectivity\ObjectOrientedConnectivity\obj\Debug\ObjectOrientedConnectivity.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\ObjectOrientedConnectivity\ObjectOrientedConnectivity\obj\Debug\ObjectOrientedConnectivity.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\ObjectOrientedConnectivity\ObjectOrientedConnectivity\obj\Debug\ObjectOrientedConnectivity.pdb
