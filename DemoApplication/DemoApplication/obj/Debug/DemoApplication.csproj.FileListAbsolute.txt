@@ -1,0 +1,13 @@
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\bin\Debug\DemoApplication.exe.config
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\bin\Debug\DemoApplication.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\bin\Debug\DemoApplication.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.csprojResolveAssemblyReference.cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.LoginForm.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.Properties.Resources.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.FrmPartyMaster.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.MDIParent1.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.FrmSource.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.FrmIncomeMaster.resources

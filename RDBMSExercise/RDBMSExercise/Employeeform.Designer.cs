@@ -30,6 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnview = new System.Windows.Forms.Button();
+            this.btndelete = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.btninsert = new System.Windows.Forms.Button();
+            this.comboBoxmgr = new System.Windows.Forms.ComboBox();
+            this.dateTimePickerhiredate = new System.Windows.Forms.DateTimePicker();
+            this.comboBoxdeptno = new System.Windows.Forms.ComboBox();
+            this.txtcomm = new System.Windows.Forms.TextBox();
+            this.txtsal = new System.Windows.Forms.TextBox();
+            this.txtjob = new System.Windows.Forms.TextBox();
+            this.txtename = new System.Windows.Forms.TextBox();
+            this.txtempno = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -38,19 +50,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtempno = new System.Windows.Forms.TextBox();
-            this.txtename = new System.Windows.Forms.TextBox();
-            this.txtjob = new System.Windows.Forms.TextBox();
-            this.txtsal = new System.Windows.Forms.TextBox();
-            this.txtcomm = new System.Windows.Forms.TextBox();
-            this.comboBoxdeptno = new System.Windows.Forms.ComboBox();
-            this.dateTimePickerhiredate = new System.Windows.Forms.DateTimePicker();
-            this.comboBoxmgr = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btninsert = new System.Windows.Forms.Button();
-            this.btnupdate = new System.Windows.Forms.Button();
-            this.btndelete = new System.Windows.Forms.Button();
-            this.btnview = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -92,6 +92,109 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(895, 136);
             this.panel1.TabIndex = 1;
+            // 
+            // btnview
+            // 
+            this.btnview.Location = new System.Drawing.Point(321, 106);
+            this.btnview.Name = "btnview";
+            this.btnview.Size = new System.Drawing.Size(75, 23);
+            this.btnview.TabIndex = 6;
+            this.btnview.Text = "View";
+            this.btnview.UseVisualStyleBackColor = true;
+            this.btnview.Click += new System.EventHandler(this.btnview_Click);
+            // 
+            // btndelete
+            // 
+            this.btndelete.Location = new System.Drawing.Point(216, 106);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(75, 23);
+            this.btndelete.TabIndex = 6;
+            this.btndelete.Text = "Delete";
+            this.btndelete.UseVisualStyleBackColor = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
+            // 
+            // btnupdate
+            // 
+            this.btnupdate.Location = new System.Drawing.Point(116, 106);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(75, 23);
+            this.btnupdate.TabIndex = 6;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            // 
+            // btninsert
+            // 
+            this.btninsert.Location = new System.Drawing.Point(10, 106);
+            this.btninsert.Name = "btninsert";
+            this.btninsert.Size = new System.Drawing.Size(75, 23);
+            this.btninsert.TabIndex = 6;
+            this.btninsert.Text = "Insert";
+            this.btninsert.UseVisualStyleBackColor = true;
+            this.btninsert.Click += new System.EventHandler(this.btninsert_Click);
+            // 
+            // comboBoxmgr
+            // 
+            this.comboBoxmgr.FormattingEnabled = true;
+            this.comboBoxmgr.Location = new System.Drawing.Point(622, 16);
+            this.comboBoxmgr.Name = "comboBoxmgr";
+            this.comboBoxmgr.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxmgr.TabIndex = 5;
+            this.comboBoxmgr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.comboBoxmgr_MouseClick);
+            // 
+            // dateTimePickerhiredate
+            // 
+            this.dateTimePickerhiredate.Location = new System.Drawing.Point(658, 67);
+            this.dateTimePickerhiredate.Name = "dateTimePickerhiredate";
+            this.dateTimePickerhiredate.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerhiredate.TabIndex = 4;
+            // 
+            // comboBoxdeptno
+            // 
+            this.comboBoxdeptno.FormattingEnabled = true;
+            this.comboBoxdeptno.Items.AddRange(new object[] {
+            "NULL"});
+            this.comboBoxdeptno.Location = new System.Drawing.Point(449, 67);
+            this.comboBoxdeptno.Name = "comboBoxdeptno";
+            this.comboBoxdeptno.Size = new System.Drawing.Size(106, 21);
+            this.comboBoxdeptno.TabIndex = 3;
+            this.comboBoxdeptno.SelectedIndexChanged += new System.EventHandler(this.comboBoxdeptno_SelectedIndexChanged);
+            // 
+            // txtcomm
+            // 
+            this.txtcomm.Location = new System.Drawing.Point(229, 67);
+            this.txtcomm.Name = "txtcomm";
+            this.txtcomm.Size = new System.Drawing.Size(100, 20);
+            this.txtcomm.TabIndex = 2;
+            this.txtcomm.TextChanged += new System.EventHandler(this.txtcomm_TextChanged);
+            // 
+            // txtsal
+            // 
+            this.txtsal.Location = new System.Drawing.Point(46, 67);
+            this.txtsal.Name = "txtsal";
+            this.txtsal.Size = new System.Drawing.Size(100, 20);
+            this.txtsal.TabIndex = 2;
+            // 
+            // txtjob
+            // 
+            this.txtjob.Location = new System.Drawing.Point(426, 16);
+            this.txtjob.Name = "txtjob";
+            this.txtjob.Size = new System.Drawing.Size(100, 20);
+            this.txtjob.TabIndex = 2;
+            // 
+            // txtename
+            // 
+            this.txtename.Location = new System.Drawing.Point(234, 13);
+            this.txtename.Name = "txtename";
+            this.txtename.Size = new System.Drawing.Size(100, 20);
+            this.txtename.TabIndex = 2;
+            // 
+            // txtempno
+            // 
+            this.txtempno.Location = new System.Drawing.Point(62, 13);
+            this.txtempno.Name = "txtempno";
+            this.txtempno.Size = new System.Drawing.Size(100, 20);
+            this.txtempno.TabIndex = 2;
             // 
             // label9
             // 
@@ -165,65 +268,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "EMPNO :";
             // 
-            // txtempno
-            // 
-            this.txtempno.Location = new System.Drawing.Point(62, 13);
-            this.txtempno.Name = "txtempno";
-            this.txtempno.Size = new System.Drawing.Size(100, 20);
-            this.txtempno.TabIndex = 2;
-            // 
-            // txtename
-            // 
-            this.txtename.Location = new System.Drawing.Point(234, 13);
-            this.txtename.Name = "txtename";
-            this.txtename.Size = new System.Drawing.Size(100, 20);
-            this.txtename.TabIndex = 2;
-            // 
-            // txtjob
-            // 
-            this.txtjob.Location = new System.Drawing.Point(426, 16);
-            this.txtjob.Name = "txtjob";
-            this.txtjob.Size = new System.Drawing.Size(100, 20);
-            this.txtjob.TabIndex = 2;
-            // 
-            // txtsal
-            // 
-            this.txtsal.Location = new System.Drawing.Point(46, 67);
-            this.txtsal.Name = "txtsal";
-            this.txtsal.Size = new System.Drawing.Size(100, 20);
-            this.txtsal.TabIndex = 2;
-            // 
-            // txtcomm
-            // 
-            this.txtcomm.Location = new System.Drawing.Point(229, 67);
-            this.txtcomm.Name = "txtcomm";
-            this.txtcomm.Size = new System.Drawing.Size(100, 20);
-            this.txtcomm.TabIndex = 2;
-            // 
-            // comboBoxdeptno
-            // 
-            this.comboBoxdeptno.FormattingEnabled = true;
-            this.comboBoxdeptno.Location = new System.Drawing.Point(449, 67);
-            this.comboBoxdeptno.Name = "comboBoxdeptno";
-            this.comboBoxdeptno.Size = new System.Drawing.Size(106, 21);
-            this.comboBoxdeptno.TabIndex = 3;
-            // 
-            // dateTimePickerhiredate
-            // 
-            this.dateTimePickerhiredate.Location = new System.Drawing.Point(658, 67);
-            this.dateTimePickerhiredate.Name = "dateTimePickerhiredate";
-            this.dateTimePickerhiredate.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerhiredate.TabIndex = 4;
-            // 
-            // comboBoxmgr
-            // 
-            this.comboBoxmgr.FormattingEnabled = true;
-            this.comboBoxmgr.Location = new System.Drawing.Point(622, 16);
-            this.comboBoxmgr.Name = "comboBoxmgr";
-            this.comboBoxmgr.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxmgr.TabIndex = 5;
-            this.comboBoxmgr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.comboBoxmgr_MouseClick);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -231,45 +275,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(895, 567);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // btninsert
-            // 
-            this.btninsert.Location = new System.Drawing.Point(10, 106);
-            this.btninsert.Name = "btninsert";
-            this.btninsert.Size = new System.Drawing.Size(75, 23);
-            this.btninsert.TabIndex = 6;
-            this.btninsert.Text = "Insert";
-            this.btninsert.UseVisualStyleBackColor = true;
-            this.btninsert.Click += new System.EventHandler(this.btninsert_Click);
-            // 
-            // btnupdate
-            // 
-            this.btnupdate.Location = new System.Drawing.Point(116, 106);
-            this.btnupdate.Name = "btnupdate";
-            this.btnupdate.Size = new System.Drawing.Size(75, 23);
-            this.btnupdate.TabIndex = 6;
-            this.btnupdate.Text = "Update";
-            this.btnupdate.UseVisualStyleBackColor = true;
-            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
-            // 
-            // btndelete
-            // 
-            this.btndelete.Location = new System.Drawing.Point(216, 106);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(75, 23);
-            this.btndelete.TabIndex = 6;
-            this.btndelete.Text = "Delete";
-            this.btndelete.UseVisualStyleBackColor = true;
-            // 
-            // btnview
-            // 
-            this.btnview.Location = new System.Drawing.Point(321, 106);
-            this.btnview.Name = "btnview";
-            this.btnview.Size = new System.Drawing.Size(75, 23);
-            this.btnview.TabIndex = 6;
-            this.btnview.Text = "View";
-            this.btnview.UseVisualStyleBackColor = true;
-            this.btnview.Click += new System.EventHandler(this.btnview_Click);
+            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
             // Employeeform
             // 

@@ -8,3 +8,4 @@ D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\RDBMSExercise\RDBMSExercise\bin\Debug\RDBM
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\RDBMSExercise\RDBMSExercise\obj\Debug\RDBMSExercise.exe
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\RDBMSExercise\RDBMSExercise\obj\Debug\RDBMSExercise.pdb
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\RDBMSExercise\RDBMSExercise\obj\Debug\RDBMSExercise.Employeeform.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\RDBMSExercise\RDBMSExercise\obj\Debug\RDBMSExercise.Productform1.resources

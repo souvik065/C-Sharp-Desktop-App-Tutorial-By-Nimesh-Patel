@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
+using System.Windows.Forms;
 
 
-namespace RDBMSExercise
+namespace DemoApplication
 {
-    class sqlmethods
+    class QueryCalss
     {
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-KP7KMGJ;Initial Catalog=RDBMSExercise;User ID=sa;Password=123456");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-KP7KMGJ;Initial Catalog=DemoApplicationInC#;User ID=sa;Password=123456");
         SqlCommand cmd;
         SqlDataAdapter da;
         DataSet ds;
+        
         public void ExeCommand(string qr)
         {
             con.Open();
@@ -26,27 +27,29 @@ namespace RDBMSExercise
 
         public DataSet ViewCommand(string qr)
         {
-            cmd = new SqlCommand(qr, con);
-            da = new SqlDataAdapter(cmd);
             ds = new DataSet();
+            con.Open();
+            cmd = new SqlCommand(qr,con);
+            da = new SqlDataAdapter(cmd);
             da.Fill(ds);
+
+            con.Close();
             return ds;
         }
 
         public void InsertMessage()
         {
-            MessageBox.Show("Inserted Successfully","Message",MessageBoxButtons.OK,MessageBoxIcon.Information); 
+            MessageBox.Show("Inserted Successfully");
         }
 
         public void UpdateMessage()
         {
-            MessageBox.Show("Updated Successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Updated Successfully");
         }
 
         public void DeleteMessage()
         {
-            MessageBox.Show("Deleted Successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Deleted Successfully");
         }
-
     }
 }

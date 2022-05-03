@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RDBMSExercise
+namespace DemoApplication
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace RDBMSExercise
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Productform1());
+            Application.Run(new MDIParent1());
         }
     }
 }
