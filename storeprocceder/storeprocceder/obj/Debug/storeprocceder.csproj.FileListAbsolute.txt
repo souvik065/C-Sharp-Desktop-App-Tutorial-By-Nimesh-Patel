@@ -1,0 +1,11 @@
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\storeprocceder\storeprocceder\bin\Debug\storeprocceder.exe.config
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\storeprocceder\storeprocceder\bin\Debug\storeprocceder.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\storeprocceder\storeprocceder\bin\Debug\storeprocceder.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\storeprocceder\storeprocceder\obj\Debug\storeprocceder.csprojResolveAssemblyReference.cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\storeprocceder\storeprocceder\obj\Debug\storeprocceder.Form1.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\storeprocceder\storeprocceder\obj\Debug\storeprocceder.Properties.Resources.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\storeprocceder\storeprocceder\obj\Debug\storeprocceder.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\storeprocceder\storeprocceder\obj\Debug\storeprocceder.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\storeprocceder\storeprocceder\obj\Debug\storeprocceder.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\storeprocceder\storeprocceder\obj\Debug\storeprocceder.FrmCustomer.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\storeprocceder\storeprocceder\obj\Debug\storeprocceder.FrmOrder.resources

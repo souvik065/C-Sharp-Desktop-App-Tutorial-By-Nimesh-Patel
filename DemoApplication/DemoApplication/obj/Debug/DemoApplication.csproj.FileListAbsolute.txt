@@ -11,3 +11,9 @@ D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.MDIParent1.resources
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.FrmSource.resources
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.FrmIncomeMaster.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.FrmExpenseMaster.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.FrmQuery.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.PartyQuery.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.FrmRegistration.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.FrmIncomeQuery.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\DemoApplication\DemoApplication\obj\Debug\DemoApplication.FrmDebitOrCreditQuery.resources

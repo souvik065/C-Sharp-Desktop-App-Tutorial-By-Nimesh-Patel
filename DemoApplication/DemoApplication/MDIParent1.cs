@@ -72,7 +72,7 @@ namespace DemoApplication
 
        private void MDIParent1_Load(object sender, EventArgs e)
        {
-
+           
        }
 
        private void btnmenu_Click(object sender, EventArgs e)
@@ -94,11 +94,13 @@ namespace DemoApplication
 
        private void button4_Click(object sender, EventArgs e)
        {
+           OpenChildForm(new FrmQuery());
            HideSubMenu();
        }
 
        private void button2_Click(object sender, EventArgs e)
        {
+           OpenChildForm(new PartyQuery());
            HideSubMenu();
        }
 
@@ -110,6 +112,24 @@ namespace DemoApplication
        private void btnIncomeMaster_Click(object sender, EventArgs e)
        {
            OpenChildForm(new FrmIncomeMaster());
+           HideSubMenu();
+       }
+
+       private void SubBtnExpenseMaster_Click(object sender, EventArgs e)
+       {
+           OpenChildForm(new FrmExpenseMaster());
+           HideSubMenu();
+       }
+
+       private void button2_Click_1(object sender, EventArgs e)
+       {
+           OpenChildForm(new FrmIncomeQuery());
+           HideSubMenu();
+       }
+
+       private void SubBtnDebitOrCreditQuery_Click(object sender, EventArgs e)
+       {
+           OpenChildForm(new FrmDebitOrCreditQuery());
            HideSubMenu();
        }
 }

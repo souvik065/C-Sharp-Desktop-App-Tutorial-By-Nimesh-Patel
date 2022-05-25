@@ -28,7 +28,7 @@ namespace RDBMSExercise
                 comboBoxdeptno.DataSource = ds.Tables[0];
                 comboBoxdeptno.DisplayMember = "DNAME";
                 comboBoxdeptno.ValueMember = "DEPTNO";
-                comboBoxdeptno.SelectedIndex = -1;
+                comboBoxdeptno.SelectedIndex = -0;
                 
             }
 
@@ -160,6 +160,42 @@ namespace RDBMSExercise
             txtsal.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
             txtcomm.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
             comboBoxdeptno.SelectedValue = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+        }
+
+        private void productDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Productform1 prod = new Productform1();
+            prod.ShowDialog();
+        }
+
+        private void employeeDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Employeeform emp = new Employeeform();
+            emp.ShowDialog();
+        }
+
+        private void departmentDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Departmentform dept = new Departmentform();
+            dept.ShowDialog();
+        }
+
+        private void customerDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Customerform cust = new Customerform();
+            cust.ShowDialog();
+        }
+
+        private void itemDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmItemForm item = new FrmItemForm();
+            item.ShowDialog();
+        }
+
+        private void orderDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOrderForm order = new FrmOrderForm();
+            order.ShowDialog();
         }
     }
 }

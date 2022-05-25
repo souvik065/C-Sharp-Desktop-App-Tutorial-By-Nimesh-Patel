@@ -44,6 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmDebitOrCreditQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDebitOrCreditQuery.Designer.cs">
+      <DependentUpon>FrmDebitOrCreditQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExpenseMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExpenseMaster.Designer.cs">
+      <DependentUpon>FrmExpenseMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIncomeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIncomeQuery.Designer.cs">
+      <DependentUpon>FrmIncomeQuery.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIncomeMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +73,18 @@
     </Compile>
     <Compile Include="FrmPartyMaster.Designer.cs">
       <DependentUpon>FrmPartyMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuery.Designer.cs">
+      <DependentUpon>FrmQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistration.Designer.cs">
+      <DependentUpon>FrmRegistration.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSource.cs">
       <SubType>Form</SubType>
@@ -74,14 +104,35 @@
     <Compile Include="MDIParent1.Designer.cs">
       <DependentUpon>MDIParent1.cs</DependentUpon>
     </Compile>
+    <Compile Include="PartyQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartyQuery.Designer.cs">
+      <DependentUpon>PartyQuery.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryCalss.cs" />
+    <EmbeddedResource Include="FrmDebitOrCreditQuery.resx">
+      <DependentUpon>FrmDebitOrCreditQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExpenseMaster.resx">
+      <DependentUpon>FrmExpenseMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIncomeQuery.resx">
+      <DependentUpon>FrmIncomeQuery.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmIncomeMaster.resx">
       <DependentUpon>FrmIncomeMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPartyMaster.resx">
       <DependentUpon>FrmPartyMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuery.resx">
+      <DependentUpon>FrmQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistration.resx">
+      <DependentUpon>FrmRegistration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSource.resx">
       <DependentUpon>FrmSource.cs</DependentUpon>
@@ -91,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MDIParent1.resx">
       <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartyQuery.resx">
+      <DependentUpon>PartyQuery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

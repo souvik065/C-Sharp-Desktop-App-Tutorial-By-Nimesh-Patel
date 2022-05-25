@@ -76,5 +76,41 @@ namespace RDBMSExercise
                 dataGridView1.DataSource = ds.Tables[0];
             }
         }
+
+        private void productDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Productform1 prod = new Productform1();
+            prod.ShowDialog();
+        }
+
+        private void employeeDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Employeeform emp = new Employeeform();
+            emp.ShowDialog();
+        }
+
+        private void departmentDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Departmentform dept = new Departmentform();
+            dept.ShowDialog();
+        }
+
+        private void customerDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Customerform cust = new Customerform();
+            cust.ShowDialog();
+        }
+
+        private void itemDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmItemForm item = new FrmItemForm();
+            item.ShowDialog();
+        }
+
+        private void orderDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmOrderForm order = new FrmOrderForm();
+            order.ShowDialog();
+        }
     }
 }

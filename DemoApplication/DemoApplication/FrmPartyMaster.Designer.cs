@@ -32,13 +32,13 @@
             this.btnclose = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.richTextBoxAddress = new System.Windows.Forms.RichTextBox();
             this.btnView = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
             this.txtMobileNo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtAddress = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPartyName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,13 +50,14 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnclose);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1138, 63);
+            this.panel1.Size = new System.Drawing.Size(1132, 63);
             this.panel1.TabIndex = 0;
             // 
             // btnclose
@@ -65,7 +66,7 @@
             this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnclose.Location = new System.Drawing.Point(1090, 11);
+            this.btnclose.Location = new System.Drawing.Point(1084, 11);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(35, 33);
             this.btnclose.TabIndex = 6;
@@ -90,29 +91,39 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.richTextBoxAddress);
             this.panel2.Controls.Add(this.btnView);
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnUpdate);
             this.panel2.Controls.Add(this.btnInsert);
             this.panel2.Controls.Add(this.txtMobileNo);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.txtAddress);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtPartyName);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 63);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1138, 155);
+            this.panel2.Size = new System.Drawing.Size(1132, 155);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // richTextBoxAddress
+            // 
+            this.richTextBoxAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxAddress.Location = new System.Drawing.Point(509, 16);
+            this.richTextBoxAddress.Name = "richTextBoxAddress";
+            this.richTextBoxAddress.Size = new System.Drawing.Size(232, 50);
+            this.richTextBoxAddress.TabIndex = 3;
+            this.richTextBoxAddress.Text = "";
             // 
             // btnView
             // 
             this.btnView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.btnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnView.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnView.Location = new System.Drawing.Point(565, 87);
+            this.btnView.Location = new System.Drawing.Point(566, 95);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(113, 37);
             this.btnView.TabIndex = 2;
@@ -123,8 +134,9 @@
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnDelete.Location = new System.Drawing.Point(430, 87);
+            this.btnDelete.Location = new System.Drawing.Point(431, 95);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(113, 37);
             this.btnDelete.TabIndex = 2;
@@ -135,8 +147,9 @@
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnUpdate.Location = new System.Drawing.Point(295, 87);
+            this.btnUpdate.Location = new System.Drawing.Point(296, 95);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(113, 37);
             this.btnUpdate.TabIndex = 2;
@@ -147,8 +160,9 @@
             // btnInsert
             // 
             this.btnInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.btnInsert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInsert.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnInsert.Location = new System.Drawing.Point(160, 87);
+            this.btnInsert.Location = new System.Drawing.Point(161, 95);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(113, 37);
             this.btnInsert.TabIndex = 2;
@@ -175,15 +189,6 @@
             this.label4.Size = new System.Drawing.Size(118, 24);
             this.label4.TabIndex = 0;
             this.label4.Text = "Mobile No :";
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(509, 16);
-            this.txtAddress.Multiline = true;
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(224, 25);
-            this.txtAddress.TabIndex = 1;
             // 
             // label3
             // 
@@ -224,7 +229,7 @@
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataGridView1.Location = new System.Drawing.Point(0, 218);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1138, 515);
+            this.dataGridView1.Size = new System.Drawing.Size(1132, 515);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
@@ -233,7 +238,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.ClientSize = new System.Drawing.Size(1138, 733);
+            this.ClientSize = new System.Drawing.Size(1132, 733);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -241,6 +246,7 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FrmPartyMaster";
             this.Text = "FrmPartyMaster";
+            this.Load += new System.EventHandler(this.FrmPartyMaster_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -261,12 +267,12 @@
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.TextBox txtMobileNo;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtPartyName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnclose;
+        private System.Windows.Forms.RichTextBox richTextBoxAddress;
 
     }
 }

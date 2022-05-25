@@ -1,0 +1,53 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace DemoApplication
+{
+    public partial class FrmDebitOrCreditQuery : Form
+    {
+        DataSet ds;
+        QueryCalss q1 = new QueryCalss();
+        public FrmDebitOrCreditQuery()
+        {
+            InitializeComponent();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            ds = q1.ViewCommand("SELECT EXPENSEID,EXPENSEDATE,EXPENSECATEGORY,PARTYNAME,SOURCENAME,AMOUNT,PAYMENTMODE,REFERENCE,CHEQUEDATE,REMARK FROM EXPENSEMASTER,PARTYMASTER,SOURCEMASTER WHERE PARTYMASTER.PARTYID = EXPENSEMASTER.PARTYID AND SOURCEMASTER.SOURCEID = EXPENSEMASTER.SOURCEID");
+            if (ds.Tables[0].Rows.Count > 0)
+            { 
+               dataGridViewExpenseTable.DataSource = ds.Tables[0];
+            }
+
+            ds = q1.ViewCommand("SELECT INCOMEID,INCOMEDATE,PARTYNAME,SOURCENAME,AMOUNT,PAYMENTMODE,REFERENCE,CHEQUEDATE,REMARK FROM INCOMEMASTER,PARTYMASTER,SOURCEMASTER WHERE PARTYMASTER.PARTYID = INCOMEMASTER.PARTYID AND SOURCEMASTER.SOURCEID = INCOMEMASTER.SOURCEID");
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                dataGridViewIncomeTable.DataSource = ds.Tables[0];
+            }
+            //SELECT EXPENSEMASTER.PARTYID,EXPENSEMASTER.SOURCEID,INCOMEMASTER.PARTYID,INCOMEMASTER.SOURCEID,SUM(EXPENSEMASTER.AMOUNT) AS TOTAL_EXPENSE,SUM(INCOMEMASTER.AMOUNT) AS TOTAL_INCOME, SUM(EXPENSEMASTER.AMOUNT - INCOMEMASTER.AMOUNT) AS DEBIT_AND_CREDIT FROM EXPENSEMASTER,INCOMEMASTER GROUP BY EXPENSEMASTER.PARTYID,EXPENSEMASTER.SOURCEID,INCOMEMASTER.PARTYID,INCOMEMASTER.SOURCEID "
+            //ds = q1.ViewCommand("SELECT EXPENSEMASTER.PARTYID,PARTYNAME,EXPENSEMASTER.SOURCEID,INCOMEMASTER.PARTYID,INCOMEMASTER.SOURCEID,SUM(EXPENSEMASTER.AMOUNT) AS TOTAL_EXPENSE,SUM(INCOMEMASTER.AMOUNT) AS TOTAL_INCOME, SUM(EXPENSEMASTER.AMOUNT - INCOMEMASTER.AMOUNT) AS DEBIT_AND_CREDIT FROM EXPENSEMASTER,INCOMEMASTER INNER JOIN PARTYMASTER ON EXPENSEMASTER.PARTYID = PARTYMASTER.PARTYID GROUP BY EXPENSEMASTER.PARTYID,PARTYNAME,EXPENSEMASTER.SOURCEID,INCOMEMASTER.PARTYID,INCOMEMASTER.SOURCEID ");
+
+            ds = q1.ViewCommand("SELECT PARTYNAME,SOURCENAME,ex.AMOUNT,im.AMOUNT FROM EXPENSEMASTER ex INNER JOIN PARTYMASTER pm ON ex.PARTYID = pm.PARTYID INNER JOIN SOURCEMASTER sm ON ex.SOURCEID = sm.SOURCEID INNER JOIN INCOMEMASTER im on im.PARTYID = pm.PARTYID AND im.SOURCEID = sm.SOURCEID ");
+
+            if (ds.Tables[0].Rows.Count > 0)
+            { 
+                dataGridViewDebitOrCreditQuery.DataSource = ds.Tables[0];
+            }
+
+            
+        }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

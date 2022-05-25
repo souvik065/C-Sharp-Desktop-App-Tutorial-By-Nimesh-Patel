@@ -19,31 +19,15 @@ namespace DemoApplication
             InitializeComponent();
         }
 
-        private void btnclose_Click(object sender, EventArgs e)
+        public void Reset()
         {
-            this.Close();
-        }
-
-        private void btnInsert_Click(object sender, EventArgs e)
-        {
-            q1.ExeCommand("INSERT INTO PARTYMASTER(PARTYNAME,ADDRESS,MOBILENO) VALUES('"+txtPartyName.Text+"','"+txtAddress.Text+"',"+txtMobileNo.Text+")");
-            q1.InsertMessage();
-        }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            q1.ExeCommand("UPDATE PARTYMASTER SET PARTYNAME = '"+txtPartyName.Text+"',ADDRESS = '"+txtAddress.Text+"',MOBILENO = "+txtMobileNo.Text+" ");
-            q1.UpdateMessage();
-
             txtPartyName.Clear();
-            txtAddress.Clear();
+            richTextBoxAddress.Clear();
             txtMobileNo.Clear();
-
         }
 
-        private void btnView_Click(object sender, EventArgs e)
+        public void ReView()
         {
-            ds = new DataSet();
             ds = q1.ViewCommand("SELECT * FROM PARTYMASTER");
             if (ds.Tables[0].Rows.Count > 0)
             {
@@ -51,11 +35,42 @@ namespace DemoApplication
             }
         }
 
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            q1.ExeCommand("INSERT INTO PARTYMASTER(PARTYNAME,ADDRESS,MOBILENO) VALUES('"+txtPartyName.Text+"','"+richTextBoxAddress.Text+"',"+txtMobileNo.Text+")");
+            q1.InsertMessage();
+
+            ReView();
+            Reset();
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            q1.ExeCommand("UPDATE PARTYMASTER SET PARTYNAME = '"+txtPartyName.Text+"',ADDRESS = '"+richTextBoxAddress.Text+"',MOBILENO = "+txtMobileNo.Text+" ");
+            q1.UpdateMessage();
+
+            ReView();
+
+            Reset();
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+
+            ReView();
+        }
+
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             txtPartyName.Tag = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtPartyName.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            txtAddress.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            richTextBoxAddress.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txtMobileNo.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
         }
 
@@ -68,6 +83,18 @@ namespace DemoApplication
         {
             q1.ExeCommand("DELETE FROM PARTYMASTER WHERE PARTYID = "+txtPartyName.Tag+"");
             q1.DeleteMessage();
+
+            txtPartyName.Clear();
+            richTextBoxAddress.Clear();
+            txtMobileNo.Clear();
+
+            ReView();
+            Reset();
+        }
+
+        private void FrmPartyMaster_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

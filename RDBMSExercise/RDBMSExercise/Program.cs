@@ -16,7 +16,7 @@ namespace RDBMSExercise
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Productform1());
+            Application.Run(new Customerform());
         }
     }
 }
