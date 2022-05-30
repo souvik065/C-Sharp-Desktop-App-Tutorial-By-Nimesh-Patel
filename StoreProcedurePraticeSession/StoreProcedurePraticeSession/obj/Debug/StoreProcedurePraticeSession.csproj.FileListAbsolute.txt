@@ -1,0 +1,10 @@
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\StoreProcedurePraticeSession\StoreProcedurePraticeSession\bin\Debug\StoreProcedurePraticeSession.exe.config
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\StoreProcedurePraticeSession\StoreProcedurePraticeSession\bin\Debug\StoreProcedurePraticeSession.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\StoreProcedurePraticeSession\StoreProcedurePraticeSession\bin\Debug\StoreProcedurePraticeSession.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\StoreProcedurePraticeSession\StoreProcedurePraticeSession\obj\Debug\StoreProcedurePraticeSession.csprojResolveAssemblyReference.cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\StoreProcedurePraticeSession\StoreProcedurePraticeSession\obj\Debug\StoreProcedurePraticeSession.Form1.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\StoreProcedurePraticeSession\StoreProcedurePraticeSession\obj\Debug\StoreProcedurePraticeSession.Properties.Resources.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\StoreProcedurePraticeSession\StoreProcedurePraticeSession\obj\Debug\StoreProcedurePraticeSession.csproj.GenerateResource.Cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\StoreProcedurePraticeSession\StoreProcedurePraticeSession\obj\Debug\StoreProcedurePraticeSession.exe
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\StoreProcedurePraticeSession\StoreProcedurePraticeSession\obj\Debug\StoreProcedurePraticeSession.pdb
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\StoreProcedurePraticeSession\StoreProcedurePraticeSession\obj\Debug\StoreProcedurePraticeSession.FrmEmpDetails.resources
