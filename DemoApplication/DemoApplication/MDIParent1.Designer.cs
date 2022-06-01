@@ -36,6 +36,7 @@
             this.partyQueryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Sidebarpanel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.SubBtnDebitOrCreditQuery = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnPartyQuery = new System.Windows.Forms.Button();
             this.btnExpenseQuery = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@
             this.panellogo = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelchildform = new System.Windows.Forms.Panel();
-            this.SubBtnDebitOrCreditQuery = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.Sidebarpanel.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -140,10 +140,28 @@
             this.panel2.Controls.Add(this.btnPartyQuery);
             this.panel2.Controls.Add(this.btnExpenseQuery);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 388);
+            this.panel2.Location = new System.Drawing.Point(0, 383);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(204, 203);
+            this.panel2.Size = new System.Drawing.Size(204, 204);
             this.panel2.TabIndex = 7;
+            // 
+            // SubBtnDebitOrCreditQuery
+            // 
+            this.SubBtnDebitOrCreditQuery.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SubBtnDebitOrCreditQuery.FlatAppearance.BorderSize = 0;
+            this.SubBtnDebitOrCreditQuery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SubBtnDebitOrCreditQuery.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubBtnDebitOrCreditQuery.ForeColor = System.Drawing.Color.LightGray;
+            this.SubBtnDebitOrCreditQuery.Location = new System.Drawing.Point(0, 135);
+            this.SubBtnDebitOrCreditQuery.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.SubBtnDebitOrCreditQuery.Name = "SubBtnDebitOrCreditQuery";
+            this.SubBtnDebitOrCreditQuery.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
+            this.SubBtnDebitOrCreditQuery.Size = new System.Drawing.Size(202, 45);
+            this.SubBtnDebitOrCreditQuery.TabIndex = 5;
+            this.SubBtnDebitOrCreditQuery.Text = "Debit Credit Query";
+            this.SubBtnDebitOrCreditQuery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SubBtnDebitOrCreditQuery.UseVisualStyleBackColor = true;
+            this.SubBtnDebitOrCreditQuery.Click += new System.EventHandler(this.SubBtnDebitOrCreditQuery_Click);
             // 
             // button2
             // 
@@ -210,7 +228,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.LightGray;
-            this.button1.Location = new System.Drawing.Point(0, 334);
+            this.button1.Location = new System.Drawing.Point(0, 329);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -230,7 +248,7 @@
             this.MenuSubpanel.Controls.Add(this.btnSourceMaster);
             this.MenuSubpanel.Controls.Add(this.SubBtnPartyMaster);
             this.MenuSubpanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.MenuSubpanel.Location = new System.Drawing.Point(0, 145);
+            this.MenuSubpanel.Location = new System.Drawing.Point(0, 140);
             this.MenuSubpanel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MenuSubpanel.Name = "MenuSubpanel";
             this.MenuSubpanel.Size = new System.Drawing.Size(204, 189);
@@ -323,7 +341,7 @@
             this.btnmenu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnmenu.Name = "btnmenu";
             this.btnmenu.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnmenu.Size = new System.Drawing.Size(204, 54);
+            this.btnmenu.Size = new System.Drawing.Size(204, 49);
             this.btnmenu.TabIndex = 4;
             this.btnmenu.Text = "Menu";
             this.btnmenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -361,24 +379,6 @@
             this.panelchildform.Name = "panelchildform";
             this.panelchildform.Size = new System.Drawing.Size(932, 652);
             this.panelchildform.TabIndex = 5;
-            // 
-            // SubBtnDebitOrCreditQuery
-            // 
-            this.SubBtnDebitOrCreditQuery.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SubBtnDebitOrCreditQuery.FlatAppearance.BorderSize = 0;
-            this.SubBtnDebitOrCreditQuery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SubBtnDebitOrCreditQuery.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SubBtnDebitOrCreditQuery.ForeColor = System.Drawing.Color.LightGray;
-            this.SubBtnDebitOrCreditQuery.Location = new System.Drawing.Point(0, 135);
-            this.SubBtnDebitOrCreditQuery.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.SubBtnDebitOrCreditQuery.Name = "SubBtnDebitOrCreditQuery";
-            this.SubBtnDebitOrCreditQuery.Padding = new System.Windows.Forms.Padding(45, 0, 0, 0);
-            this.SubBtnDebitOrCreditQuery.Size = new System.Drawing.Size(202, 45);
-            this.SubBtnDebitOrCreditQuery.TabIndex = 5;
-            this.SubBtnDebitOrCreditQuery.Text = "Debit Credit Query";
-            this.SubBtnDebitOrCreditQuery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.SubBtnDebitOrCreditQuery.UseVisualStyleBackColor = true;
-            this.SubBtnDebitOrCreditQuery.Click += new System.EventHandler(this.SubBtnDebitOrCreditQuery_Click);
             // 
             // MDIParent1
             // 
