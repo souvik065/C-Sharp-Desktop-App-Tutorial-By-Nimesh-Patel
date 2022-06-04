@@ -50,7 +50,22 @@ namespace FinalProject
         }
 
        
-        
 
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+            FrmCategory cate = new FrmCategory();
+            cate.ShowDialog();
+        }
+
+        private void btnSubCategory_Click(object sender, EventArgs e)
+        {
+            FrmSubCategory Subcate = new FrmSubCategory();
+            Subcate.ShowDialog();
+        }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

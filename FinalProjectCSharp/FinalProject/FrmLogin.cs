@@ -43,8 +43,8 @@ namespace FinalProject
             da.Fill(ds);
             if (ds.Tables[0].Rows.Count > 0)
             {
-                FrmCategory cate = new FrmCategory();
-                cate.ShowDialog();
+                MDIParent1 MDI1 = new MDIParent1();
+                MDI1.ShowDialog();
                 this.WindowState = FormWindowState.Minimized;
                 this.Close();
             }

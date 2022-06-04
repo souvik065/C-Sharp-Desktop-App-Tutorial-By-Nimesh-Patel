@@ -79,8 +79,10 @@
             this.txtPassword.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(66, 199);
             this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(193, 22);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.UseSystemPasswordChar = true;
             this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // label3
@@ -213,7 +215,7 @@
             this.labelRegister.ForeColor = System.Drawing.Color.MediumBlue;
             this.labelRegister.Location = new System.Drawing.Point(211, 401);
             this.labelRegister.Name = "labelRegister";
-            this.labelRegister.Size = new System.Drawing.Size(60, 16);
+            this.labelRegister.Size = new System.Drawing.Size(59, 16);
             this.labelRegister.TabIndex = 5;
             this.labelRegister.Text = "Register";
             // 
@@ -224,7 +226,7 @@
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
             this.label5.Location = new System.Drawing.Point(54, 401);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(161, 16);
+            this.label5.Size = new System.Drawing.Size(160, 16);
             this.label5.TabIndex = 1;
             this.label5.Text = "Don\'t have an account? ";
             // 

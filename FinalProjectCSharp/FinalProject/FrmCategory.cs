@@ -87,7 +87,9 @@ namespace FinalProject
 
         }
 
-        private void btnInsert_Click(object sender, EventArgs e)
+       
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             Insert();
         }
@@ -95,6 +97,7 @@ namespace FinalProject
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             Update();
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -102,7 +105,7 @@ namespace FinalProject
             Delete();
         }
 
-        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        private void dataGridView1_CellMouseClick_1(object sender, DataGridViewCellMouseEventArgs e)
         {
             FillData();
         }

@@ -1,5 +1,4 @@
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\bin\Debug\FinalProject.exe.config
-D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.FrmLogin.resources
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.Properties.Resources.resources
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.Cache
@@ -12,3 +11,6 @@ D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\obj\Debug\
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.FrmCategory.resources
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.FrmSubCategory.resources
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.MDIParent1.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.csproj.AssemblyReference.cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.csproj.CopyComplete
