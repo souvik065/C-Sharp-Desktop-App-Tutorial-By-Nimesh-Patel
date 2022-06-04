@@ -65,7 +65,8 @@ namespace FinalProject
 
         private void btnProducts_Click(object sender, EventArgs e)
         {
-            
+            FrmProductMasterAndDetails prod = new FrmProductMasterAndDetails();
+            prod.ShowDialog();
         }
     }
 }
