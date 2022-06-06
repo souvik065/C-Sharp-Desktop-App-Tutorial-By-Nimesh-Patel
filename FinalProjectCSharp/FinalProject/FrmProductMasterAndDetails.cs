@@ -17,7 +17,7 @@ namespace FinalProject
 
        
         Int32 productID = 0;
-        int32 productDetailID = 0;
+        
         public FrmProductMasterAndDetails()
         {
             InitializeComponent();
@@ -63,7 +63,7 @@ namespace FinalProject
             txtIGSTAmount.Text = "0.00";
             txtBasicRate.Clear();
             txtMRP.Clear();
-            productDetailID = 0;
+            productID = 0;
 
         }
 
@@ -85,33 +85,70 @@ namespace FinalProject
             
         }
 
-        public void InsertProdutDetails()
+        private void InsertProductDetail()
         {
             SQLQueryClass.con.Open();
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
-            {
-                SqlCommand cmd = new SqlCommand("InsertIntoProductDetails",SQLQueryClass.con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@PRODUCTID", dataGridView1.Rows[i].Cells[0].Value).DbType = DbType.Int32;
-                cmd.Parameters.AddWithValue("@QTY",Convert.ToDecimal(dataGridView1.Rows[i].Cells[1].Value)).DbType = DbType.Decimal;
-                cmd.Parameters.AddWithValue("@UNIT", dataGridView1.Rows[i].Cells[2].Value).DbType = DbType.String;
-                cmd.Parameters.AddWithValue("@PURCHASERATE", Convert.ToDecimal(dataGridView1.Rows[i].Cells[3].Value)).DbType = DbType.Decimal;
-                cmd.Parameters.AddWithValue("@SALESRATE", Convert.ToDecimal(dataGridView1.Rows[i].Cells[4].Value)).DbType = DbType.Decimal;
-                cmd.Parameters.AddWithValue("@CGSTPERCENTAGE", Convert.ToDecimal(dataGridView1.Rows[i].Cells[5].Value)).DbType = DbType.Decimal;
-                cmd.Parameters.AddWithValue("@CGSTAMOUNT", Convert.ToDecimal(dataGridView1.Rows[i].Cells[6].Value)).DbType = DbType.Decimal;
-                cmd.Parameters.AddWithValue("@SGSTPERCENTAGE",Convert.ToDecimal(dataGridView1.Rows[i].Cells[7].Value)).DbType = DbType.Decimal;
-                cmd.Parameters.AddWithValue("@SGSTAMOUNT", Convert.ToDecimal(dataGridView1.Rows[i].Cells[8].Value)).DbType = DbType.Decimal;
-                cmd.Parameters.AddWithValue("@IGSTPERCENTAGE", Convert.ToDecimal(dataGridView1.Rows[i].Cells[9].Value)).DbType = DbType.Decimal;
-                cmd.Parameters.AddWithValue("@IGSTAMOUNT", Convert.ToDecimal(dataGridView1.Rows[i].Cells[10].Value)).DbType = DbType.Decimal;
-                cmd.Parameters.AddWithValue("@BASICRATE", Convert.ToDecimal(dataGridView1.Rows[i].Cells[11].Value)).DbType = DbType.Decimal;
-                cmd.Parameters.AddWithValue("@MRP", Convert.ToDecimal(dataGridView1.Rows[i].Cells[12].Value)).DbType = DbType.Decimal;
-                cmd.ExecuteNonQuery();
 
-            }
+            SqlCommand cmd = new SqlCommand("InsertIntoProductDetails", SQLQueryClass.con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@PRODUCTID", productID).DbType = DbType.Int32;
+            cmd.Parameters.AddWithValue("@QTY", txtQTY.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@UNIT", comboBoxUnit.Text).DbType = DbType.String;
+            cmd.Parameters.AddWithValue("@PURCHASERATE", txtPurchaseRate.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@SALESRATE", txtSalesRate.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@CGSTPERCENTAGE", txtCGSTRate.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@CGSTAMOUNT", txtCGSTAmount.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@SGSTPERCENTAGE", txtSGSTRate.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@SGSTAMOUNT", txtSGSTAmount.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@IGSTPERCENTAGE", txtIGSTRate.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@IGSTAMOUNT", txtIGSTAmount.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@BASICRATE", txtBasicRate.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@MRP", txtMRP.Text).DbType = DbType.Decimal;
+
+
+
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Product Detail Inserted Successfully");
 
             SQLQueryClass.con.Close();
-            MessageBox.Show("Product Details Inserted Successfully");
+
+            this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails);
         }
+
+        public void UpdateProductDetails()
+        {
+            SQLQueryClass.con.Open();
+
+            SqlCommand cmd = new SqlCommand("UpdateProductDetails", SQLQueryClass.con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@PRODUCTDETAILID", txtQTY.Tag).DbType = DbType.Int32;
+            cmd.Parameters.AddWithValue("@PRODUCTID", productID).DbType = DbType.Int32;
+            cmd.Parameters.AddWithValue("@QTY", txtQTY.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@UNIT", comboBoxUnit.Text).DbType = DbType.String;
+            cmd.Parameters.AddWithValue("@PURCHASERATE", txtPurchaseRate.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@SALESRATE", txtSalesRate.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@CGSTPERCENTAGE", txtCGSTRate.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@CGSTAMOUNT", txtCGSTAmount.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@SGSTPERCENTAGE", txtSGSTRate.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@SGSTAMOUNT", txtSGSTAmount.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@IGSTPERCENTAGE", txtIGSTRate.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@IGSTAMOUNT", txtIGSTAmount.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@BASICRATE", txtBasicRate.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@MRP", txtMRP.Text).DbType = DbType.Decimal;
+
+
+
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("Product Detail Updated Successfully");
+
+            SQLQueryClass.con.Close();
+
+            this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails);
+            txtQTY.Tag = null;
+        }
+
+
+
 
 
         public void GrideViewDelete()
@@ -123,6 +160,24 @@ namespace FinalProject
             }
         }
 
+
+        public void FillData()
+        {
+            txtQTY.Tag = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            productID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[1].Value.ToString());
+            txtQTY.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            comboBoxUnit.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            txtPurchaseRate.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            txtSalesRate.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            txtCGSTRate.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            txtCGSTAmount.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            txtSGSTRate.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            txtSGSTAmount.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
+            txtIGSTRate.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
+            txtIGSTAmount.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
+            txtBasicRate.Text = dataGridView1.CurrentRow.Cells[12].Value.ToString();
+            txtMRP.Text = dataGridView1.CurrentRow.Cells[13].Value.ToString();
+        }
       
         
         public void GSTCAl()
@@ -170,13 +225,12 @@ namespace FinalProject
 
         }
 
-        private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+       
 
         private void FrmProductMasterAndDetails_Load_1(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dSGetProductDetails.GetProductDetails' table. You can move, or remove it, as needed.
+            this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails);
             // TODO: This line of code loads data into the 'listCategoryDetails._ListCategoryDetails' table. You can move, or remove it, as needed.
             this.listCategoryDetailsTableAdapter.Fill(this.listCategoryDetails._ListCategoryDetails);
 
@@ -201,19 +255,21 @@ namespace FinalProject
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
+            InsertIntoProductMaster();
 
-
-            if (productID == 0)
+            if (txtQTY.Tag == null)
             {
-                InsertIntoProductMaster();
+                
+                InsertProductDetail();
+                
             }
             else
-            { 
-                //update 
+            {
+                UpdateProductDetails();
 
             }
 
-            dataGridView1.Rows.Add(productID,txtQTY.Text, comboBoxUnit.Text, txtPurchaseRate.Text, txtSalesRate.Text, txtCGSTRate.Text, txtCGSTAmount.Text, txtSGSTRate.Text, txtSGSTAmount.Text, txtIGSTRate.Text, txtIGSTAmount.Text, txtBasicRate.Text, txtMRP.Text);
+            
 
             Reset();
 
@@ -242,8 +298,8 @@ namespace FinalProject
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            InsertProdutDetails();
-            dataGridView1.Rows.Clear();
+            
+            
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -253,19 +309,7 @@ namespace FinalProject
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            productDetail = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            txtQTY.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            comboBoxUnit.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtPurchaseRate.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-            txtSalesRate.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
-            txtCGSTRate.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
-            txtCGSTAmount.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
-            txtSGSTRate.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
-            txtSGSTAmount.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
-            txtIGSTRate.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
-            txtIGSTAmount.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
-            txtBasicRate.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
-            txtMRP.Text = dataGridView1.CurrentRow.Cells[12].Value.ToString();
+            FillData();
 
         }
 

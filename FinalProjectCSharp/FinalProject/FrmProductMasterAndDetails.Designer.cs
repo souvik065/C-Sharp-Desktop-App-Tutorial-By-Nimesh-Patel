@@ -77,19 +77,24 @@
             this.listCategoryDetailsTableAdapter = new FinalProject.FinalProjectDataSets.ListCategoryDetailsTableAdapters.ListCategoryDetailsTableAdapter();
             this.listSubCategoryDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSListSubCategoryDetailsTableAdapters.ListSubCategoryDetailsTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ColProductID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Qty = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Unit = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PurchaseRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SalesRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CGSTPercentage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CGSTAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SGSTPercentage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SGSTAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IGSTPercentage = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IGSTAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BasicRate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MRP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dSGetProductDetails = new FinalProject.FinalProjectDataSets.DSGetProductDetails();
+            this.dSGetProductDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.getProductDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.getProductDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters.GetProductDetailsTableAdapter();
+            this.pRODUCTDETAILIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pRODUCTIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qTYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.uNITDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pURCHASERATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sALESRATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGSTPERCENTAGEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cGSTAMOUNTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sGSTPERCENTAGEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sGSTAMOUNTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iGSTPERCENTAGEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iGSTAMOUNTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bASICRATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mRPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listCategoryDetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listCategoryDetails)).BeginInit();
@@ -102,6 +107,9 @@
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subCategoryDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetails)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.getProductDetailsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -110,7 +118,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.50812F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.49188F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 651F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 653F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -126,7 +134,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(813, 12);
+            this.label1.Location = new System.Drawing.Point(812, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(270, 41);
             this.label1.TabIndex = 0;
@@ -744,23 +752,26 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColProductID,
-            this.Qty,
-            this.Unit,
-            this.PurchaseRate,
-            this.SalesRate,
-            this.CGSTPercentage,
-            this.CGSTAmount,
-            this.SGSTPercentage,
-            this.SGSTAmount,
-            this.IGSTPercentage,
-            this.IGSTAmount,
-            this.BasicRate,
-            this.MRP});
+            this.pRODUCTDETAILIDDataGridViewTextBoxColumn,
+            this.pRODUCTIDDataGridViewTextBoxColumn,
+            this.qTYDataGridViewTextBoxColumn,
+            this.uNITDataGridViewTextBoxColumn,
+            this.pURCHASERATEDataGridViewTextBoxColumn,
+            this.sALESRATEDataGridViewTextBoxColumn,
+            this.cGSTPERCENTAGEDataGridViewTextBoxColumn,
+            this.cGSTAMOUNTDataGridViewTextBoxColumn,
+            this.sGSTPERCENTAGEDataGridViewTextBoxColumn,
+            this.sGSTAMOUNTDataGridViewTextBoxColumn,
+            this.iGSTPERCENTAGEDataGridViewTextBoxColumn,
+            this.iGSTAMOUNTDataGridViewTextBoxColumn,
+            this.bASICRATEDataGridViewTextBoxColumn,
+            this.mRPDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.getProductDetailsBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
             this.dataGridView1.Location = new System.Drawing.Point(0, 251);
@@ -770,83 +781,122 @@
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
-            // ColProductID
+            // dSGetProductDetails
             // 
-            this.ColProductID.HeaderText = "PRODUCTID";
-            this.ColProductID.Name = "ColProductID";
-            this.ColProductID.ReadOnly = true;
+            this.dSGetProductDetails.DataSetName = "DSGetProductDetails";
+            this.dSGetProductDetails.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // Qty
+            // dSGetProductDetailsBindingSource
             // 
-            this.Qty.HeaderText = "QTY";
-            this.Qty.Name = "Qty";
-            this.Qty.ReadOnly = true;
+            this.dSGetProductDetailsBindingSource.DataSource = this.dSGetProductDetails;
+            this.dSGetProductDetailsBindingSource.Position = 0;
             // 
-            // Unit
+            // getProductDetailsBindingSource
             // 
-            this.Unit.HeaderText = "UNIT";
-            this.Unit.Name = "Unit";
-            this.Unit.ReadOnly = true;
+            this.getProductDetailsBindingSource.DataMember = "GetProductDetails";
+            this.getProductDetailsBindingSource.DataSource = this.dSGetProductDetailsBindingSource;
             // 
-            // PurchaseRate
+            // getProductDetailsTableAdapter
             // 
-            this.PurchaseRate.HeaderText = "PURCHASERATE";
-            this.PurchaseRate.Name = "PurchaseRate";
-            this.PurchaseRate.ReadOnly = true;
+            this.getProductDetailsTableAdapter.ClearBeforeFill = true;
             // 
-            // SalesRate
+            // pRODUCTDETAILIDDataGridViewTextBoxColumn
             // 
-            this.SalesRate.HeaderText = "SALESRATE";
-            this.SalesRate.Name = "SalesRate";
-            this.SalesRate.ReadOnly = true;
+            this.pRODUCTDETAILIDDataGridViewTextBoxColumn.DataPropertyName = "PRODUCTDETAILID";
+            this.pRODUCTDETAILIDDataGridViewTextBoxColumn.HeaderText = "PRODUCTDETAILID";
+            this.pRODUCTDETAILIDDataGridViewTextBoxColumn.Name = "pRODUCTDETAILIDDataGridViewTextBoxColumn";
+            this.pRODUCTDETAILIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // CGSTPercentage
+            // pRODUCTIDDataGridViewTextBoxColumn
             // 
-            this.CGSTPercentage.HeaderText = "CGSTPERCENTAGE";
-            this.CGSTPercentage.Name = "CGSTPercentage";
-            this.CGSTPercentage.ReadOnly = true;
+            this.pRODUCTIDDataGridViewTextBoxColumn.DataPropertyName = "PRODUCTID";
+            this.pRODUCTIDDataGridViewTextBoxColumn.HeaderText = "PRODUCTID";
+            this.pRODUCTIDDataGridViewTextBoxColumn.Name = "pRODUCTIDDataGridViewTextBoxColumn";
+            this.pRODUCTIDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // CGSTAmount
+            // qTYDataGridViewTextBoxColumn
             // 
-            this.CGSTAmount.HeaderText = "CGSTAMOUNT";
-            this.CGSTAmount.Name = "CGSTAmount";
-            this.CGSTAmount.ReadOnly = true;
+            this.qTYDataGridViewTextBoxColumn.DataPropertyName = "QTY";
+            this.qTYDataGridViewTextBoxColumn.HeaderText = "QTY";
+            this.qTYDataGridViewTextBoxColumn.Name = "qTYDataGridViewTextBoxColumn";
+            this.qTYDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // SGSTPercentage
+            // uNITDataGridViewTextBoxColumn
             // 
-            this.SGSTPercentage.HeaderText = "SGSTPERCENTAGE";
-            this.SGSTPercentage.Name = "SGSTPercentage";
-            this.SGSTPercentage.ReadOnly = true;
+            this.uNITDataGridViewTextBoxColumn.DataPropertyName = "UNIT";
+            this.uNITDataGridViewTextBoxColumn.HeaderText = "UNIT";
+            this.uNITDataGridViewTextBoxColumn.Name = "uNITDataGridViewTextBoxColumn";
+            this.uNITDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // SGSTAmount
+            // pURCHASERATEDataGridViewTextBoxColumn
             // 
-            this.SGSTAmount.HeaderText = "SGSTAMOUNT";
-            this.SGSTAmount.Name = "SGSTAmount";
-            this.SGSTAmount.ReadOnly = true;
+            this.pURCHASERATEDataGridViewTextBoxColumn.DataPropertyName = "PURCHASERATE";
+            this.pURCHASERATEDataGridViewTextBoxColumn.HeaderText = "PURCHASERATE";
+            this.pURCHASERATEDataGridViewTextBoxColumn.Name = "pURCHASERATEDataGridViewTextBoxColumn";
+            this.pURCHASERATEDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // IGSTPercentage
+            // sALESRATEDataGridViewTextBoxColumn
             // 
-            this.IGSTPercentage.HeaderText = "IGSTPERCENTAGE";
-            this.IGSTPercentage.Name = "IGSTPercentage";
-            this.IGSTPercentage.ReadOnly = true;
+            this.sALESRATEDataGridViewTextBoxColumn.DataPropertyName = "SALESRATE";
+            this.sALESRATEDataGridViewTextBoxColumn.HeaderText = "SALESRATE";
+            this.sALESRATEDataGridViewTextBoxColumn.Name = "sALESRATEDataGridViewTextBoxColumn";
+            this.sALESRATEDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // IGSTAmount
+            // cGSTPERCENTAGEDataGridViewTextBoxColumn
             // 
-            this.IGSTAmount.HeaderText = "IGSTAMOUNT";
-            this.IGSTAmount.Name = "IGSTAmount";
-            this.IGSTAmount.ReadOnly = true;
+            this.cGSTPERCENTAGEDataGridViewTextBoxColumn.DataPropertyName = "CGSTPERCENTAGE";
+            this.cGSTPERCENTAGEDataGridViewTextBoxColumn.HeaderText = "CGSTPERCENTAGE";
+            this.cGSTPERCENTAGEDataGridViewTextBoxColumn.Name = "cGSTPERCENTAGEDataGridViewTextBoxColumn";
+            this.cGSTPERCENTAGEDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // BasicRate
+            // cGSTAMOUNTDataGridViewTextBoxColumn
             // 
-            this.BasicRate.HeaderText = "BASICRATE";
-            this.BasicRate.Name = "BasicRate";
-            this.BasicRate.ReadOnly = true;
+            this.cGSTAMOUNTDataGridViewTextBoxColumn.DataPropertyName = "CGSTAMOUNT";
+            this.cGSTAMOUNTDataGridViewTextBoxColumn.HeaderText = "CGSTAMOUNT";
+            this.cGSTAMOUNTDataGridViewTextBoxColumn.Name = "cGSTAMOUNTDataGridViewTextBoxColumn";
+            this.cGSTAMOUNTDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // MRP
+            // sGSTPERCENTAGEDataGridViewTextBoxColumn
             // 
-            this.MRP.HeaderText = "MRP";
-            this.MRP.Name = "MRP";
-            this.MRP.ReadOnly = true;
+            this.sGSTPERCENTAGEDataGridViewTextBoxColumn.DataPropertyName = "SGSTPERCENTAGE";
+            this.sGSTPERCENTAGEDataGridViewTextBoxColumn.HeaderText = "SGSTPERCENTAGE";
+            this.sGSTPERCENTAGEDataGridViewTextBoxColumn.Name = "sGSTPERCENTAGEDataGridViewTextBoxColumn";
+            this.sGSTPERCENTAGEDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sGSTAMOUNTDataGridViewTextBoxColumn
+            // 
+            this.sGSTAMOUNTDataGridViewTextBoxColumn.DataPropertyName = "SGSTAMOUNT";
+            this.sGSTAMOUNTDataGridViewTextBoxColumn.HeaderText = "SGSTAMOUNT";
+            this.sGSTAMOUNTDataGridViewTextBoxColumn.Name = "sGSTAMOUNTDataGridViewTextBoxColumn";
+            this.sGSTAMOUNTDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // iGSTPERCENTAGEDataGridViewTextBoxColumn
+            // 
+            this.iGSTPERCENTAGEDataGridViewTextBoxColumn.DataPropertyName = "IGSTPERCENTAGE";
+            this.iGSTPERCENTAGEDataGridViewTextBoxColumn.HeaderText = "IGSTPERCENTAGE";
+            this.iGSTPERCENTAGEDataGridViewTextBoxColumn.Name = "iGSTPERCENTAGEDataGridViewTextBoxColumn";
+            this.iGSTPERCENTAGEDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // iGSTAMOUNTDataGridViewTextBoxColumn
+            // 
+            this.iGSTAMOUNTDataGridViewTextBoxColumn.DataPropertyName = "IGSTAMOUNT";
+            this.iGSTAMOUNTDataGridViewTextBoxColumn.HeaderText = "IGSTAMOUNT";
+            this.iGSTAMOUNTDataGridViewTextBoxColumn.Name = "iGSTAMOUNTDataGridViewTextBoxColumn";
+            this.iGSTAMOUNTDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // bASICRATEDataGridViewTextBoxColumn
+            // 
+            this.bASICRATEDataGridViewTextBoxColumn.DataPropertyName = "BASICRATE";
+            this.bASICRATEDataGridViewTextBoxColumn.HeaderText = "BASICRATE";
+            this.bASICRATEDataGridViewTextBoxColumn.Name = "bASICRATEDataGridViewTextBoxColumn";
+            this.bASICRATEDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // mRPDataGridViewTextBoxColumn
+            // 
+            this.mRPDataGridViewTextBoxColumn.DataPropertyName = "MRP";
+            this.mRPDataGridViewTextBoxColumn.HeaderText = "MRP";
+            this.mRPDataGridViewTextBoxColumn.Name = "mRPDataGridViewTextBoxColumn";
+            this.mRPDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // FrmProductMasterAndDetails
             // 
@@ -882,6 +932,9 @@
             this.tableLayoutPanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.subCategoryDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetails)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.getProductDetailsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -936,18 +989,23 @@
         private FinalProjectDataSets.DSListSubCategoryDetails dSListSubCategoryDetails;
         private FinalProjectDataSets.DSListSubCategoryDetailsTableAdapters.ListSubCategoryDetailsTableAdapter listSubCategoryDetailsTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColProductID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Qty;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Unit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PurchaseRate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SalesRate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CGSTPercentage;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CGSTAmount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SGSTPercentage;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SGSTAmount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IGSTPercentage;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IGSTAmount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BasicRate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MRP;
+        private System.Windows.Forms.BindingSource dSGetProductDetailsBindingSource;
+        private FinalProjectDataSets.DSGetProductDetails dSGetProductDetails;
+        private System.Windows.Forms.BindingSource getProductDetailsBindingSource;
+        private FinalProjectDataSets.DSGetProductDetailsTableAdapters.GetProductDetailsTableAdapter getProductDetailsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pRODUCTDETAILIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pRODUCTIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn qTYDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn uNITDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pURCHASERATEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sALESRATEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cGSTPERCENTAGEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cGSTAMOUNTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sGSTPERCENTAGEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sGSTAMOUNTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iGSTPERCENTAGEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iGSTAMOUNTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bASICRATEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mRPDataGridViewTextBoxColumn;
     }
 }

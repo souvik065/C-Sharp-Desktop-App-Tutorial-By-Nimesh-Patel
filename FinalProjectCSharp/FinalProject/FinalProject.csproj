@@ -70,6 +70,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CategoryDetails.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FinalProjectDataSets\DSGetProductDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSGetProductDetails.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FinalProjectDataSets\DSListSubCategoryDetails.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -166,6 +171,17 @@
     </None>
     <None Include="FinalProjectDataSets\CategoryDetails.xss">
       <DependentUpon>CategoryDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetProductDetails.xsc">
+      <DependentUpon>DSGetProductDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetProductDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSGetProductDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetProductDetails.xss">
+      <DependentUpon>DSGetProductDetails.xsd</DependentUpon>
     </None>
     <None Include="FinalProjectDataSets\DSListSubCategoryDetails.xsc">
       <DependentUpon>DSListSubCategoryDetails.xsd</DependentUpon>
