@@ -17,6 +17,7 @@ namespace FinalProject
 
        
         Int32 productID = 0;
+        int32 productDetailID = 0;
         public FrmProductMasterAndDetails()
         {
             InitializeComponent();
@@ -51,7 +52,7 @@ namespace FinalProject
             txtProductName.Clear();
             comboBoxCategory.SelectedIndex = 0;
             txtQTY.Text = "1";
-            //comboBoxUnit.SelectedIndex = 0;
+            comboBoxUnit.SelectedIndex = 1;
             txtPurchaseRate.Clear();
             txtSalesRate.Clear();
             txtCGSTRate.Text = "0.00";
@@ -62,6 +63,7 @@ namespace FinalProject
             txtIGSTAmount.Text = "0.00";
             txtBasicRate.Clear();
             txtMRP.Clear();
+            productDetailID = 0;
 
         }
 
@@ -120,6 +122,8 @@ namespace FinalProject
                 dataGridView1.Rows.RemoveAt(item.Index);
             }
         }
+
+      
         
         public void GSTCAl()
         {
@@ -152,7 +156,7 @@ namespace FinalProject
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Reset();
         }
 
         private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
@@ -176,15 +180,10 @@ namespace FinalProject
             // TODO: This line of code loads data into the 'listCategoryDetails._ListCategoryDetails' table. You can move, or remove it, as needed.
             this.listCategoryDetailsTableAdapter.Fill(this.listCategoryDetails._ListCategoryDetails);
 
-            Reset();
-            CreateTable();
+             comboBoxUnit.SelectedIndex = 0;
 
-            comboBoxUnit.Items.Add("--Select Unit--");
-            comboBoxUnit.Items.Add("Kg");
-            comboBoxUnit.Items.Add("g");
-            comboBoxUnit.Items.Add("mg");
-            comboBoxUnit.Items.Add("L");
-            comboBoxUnit.Items.Add("ml");
+
+            
 
         }
 
@@ -201,29 +200,22 @@ namespace FinalProject
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            InsertIntoProductMaster();
+
+
+
+            if (productID == 0)
+            {
+                InsertIntoProductMaster();
+            }
+            else
+            { 
+                //update 
+
+            }
 
             dataGridView1.Rows.Add(productID,txtQTY.Text, comboBoxUnit.Text, txtPurchaseRate.Text, txtSalesRate.Text, txtCGSTRate.Text, txtCGSTAmount.Text, txtSGSTRate.Text, txtSGSTAmount.Text, txtIGSTRate.Text, txtIGSTAmount.Text, txtBasicRate.Text, txtMRP.Text);
-            
-            /*
-            DataRow dr = ProductTable.NewRow();
-            dr[0] = productID;
-            dr[1] = txtQTY.Text;
-            dr[2] = comboBoxUnit.Text;
-            dr[3] = txtPurchaseRate.Text;
-            dr[4] = txtSalesRate.Text;
-            dr[5] = txtCGSTRate.Text;
-            dr[6] = txtCGSTAmount.Text;
-            dr[7] = txtSGSTRate.Text;
-            dr[8] = txtSGSTAmount.Text;
-            dr[9] = txtIGSTRate.Text;
-            dr[10] = txtIGSTAmount.Text;
-            dr[11] = txtBasicRate.Text;
-            dr[12] = txtMRP.Text;
-            ProductTable.Rows.Add(dr);
-            */
 
-
+            Reset();
 
             
 
@@ -261,18 +253,24 @@ namespace FinalProject
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            productDetail = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             txtQTY.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             comboBoxUnit.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtPurchaseRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtSalesRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtCGSTRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtCGSTAmount.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtSGSTRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtSGSTAmount.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txt.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtPurchaseRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtPurchaseRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txtPurchaseRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtPurchaseRate.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            txtSalesRate.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            txtCGSTRate.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            txtCGSTAmount.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            txtSGSTRate.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+            txtSGSTAmount.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+            txtIGSTRate.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
+            txtIGSTAmount.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
+            txtBasicRate.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
+            txtMRP.Text = dataGridView1.CurrentRow.Cells[12].Value.ToString();
+
+        }
+
+        private void txtSGSTAmount_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

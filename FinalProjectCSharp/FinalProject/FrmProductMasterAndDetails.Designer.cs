@@ -288,6 +288,7 @@
             this.txtQTY.Name = "txtQTY";
             this.txtQTY.Size = new System.Drawing.Size(78, 22);
             this.txtQTY.TabIndex = 6;
+            this.txtQTY.Text = "1";
             // 
             // comboBoxUnit
             // 
@@ -296,9 +297,15 @@
             this.comboBoxUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxUnit.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxUnit.FormattingEnabled = true;
-            this.comboBoxUnit.Location = new System.Drawing.Point(477, 5);
+            this.comboBoxUnit.Items.AddRange(new object[] {
+            "--Select Unit --",
+            "Kg",
+            "mg",
+            "L",
+            "ml"});
+            this.comboBoxUnit.Location = new System.Drawing.Point(478, 5);
             this.comboBoxUnit.Name = "comboBoxUnit";
-            this.comboBoxUnit.Size = new System.Drawing.Size(87, 30);
+            this.comboBoxUnit.Size = new System.Drawing.Size(137, 30);
             this.comboBoxUnit.TabIndex = 7;
             // 
             // txtPurchaseRate
@@ -311,6 +318,7 @@
             this.txtPurchaseRate.Name = "txtPurchaseRate";
             this.txtPurchaseRate.Size = new System.Drawing.Size(118, 22);
             this.txtPurchaseRate.TabIndex = 6;
+            this.txtPurchaseRate.Text = "0";
             // 
             // txtSalesRate
             // 
@@ -322,6 +330,7 @@
             this.txtSalesRate.Name = "txtSalesRate";
             this.txtSalesRate.Size = new System.Drawing.Size(119, 22);
             this.txtSalesRate.TabIndex = 6;
+            this.txtSalesRate.Text = "0";
             // 
             // label9
             // 
@@ -345,6 +354,7 @@
             this.txtCGSTRate.Name = "txtCGSTRate";
             this.txtCGSTRate.Size = new System.Drawing.Size(57, 22);
             this.txtCGSTRate.TabIndex = 6;
+            this.txtCGSTRate.Text = "0";
             this.txtCGSTRate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCGSTRate_KeyDown);
             // 
             // label10
@@ -369,6 +379,7 @@
             this.txtSGSTRate.Name = "txtSGSTRate";
             this.txtSGSTRate.Size = new System.Drawing.Size(52, 22);
             this.txtSGSTRate.TabIndex = 6;
+            this.txtSGSTRate.Text = "0";
             this.txtSGSTRate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSGSTRate_KeyDown_1);
             // 
             // label11
@@ -393,6 +404,7 @@
             this.txtIGSTRate.Name = "txtIGSTRate";
             this.txtIGSTRate.Size = new System.Drawing.Size(52, 22);
             this.txtIGSTRate.TabIndex = 6;
+            this.txtIGSTRate.Text = "0";
             this.txtIGSTRate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtIGSTRate_KeyDown);
             // 
             // label12
@@ -417,6 +429,7 @@
             this.txtBasicRate.Name = "txtBasicRate";
             this.txtBasicRate.Size = new System.Drawing.Size(100, 22);
             this.txtBasicRate.TabIndex = 6;
+            this.txtBasicRate.Text = "0";
             // 
             // label13
             // 
@@ -440,6 +453,7 @@
             this.txtMRP.Name = "txtMRP";
             this.txtMRP.Size = new System.Drawing.Size(110, 22);
             this.txtMRP.TabIndex = 6;
+            this.txtMRP.Text = "0";
             // 
             // txtCGSTAmount
             // 
@@ -451,6 +465,7 @@
             this.txtCGSTAmount.Name = "txtCGSTAmount";
             this.txtCGSTAmount.Size = new System.Drawing.Size(89, 22);
             this.txtCGSTAmount.TabIndex = 6;
+            this.txtCGSTAmount.Text = "0";
             // 
             // txtSGSTAmount
             // 
@@ -462,6 +477,8 @@
             this.txtSGSTAmount.Name = "txtSGSTAmount";
             this.txtSGSTAmount.Size = new System.Drawing.Size(82, 22);
             this.txtSGSTAmount.TabIndex = 6;
+            this.txtSGSTAmount.Text = "0";
+            this.txtSGSTAmount.TextChanged += new System.EventHandler(this.txtSGSTAmount_TextChanged);
             // 
             // txtIGSTAmount
             // 
@@ -473,6 +490,7 @@
             this.txtIGSTAmount.Name = "txtIGSTAmount";
             this.txtIGSTAmount.Size = new System.Drawing.Size(88, 22);
             this.txtIGSTAmount.TabIndex = 6;
+            this.txtIGSTAmount.Text = "0";
             // 
             // btnAdd
             // 
@@ -544,8 +562,8 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 218F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 151F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
