@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDIParent1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.MastersSubPanel = new System.Windows.Forms.Panel();
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnSubCategory = new System.Windows.Forms.Button();
             this.btnCategory = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnMaster = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.Bodypanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.MastersSubPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.MastersSubPanel);
+            this.panel1.Controls.Add(this.btnMaster);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -53,15 +53,15 @@
             this.panel1.Size = new System.Drawing.Size(200, 808);
             this.panel1.TabIndex = 6;
             // 
-            // panel3
+            // MastersSubPanel
             // 
-            this.panel3.Controls.Add(this.btnProducts);
-            this.panel3.Controls.Add(this.btnSubCategory);
-            this.panel3.Controls.Add(this.btnCategory);
-            this.panel3.Location = new System.Drawing.Point(0, 143);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 196);
-            this.panel3.TabIndex = 9;
+            this.MastersSubPanel.Controls.Add(this.btnProducts);
+            this.MastersSubPanel.Controls.Add(this.btnSubCategory);
+            this.MastersSubPanel.Controls.Add(this.btnCategory);
+            this.MastersSubPanel.Location = new System.Drawing.Point(0, 143);
+            this.MastersSubPanel.Name = "MastersSubPanel";
+            this.MastersSubPanel.Size = new System.Drawing.Size(200, 196);
+            this.MastersSubPanel.TabIndex = 9;
             // 
             // btnProducts
             // 
@@ -105,19 +105,20 @@
             this.btnCategory.UseVisualStyleBackColor = true;
             this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
-            // button1
+            // btnMaster
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 100);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 43);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Masters";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnMaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaster.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMaster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnMaster.Image = ((System.Drawing.Image)(resources.GetObject("btnMaster.Image")));
+            this.btnMaster.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMaster.Location = new System.Drawing.Point(0, 100);
+            this.btnMaster.Name = "btnMaster";
+            this.btnMaster.Size = new System.Drawing.Size(200, 43);
+            this.btnMaster.TabIndex = 8;
+            this.btnMaster.Text = "Masters";
+            this.btnMaster.UseVisualStyleBackColor = true;
+            this.btnMaster.Click += new System.EventHandler(this.btnMaster_Click);
             // 
             // panel2
             // 
@@ -127,20 +128,20 @@
             this.panel2.Size = new System.Drawing.Size(198, 100);
             this.panel2.TabIndex = 7;
             // 
-            // panel4
+            // Bodypanel
             // 
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(200, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1070, 808);
-            this.panel4.TabIndex = 8;
+            this.Bodypanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Bodypanel.Location = new System.Drawing.Point(200, 0);
+            this.Bodypanel.Name = "Bodypanel";
+            this.Bodypanel.Size = new System.Drawing.Size(1070, 808);
+            this.Bodypanel.TabIndex = 8;
             // 
             // MDIParent1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1270, 808);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.Bodypanel);
             this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;
             this.Name = "MDIParent1";
@@ -148,20 +149,20 @@
             this.Text = "MDIParent1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.MastersSubPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnMaster;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel MastersSubPanel;
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Button btnSubCategory;
         private System.Windows.Forms.Button btnCategory;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel Bodypanel;
     }
 }
 

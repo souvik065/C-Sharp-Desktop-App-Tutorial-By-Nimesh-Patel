@@ -22,7 +22,7 @@ namespace FinalProject
             InitializeComponent();
         }
 
-        
+
 
         public DataTable CreateTable()
         {
@@ -112,8 +112,15 @@ namespace FinalProject
         }
 
 
+        public void GrideViewDelete()
+        {
+            foreach (DataGridViewRow item in this.dataGridView1.SelectedRows)
+            {
 
-
+                dataGridView1.Rows.RemoveAt(item.Index);
+            }
+        }
+        
         public void GSTCAl()
         {
             if (Convert.ToDecimal(txtCGSTRate.Text) > Convert.ToDecimal(0.00) || Convert.ToDecimal(txtSGSTRate.Text) > Convert.ToDecimal(0.00))
@@ -245,6 +252,28 @@ namespace FinalProject
         {
             InsertProdutDetails();
             dataGridView1.Rows.Clear();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            GrideViewDelete();
+        }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            txtQTY.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            comboBoxUnit.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtPurchaseRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtSalesRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtCGSTRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtCGSTAmount.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtSGSTRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtSGSTAmount.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txt.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtPurchaseRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtPurchaseRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtPurchaseRate.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+
         }
     }
 }

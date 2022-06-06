@@ -19,6 +19,56 @@ namespace FinalProject
             InitializeComponent();
         }
 
+
+        //MDI Parent UI Design
+        public void CustomizeDesign()
+        {
+            MastersSubPanel.Visible = false;
+            
+        }
+
+
+        public void HideSubMenu()
+        {
+            if (MastersSubPanel.Visible == true)
+                MastersSubPanel.Visible = false;
+        }
+
+        public void ShowSubMenu(Panel SubMenu)
+        {
+            if (SubMenu.Visible == false)
+            {
+                HideSubMenu();
+                SubMenu.Visible = true;
+            }
+            else
+            {
+                SubMenu.Visible = false;
+            }
+        }
+
+        private Form activeForm = null;
+        private void OpenChildForm(Form childFrom)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childFrom;
+            childFrom.TopLevel = false;
+            childFrom.FormBorderStyle = FormBorderStyle.None;
+            childFrom.Dock = DockStyle.Fill;
+            Bodypanel.Controls.Add(childFrom);
+            Bodypanel.Tag = childFrom;
+            childFrom.BringToFront();
+            childFrom.Show();
+        }
+
+        //-------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+        //Other Default Features in MDI
         private void ShowNewForm(object sender, EventArgs e)
         {
             Form childForm = new Form();
@@ -49,24 +99,33 @@ namespace FinalProject
             }
         }
 
-       
+       //---------------------------------------------------------------------------------------------------------------
 
         private void btnCategory_Click(object sender, EventArgs e)
         {
-            FrmCategory cate = new FrmCategory();
-            cate.ShowDialog();
+            OpenChildForm(new FrmCategory());
+            HideSubMenu();
+
+            
         }
 
         private void btnSubCategory_Click(object sender, EventArgs e)
         {
-            FrmSubCategory Subcate = new FrmSubCategory();
-            Subcate.ShowDialog();
+            OpenChildForm(new FrmSubCategory());
+            HideSubMenu();
         }
 
         private void btnProducts_Click(object sender, EventArgs e)
         {
-            FrmProductMasterAndDetails prod = new FrmProductMasterAndDetails();
-            prod.ShowDialog();
+            OpenChildForm(new FrmProductMasterAndDetails());
+            HideSubMenu();
+        }
+
+        
+
+        private void btnMaster_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(MastersSubPanel);
         }
     }
 }
