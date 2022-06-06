@@ -18,6 +18,8 @@ namespace FinalProject
             InitializeComponent();
         }
 
+
+
         private void Insert()
         {
             SQLQueryClass.con.Open();
@@ -85,6 +87,13 @@ namespace FinalProject
             // TODO: This line of code loads data into the 'categoryDetails.GetCategoryDetails' table. You can move, or remove it, as needed.
             this.getCategoryDetailsTableAdapter.Fill(this.categoryDetails.GetCategoryDetails);
 
+
+            //datagriedview design
+            dataGridView1.EnableHeadersVisualStyles = false;
+
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+         
         }
 
        
