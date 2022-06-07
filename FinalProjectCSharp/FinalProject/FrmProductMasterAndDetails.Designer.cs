@@ -77,10 +77,6 @@
             this.listCategoryDetailsTableAdapter = new FinalProject.FinalProjectDataSets.ListCategoryDetailsTableAdapters.ListCategoryDetailsTableAdapter();
             this.listSubCategoryDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSListSubCategoryDetailsTableAdapters.ListSubCategoryDetailsTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dSGetProductDetails = new FinalProject.FinalProjectDataSets.DSGetProductDetails();
-            this.dSGetProductDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.getProductDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.getProductDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters.GetProductDetailsTableAdapter();
             this.pRODUCTDETAILIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pRODUCTIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.qTYDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -95,6 +91,10 @@
             this.iGSTAMOUNTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bASICRATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mRPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.getProductDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dSGetProductDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dSGetProductDetails = new FinalProject.FinalProjectDataSets.DSGetProductDetails();
+            this.getProductDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters.GetProductDetailsTableAdapter();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listCategoryDetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listCategoryDetails)).BeginInit();
@@ -107,9 +107,9 @@
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subCategoryDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.getProductDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetails)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -118,7 +118,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.50812F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.49188F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 653F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 654F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -134,7 +134,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(812, 12);
+            this.label1.Location = new System.Drawing.Point(811, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(270, 41);
             this.label1.TabIndex = 0;
@@ -185,7 +185,7 @@
             this.txtProductName.Location = new System.Drawing.Point(260, 14);
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(330, 22);
-            this.txtProductName.TabIndex = 6;
+            this.txtProductName.TabIndex = 0;
             // 
             // comboBoxCategory
             // 
@@ -199,7 +199,7 @@
             this.comboBoxCategory.Location = new System.Drawing.Point(959, 10);
             this.comboBoxCategory.Name = "comboBoxCategory";
             this.comboBoxCategory.Size = new System.Drawing.Size(186, 30);
-            this.comboBoxCategory.TabIndex = 7;
+            this.comboBoxCategory.TabIndex = 1;
             this.comboBoxCategory.ValueMember = "CATEGORYID";
             this.comboBoxCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategory_SelectedIndexChanged);
             // 
@@ -225,7 +225,7 @@
             this.comboBoxSubCategory.Location = new System.Drawing.Point(1430, 10);
             this.comboBoxSubCategory.Name = "comboBoxSubCategory";
             this.comboBoxSubCategory.Size = new System.Drawing.Size(190, 30);
-            this.comboBoxSubCategory.TabIndex = 7;
+            this.comboBoxSubCategory.TabIndex = 2;
             this.comboBoxSubCategory.ValueMember = "SUBCATEGORYID";
             // 
             // listSubCategoryDetailsBindingSource
@@ -295,7 +295,7 @@
             this.txtQTY.Location = new System.Drawing.Point(262, 9);
             this.txtQTY.Name = "txtQTY";
             this.txtQTY.Size = new System.Drawing.Size(78, 22);
-            this.txtQTY.TabIndex = 6;
+            this.txtQTY.TabIndex = 0;
             this.txtQTY.Text = "1";
             // 
             // comboBoxUnit
@@ -314,7 +314,7 @@
             this.comboBoxUnit.Location = new System.Drawing.Point(478, 5);
             this.comboBoxUnit.Name = "comboBoxUnit";
             this.comboBoxUnit.Size = new System.Drawing.Size(137, 30);
-            this.comboBoxUnit.TabIndex = 7;
+            this.comboBoxUnit.TabIndex = 1;
             // 
             // txtPurchaseRate
             // 
@@ -325,7 +325,7 @@
             this.txtPurchaseRate.Location = new System.Drawing.Point(961, 9);
             this.txtPurchaseRate.Name = "txtPurchaseRate";
             this.txtPurchaseRate.Size = new System.Drawing.Size(118, 22);
-            this.txtPurchaseRate.TabIndex = 6;
+            this.txtPurchaseRate.TabIndex = 2;
             this.txtPurchaseRate.Text = "0";
             // 
             // txtSalesRate
@@ -337,7 +337,7 @@
             this.txtSalesRate.Location = new System.Drawing.Point(1433, 9);
             this.txtSalesRate.Name = "txtSalesRate";
             this.txtSalesRate.Size = new System.Drawing.Size(119, 22);
-            this.txtSalesRate.TabIndex = 6;
+            this.txtSalesRate.TabIndex = 3;
             this.txtSalesRate.Text = "0";
             // 
             // label9
@@ -361,7 +361,7 @@
             this.txtCGSTRate.Location = new System.Drawing.Point(258, 13);
             this.txtCGSTRate.Name = "txtCGSTRate";
             this.txtCGSTRate.Size = new System.Drawing.Size(57, 22);
-            this.txtCGSTRate.TabIndex = 6;
+            this.txtCGSTRate.TabIndex = 0;
             this.txtCGSTRate.Text = "0";
             this.txtCGSTRate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCGSTRate_KeyDown);
             // 
@@ -386,7 +386,7 @@
             this.txtSGSTRate.Location = new System.Drawing.Point(961, 13);
             this.txtSGSTRate.Name = "txtSGSTRate";
             this.txtSGSTRate.Size = new System.Drawing.Size(52, 22);
-            this.txtSGSTRate.TabIndex = 6;
+            this.txtSGSTRate.TabIndex = 1;
             this.txtSGSTRate.Text = "0";
             this.txtSGSTRate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSGSTRate_KeyDown_1);
             // 
@@ -411,7 +411,7 @@
             this.txtIGSTRate.Location = new System.Drawing.Point(1435, 13);
             this.txtIGSTRate.Name = "txtIGSTRate";
             this.txtIGSTRate.Size = new System.Drawing.Size(52, 22);
-            this.txtIGSTRate.TabIndex = 6;
+            this.txtIGSTRate.TabIndex = 2;
             this.txtIGSTRate.Text = "0";
             this.txtIGSTRate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtIGSTRate_KeyDown);
             // 
@@ -436,7 +436,7 @@
             this.txtBasicRate.Location = new System.Drawing.Point(260, 11);
             this.txtBasicRate.Name = "txtBasicRate";
             this.txtBasicRate.Size = new System.Drawing.Size(100, 22);
-            this.txtBasicRate.TabIndex = 6;
+            this.txtBasicRate.TabIndex = 0;
             this.txtBasicRate.Text = "0";
             // 
             // label13
@@ -460,7 +460,7 @@
             this.txtMRP.Location = new System.Drawing.Point(985, 11);
             this.txtMRP.Name = "txtMRP";
             this.txtMRP.Size = new System.Drawing.Size(110, 22);
-            this.txtMRP.TabIndex = 6;
+            this.txtMRP.TabIndex = 1;
             this.txtMRP.Text = "0";
             // 
             // txtCGSTAmount
@@ -511,7 +511,7 @@
             this.btnAdd.Location = new System.Drawing.Point(1309, 3);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(109, 39);
-            this.btnAdd.TabIndex = 8;
+            this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -527,7 +527,7 @@
             this.btnClear.Location = new System.Drawing.Point(1463, 3);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(109, 39);
-            this.btnClear.TabIndex = 8;
+            this.btnClear.TabIndex = 3;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.button2_Click);
@@ -690,7 +690,7 @@
             this.btnSave.Location = new System.Drawing.Point(421, 8);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(109, 39);
-            this.btnSave.TabIndex = 8;
+            this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -706,7 +706,7 @@
             this.btnDelete.Location = new System.Drawing.Point(897, 8);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(109, 39);
-            this.btnDelete.TabIndex = 8;
+            this.btnDelete.TabIndex = 1;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -722,7 +722,7 @@
             this.button3.Location = new System.Drawing.Point(1373, 8);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(109, 39);
-            this.button3.TabIndex = 8;
+            this.button3.TabIndex = 2;
             this.button3.Text = "Reset";
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -780,25 +780,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1904, 650);
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
-            // 
-            // dSGetProductDetails
-            // 
-            this.dSGetProductDetails.DataSetName = "DSGetProductDetails";
-            this.dSGetProductDetails.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dSGetProductDetailsBindingSource
-            // 
-            this.dSGetProductDetailsBindingSource.DataSource = this.dSGetProductDetails;
-            this.dSGetProductDetailsBindingSource.Position = 0;
-            // 
-            // getProductDetailsBindingSource
-            // 
-            this.getProductDetailsBindingSource.DataMember = "GetProductDetails";
-            this.getProductDetailsBindingSource.DataSource = this.dSGetProductDetailsBindingSource;
-            // 
-            // getProductDetailsTableAdapter
-            // 
-            this.getProductDetailsTableAdapter.ClearBeforeFill = true;
             // 
             // pRODUCTDETAILIDDataGridViewTextBoxColumn
             // 
@@ -898,6 +879,25 @@
             this.mRPDataGridViewTextBoxColumn.Name = "mRPDataGridViewTextBoxColumn";
             this.mRPDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // getProductDetailsBindingSource
+            // 
+            this.getProductDetailsBindingSource.DataMember = "GetProductDetails";
+            this.getProductDetailsBindingSource.DataSource = this.dSGetProductDetailsBindingSource;
+            // 
+            // dSGetProductDetailsBindingSource
+            // 
+            this.dSGetProductDetailsBindingSource.DataSource = this.dSGetProductDetails;
+            this.dSGetProductDetailsBindingSource.Position = 0;
+            // 
+            // dSGetProductDetails
+            // 
+            this.dSGetProductDetails.DataSetName = "DSGetProductDetails";
+            this.dSGetProductDetails.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // getProductDetailsTableAdapter
+            // 
+            this.getProductDetailsTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmProductMasterAndDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -932,9 +932,9 @@
             this.tableLayoutPanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.subCategoryDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetailsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.getProductDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetails)).EndInit();
             this.ResumeLayout(false);
 
         }
