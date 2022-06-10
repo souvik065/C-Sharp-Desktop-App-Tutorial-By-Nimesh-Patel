@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDIParent1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.MastersSubPanel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnSubCategory = new System.Windows.Forms.Button();
             this.btnCategory = new System.Windows.Forms.Button();
@@ -55,13 +56,28 @@
             // 
             // MastersSubPanel
             // 
+            this.MastersSubPanel.Controls.Add(this.button1);
             this.MastersSubPanel.Controls.Add(this.btnProducts);
             this.MastersSubPanel.Controls.Add(this.btnSubCategory);
             this.MastersSubPanel.Controls.Add(this.btnCategory);
             this.MastersSubPanel.Location = new System.Drawing.Point(0, 143);
             this.MastersSubPanel.Name = "MastersSubPanel";
-            this.MastersSubPanel.Size = new System.Drawing.Size(200, 196);
+            this.MastersSubPanel.Size = new System.Drawing.Size(200, 272);
             this.MastersSubPanel.TabIndex = 9;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.button1.Location = new System.Drawing.Point(0, 150);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 44);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Supplier Master";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnProducts
             // 
@@ -148,6 +164,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MDIParent1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MDIParent1_Load);
             this.panel1.ResumeLayout(false);
             this.MastersSubPanel.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -163,6 +180,7 @@
         private System.Windows.Forms.Button btnSubCategory;
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Panel Bodypanel;
+        private System.Windows.Forms.Button button1;
     }
 }
 

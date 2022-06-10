@@ -17,54 +17,134 @@ namespace FinalProject
 
        
         Int32 productID = 0;
+        Int32 productDetailID = 0;
         
         public FrmProductMasterAndDetails()
         {
             InitializeComponent();
         }
 
-
-
-        public DataTable CreateTable()
+        private void EnablePanelContents()
         {
-            DataTable ProductTable = new DataTable();
+
+            tableLayoutProductDetailPanel.Enabled = false;
+            tableLayoutProductDetailPanel2.Enabled = false;
+            txtBasicRate.Enabled = false;
+            txtMRP.Enabled = false;
+            dataGridView1.Enabled = false;
+
+            if (txtProductName.Text != null && comboBoxSubCategory.SelectedValue != null)
+            {
+                tableLayoutProductDetailPanel.Enabled = Enabled;
+                tableLayoutProductDetailPanel2.Enabled = Enabled;
+                txtBasicRate.Enabled = Enabled;
+                txtMRP.Enabled = Enabled;
+                dataGridView1.Enabled = Enabled;
+
+                tableLayoutProductMasterPanel.Enabled = false;
+
+            }
 
 
-            ProductTable.Columns.Add("PRODUCTID");
-            ProductTable.Columns.Add("QTY");
-            ProductTable.Columns.Add("UNIT");
-            ProductTable.Columns.Add("PURCHASERATE");
-            ProductTable.Columns.Add("SALESRATE");
-            ProductTable.Columns.Add("CGSTPERCENTAGE");
-            ProductTable.Columns.Add("CGSTAMOUNT");
-            ProductTable.Columns.Add("SGSTPERCENTAGE");
-            ProductTable.Columns.Add("SGSTAMOUNT");
-            ProductTable.Columns.Add("IGSTPERCENTAGE");
-            ProductTable.Columns.Add("IGSTAMOUNT");
-            ProductTable.Columns.Add("BASICRATE");
-            ProductTable.Columns.Add("MRP");
-            return ProductTable;
+            
+            
+
 
         }
 
+       
         public void Reset()
         {
-            txtProductName.Clear();
-            comboBoxCategory.SelectedIndex = 0;
+           
             txtQTY.Text = "1";
             comboBoxUnit.SelectedIndex = 1;
-            txtPurchaseRate.Clear();
-            txtSalesRate.Clear();
-            txtCGSTRate.Text = "0.00";
-            txtCGSTAmount.Text = "0.00";
-            txtSGSTRate.Text = "0.00";
-            txtSGSTAmount.Text = "0.00";
-            txtIGSTRate.Text = "0.00";
-            txtIGSTAmount.Text = "0.00";
-            txtBasicRate.Clear();
-            txtMRP.Clear();
-            productID = 0;
+            txtPurchaseRate.Text = "0";
+            txtSalesRate.Text = "0";
+            txtCGSTRate.Text = "0";
+            txtCGSTAmount.Text = "0";
+            txtSGSTRate.Text = "0";
+            txtSGSTAmount.Text = "0";
+            txtIGSTRate.Text = "0";
+            txtIGSTAmount.Text = "0";
+            txtBasicRate.Text = "0";
+            txtMRP.Text = "0";
+            productDetailID = 0;
 
+        }
+
+        public void SaveDetails()
+        {
+            DialogResult dialogResult =  MessageBox.Show("Alert", "Do you want to save the Details.", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+            if (productID != 0 && dialogResult == DialogResult.Yes)
+            {
+                
+                productID = 0;
+                Reset();
+                tableLayoutProductMasterPanel.Enabled = Enabled;
+                tableLayoutProductDetailPanel.Enabled = false;
+                tableLayoutProductDetailPanel2.Enabled = false;
+                txtBasicRate.Enabled = false;
+                txtMRP.Enabled = false;
+                txtProductName.Clear();
+                comboBoxCategory.SelectedIndex = 0;
+                comboBoxSubCategory.SelectedIndex = 0;
+                txtProductName.Focus();
+                MessageBox.Show("Details Saved Successfully");
+
+                this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails, productID);
+
+            }
+        }
+
+        public void ResetForm()
+        {
+            if (productID != 0)
+            {
+                DialogResult dialogResult = MessageBox.Show("Alert", "Do you want to Reste the Form. All the data will be deleted.", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (productID != 0 && dialogResult == DialogResult.Yes)
+                {
+                    DeleteIntoProductMaster();
+                    ResetProductDetails();
+                    productID = 0;
+                    Reset();
+                    tableLayoutProductMasterPanel.Enabled = Enabled;
+                    tableLayoutProductDetailPanel.Enabled = false;
+                    tableLayoutProductDetailPanel2.Enabled = false;
+                    txtBasicRate.Enabled = false;
+                    txtMRP.Enabled = false;
+                    txtProductName.Clear();
+                    comboBoxCategory.SelectedIndex = 0;
+                    comboBoxSubCategory.SelectedIndex = 0;
+                    txtProductName.Focus();
+                    MessageBox.Show("Form Reset Successfully");
+                    this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails, productID);
+                }
+            }
+            else {
+                MessageBox.Show("Nothing To Reset");
+            }
+        }
+
+        public void ResetProductDetails()
+        {
+            if (productID > 0)
+            {
+                SQLQueryClass.con.Open();
+                SqlCommand cmd = new SqlCommand("ResetProductDetail", SQLQueryClass.con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@PRODUCTID", productID).DbType = DbType.Int32;
+
+
+                // cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Product Detail Deleted Successfully");
+
+                SQLQueryClass.con.Close();
+            }
+            this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails, productID);
         }
 
         public void InsertIntoProductMaster()
@@ -112,7 +192,7 @@ namespace FinalProject
 
             SQLQueryClass.con.Close();
 
-            this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails);
+            this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails,productID);
         }
 
         public void UpdateProductDetails()
@@ -121,7 +201,7 @@ namespace FinalProject
 
             SqlCommand cmd = new SqlCommand("UpdateProductDetails", SQLQueryClass.con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@PRODUCTDETAILID", txtQTY.Tag).DbType = DbType.Int32;
+            cmd.Parameters.AddWithValue("@PRODUCTDETAILID", productDetailID).DbType = DbType.Int32;
             cmd.Parameters.AddWithValue("@PRODUCTID", productID).DbType = DbType.Int32;
             cmd.Parameters.AddWithValue("@QTY", txtQTY.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@UNIT", comboBoxUnit.Text).DbType = DbType.String;
@@ -143,12 +223,57 @@ namespace FinalProject
 
             SQLQueryClass.con.Close();
 
-            this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails);
-            txtQTY.Tag = null;
+            this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails,productID);
+            //txtQTY.Tag = null;
+
+            
+
         }
 
 
+        public void DeleteProductDetail()
+        {
+            if (productDetailID > 0)
+            {
+                SQLQueryClass.con.Open();
+                SqlCommand cmd = new SqlCommand("DeletePrductDetail", SQLQueryClass.con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@PRODUCTDETAILID", productDetailID).DbType = DbType.Int32;
 
+
+                // cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Product Detail Deleted Successfully");
+
+                SQLQueryClass.con.Close();
+            }
+            else {
+                MessageBox.Show("No Records to Delete");
+            }
+
+            this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails, productID);
+        }
+
+        public void DeleteIntoProductMaster()
+        {
+            if (productID > 0)
+            {
+                SQLQueryClass.con.Open();
+                SqlCommand cmd = new SqlCommand("DeleteIntoProductMaster", SQLQueryClass.con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@PRODUCTID", productID).DbType = DbType.Int32;
+
+
+                
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Deleted From Product Master Successfully");
+
+                SQLQueryClass.con.Close();
+            }
+            this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails, productID); 
+        }
 
 
         public void GrideViewDelete()
@@ -163,7 +288,7 @@ namespace FinalProject
 
         public void FillData()
         {
-            txtQTY.Tag = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+           productDetailID =Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
             productID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[1].Value.ToString());
             txtQTY.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             comboBoxUnit.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
@@ -190,7 +315,7 @@ namespace FinalProject
                 txtCGSTAmount.Text = Convert.ToString(Convert.ToDecimal(txtSalesRate.Text) * Convert.ToDecimal(txtCGSTRate.Text) / 100);
                 txtSGSTAmount.Text = Convert.ToString(Convert.ToDecimal(txtSalesRate.Text) * Convert.ToDecimal(txtSGSTRate.Text) / 100);
 
-                txtBasicRate.Text = Convert.ToString(Convert.ToDecimal(txtSalesRate.Text) + Convert.ToDecimal(txtCGSTAmount.Text) + Convert.ToDecimal(txtSGSTAmount.Text));
+                txtBasicRate.Text = Convert.ToString((Convert.ToDecimal(txtSalesRate.Text) * Convert.ToDecimal(txtQTY.Text)) + Convert.ToDecimal(txtCGSTAmount.Text) + Convert.ToDecimal(txtSGSTAmount.Text));
 
             }
             else if (Convert.ToDecimal(txtIGSTRate.Text) > Convert.ToDecimal(0.00))
@@ -202,7 +327,7 @@ namespace FinalProject
 
                 txtIGSTAmount.Text = Convert.ToString(Convert.ToDecimal(txtSalesRate.Text) * Convert.ToDecimal(txtIGSTRate.Text) / 100);
 
-                txtBasicRate.Text = Convert.ToString(Convert.ToDecimal(txtSalesRate.Text) + Convert.ToDecimal(txtIGSTAmount.Text));
+                txtBasicRate.Text = Convert.ToString((Convert.ToDecimal(txtSalesRate.Text) * Convert.ToDecimal(txtQTY.Text)) + Convert.ToDecimal(txtIGSTAmount.Text));
             }
 
             
@@ -230,9 +355,12 @@ namespace FinalProject
         private void FrmProductMasterAndDetails_Load_1(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dSGetProductDetails.GetProductDetails' table. You can move, or remove it, as needed.
-            this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails);
+            this.getProductDetailsTableAdapter.Fill(this.dSGetProductDetails.GetProductDetails,productID);
             // TODO: This line of code loads data into the 'listCategoryDetails._ListCategoryDetails' table. You can move, or remove it, as needed.
             this.listCategoryDetailsTableAdapter.Fill(this.listCategoryDetails._ListCategoryDetails);
+
+            EnablePanelContents();
+            txtProductName.Focus();
 
              comboBoxUnit.SelectedIndex = 0;
 
@@ -255,25 +383,29 @@ namespace FinalProject
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
-            InsertIntoProductMaster();
 
-            if (txtQTY.Tag == null)
+            if (productID == 0)
             {
-                
-                InsertProductDetail();
-                
+                InsertIntoProductMaster();
             }
-            else
+            if (tableLayoutProductMasterPanel.Enabled == false  && productDetailID == 0)
+            {
+               
+                InsertProductDetail();  
+            }
+            else if(tableLayoutProductMasterPanel.Enabled == false)
             {
                 UpdateProductDetails();
 
             }
 
-            
 
+            
             Reset();
+            EnablePanelContents();
+            txtQTY.Focus();
 
-            
+
 
 
 
@@ -298,13 +430,14 @@ namespace FinalProject
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            
-            
+
+            SaveDetails();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            GrideViewDelete();
+            DeleteProductDetail();
+            Reset();
         }
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -317,5 +450,19 @@ namespace FinalProject
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ResetForm();
+
+        }
+
+
+        }
     }
-}
+

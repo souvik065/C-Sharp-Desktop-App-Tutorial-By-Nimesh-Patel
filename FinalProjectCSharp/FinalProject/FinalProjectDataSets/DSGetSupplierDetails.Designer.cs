@@ -20,17 +20,17 @@ namespace FinalProject.FinalProjectDataSets {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DSGetProductDetails")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DSGetSupplierDetails")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DSGetProductDetails : global::System.Data.DataSet {
+    public partial class DSGetSupplierDetails : global::System.Data.DataSet {
         
-        private GetProductDetailsDataTable tableGetProductDetails;
+        private GetSupplierMasterDetailsDataTable tableGetSupplierMasterDetails;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public DSGetProductDetails() {
+        public DSGetSupplierDetails() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace FinalProject.FinalProjectDataSets {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected DSGetProductDetails(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DSGetSupplierDetails(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace FinalProject.FinalProjectDataSets {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["GetProductDetails"] != null)) {
-                    base.Tables.Add(new GetProductDetailsDataTable(ds.Tables["GetProductDetails"]));
+                if ((ds.Tables["GetSupplierMasterDetails"] != null)) {
+                    base.Tables.Add(new GetSupplierMasterDetailsDataTable(ds.Tables["GetSupplierMasterDetails"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace FinalProject.FinalProjectDataSets {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public GetProductDetailsDataTable GetProductDetails {
+        public GetSupplierMasterDetailsDataTable GetSupplierMasterDetails {
             get {
-                return this.tableGetProductDetails;
+                return this.tableGetSupplierMasterDetails;
             }
         }
         
@@ -127,7 +127,7 @@ namespace FinalProject.FinalProjectDataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DSGetProductDetails cln = ((DSGetProductDetails)(base.Clone()));
+            DSGetSupplierDetails cln = ((DSGetSupplierDetails)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace FinalProject.FinalProjectDataSets {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["GetProductDetails"] != null)) {
-                    base.Tables.Add(new GetProductDetailsDataTable(ds.Tables["GetProductDetails"]));
+                if ((ds.Tables["GetSupplierMasterDetails"] != null)) {
+                    base.Tables.Add(new GetSupplierMasterDetailsDataTable(ds.Tables["GetSupplierMasterDetails"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace FinalProject.FinalProjectDataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableGetProductDetails = ((GetProductDetailsDataTable)(base.Tables["GetProductDetails"]));
+            this.tableGetSupplierMasterDetails = ((GetSupplierMasterDetailsDataTable)(base.Tables["GetSupplierMasterDetails"]));
             if ((initTable == true)) {
-                if ((this.tableGetProductDetails != null)) {
-                    this.tableGetProductDetails.InitVars();
+                if ((this.tableGetSupplierMasterDetails != null)) {
+                    this.tableGetSupplierMasterDetails.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace FinalProject.FinalProjectDataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DSGetProductDetails";
+            this.DataSetName = "DSGetSupplierDetails";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DSGetProductDetails.xsd";
+            this.Namespace = "http://tempuri.org/DSGetSupplierDetails.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableGetProductDetails = new GetProductDetailsDataTable();
-            base.Tables.Add(this.tableGetProductDetails);
+            this.tableGetSupplierMasterDetails = new GetSupplierMasterDetailsDataTable();
+            base.Tables.Add(this.tableGetSupplierMasterDetails);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeGetProductDetails() {
+        private bool ShouldSerializeGetSupplierMasterDetails() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace FinalProject.FinalProjectDataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DSGetProductDetails ds = new DSGetProductDetails();
+            DSGetSupplierDetails ds = new DSGetSupplierDetails();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,47 +270,33 @@ namespace FinalProject.FinalProjectDataSets {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void GetProductDetailsRowChangeEventHandler(object sender, GetProductDetailsRowChangeEvent e);
+        public delegate void GetSupplierMasterDetailsRowChangeEventHandler(object sender, GetSupplierMasterDetailsRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class GetProductDetailsDataTable : global::System.Data.TypedTableBase<GetProductDetailsRow> {
+        public partial class GetSupplierMasterDetailsDataTable : global::System.Data.TypedTableBase<GetSupplierMasterDetailsRow> {
             
-            private global::System.Data.DataColumn columnPRODUCTDETAILID;
+            private global::System.Data.DataColumn columnSUPPLIERID;
             
-            private global::System.Data.DataColumn columnPRODUCTID;
+            private global::System.Data.DataColumn columnSUPPLIERNAME;
             
-            private global::System.Data.DataColumn columnQTY;
+            private global::System.Data.DataColumn columnADDRESS;
             
-            private global::System.Data.DataColumn columnUNIT;
+            private global::System.Data.DataColumn columnEMAILID;
             
-            private global::System.Data.DataColumn columnPURCHASERATE;
+            private global::System.Data.DataColumn columnMOBILENO;
             
-            private global::System.Data.DataColumn columnSALESRATE;
+            private global::System.Data.DataColumn columnCONTACTPERSON;
             
-            private global::System.Data.DataColumn columnCGSTPERCENTAGE;
-            
-            private global::System.Data.DataColumn columnCGSTAMOUNT;
-            
-            private global::System.Data.DataColumn columnSGSTPERCENTAGE;
-            
-            private global::System.Data.DataColumn columnSGSTAMOUNT;
-            
-            private global::System.Data.DataColumn columnIGSTPERCENTAGE;
-            
-            private global::System.Data.DataColumn columnIGSTAMOUNT;
-            
-            private global::System.Data.DataColumn columnBASICRATE;
-            
-            private global::System.Data.DataColumn columnMRP;
+            private global::System.Data.DataColumn columnREMARK;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public GetProductDetailsDataTable() {
-                this.TableName = "GetProductDetails";
+            public GetSupplierMasterDetailsDataTable() {
+                this.TableName = "GetSupplierMasterDetails";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -318,7 +304,7 @@ namespace FinalProject.FinalProjectDataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal GetProductDetailsDataTable(global::System.Data.DataTable table) {
+            internal GetSupplierMasterDetailsDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -335,120 +321,64 @@ namespace FinalProject.FinalProjectDataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected GetProductDetailsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected GetSupplierMasterDetailsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn PRODUCTDETAILIDColumn {
+            public global::System.Data.DataColumn SUPPLIERIDColumn {
                 get {
-                    return this.columnPRODUCTDETAILID;
+                    return this.columnSUPPLIERID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn PRODUCTIDColumn {
+            public global::System.Data.DataColumn SUPPLIERNAMEColumn {
                 get {
-                    return this.columnPRODUCTID;
+                    return this.columnSUPPLIERNAME;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn QTYColumn {
+            public global::System.Data.DataColumn ADDRESSColumn {
                 get {
-                    return this.columnQTY;
+                    return this.columnADDRESS;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn UNITColumn {
+            public global::System.Data.DataColumn EMAILIDColumn {
                 get {
-                    return this.columnUNIT;
+                    return this.columnEMAILID;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn PURCHASERATEColumn {
+            public global::System.Data.DataColumn MOBILENOColumn {
                 get {
-                    return this.columnPURCHASERATE;
+                    return this.columnMOBILENO;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn SALESRATEColumn {
+            public global::System.Data.DataColumn CONTACTPERSONColumn {
                 get {
-                    return this.columnSALESRATE;
+                    return this.columnCONTACTPERSON;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn CGSTPERCENTAGEColumn {
+            public global::System.Data.DataColumn REMARKColumn {
                 get {
-                    return this.columnCGSTPERCENTAGE;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn CGSTAMOUNTColumn {
-                get {
-                    return this.columnCGSTAMOUNT;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn SGSTPERCENTAGEColumn {
-                get {
-                    return this.columnSGSTPERCENTAGE;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn SGSTAMOUNTColumn {
-                get {
-                    return this.columnSGSTAMOUNT;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn IGSTPERCENTAGEColumn {
-                get {
-                    return this.columnIGSTPERCENTAGE;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn IGSTAMOUNTColumn {
-                get {
-                    return this.columnIGSTAMOUNT;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn BASICRATEColumn {
-                get {
-                    return this.columnBASICRATE;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn MRPColumn {
-                get {
-                    return this.columnMRP;
+                    return this.columnREMARK;
                 }
             }
             
@@ -463,58 +393,51 @@ namespace FinalProject.FinalProjectDataSets {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public GetProductDetailsRow this[int index] {
+            public GetSupplierMasterDetailsRow this[int index] {
                 get {
-                    return ((GetProductDetailsRow)(this.Rows[index]));
+                    return ((GetSupplierMasterDetailsRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event GetProductDetailsRowChangeEventHandler GetProductDetailsRowChanging;
+            public event GetSupplierMasterDetailsRowChangeEventHandler GetSupplierMasterDetailsRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event GetProductDetailsRowChangeEventHandler GetProductDetailsRowChanged;
+            public event GetSupplierMasterDetailsRowChangeEventHandler GetSupplierMasterDetailsRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event GetProductDetailsRowChangeEventHandler GetProductDetailsRowDeleting;
+            public event GetSupplierMasterDetailsRowChangeEventHandler GetSupplierMasterDetailsRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event GetProductDetailsRowChangeEventHandler GetProductDetailsRowDeleted;
+            public event GetSupplierMasterDetailsRowChangeEventHandler GetSupplierMasterDetailsRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddGetProductDetailsRow(GetProductDetailsRow row) {
+            public void AddGetSupplierMasterDetailsRow(GetSupplierMasterDetailsRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public GetProductDetailsRow AddGetProductDetailsRow(int PRODUCTID, decimal QTY, string UNIT, decimal PURCHASERATE, decimal SALESRATE, decimal CGSTPERCENTAGE, decimal CGSTAMOUNT, decimal SGSTPERCENTAGE, decimal SGSTAMOUNT, decimal IGSTPERCENTAGE, decimal IGSTAMOUNT, decimal BASICRATE, decimal MRP) {
-                GetProductDetailsRow rowGetProductDetailsRow = ((GetProductDetailsRow)(this.NewRow()));
+            public GetSupplierMasterDetailsRow AddGetSupplierMasterDetailsRow(string SUPPLIERNAME, string ADDRESS, string EMAILID, decimal MOBILENO, string CONTACTPERSON, string REMARK) {
+                GetSupplierMasterDetailsRow rowGetSupplierMasterDetailsRow = ((GetSupplierMasterDetailsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        PRODUCTID,
-                        QTY,
-                        UNIT,
-                        PURCHASERATE,
-                        SALESRATE,
-                        CGSTPERCENTAGE,
-                        CGSTAMOUNT,
-                        SGSTPERCENTAGE,
-                        SGSTAMOUNT,
-                        IGSTPERCENTAGE,
-                        IGSTAMOUNT,
-                        BASICRATE,
-                        MRP};
-                rowGetProductDetailsRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowGetProductDetailsRow);
-                return rowGetProductDetailsRow;
+                        SUPPLIERNAME,
+                        ADDRESS,
+                        EMAILID,
+                        MOBILENO,
+                        CONTACTPERSON,
+                        REMARK};
+                rowGetSupplierMasterDetailsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowGetSupplierMasterDetailsRow);
+                return rowGetSupplierMasterDetailsRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                GetProductDetailsDataTable cln = ((GetProductDetailsDataTable)(base.Clone()));
+                GetSupplierMasterDetailsDataTable cln = ((GetSupplierMasterDetailsDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -522,95 +445,74 @@ namespace FinalProject.FinalProjectDataSets {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new GetProductDetailsDataTable();
+                return new GetSupplierMasterDetailsDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnPRODUCTDETAILID = base.Columns["PRODUCTDETAILID"];
-                this.columnPRODUCTID = base.Columns["PRODUCTID"];
-                this.columnQTY = base.Columns["QTY"];
-                this.columnUNIT = base.Columns["UNIT"];
-                this.columnPURCHASERATE = base.Columns["PURCHASERATE"];
-                this.columnSALESRATE = base.Columns["SALESRATE"];
-                this.columnCGSTPERCENTAGE = base.Columns["CGSTPERCENTAGE"];
-                this.columnCGSTAMOUNT = base.Columns["CGSTAMOUNT"];
-                this.columnSGSTPERCENTAGE = base.Columns["SGSTPERCENTAGE"];
-                this.columnSGSTAMOUNT = base.Columns["SGSTAMOUNT"];
-                this.columnIGSTPERCENTAGE = base.Columns["IGSTPERCENTAGE"];
-                this.columnIGSTAMOUNT = base.Columns["IGSTAMOUNT"];
-                this.columnBASICRATE = base.Columns["BASICRATE"];
-                this.columnMRP = base.Columns["MRP"];
+                this.columnSUPPLIERID = base.Columns["SUPPLIERID"];
+                this.columnSUPPLIERNAME = base.Columns["SUPPLIERNAME"];
+                this.columnADDRESS = base.Columns["ADDRESS"];
+                this.columnEMAILID = base.Columns["EMAILID"];
+                this.columnMOBILENO = base.Columns["MOBILENO"];
+                this.columnCONTACTPERSON = base.Columns["CONTACTPERSON"];
+                this.columnREMARK = base.Columns["REMARK"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnPRODUCTDETAILID = new global::System.Data.DataColumn("PRODUCTDETAILID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPRODUCTDETAILID);
-                this.columnPRODUCTID = new global::System.Data.DataColumn("PRODUCTID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPRODUCTID);
-                this.columnQTY = new global::System.Data.DataColumn("QTY", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnQTY);
-                this.columnUNIT = new global::System.Data.DataColumn("UNIT", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnUNIT);
-                this.columnPURCHASERATE = new global::System.Data.DataColumn("PURCHASERATE", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPURCHASERATE);
-                this.columnSALESRATE = new global::System.Data.DataColumn("SALESRATE", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSALESRATE);
-                this.columnCGSTPERCENTAGE = new global::System.Data.DataColumn("CGSTPERCENTAGE", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCGSTPERCENTAGE);
-                this.columnCGSTAMOUNT = new global::System.Data.DataColumn("CGSTAMOUNT", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCGSTAMOUNT);
-                this.columnSGSTPERCENTAGE = new global::System.Data.DataColumn("SGSTPERCENTAGE", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSGSTPERCENTAGE);
-                this.columnSGSTAMOUNT = new global::System.Data.DataColumn("SGSTAMOUNT", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSGSTAMOUNT);
-                this.columnIGSTPERCENTAGE = new global::System.Data.DataColumn("IGSTPERCENTAGE", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIGSTPERCENTAGE);
-                this.columnIGSTAMOUNT = new global::System.Data.DataColumn("IGSTAMOUNT", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIGSTAMOUNT);
-                this.columnBASICRATE = new global::System.Data.DataColumn("BASICRATE", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBASICRATE);
-                this.columnMRP = new global::System.Data.DataColumn("MRP", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMRP);
-                this.columnPRODUCTDETAILID.AutoIncrement = true;
-                this.columnPRODUCTDETAILID.AutoIncrementSeed = -1;
-                this.columnPRODUCTDETAILID.AutoIncrementStep = -1;
-                this.columnPRODUCTDETAILID.AllowDBNull = false;
-                this.columnPRODUCTDETAILID.ReadOnly = true;
-                this.columnPRODUCTID.AllowDBNull = false;
-                this.columnQTY.AllowDBNull = false;
-                this.columnUNIT.MaxLength = 50;
-                this.columnPURCHASERATE.AllowDBNull = false;
-                this.columnSALESRATE.AllowDBNull = false;
+                this.columnSUPPLIERID = new global::System.Data.DataColumn("SUPPLIERID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSUPPLIERID);
+                this.columnSUPPLIERNAME = new global::System.Data.DataColumn("SUPPLIERNAME", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSUPPLIERNAME);
+                this.columnADDRESS = new global::System.Data.DataColumn("ADDRESS", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnADDRESS);
+                this.columnEMAILID = new global::System.Data.DataColumn("EMAILID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEMAILID);
+                this.columnMOBILENO = new global::System.Data.DataColumn("MOBILENO", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMOBILENO);
+                this.columnCONTACTPERSON = new global::System.Data.DataColumn("CONTACTPERSON", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCONTACTPERSON);
+                this.columnREMARK = new global::System.Data.DataColumn("REMARK", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnREMARK);
+                this.columnSUPPLIERID.AutoIncrement = true;
+                this.columnSUPPLIERID.AutoIncrementSeed = -1;
+                this.columnSUPPLIERID.AutoIncrementStep = -1;
+                this.columnSUPPLIERID.AllowDBNull = false;
+                this.columnSUPPLIERID.ReadOnly = true;
+                this.columnSUPPLIERNAME.MaxLength = 50;
+                this.columnADDRESS.MaxLength = 500;
+                this.columnEMAILID.MaxLength = 50;
+                this.columnCONTACTPERSON.MaxLength = 50;
+                this.columnREMARK.MaxLength = 500;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public GetProductDetailsRow NewGetProductDetailsRow() {
-                return ((GetProductDetailsRow)(this.NewRow()));
+            public GetSupplierMasterDetailsRow NewGetSupplierMasterDetailsRow() {
+                return ((GetSupplierMasterDetailsRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new GetProductDetailsRow(builder);
+                return new GetSupplierMasterDetailsRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(GetProductDetailsRow);
+                return typeof(GetSupplierMasterDetailsRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.GetProductDetailsRowChanged != null)) {
-                    this.GetProductDetailsRowChanged(this, new GetProductDetailsRowChangeEvent(((GetProductDetailsRow)(e.Row)), e.Action));
+                if ((this.GetSupplierMasterDetailsRowChanged != null)) {
+                    this.GetSupplierMasterDetailsRowChanged(this, new GetSupplierMasterDetailsRowChangeEvent(((GetSupplierMasterDetailsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -618,8 +520,8 @@ namespace FinalProject.FinalProjectDataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.GetProductDetailsRowChanging != null)) {
-                    this.GetProductDetailsRowChanging(this, new GetProductDetailsRowChangeEvent(((GetProductDetailsRow)(e.Row)), e.Action));
+                if ((this.GetSupplierMasterDetailsRowChanging != null)) {
+                    this.GetSupplierMasterDetailsRowChanging(this, new GetSupplierMasterDetailsRowChangeEvent(((GetSupplierMasterDetailsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -627,8 +529,8 @@ namespace FinalProject.FinalProjectDataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.GetProductDetailsRowDeleted != null)) {
-                    this.GetProductDetailsRowDeleted(this, new GetProductDetailsRowChangeEvent(((GetProductDetailsRow)(e.Row)), e.Action));
+                if ((this.GetSupplierMasterDetailsRowDeleted != null)) {
+                    this.GetSupplierMasterDetailsRowDeleted(this, new GetSupplierMasterDetailsRowChangeEvent(((GetSupplierMasterDetailsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -636,14 +538,14 @@ namespace FinalProject.FinalProjectDataSets {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.GetProductDetailsRowDeleting != null)) {
-                    this.GetProductDetailsRowDeleting(this, new GetProductDetailsRowChangeEvent(((GetProductDetailsRow)(e.Row)), e.Action));
+                if ((this.GetSupplierMasterDetailsRowDeleting != null)) {
+                    this.GetSupplierMasterDetailsRowDeleting(this, new GetSupplierMasterDetailsRowChangeEvent(((GetSupplierMasterDetailsRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveGetProductDetailsRow(GetProductDetailsRow row) {
+            public void RemoveGetSupplierMasterDetailsRow(GetSupplierMasterDetailsRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -652,7 +554,7 @@ namespace FinalProject.FinalProjectDataSets {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DSGetProductDetails ds = new DSGetProductDetails();
+                DSGetSupplierDetails ds = new DSGetSupplierDetails();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -670,7 +572,7 @@ namespace FinalProject.FinalProjectDataSets {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "GetProductDetailsDataTable";
+                attribute2.FixedValue = "GetSupplierMasterDetailsDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -714,322 +616,196 @@ namespace FinalProject.FinalProjectDataSets {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class GetProductDetailsRow : global::System.Data.DataRow {
+        public partial class GetSupplierMasterDetailsRow : global::System.Data.DataRow {
             
-            private GetProductDetailsDataTable tableGetProductDetails;
+            private GetSupplierMasterDetailsDataTable tableGetSupplierMasterDetails;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal GetProductDetailsRow(global::System.Data.DataRowBuilder rb) : 
+            internal GetSupplierMasterDetailsRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableGetProductDetails = ((GetProductDetailsDataTable)(this.Table));
+                this.tableGetSupplierMasterDetails = ((GetSupplierMasterDetailsDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int PRODUCTDETAILID {
+            public int SUPPLIERID {
                 get {
-                    return ((int)(this[this.tableGetProductDetails.PRODUCTDETAILIDColumn]));
+                    return ((int)(this[this.tableGetSupplierMasterDetails.SUPPLIERIDColumn]));
                 }
                 set {
-                    this[this.tableGetProductDetails.PRODUCTDETAILIDColumn] = value;
+                    this[this.tableGetSupplierMasterDetails.SUPPLIERIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int PRODUCTID {
-                get {
-                    return ((int)(this[this.tableGetProductDetails.PRODUCTIDColumn]));
-                }
-                set {
-                    this[this.tableGetProductDetails.PRODUCTIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal QTY {
-                get {
-                    return ((decimal)(this[this.tableGetProductDetails.QTYColumn]));
-                }
-                set {
-                    this[this.tableGetProductDetails.QTYColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string UNIT {
+            public string SUPPLIERNAME {
                 get {
                     try {
-                        return ((string)(this[this.tableGetProductDetails.UNITColumn]));
+                        return ((string)(this[this.tableGetSupplierMasterDetails.SUPPLIERNAMEColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'UNIT\' in table \'GetProductDetails\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'SUPPLIERNAME\' in table \'GetSupplierMasterDetails\' is DBNull" +
+                                ".", e);
                     }
                 }
                 set {
-                    this[this.tableGetProductDetails.UNITColumn] = value;
+                    this[this.tableGetSupplierMasterDetails.SUPPLIERNAMEColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal PURCHASERATE {
-                get {
-                    return ((decimal)(this[this.tableGetProductDetails.PURCHASERATEColumn]));
-                }
-                set {
-                    this[this.tableGetProductDetails.PURCHASERATEColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal SALESRATE {
-                get {
-                    return ((decimal)(this[this.tableGetProductDetails.SALESRATEColumn]));
-                }
-                set {
-                    this[this.tableGetProductDetails.SALESRATEColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal CGSTPERCENTAGE {
+            public string ADDRESS {
                 get {
                     try {
-                        return ((decimal)(this[this.tableGetProductDetails.CGSTPERCENTAGEColumn]));
+                        return ((string)(this[this.tableGetSupplierMasterDetails.ADDRESSColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CGSTPERCENTAGE\' in table \'GetProductDetails\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ADDRESS\' in table \'GetSupplierMasterDetails\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGetProductDetails.CGSTPERCENTAGEColumn] = value;
+                    this[this.tableGetSupplierMasterDetails.ADDRESSColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal CGSTAMOUNT {
+            public string EMAILID {
                 get {
                     try {
-                        return ((decimal)(this[this.tableGetProductDetails.CGSTAMOUNTColumn]));
+                        return ((string)(this[this.tableGetSupplierMasterDetails.EMAILIDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CGSTAMOUNT\' in table \'GetProductDetails\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'EMAILID\' in table \'GetSupplierMasterDetails\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGetProductDetails.CGSTAMOUNTColumn] = value;
+                    this[this.tableGetSupplierMasterDetails.EMAILIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal SGSTPERCENTAGE {
+            public decimal MOBILENO {
                 get {
                     try {
-                        return ((decimal)(this[this.tableGetProductDetails.SGSTPERCENTAGEColumn]));
+                        return ((decimal)(this[this.tableGetSupplierMasterDetails.MOBILENOColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SGSTPERCENTAGE\' in table \'GetProductDetails\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'MOBILENO\' in table \'GetSupplierMasterDetails\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGetProductDetails.SGSTPERCENTAGEColumn] = value;
+                    this[this.tableGetSupplierMasterDetails.MOBILENOColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal SGSTAMOUNT {
+            public string CONTACTPERSON {
                 get {
                     try {
-                        return ((decimal)(this[this.tableGetProductDetails.SGSTAMOUNTColumn]));
+                        return ((string)(this[this.tableGetSupplierMasterDetails.CONTACTPERSONColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'SGSTAMOUNT\' in table \'GetProductDetails\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'CONTACTPERSON\' in table \'GetSupplierMasterDetails\' is DBNul" +
+                                "l.", e);
                     }
                 }
                 set {
-                    this[this.tableGetProductDetails.SGSTAMOUNTColumn] = value;
+                    this[this.tableGetSupplierMasterDetails.CONTACTPERSONColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal IGSTPERCENTAGE {
+            public string REMARK {
                 get {
                     try {
-                        return ((decimal)(this[this.tableGetProductDetails.IGSTPERCENTAGEColumn]));
+                        return ((string)(this[this.tableGetSupplierMasterDetails.REMARKColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'IGSTPERCENTAGE\' in table \'GetProductDetails\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'REMARK\' in table \'GetSupplierMasterDetails\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableGetProductDetails.IGSTPERCENTAGEColumn] = value;
+                    this[this.tableGetSupplierMasterDetails.REMARKColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal IGSTAMOUNT {
-                get {
-                    try {
-                        return ((decimal)(this[this.tableGetProductDetails.IGSTAMOUNTColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'IGSTAMOUNT\' in table \'GetProductDetails\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetProductDetails.IGSTAMOUNTColumn] = value;
-                }
+            public bool IsSUPPLIERNAMENull() {
+                return this.IsNull(this.tableGetSupplierMasterDetails.SUPPLIERNAMEColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal BASICRATE {
-                get {
-                    try {
-                        return ((decimal)(this[this.tableGetProductDetails.BASICRATEColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'BASICRATE\' in table \'GetProductDetails\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetProductDetails.BASICRATEColumn] = value;
-                }
+            public void SetSUPPLIERNAMENull() {
+                this[this.tableGetSupplierMasterDetails.SUPPLIERNAMEColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public decimal MRP {
-                get {
-                    try {
-                        return ((decimal)(this[this.tableGetProductDetails.MRPColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'MRP\' in table \'GetProductDetails\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableGetProductDetails.MRPColumn] = value;
-                }
+            public bool IsADDRESSNull() {
+                return this.IsNull(this.tableGetSupplierMasterDetails.ADDRESSColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsUNITNull() {
-                return this.IsNull(this.tableGetProductDetails.UNITColumn);
+            public void SetADDRESSNull() {
+                this[this.tableGetSupplierMasterDetails.ADDRESSColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetUNITNull() {
-                this[this.tableGetProductDetails.UNITColumn] = global::System.Convert.DBNull;
+            public bool IsEMAILIDNull() {
+                return this.IsNull(this.tableGetSupplierMasterDetails.EMAILIDColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsCGSTPERCENTAGENull() {
-                return this.IsNull(this.tableGetProductDetails.CGSTPERCENTAGEColumn);
+            public void SetEMAILIDNull() {
+                this[this.tableGetSupplierMasterDetails.EMAILIDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetCGSTPERCENTAGENull() {
-                this[this.tableGetProductDetails.CGSTPERCENTAGEColumn] = global::System.Convert.DBNull;
+            public bool IsMOBILENONull() {
+                return this.IsNull(this.tableGetSupplierMasterDetails.MOBILENOColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsCGSTAMOUNTNull() {
-                return this.IsNull(this.tableGetProductDetails.CGSTAMOUNTColumn);
+            public void SetMOBILENONull() {
+                this[this.tableGetSupplierMasterDetails.MOBILENOColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetCGSTAMOUNTNull() {
-                this[this.tableGetProductDetails.CGSTAMOUNTColumn] = global::System.Convert.DBNull;
+            public bool IsCONTACTPERSONNull() {
+                return this.IsNull(this.tableGetSupplierMasterDetails.CONTACTPERSONColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsSGSTPERCENTAGENull() {
-                return this.IsNull(this.tableGetProductDetails.SGSTPERCENTAGEColumn);
+            public void SetCONTACTPERSONNull() {
+                this[this.tableGetSupplierMasterDetails.CONTACTPERSONColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetSGSTPERCENTAGENull() {
-                this[this.tableGetProductDetails.SGSTPERCENTAGEColumn] = global::System.Convert.DBNull;
+            public bool IsREMARKNull() {
+                return this.IsNull(this.tableGetSupplierMasterDetails.REMARKColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsSGSTAMOUNTNull() {
-                return this.IsNull(this.tableGetProductDetails.SGSTAMOUNTColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetSGSTAMOUNTNull() {
-                this[this.tableGetProductDetails.SGSTAMOUNTColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsIGSTPERCENTAGENull() {
-                return this.IsNull(this.tableGetProductDetails.IGSTPERCENTAGEColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetIGSTPERCENTAGENull() {
-                this[this.tableGetProductDetails.IGSTPERCENTAGEColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsIGSTAMOUNTNull() {
-                return this.IsNull(this.tableGetProductDetails.IGSTAMOUNTColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetIGSTAMOUNTNull() {
-                this[this.tableGetProductDetails.IGSTAMOUNTColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsBASICRATENull() {
-                return this.IsNull(this.tableGetProductDetails.BASICRATEColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetBASICRATENull() {
-                this[this.tableGetProductDetails.BASICRATEColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsMRPNull() {
-                return this.IsNull(this.tableGetProductDetails.MRPColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetMRPNull() {
-                this[this.tableGetProductDetails.MRPColumn] = global::System.Convert.DBNull;
+            public void SetREMARKNull() {
+                this[this.tableGetSupplierMasterDetails.REMARKColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1037,22 +813,22 @@ namespace FinalProject.FinalProjectDataSets {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class GetProductDetailsRowChangeEvent : global::System.EventArgs {
+        public class GetSupplierMasterDetailsRowChangeEvent : global::System.EventArgs {
             
-            private GetProductDetailsRow eventRow;
+            private GetSupplierMasterDetailsRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public GetProductDetailsRowChangeEvent(GetProductDetailsRow row, global::System.Data.DataRowAction action) {
+            public GetSupplierMasterDetailsRowChangeEvent(GetSupplierMasterDetailsRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public GetProductDetailsRow Row {
+            public GetSupplierMasterDetailsRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1068,7 +844,7 @@ namespace FinalProject.FinalProjectDataSets {
         }
     }
 }
-namespace FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters {
+namespace FinalProject.FinalProjectDataSets.DSGetSupplierDetailsTableAdapters {
     
     
     /// <summary>
@@ -1080,7 +856,7 @@ namespace FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class GetProductDetailsTableAdapter : global::System.ComponentModel.Component {
+    public partial class GetSupplierMasterDetailsTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -1094,7 +870,7 @@ namespace FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public GetProductDetailsTableAdapter() {
+        public GetSupplierMasterDetailsTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -1191,21 +967,14 @@ namespace FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "GetProductDetails";
-            tableMapping.ColumnMappings.Add("PRODUCTDETAILID", "PRODUCTDETAILID");
-            tableMapping.ColumnMappings.Add("PRODUCTID", "PRODUCTID");
-            tableMapping.ColumnMappings.Add("QTY", "QTY");
-            tableMapping.ColumnMappings.Add("UNIT", "UNIT");
-            tableMapping.ColumnMappings.Add("PURCHASERATE", "PURCHASERATE");
-            tableMapping.ColumnMappings.Add("SALESRATE", "SALESRATE");
-            tableMapping.ColumnMappings.Add("CGSTPERCENTAGE", "CGSTPERCENTAGE");
-            tableMapping.ColumnMappings.Add("CGSTAMOUNT", "CGSTAMOUNT");
-            tableMapping.ColumnMappings.Add("SGSTPERCENTAGE", "SGSTPERCENTAGE");
-            tableMapping.ColumnMappings.Add("SGSTAMOUNT", "SGSTAMOUNT");
-            tableMapping.ColumnMappings.Add("IGSTPERCENTAGE", "IGSTPERCENTAGE");
-            tableMapping.ColumnMappings.Add("IGSTAMOUNT", "IGSTAMOUNT");
-            tableMapping.ColumnMappings.Add("BASICRATE", "BASICRATE");
-            tableMapping.ColumnMappings.Add("MRP", "MRP");
+            tableMapping.DataSetTable = "GetSupplierMasterDetails";
+            tableMapping.ColumnMappings.Add("SUPPLIERID", "SUPPLIERID");
+            tableMapping.ColumnMappings.Add("SUPPLIERNAME", "SUPPLIERNAME");
+            tableMapping.ColumnMappings.Add("ADDRESS", "ADDRESS");
+            tableMapping.ColumnMappings.Add("EMAILID", "EMAILID");
+            tableMapping.ColumnMappings.Add("MOBILENO", "MOBILENO");
+            tableMapping.ColumnMappings.Add("CONTACTPERSON", "CONTACTPERSON");
+            tableMapping.ColumnMappings.Add("REMARK", "REMARK");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -1222,24 +991,17 @@ namespace FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "dbo.GetProductDetails";
+            this._commandCollection[0].CommandText = "dbo.GetSupplierMasterDetails";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PRODUCTID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DSGetProductDetails.GetProductDetailsDataTable dataTable, global::System.Nullable<int> PRODUCTID) {
+        public virtual int Fill(DSGetSupplierDetails.GetSupplierMasterDetailsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((PRODUCTID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(PRODUCTID.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -1251,15 +1013,9 @@ namespace FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DSGetProductDetails.GetProductDetailsDataTable GetData(global::System.Nullable<int> PRODUCTID) {
+        public virtual DSGetSupplierDetails.GetSupplierMasterDetailsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((PRODUCTID.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(PRODUCTID.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            DSGetProductDetails.GetProductDetailsDataTable dataTable = new DSGetProductDetails.GetProductDetailsDataTable();
+            DSGetSupplierDetails.GetSupplierMasterDetailsDataTable dataTable = new DSGetSupplierDetails.GetSupplierMasterDetailsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1333,7 +1089,7 @@ namespace FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(DSGetProductDetails dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DSGetSupplierDetails dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1343,7 +1099,7 @@ namespace FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(DSGetProductDetails dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DSGetSupplierDetails dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -1353,7 +1109,7 @@ namespace FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(DSGetProductDetails dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DSGetSupplierDetails dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -1387,7 +1143,7 @@ namespace FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(DSGetProductDetails dataSet) {
+        public virtual int UpdateAll(DSGetSupplierDetails dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

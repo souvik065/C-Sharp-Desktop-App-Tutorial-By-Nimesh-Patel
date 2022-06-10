@@ -127,5 +127,22 @@ namespace FinalProject
         {
             ShowSubMenu(MastersSubPanel);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmSupplierMaster());
+            HideSubMenu();
+
+        }
+
+        private void MDIParent1_Load(object sender, EventArgs e)
+        {
+            HideSubMenu();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

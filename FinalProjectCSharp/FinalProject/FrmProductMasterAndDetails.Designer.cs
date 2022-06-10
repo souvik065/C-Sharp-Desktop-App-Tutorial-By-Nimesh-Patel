@@ -64,14 +64,14 @@
             this.txtIGSTAmount = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutProductMasterPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutProductDetailPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutProductDetailPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutProductDetailPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.subCategoryDetails = new FinalProject.FinalProjectDataSets.SubCategoryDetails();
             this.listCategoryDetailsTableAdapter = new FinalProject.FinalProjectDataSets.ListCategoryDetailsTableAdapters.ListCategoryDetailsTableAdapter();
@@ -92,7 +92,6 @@
             this.bASICRATEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mRPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.getProductDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dSGetProductDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dSGetProductDetails = new FinalProject.FinalProjectDataSets.DSGetProductDetails();
             this.getProductDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSGetProductDetailsTableAdapters.GetProductDetailsTableAdapter();
             this.tableLayoutPanel1.SuspendLayout();
@@ -100,15 +99,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.listCategoryDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.listSubCategoryDetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSListSubCategoryDetails)).BeginInit();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
-            this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutProductMasterPanel.SuspendLayout();
+            this.tableLayoutProductDetailPanel.SuspendLayout();
+            this.tableLayoutProductDetailPanel2.SuspendLayout();
+            this.tableLayoutProductDetailPanel3.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subCategoryDetails)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.getProductDetailsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetails)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,7 +116,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.50812F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.49188F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 654F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 659F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -134,7 +132,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(811, 12);
+            this.label1.Location = new System.Drawing.Point(807, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(270, 41);
             this.label1.TabIndex = 0;
@@ -532,131 +530,131 @@
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.button2_Click);
             // 
-            // tableLayoutPanel2
+            // tableLayoutProductMasterPanel
             // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel2.ColumnCount = 10;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 350F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 239F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 279F));
-            this.tableLayoutPanel2.Controls.Add(this.label2, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label3, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.comboBoxSubCategory, 8, 0);
-            this.tableLayoutPanel2.Controls.Add(this.comboBoxCategory, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label4, 7, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txtProductName, 2, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 65);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1904, 51);
-            this.tableLayoutPanel2.TabIndex = 9;
-            this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
+            this.tableLayoutProductMasterPanel.BackColor = System.Drawing.Color.White;
+            this.tableLayoutProductMasterPanel.ColumnCount = 10;
+            this.tableLayoutProductMasterPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
+            this.tableLayoutProductMasterPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
+            this.tableLayoutProductMasterPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 350F));
+            this.tableLayoutProductMasterPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 239F));
+            this.tableLayoutProductMasterPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
+            this.tableLayoutProductMasterPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutProductMasterPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
+            this.tableLayoutProductMasterPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
+            this.tableLayoutProductMasterPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutProductMasterPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 279F));
+            this.tableLayoutProductMasterPanel.Controls.Add(this.label2, 1, 0);
+            this.tableLayoutProductMasterPanel.Controls.Add(this.label3, 4, 0);
+            this.tableLayoutProductMasterPanel.Controls.Add(this.comboBoxSubCategory, 8, 0);
+            this.tableLayoutProductMasterPanel.Controls.Add(this.comboBoxCategory, 5, 0);
+            this.tableLayoutProductMasterPanel.Controls.Add(this.label4, 7, 0);
+            this.tableLayoutProductMasterPanel.Controls.Add(this.txtProductName, 2, 0);
+            this.tableLayoutProductMasterPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutProductMasterPanel.Location = new System.Drawing.Point(0, 65);
+            this.tableLayoutProductMasterPanel.Name = "tableLayoutProductMasterPanel";
+            this.tableLayoutProductMasterPanel.RowCount = 1;
+            this.tableLayoutProductMasterPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutProductMasterPanel.Size = new System.Drawing.Size(1904, 51);
+            this.tableLayoutProductMasterPanel.TabIndex = 9;
+            this.tableLayoutProductMasterPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
-            // tableLayoutPanel3
+            // tableLayoutProductDetailPanel
             // 
-            this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel3.ColumnCount = 13;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 151F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 345F));
-            this.tableLayoutPanel3.Controls.Add(this.label5, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.txtQTY, 2, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label6, 4, 0);
-            this.tableLayoutPanel3.Controls.Add(this.comboBoxUnit, 5, 0);
-            this.tableLayoutPanel3.Controls.Add(this.txtSalesRate, 11, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label7, 7, 0);
-            this.tableLayoutPanel3.Controls.Add(this.txtPurchaseRate, 8, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label8, 10, 0);
-            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 116);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1904, 41);
-            this.tableLayoutPanel3.TabIndex = 10;
-            this.tableLayoutPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
+            this.tableLayoutProductDetailPanel.BackColor = System.Drawing.Color.White;
+            this.tableLayoutProductDetailPanel.ColumnCount = 13;
+            this.tableLayoutProductDetailPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
+            this.tableLayoutProductDetailPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
+            this.tableLayoutProductDetailPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 104F));
+            this.tableLayoutProductDetailPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
+            this.tableLayoutProductDetailPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutProductDetailPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 151F));
+            this.tableLayoutProductDetailPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
+            this.tableLayoutProductDetailPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
+            this.tableLayoutProductDetailPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
+            this.tableLayoutProductDetailPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 213F));
+            this.tableLayoutProductDetailPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
+            this.tableLayoutProductDetailPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.tableLayoutProductDetailPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 345F));
+            this.tableLayoutProductDetailPanel.Controls.Add(this.label5, 1, 0);
+            this.tableLayoutProductDetailPanel.Controls.Add(this.txtQTY, 2, 0);
+            this.tableLayoutProductDetailPanel.Controls.Add(this.label6, 4, 0);
+            this.tableLayoutProductDetailPanel.Controls.Add(this.comboBoxUnit, 5, 0);
+            this.tableLayoutProductDetailPanel.Controls.Add(this.txtSalesRate, 11, 0);
+            this.tableLayoutProductDetailPanel.Controls.Add(this.label7, 7, 0);
+            this.tableLayoutProductDetailPanel.Controls.Add(this.txtPurchaseRate, 8, 0);
+            this.tableLayoutProductDetailPanel.Controls.Add(this.label8, 10, 0);
+            this.tableLayoutProductDetailPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutProductDetailPanel.Location = new System.Drawing.Point(0, 116);
+            this.tableLayoutProductDetailPanel.Name = "tableLayoutProductDetailPanel";
+            this.tableLayoutProductDetailPanel.RowCount = 1;
+            this.tableLayoutProductDetailPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutProductDetailPanel.Size = new System.Drawing.Size(1904, 41);
+            this.tableLayoutProductDetailPanel.TabIndex = 10;
+            this.tableLayoutProductDetailPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel3_Paint);
             // 
-            // tableLayoutPanel4
+            // tableLayoutProductDetailPanel2
             // 
-            this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel4.ColumnCount = 13;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 444F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 235F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 307F));
-            this.tableLayoutPanel4.Controls.Add(this.label9, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txtCGSTRate, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txtCGSTAmount, 3, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label10, 5, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txtSGSTRate, 6, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txtSGSTAmount, 7, 0);
-            this.tableLayoutPanel4.Controls.Add(this.label11, 9, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txtIGSTAmount, 11, 0);
-            this.tableLayoutPanel4.Controls.Add(this.txtIGSTRate, 10, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 157);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 1;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(1904, 49);
-            this.tableLayoutPanel4.TabIndex = 11;
+            this.tableLayoutProductDetailPanel2.BackColor = System.Drawing.Color.White;
+            this.tableLayoutProductDetailPanel2.ColumnCount = 13;
+            this.tableLayoutProductDetailPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
+            this.tableLayoutProductDetailPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
+            this.tableLayoutProductDetailPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tableLayoutProductDetailPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107F));
+            this.tableLayoutProductDetailPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 444F));
+            this.tableLayoutProductDetailPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.tableLayoutProductDetailPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
+            this.tableLayoutProductDetailPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
+            this.tableLayoutProductDetailPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 235F));
+            this.tableLayoutProductDetailPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutProductDetailPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68F));
+            this.tableLayoutProductDetailPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
+            this.tableLayoutProductDetailPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 307F));
+            this.tableLayoutProductDetailPanel2.Controls.Add(this.label9, 1, 0);
+            this.tableLayoutProductDetailPanel2.Controls.Add(this.txtCGSTRate, 2, 0);
+            this.tableLayoutProductDetailPanel2.Controls.Add(this.txtCGSTAmount, 3, 0);
+            this.tableLayoutProductDetailPanel2.Controls.Add(this.label10, 5, 0);
+            this.tableLayoutProductDetailPanel2.Controls.Add(this.txtSGSTRate, 6, 0);
+            this.tableLayoutProductDetailPanel2.Controls.Add(this.txtSGSTAmount, 7, 0);
+            this.tableLayoutProductDetailPanel2.Controls.Add(this.label11, 9, 0);
+            this.tableLayoutProductDetailPanel2.Controls.Add(this.txtIGSTAmount, 11, 0);
+            this.tableLayoutProductDetailPanel2.Controls.Add(this.txtIGSTRate, 10, 0);
+            this.tableLayoutProductDetailPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutProductDetailPanel2.Location = new System.Drawing.Point(0, 157);
+            this.tableLayoutProductDetailPanel2.Name = "tableLayoutProductDetailPanel2";
+            this.tableLayoutProductDetailPanel2.RowCount = 1;
+            this.tableLayoutProductDetailPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutProductDetailPanel2.Size = new System.Drawing.Size(1904, 49);
+            this.tableLayoutProductDetailPanel2.TabIndex = 11;
             // 
-            // tableLayoutPanel5
+            // tableLayoutProductDetailPanel3
             // 
-            this.tableLayoutPanel5.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel5.ColumnCount = 11;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 510F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 174F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 316F));
-            this.tableLayoutPanel5.Controls.Add(this.label12, 1, 0);
-            this.tableLayoutPanel5.Controls.Add(this.txtBasicRate, 2, 0);
-            this.tableLayoutPanel5.Controls.Add(this.label13, 4, 0);
-            this.tableLayoutPanel5.Controls.Add(this.txtMRP, 5, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btnClear, 9, 0);
-            this.tableLayoutPanel5.Controls.Add(this.btnAdd, 7, 0);
-            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 206);
-            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 1;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(1904, 45);
-            this.tableLayoutPanel5.TabIndex = 12;
+            this.tableLayoutProductDetailPanel3.BackColor = System.Drawing.Color.White;
+            this.tableLayoutProductDetailPanel3.ColumnCount = 11;
+            this.tableLayoutProductDetailPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
+            this.tableLayoutProductDetailPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
+            this.tableLayoutProductDetailPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119F));
+            this.tableLayoutProductDetailPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 510F));
+            this.tableLayoutProductDetailPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
+            this.tableLayoutProductDetailPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
+            this.tableLayoutProductDetailPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 174F));
+            this.tableLayoutProductDetailPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this.tableLayoutProductDetailPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
+            this.tableLayoutProductDetailPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
+            this.tableLayoutProductDetailPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 316F));
+            this.tableLayoutProductDetailPanel3.Controls.Add(this.label12, 1, 0);
+            this.tableLayoutProductDetailPanel3.Controls.Add(this.txtBasicRate, 2, 0);
+            this.tableLayoutProductDetailPanel3.Controls.Add(this.label13, 4, 0);
+            this.tableLayoutProductDetailPanel3.Controls.Add(this.txtMRP, 5, 0);
+            this.tableLayoutProductDetailPanel3.Controls.Add(this.btnClear, 9, 0);
+            this.tableLayoutProductDetailPanel3.Controls.Add(this.btnAdd, 7, 0);
+            this.tableLayoutProductDetailPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutProductDetailPanel3.Location = new System.Drawing.Point(0, 206);
+            this.tableLayoutProductDetailPanel3.Name = "tableLayoutProductDetailPanel3";
+            this.tableLayoutProductDetailPanel3.RowCount = 1;
+            this.tableLayoutProductDetailPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutProductDetailPanel3.Size = new System.Drawing.Size(1904, 45);
+            this.tableLayoutProductDetailPanel3.TabIndex = 12;
             // 
             // tableLayoutPanel6
             // 
@@ -669,7 +667,7 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel6.Controls.Add(this.btnSave, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.btnDelete, 2, 0);
-            this.tableLayoutPanel6.Controls.Add(this.button3, 3, 0);
+            this.tableLayoutPanel6.Controls.Add(this.btnReset, 3, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 906);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -711,20 +709,21 @@
             this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // button3
+            // btnReset
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1373, 8);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 39);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Reset";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnReset.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnReset.FlatAppearance.BorderSize = 0;
+            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReset.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.Location = new System.Drawing.Point(1373, 8);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(109, 39);
+            this.btnReset.TabIndex = 2;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // panel1
             // 
@@ -882,12 +881,7 @@
             // getProductDetailsBindingSource
             // 
             this.getProductDetailsBindingSource.DataMember = "GetProductDetails";
-            this.getProductDetailsBindingSource.DataSource = this.dSGetProductDetailsBindingSource;
-            // 
-            // dSGetProductDetailsBindingSource
-            // 
-            this.dSGetProductDetailsBindingSource.DataSource = this.dSGetProductDetails;
-            this.dSGetProductDetailsBindingSource.Position = 0;
+            this.getProductDetailsBindingSource.DataSource = this.dSGetProductDetails;
             // 
             // dSGetProductDetails
             // 
@@ -906,10 +900,10 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel6);
-            this.Controls.Add(this.tableLayoutPanel5);
-            this.Controls.Add(this.tableLayoutPanel4);
-            this.Controls.Add(this.tableLayoutPanel3);
-            this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.tableLayoutProductDetailPanel3);
+            this.Controls.Add(this.tableLayoutProductDetailPanel2);
+            this.Controls.Add(this.tableLayoutProductDetailPanel);
+            this.Controls.Add(this.tableLayoutProductMasterPanel);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FrmProductMasterAndDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -921,19 +915,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.listCategoryDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.listSubCategoryDetailsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSListSubCategoryDetails)).EndInit();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
-            this.tableLayoutPanel4.ResumeLayout(false);
-            this.tableLayoutPanel4.PerformLayout();
-            this.tableLayoutPanel5.ResumeLayout(false);
-            this.tableLayoutPanel5.PerformLayout();
+            this.tableLayoutProductMasterPanel.ResumeLayout(false);
+            this.tableLayoutProductMasterPanel.PerformLayout();
+            this.tableLayoutProductDetailPanel.ResumeLayout(false);
+            this.tableLayoutProductDetailPanel.PerformLayout();
+            this.tableLayoutProductDetailPanel2.ResumeLayout(false);
+            this.tableLayoutProductDetailPanel2.PerformLayout();
+            this.tableLayoutProductDetailPanel3.ResumeLayout(false);
+            this.tableLayoutProductDetailPanel3.PerformLayout();
             this.tableLayoutPanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.subCategoryDetails)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.getProductDetailsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetailsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSGetProductDetails)).EndInit();
             this.ResumeLayout(false);
 
@@ -972,14 +965,14 @@
         private System.Windows.Forms.TextBox txtIGSTAmount;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutProductMasterPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutProductDetailPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutProductDetailPanel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutProductDetailPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Panel panel1;
         private FinalProjectDataSets.SubCategoryDetails subCategoryDetails;
         private FinalProjectDataSets.ListCategoryDetails listCategoryDetails;
@@ -989,10 +982,6 @@
         private FinalProjectDataSets.DSListSubCategoryDetails dSListSubCategoryDetails;
         private FinalProjectDataSets.DSListSubCategoryDetailsTableAdapters.ListSubCategoryDetailsTableAdapter listSubCategoryDetailsTableAdapter;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource dSGetProductDetailsBindingSource;
-        private FinalProjectDataSets.DSGetProductDetails dSGetProductDetails;
-        private System.Windows.Forms.BindingSource getProductDetailsBindingSource;
-        private FinalProjectDataSets.DSGetProductDetailsTableAdapters.GetProductDetailsTableAdapter getProductDetailsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn pRODUCTDETAILIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pRODUCTIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn qTYDataGridViewTextBoxColumn;
@@ -1007,5 +996,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iGSTAMOUNTDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bASICRATEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn mRPDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource getProductDetailsBindingSource;
+        private FinalProjectDataSets.DSGetProductDetails dSGetProductDetails;
+        private FinalProjectDataSets.DSGetProductDetailsTableAdapters.GetProductDetailsTableAdapter getProductDetailsTableAdapter;
     }
 }
