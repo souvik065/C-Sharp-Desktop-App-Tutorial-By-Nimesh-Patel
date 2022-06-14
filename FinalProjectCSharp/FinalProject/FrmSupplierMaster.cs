@@ -34,7 +34,8 @@ namespace FinalProject
 
             SQLQueryClass.con.Close();
 
-            
+            MessageBox.Show("Inserted Successfully");
+            this.getSupplierMasterDetailsTableAdapter.Fill(this.dSGetSupplierDetails.GetSupplierMasterDetails);
         }
 
        
@@ -46,7 +47,7 @@ namespace FinalProject
 
             SqlCommand cmd = new SqlCommand("UpdateSupplierMaster", SQLQueryClass.con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@SUPPLIERID", txtSupplierName.Text).DbType = DbType.Int32;
+            cmd.Parameters.AddWithValue("@SUPPLIERID", txtSupplierName.Tag).DbType = DbType.Int32;
             cmd.Parameters.AddWithValue("@SUPPLIERNAME", txtSupplierName.Text).DbType = DbType.String;
             cmd.Parameters.AddWithValue("@ADDRESS", richTextBoxAddress.Text).DbType = DbType.String;
             cmd.Parameters.AddWithValue("@EMAILID", txtEmail.Text).DbType = DbType.String;
@@ -57,8 +58,8 @@ namespace FinalProject
             cmd.ExecuteNonQuery();
 
             SQLQueryClass.con.Close();
+            this.getSupplierMasterDetailsTableAdapter.Fill(this.dSGetSupplierDetails.GetSupplierMasterDetails);
 
-           
 
         }
 
@@ -69,13 +70,13 @@ namespace FinalProject
             SqlCommand cmd = new SqlCommand("DeleteFromSupplierMaster", SQLQueryClass.con);
             cmd.CommandType = CommandType.StoredProcedure;
 
-            cmd.Parameters.AddWithValue("@SUBCATEGORYID", txtSupplierName.Tag).DbType = DbType.Int32;
+            cmd.Parameters.AddWithValue("@SUPPLIERID", txtSupplierName.Tag).DbType = DbType.Int32;
 
             cmd.ExecuteNonQuery();
 
             SQLQueryClass.con.Close();
+            this.getSupplierMasterDetailsTableAdapter.Fill(this.dSGetSupplierDetails.GetSupplierMasterDetails);
 
-           
 
         }
 
@@ -90,10 +91,22 @@ namespace FinalProject
             richTextBoxRemark.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
         }
 
+        private void Reset()
+        {
+            txtSupplierName.Clear();
+            txtEmail.Clear();
+            txtMobileNo.Clear();
+            txtContactPerson.Clear();
+            richTextBoxAddress.Clear();
+            richTextBoxRemark.Clear();
+        }
+
+
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
             Insert();
+            Reset();
         }
 
         private void FrmSupplierMaster_Load(object sender, EventArgs e)
@@ -101,6 +114,23 @@ namespace FinalProject
             // TODO: This line of code loads data into the 'dSGetSupplierDetails.GetSupplierMasterDetails' table. You can move, or remove it, as needed.
             this.getSupplierMasterDetailsTableAdapter.Fill(this.dSGetSupplierDetails.GetSupplierMasterDetails);
 
+        }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            FillData();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            Update();
+            Reset();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            Delete();
+            Reset();
         }
     }
 }
