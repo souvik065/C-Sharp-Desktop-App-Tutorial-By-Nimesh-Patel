@@ -75,15 +75,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSGetProductDetails.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FinalProjectDataSets\DSGetPurchaseDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSGetPurchaseDetail.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FinalProjectDataSets\DSGetSupplierDetails.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DSGetSupplierDetails.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FinalProjectDataSets\DSListProductMasterDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSListProductMasterDetails.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FinalProjectDataSets\DSListSubCategoryDetails.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DSListSubCategoryDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalProjectDataSets\DSListSupplierMasterDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSListSupplierMasterDetails.xsd</DependentUpon>
     </Compile>
     <Compile Include="FinalProjectDataSets\ListCategoryDetails.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -206,6 +221,17 @@
     <None Include="FinalProjectDataSets\DSGetProductDetails.xss">
       <DependentUpon>DSGetProductDetails.xsd</DependentUpon>
     </None>
+    <None Include="FinalProjectDataSets\DSGetPurchaseDetail.xsc">
+      <DependentUpon>DSGetPurchaseDetail.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetPurchaseDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSGetPurchaseDetail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetPurchaseDetail.xss">
+      <DependentUpon>DSGetPurchaseDetail.xsd</DependentUpon>
+    </None>
     <None Include="FinalProjectDataSets\DSGetSupplierDetails.xsc">
       <DependentUpon>DSGetSupplierDetails.xsd</DependentUpon>
     </None>
@@ -217,6 +243,17 @@
     <None Include="FinalProjectDataSets\DSGetSupplierDetails.xss">
       <DependentUpon>DSGetSupplierDetails.xsd</DependentUpon>
     </None>
+    <None Include="FinalProjectDataSets\DSListProductMasterDetails.xsc">
+      <DependentUpon>DSListProductMasterDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\DSListProductMasterDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSListProductMasterDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\DSListProductMasterDetails.xss">
+      <DependentUpon>DSListProductMasterDetails.xsd</DependentUpon>
+    </None>
     <None Include="FinalProjectDataSets\DSListSubCategoryDetails.xsc">
       <DependentUpon>DSListSubCategoryDetails.xsd</DependentUpon>
     </None>
@@ -227,6 +264,17 @@
     </None>
     <None Include="FinalProjectDataSets\DSListSubCategoryDetails.xss">
       <DependentUpon>DSListSubCategoryDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\DSListSupplierMasterDetails.xsc">
+      <DependentUpon>DSListSupplierMasterDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\DSListSupplierMasterDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSListSupplierMasterDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\DSListSupplierMasterDetails.xss">
+      <DependentUpon>DSListSupplierMasterDetails.xsd</DependentUpon>
     </None>
     <None Include="FinalProjectDataSets\ListCategoryDetails.xsc">
       <DependentUpon>ListCategoryDetails.xsd</DependentUpon>

@@ -144,5 +144,11 @@ namespace FinalProject
         {
             this.Close();
         }
+
+        private void btnPurchaseMaster_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new PurchaseMaterialMaster());
+            HideSubMenu();
+        }
     }
 }

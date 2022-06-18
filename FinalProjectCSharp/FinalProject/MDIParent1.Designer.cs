@@ -38,6 +38,7 @@
             this.btnMaster = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Bodypanel = new System.Windows.Forms.Panel();
+            this.btnPurchaseMaster = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.MastersSubPanel.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +57,7 @@
             // 
             // MastersSubPanel
             // 
+            this.MastersSubPanel.Controls.Add(this.btnPurchaseMaster);
             this.MastersSubPanel.Controls.Add(this.button1);
             this.MastersSubPanel.Controls.Add(this.btnProducts);
             this.MastersSubPanel.Controls.Add(this.btnSubCategory);
@@ -71,7 +73,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(0, 150);
+            this.button1.Location = new System.Drawing.Point(3, 150);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 44);
             this.button1.TabIndex = 0;
@@ -152,6 +154,20 @@
             this.Bodypanel.Size = new System.Drawing.Size(1070, 808);
             this.Bodypanel.TabIndex = 8;
             // 
+            // btnPurchaseMaster
+            // 
+            this.btnPurchaseMaster.FlatAppearance.BorderSize = 0;
+            this.btnPurchaseMaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPurchaseMaster.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseMaster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnPurchaseMaster.Location = new System.Drawing.Point(0, 200);
+            this.btnPurchaseMaster.Name = "btnPurchaseMaster";
+            this.btnPurchaseMaster.Size = new System.Drawing.Size(200, 44);
+            this.btnPurchaseMaster.TabIndex = 1;
+            this.btnPurchaseMaster.Text = "Purchase Master";
+            this.btnPurchaseMaster.UseVisualStyleBackColor = true;
+            this.btnPurchaseMaster.Click += new System.EventHandler(this.btnPurchaseMaster_Click);
+            // 
             // MDIParent1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,6 +197,7 @@
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.Panel Bodypanel;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPurchaseMaster;
     }
 }
 

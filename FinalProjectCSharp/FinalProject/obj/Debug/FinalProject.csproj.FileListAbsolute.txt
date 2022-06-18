@@ -22,3 +22,4 @@ D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\bin\Debug\
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\bin\Debug\ComponentFactory.Krypton.Workspace.dll
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.FrmSupplierMaster.resources
+D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.PurchaseMaterialMaster.resources
