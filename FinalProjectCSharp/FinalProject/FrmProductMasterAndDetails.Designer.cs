@@ -116,7 +116,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.50812F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.49188F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 660F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 661F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -295,6 +295,7 @@
             this.txtQTY.Size = new System.Drawing.Size(78, 22);
             this.txtQTY.TabIndex = 0;
             this.txtQTY.Text = "1";
+            this.txtQTY.Leave += new System.EventHandler(this.txtQTY_Leave);
             // 
             // comboBoxUnit
             // 
@@ -337,6 +338,7 @@
             this.txtSalesRate.Size = new System.Drawing.Size(119, 22);
             this.txtSalesRate.TabIndex = 3;
             this.txtSalesRate.Text = "0";
+            this.txtSalesRate.Leave += new System.EventHandler(this.txtSalesRate_Leave);
             // 
             // label9
             // 
@@ -361,7 +363,7 @@
             this.txtCGSTRate.Size = new System.Drawing.Size(57, 22);
             this.txtCGSTRate.TabIndex = 0;
             this.txtCGSTRate.Text = "0";
-            this.txtCGSTRate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCGSTRate_KeyDown);
+            this.txtCGSTRate.Leave += new System.EventHandler(this.txtCGSTRate_Leave);
             // 
             // label10
             // 
@@ -386,7 +388,7 @@
             this.txtSGSTRate.Size = new System.Drawing.Size(52, 22);
             this.txtSGSTRate.TabIndex = 1;
             this.txtSGSTRate.Text = "0";
-            this.txtSGSTRate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSGSTRate_KeyDown_1);
+            this.txtSGSTRate.Leave += new System.EventHandler(this.txtSGSTRate_Leave);
             // 
             // label11
             // 
@@ -411,7 +413,7 @@
             this.txtIGSTRate.Size = new System.Drawing.Size(52, 22);
             this.txtIGSTRate.TabIndex = 2;
             this.txtIGSTRate.Text = "0";
-            this.txtIGSTRate.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtIGSTRate_KeyDown);
+            this.txtIGSTRate.Leave += new System.EventHandler(this.txtIGSTRate_Leave);
             // 
             // label12
             // 
@@ -436,6 +438,7 @@
             this.txtBasicRate.Size = new System.Drawing.Size(100, 22);
             this.txtBasicRate.TabIndex = 0;
             this.txtBasicRate.Text = "0";
+            this.txtBasicRate.Leave += new System.EventHandler(this.txtBasicRate_Leave);
             // 
             // label13
             // 

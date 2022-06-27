@@ -31,6 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDIParent1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.MastersSubPanel = new System.Windows.Forms.Panel();
+            this.btnSalesReturn = new System.Windows.Forms.Button();
+            this.btnSalesMaster = new System.Windows.Forms.Button();
+            this.btnPurchasereturn = new System.Windows.Forms.Button();
+            this.btnPurchaseMaster = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnSubCategory = new System.Windows.Forms.Button();
@@ -38,7 +42,7 @@
             this.btnMaster = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Bodypanel = new System.Windows.Forms.Panel();
-            this.btnPurchaseMaster = new System.Windows.Forms.Button();
+            this.btnCategoryRPT = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.MastersSubPanel.SuspendLayout();
             this.SuspendLayout();
@@ -57,6 +61,11 @@
             // 
             // MastersSubPanel
             // 
+            this.MastersSubPanel.BackColor = System.Drawing.Color.White;
+            this.MastersSubPanel.Controls.Add(this.btnCategoryRPT);
+            this.MastersSubPanel.Controls.Add(this.btnSalesReturn);
+            this.MastersSubPanel.Controls.Add(this.btnSalesMaster);
+            this.MastersSubPanel.Controls.Add(this.btnPurchasereturn);
             this.MastersSubPanel.Controls.Add(this.btnPurchaseMaster);
             this.MastersSubPanel.Controls.Add(this.button1);
             this.MastersSubPanel.Controls.Add(this.btnProducts);
@@ -64,16 +73,67 @@
             this.MastersSubPanel.Controls.Add(this.btnCategory);
             this.MastersSubPanel.Location = new System.Drawing.Point(0, 143);
             this.MastersSubPanel.Name = "MastersSubPanel";
-            this.MastersSubPanel.Size = new System.Drawing.Size(200, 272);
+            this.MastersSubPanel.Size = new System.Drawing.Size(200, 451);
             this.MastersSubPanel.TabIndex = 9;
+            // 
+            // btnSalesReturn
+            // 
+            this.btnSalesReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalesReturn.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalesReturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnSalesReturn.Location = new System.Drawing.Point(-1, 350);
+            this.btnSalesReturn.Name = "btnSalesReturn";
+            this.btnSalesReturn.Size = new System.Drawing.Size(200, 44);
+            this.btnSalesReturn.TabIndex = 1;
+            this.btnSalesReturn.Text = "Sales Return";
+            this.btnSalesReturn.UseVisualStyleBackColor = true;
+            this.btnSalesReturn.Click += new System.EventHandler(this.btnSalesReturn_Click);
+            // 
+            // btnSalesMaster
+            // 
+            this.btnSalesMaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalesMaster.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalesMaster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnSalesMaster.Location = new System.Drawing.Point(-1, 300);
+            this.btnSalesMaster.Name = "btnSalesMaster";
+            this.btnSalesMaster.Size = new System.Drawing.Size(200, 44);
+            this.btnSalesMaster.TabIndex = 1;
+            this.btnSalesMaster.Text = "Sales Master";
+            this.btnSalesMaster.UseVisualStyleBackColor = true;
+            this.btnSalesMaster.Click += new System.EventHandler(this.btnSalesMaster_Click);
+            // 
+            // btnPurchasereturn
+            // 
+            this.btnPurchasereturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPurchasereturn.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchasereturn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnPurchasereturn.Location = new System.Drawing.Point(-1, 250);
+            this.btnPurchasereturn.Name = "btnPurchasereturn";
+            this.btnPurchasereturn.Size = new System.Drawing.Size(200, 44);
+            this.btnPurchasereturn.TabIndex = 1;
+            this.btnPurchasereturn.Text = "Purchase Return";
+            this.btnPurchasereturn.UseVisualStyleBackColor = true;
+            this.btnPurchasereturn.Click += new System.EventHandler(this.btnPurchasereturn_Click);
+            // 
+            // btnPurchaseMaster
+            // 
+            this.btnPurchaseMaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPurchaseMaster.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseMaster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnPurchaseMaster.Location = new System.Drawing.Point(0, 200);
+            this.btnPurchaseMaster.Name = "btnPurchaseMaster";
+            this.btnPurchaseMaster.Size = new System.Drawing.Size(200, 44);
+            this.btnPurchaseMaster.TabIndex = 1;
+            this.btnPurchaseMaster.Text = "Purchase Master";
+            this.btnPurchaseMaster.UseVisualStyleBackColor = true;
+            this.btnPurchaseMaster.Click += new System.EventHandler(this.btnPurchaseMaster_Click);
             // 
             // button1
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.button1.Location = new System.Drawing.Point(3, 150);
+            this.button1.Location = new System.Drawing.Point(0, 150);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 44);
             this.button1.TabIndex = 0;
@@ -83,7 +143,6 @@
             // 
             // btnProducts
             // 
-            this.btnProducts.FlatAppearance.BorderSize = 0;
             this.btnProducts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProducts.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
@@ -97,7 +156,6 @@
             // 
             // btnSubCategory
             // 
-            this.btnSubCategory.FlatAppearance.BorderSize = 0;
             this.btnSubCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSubCategory.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
@@ -111,7 +169,6 @@
             // 
             // btnCategory
             // 
-            this.btnCategory.FlatAppearance.BorderSize = 0;
             this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCategory.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
@@ -125,6 +182,7 @@
             // 
             // btnMaster
             // 
+            this.btnMaster.BackColor = System.Drawing.Color.White;
             this.btnMaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaster.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
@@ -135,7 +193,7 @@
             this.btnMaster.Size = new System.Drawing.Size(200, 43);
             this.btnMaster.TabIndex = 8;
             this.btnMaster.Text = "Masters";
-            this.btnMaster.UseVisualStyleBackColor = true;
+            this.btnMaster.UseVisualStyleBackColor = false;
             this.btnMaster.Click += new System.EventHandler(this.btnMaster_Click);
             // 
             // panel2
@@ -154,19 +212,18 @@
             this.Bodypanel.Size = new System.Drawing.Size(1070, 808);
             this.Bodypanel.TabIndex = 8;
             // 
-            // btnPurchaseMaster
+            // btnCategoryRPT
             // 
-            this.btnPurchaseMaster.FlatAppearance.BorderSize = 0;
-            this.btnPurchaseMaster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPurchaseMaster.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPurchaseMaster.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.btnPurchaseMaster.Location = new System.Drawing.Point(0, 200);
-            this.btnPurchaseMaster.Name = "btnPurchaseMaster";
-            this.btnPurchaseMaster.Size = new System.Drawing.Size(200, 44);
-            this.btnPurchaseMaster.TabIndex = 1;
-            this.btnPurchaseMaster.Text = "Purchase Master";
-            this.btnPurchaseMaster.UseVisualStyleBackColor = true;
-            this.btnPurchaseMaster.Click += new System.EventHandler(this.btnPurchaseMaster_Click);
+            this.btnCategoryRPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategoryRPT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategoryRPT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnCategoryRPT.Location = new System.Drawing.Point(0, 400);
+            this.btnCategoryRPT.Name = "btnCategoryRPT";
+            this.btnCategoryRPT.Size = new System.Drawing.Size(200, 44);
+            this.btnCategoryRPT.TabIndex = 1;
+            this.btnCategoryRPT.Text = "Category RPT";
+            this.btnCategoryRPT.UseVisualStyleBackColor = true;
+            this.btnCategoryRPT.Click += new System.EventHandler(this.btnCategoryRPT_Click);
             // 
             // MDIParent1
             // 
@@ -198,6 +255,10 @@
         private System.Windows.Forms.Panel Bodypanel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnPurchaseMaster;
+        private System.Windows.Forms.Button btnPurchasereturn;
+        private System.Windows.Forms.Button btnSalesMaster;
+        private System.Windows.Forms.Button btnSalesReturn;
+        private System.Windows.Forms.Button btnCategoryRPT;
     }
 }
 

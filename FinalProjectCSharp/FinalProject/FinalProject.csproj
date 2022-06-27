@@ -35,26 +35,13 @@
     <Reference Include="CircularProgressBar">
       <HintPath>..\CircularProgressBar.dll</HintPath>
     </Reference>
-    <Reference Include="ComponentFactory.Krypton.Design, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Design.dll</HintPath>
-    </Reference>
-    <Reference Include="ComponentFactory.Krypton.Docking, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Docking.dll</HintPath>
-    </Reference>
-    <Reference Include="ComponentFactory.Krypton.Navigator, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Navigator.dll</HintPath>
-    </Reference>
-    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Ribbon.dll</HintPath>
-    </Reference>
-    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Toolkit.dll</HintPath>
-    </Reference>
-    <Reference Include="ComponentFactory.Krypton.Workspace, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
-      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -80,6 +67,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSGetPurchaseDetail.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FinalProjectDataSets\DSGetPurchaseReturnDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSGetPurchaseReturnDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalProjectDataSets\DSGetSalesDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSGetSalesDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalProjectDataSets\DSGetSalesReturndetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSGetSalesReturndetails.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FinalProjectDataSets\DSGetSupplierDetails.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -99,6 +101,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DSListSupplierMasterDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalProjectDataSets\DSRPTCategoryList.cs" />
+    <Compile Include="FinalProjectDataSets\DSRPTCategoryListTableAdapters.cs" />
+    <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTCategoryList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRPTCategoryList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTSubCategoryList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRPTSubCategoryList.xsd</DependentUpon>
     </Compile>
     <Compile Include="FinalProjectDataSets\ListCategoryDetails.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -133,11 +147,23 @@
     <Compile Include="FrmProductMasterAndDetails.Designer.cs">
       <DependentUpon>FrmProductMasterAndDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPurchaseReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPurchaseReturn.Designer.cs">
+      <DependentUpon>FrmPurchaseReturn.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRegisteration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmRegisteration.Designer.cs">
       <DependentUpon>FrmRegisteration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSaleMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSaleMaster.Designer.cs">
+      <DependentUpon>FrmSaleMaster.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSubCategory.cs">
       <SubType>Form</SubType>
@@ -165,7 +191,20 @@
     <Compile Include="PurchaseMaterialMaster.Designer.cs">
       <DependentUpon>PurchaseMaterialMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report Forms\FrmRPTCategoryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report Forms\FrmRPTCategoryList.Designer.cs">
+      <DependentUpon>FrmRPTCategoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesReturnMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesReturnMaster.Designer.cs">
+      <DependentUpon>SalesReturnMaster.cs</DependentUpon>
+    </Compile>
     <Compile Include="SQLQueryClass.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="FrmCategory.resx">
       <DependentUpon>FrmCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,8 +214,14 @@
     <EmbeddedResource Include="FrmProductMasterAndDetails.resx">
       <DependentUpon>FrmProductMasterAndDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmPurchaseReturn.resx">
+      <DependentUpon>FrmPurchaseReturn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRegisteration.resx">
       <DependentUpon>FrmRegisteration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSaleMaster.resx">
+      <DependentUpon>FrmSaleMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSubCategory.resx">
       <DependentUpon>FrmSubCategory.cs</DependentUpon>
@@ -198,6 +243,13 @@
     </Compile>
     <EmbeddedResource Include="PurchaseMaterialMaster.resx">
       <DependentUpon>PurchaseMaterialMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RDLC\RPTCategoryList.rdlc" />
+    <EmbeddedResource Include="Report Forms\FrmRPTCategoryList.resx">
+      <DependentUpon>FrmRPTCategoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesReturnMaster.resx">
+      <DependentUpon>SalesReturnMaster.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="FinalProjectDataSets\CategoryDetails.xsc">
       <DependentUpon>CategoryDetails.xsd</DependentUpon>
@@ -231,6 +283,39 @@
     </None>
     <None Include="FinalProjectDataSets\DSGetPurchaseDetail.xss">
       <DependentUpon>DSGetPurchaseDetail.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetPurchaseReturnDetail.xsc">
+      <DependentUpon>DSGetPurchaseReturnDetail.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetPurchaseReturnDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSGetPurchaseReturnDetail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetPurchaseReturnDetail.xss">
+      <DependentUpon>DSGetPurchaseReturnDetail.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetSalesDetail.xsc">
+      <DependentUpon>DSGetSalesDetail.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetSalesDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSGetSalesDetail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetSalesDetail.xss">
+      <DependentUpon>DSGetSalesDetail.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetSalesReturndetails.xsc">
+      <DependentUpon>DSGetSalesReturndetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetSalesReturndetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSGetSalesReturndetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\DSGetSalesReturndetails.xss">
+      <DependentUpon>DSGetSalesReturndetails.xsd</DependentUpon>
     </None>
     <None Include="FinalProjectDataSets\DSGetSupplierDetails.xsc">
       <DependentUpon>DSGetSupplierDetails.xsd</DependentUpon>
@@ -275,6 +360,28 @@
     </None>
     <None Include="FinalProjectDataSets\DSListSupplierMasterDetails.xss">
       <DependentUpon>DSListSupplierMasterDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTCategoryList.xsc">
+      <DependentUpon>DSRPTCategoryList.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTCategoryList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRPTCategoryList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTCategoryList.xss">
+      <DependentUpon>DSRPTCategoryList.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSubCategoryList.xsc">
+      <DependentUpon>DSRPTSubCategoryList.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSubCategoryList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRPTSubCategoryList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSubCategoryList.xss">
+      <DependentUpon>DSRPTSubCategoryList.xsd</DependentUpon>
     </None>
     <None Include="FinalProjectDataSets\ListCategoryDetails.xsc">
       <DependentUpon>ListCategoryDetails.xsd</DependentUpon>
@@ -323,6 +430,22 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -457,7 +457,35 @@ namespace FinalProject
 
         }
 
-
+        private void txtCGSTRate_Leave(object sender, EventArgs e)
+        {
+            GSTCAl();
         }
+
+        private void txtSGSTRate_Leave(object sender, EventArgs e)
+        {
+            GSTCAl();
+        }
+
+        private void txtIGSTRate_Leave(object sender, EventArgs e)
+        {
+            GSTCAl();
+        }
+
+        private void txtSalesRate_Leave(object sender, EventArgs e)
+        {
+            GSTCAl();
+        }
+
+        private void txtQTY_Leave(object sender, EventArgs e)
+        {
+            GSTCAl();
+        }
+
+        private void txtBasicRate_Leave(object sender, EventArgs e)
+        {
+            
+        }
+    }
     }
 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalProject.Report_Forms;
 
 namespace FinalProject
 {
@@ -149,6 +150,32 @@ namespace FinalProject
         {
             OpenChildForm(new PurchaseMaterialMaster());
             HideSubMenu();
+        }
+
+        private void btnPurchasereturn_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmPurchaseReturn());
+            HideSubMenu();
+        }
+
+        private void btnSalesMaster_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmSaleMaster());
+            HideSubMenu();
+        }
+
+        private void btnSalesReturn_Click(object sender, EventArgs e)
+        {
+           // OpenChildForm();
+            HideSubMenu();
+        }
+
+        private void btnCategoryRPT_Click(object sender, EventArgs e)
+        {
+            
+           OpenChildForm(new FrmRPTCategoryList());
+           HideSubMenu();
+           
         }
     }
 }

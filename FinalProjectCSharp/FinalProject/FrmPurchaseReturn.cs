@@ -9,18 +9,31 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
+
 namespace FinalProject
 {
-    public partial class PurchaseMaterialMaster : Form
+    public partial class FrmPurchaseReturn : Form
     {
-        
-
-        int PurchaseMasterID = 0;
-        int PurchaseDetailsID = 0;
+        int PurchaseReturnMasterID = 0;
+        int PurchaseReturnDetailsID = 0;
         Boolean isExpire = false;
-        public PurchaseMaterialMaster()
+        public FrmPurchaseReturn()
         {
             InitializeComponent();
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            if (comboBoxSupplierName.SelectedIndex > 0 && txtInvoiceNo.Text != null)
+            {
+                InsertIntoPurchaseReturnMaster();
+
+            }
+            if (PurchaseReturnMasterID > 0)
+            {
+                EnablePanelContent();
+                comboBoxProductName.Focus();
+            }
         }
 
         private void EnablePanelContent()
@@ -44,15 +57,15 @@ namespace FinalProject
         }
 
 
-       
+
 
         private void AllCalculation()
         {
-            txtTotal.Text = Convert.ToString( Convert.ToDecimal(txtRate.Text)*Convert.ToDecimal(txtQty.Text) );
+            txtTotal.Text = Convert.ToString(Convert.ToDecimal(txtRate.Text) * Convert.ToDecimal(txtQty.Text));
 
-            txtDiscountAmount.Text = Convert.ToString( Convert.ToDecimal(txtTotal.Text)*Convert.ToDecimal(txtDiscountPercentage.Text)/100  );
+            txtDiscountAmount.Text = Convert.ToString(Convert.ToDecimal(txtTotal.Text) * Convert.ToDecimal(txtDiscountPercentage.Text) / 100);
 
-            txtTaxableAmount.Text = Convert.ToString( Convert.ToDecimal(txtTotal.Text)-Convert.ToDecimal(txtDiscountAmount.Text));
+            txtTaxableAmount.Text = Convert.ToString(Convert.ToDecimal(txtTotal.Text) - Convert.ToDecimal(txtDiscountAmount.Text));
 
             if (Convert.ToDecimal(txtCGSTPercentage.Text) > 0 && Convert.ToDecimal(txtSGSTPercentage.Text) > 0)
             {
@@ -74,7 +87,7 @@ namespace FinalProject
                 txtSGSTPercentage.ReadOnly = true;
                 txtSGSTAmount.ReadOnly = true;
 
-                txtIGSTAmount.Text = Convert.ToString( Convert.ToDecimal(txtTaxableAmount.Text) * Convert.ToDecimal(txtIGSTPercentage.Text)/100 );
+                txtIGSTAmount.Text = Convert.ToString(Convert.ToDecimal(txtTaxableAmount.Text) * Convert.ToDecimal(txtIGSTPercentage.Text) / 100);
 
                 txtCGSTPercentage.Text = "0";
                 txtCGSTAmount.Text = "0";
@@ -82,9 +95,9 @@ namespace FinalProject
                 txtSGSTAmount.Text = "0";
 
 
-             }
+            }
 
-            txtNetAmount.Text = Convert.ToString( Convert.ToDecimal(txtTaxableAmount.Text) + Convert.ToDecimal(txtCGSTAmount.Text) + Convert.ToDecimal(txtSGSTAmount.Text) + Convert.ToDecimal(txtIGSTAmount.Text) );
+            txtNetAmount.Text = Convert.ToString(Convert.ToDecimal(txtTaxableAmount.Text) + Convert.ToDecimal(txtCGSTAmount.Text) + Convert.ToDecimal(txtSGSTAmount.Text) + Convert.ToDecimal(txtIGSTAmount.Text));
 
             if (Convert.ToDecimal(txtCGSTPercentage.Text) == 0 && Convert.ToDecimal(txtSGSTPercentage.Text) == 0)
             {
@@ -101,7 +114,8 @@ namespace FinalProject
             if (checkBoxYes.Checked == true)
             {
                 dateTimePickerExpireDate.Enabled = true;
-            }else if (checkBoxNo.Checked == true)
+            }
+            else if (checkBoxNo.Checked == true)
             {
                 dateTimePickerExpireDate.Enabled = false;
             }
@@ -112,13 +126,13 @@ namespace FinalProject
                 isExpire = true;
             }
             else if (checkBoxNo.Checked)
-            { 
+            {
                 isExpire = false;
             }
 
         }
 
-        private void ResetPurchasedetailDefaultValue()
+        private void ResetPurchasedetailReturnDefaultValue()
         {
 
             comboBoxProductName.SelectedIndex = 0;
@@ -137,9 +151,9 @@ namespace FinalProject
             txtSGSTPercentage.Text = "0";
             txtSGSTAmount.Text = "0";
             txtIGSTPercentage.Text = "0";
-            txtIGSTAmount.Text= "0";
+            txtIGSTAmount.Text = "0";
             txtNetAmount.Text = "0";
-            PurchaseDetailsID = 0;
+            PurchaseReturnDetailsID = 0;
 
         }
 
@@ -161,22 +175,22 @@ namespace FinalProject
             txtRemark.Clear();
         }
 
-       
 
 
-        private void InsertIntoPurchaseMaster()
+
+        private void InsertIntoPurchaseReturnMaster()
         {
             SQLQueryClass.con.Open();
-            SqlCommand cmd = new SqlCommand("InsertIntoPurchaseMaster", SQLQueryClass.con);
+            SqlCommand cmd = new SqlCommand("InsterIntoPurchaseReturnMaster", SQLQueryClass.con);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@PurchaseDate", dateTimePickerPurchaseDate.Text).DbType = DbType.Date;
             cmd.Parameters.AddWithValue("@SupplierID", comboBoxSupplierName.SelectedValue).DbType = DbType.Int32;
             cmd.Parameters.AddWithValue("@InvoiceNo", txtInvoiceNo.Text).DbType = DbType.Int32;
 
             // cmd.ExecuteNonQuery();
-            PurchaseMasterID = Convert.ToInt32(cmd.ExecuteScalar());
+            PurchaseReturnMasterID = Convert.ToInt32(cmd.ExecuteScalar());
 
-            MessageBox.Show("Inserted into Purchase Master Successfully");
+            MessageBox.Show("Inserted into Purchase Return Master Successfully");
 
             SQLQueryClass.con.Close();
 
@@ -184,52 +198,52 @@ namespace FinalProject
         }
 
 
-        private void InsertIntoPurchaseDetailTable()
+        private void InsertIntoPurchaseReturnDetailTable()
         {
             SQLQueryClass.con.Open();
-            SqlCommand cmd = new SqlCommand("InsertIntoPurchaseDetails", SQLQueryClass.con);
+            SqlCommand cmd = new SqlCommand("InsertIntoPurchaseReturnDetails", SQLQueryClass.con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@PurchaseID", PurchaseMasterID).DbType = DbType.Int32;
+            cmd.Parameters.AddWithValue("@PurchaseReturnID", PurchaseReturnMasterID).DbType = DbType.Int32;
             cmd.Parameters.AddWithValue("@ProductID", comboBoxProductName.SelectedValue).DbType = DbType.Int32;
             cmd.Parameters.AddWithValue("@IsExpire", isExpire).DbType = DbType.Boolean;
             cmd.Parameters.AddWithValue("@ExpireDate", dateTimePickerExpireDate.Text).DbType = DbType.Date;
             cmd.Parameters.AddWithValue("@Rate", txtRate.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@Qty", txtQty.Text).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@HSNCode",txtHSNCode.Text).DbType = DbType.Int32;
-            cmd.Parameters.AddWithValue("@Total",txtTotal.Text).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@DiscountPercentage",txtDiscountPercentage.Text ).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@DiscountAmount",txtDiscountAmount.Text ).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@TaxableAmount",txtTaxableAmount.Text ).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@CGSTPercentage",txtCGSTPercentage.Text ).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@CGSTAmount",txtCGSTAmount.Text ).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@SGSTPercentage",txtSGSTPercentage.Text ).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@HSNCode", txtHSNCode.Text).DbType = DbType.Int32;
+            cmd.Parameters.AddWithValue("@Total", txtTotal.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@DiscountPercentage", txtDiscountPercentage.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@DiscountAmount", txtDiscountAmount.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@TaxableAmount", txtTaxableAmount.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@CGSTPercentage", txtCGSTPercentage.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@CGSTAmount", txtCGSTAmount.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@SGSTPercentage", txtSGSTPercentage.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@SGSTAmount", txtSGSTAmount.Text).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@IGSTPercentage", txtIGSTPercentage.Text ).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@IGSTPercentage", txtIGSTPercentage.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@IGSTAmount", txtIGSTAmount.Text).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@NetAmount",txtNetAmount.Text ).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@NetAmount", txtNetAmount.Text).DbType = DbType.Decimal;
 
 
 
             cmd.ExecuteNonQuery();
-           
 
-            MessageBox.Show("Inserted Purchase Detail Successfully");
+
+            MessageBox.Show("Inserted Purchase Return Detail Successfully");
 
             SQLQueryClass.con.Close();
-            this.getPurchaseDetailsTableAdapter.Fill(this.dSGetPurchaseDetail.GetPurchaseDetails, PurchaseMasterID);
 
+            this.getPurchaseReturnDetailsTableAdapter.Fill(this.dSGetPurchaseReturnDetail.GetPurchaseReturnDetails, PurchaseReturnMasterID);
 
 
         }
 
 
-        private void UpdatePurchaseDetails()
+        private void UpdatePurchaseReturnDetails()
         {
             SQLQueryClass.con.Open();
-            SqlCommand cmd = new SqlCommand("UpdatePurchaseDetails", SQLQueryClass.con);
+            SqlCommand cmd = new SqlCommand("UpdatePurchaseReturnDetails", SQLQueryClass.con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@PurchasedetailID", PurchaseDetailsID).DbType = DbType.Int32;
-            cmd.Parameters.AddWithValue("@PurchaseID", PurchaseMasterID).DbType = DbType.Int32;
+            cmd.Parameters.AddWithValue("@PurchaseReturnDetailID", PurchaseReturnDetailsID).DbType = DbType.Int32;
+            cmd.Parameters.AddWithValue("@PurchaseReturnID", PurchaseReturnMasterID).DbType = DbType.Int32;
             cmd.Parameters.AddWithValue("@ProductID", comboBoxProductName.SelectedValue).DbType = DbType.Int32;
             cmd.Parameters.AddWithValue("@IsExpire", isExpire).DbType = DbType.Boolean;
             cmd.Parameters.AddWithValue("@ExpireDate", dateTimePickerExpireDate.Text).DbType = DbType.Date;
@@ -256,22 +270,23 @@ namespace FinalProject
             MessageBox.Show("Purchase Detail Updated Successfully");
 
             SQLQueryClass.con.Close();
-            this.getPurchaseDetailsTableAdapter.Fill(this.dSGetPurchaseDetail.GetPurchaseDetails, PurchaseMasterID);
+
+            this.getPurchaseReturnDetailsTableAdapter.Fill(this.dSGetPurchaseReturnDetail.GetPurchaseReturnDetails, PurchaseReturnMasterID);
+
 
 
         }
 
 
-        private void UpdatePurchaseMasterTable()
+        private void UpdatePurchaseReturnMasterTable()
         {
             SQLQueryClass.con.Open();
-            SqlCommand cmd = new SqlCommand("UpdatePurchaseMasterTable", SQLQueryClass.con);
+            SqlCommand cmd = new SqlCommand("UpdatePurchaseReturnMasterTable", SQLQueryClass.con);
             cmd.CommandType = CommandType.StoredProcedure;
-            
-            cmd.Parameters.AddWithValue("@PurchaseID", PurchaseMasterID).DbType = DbType.Int32;
+
+            cmd.Parameters.AddWithValue("@PurchaseReturnID", PurchaseReturnMasterID).DbType = DbType.Int32;
             cmd.Parameters.AddWithValue("@TotalGrossAmount", txtGrossAmount.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@TotalDiscountAmount", txtTotalDiscountAmount.Text).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@TotalTaxableAmount", txtTotalTaxableAmount.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@CGSTAmount", txtTotalCGSTAmount.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@SGSTAmount", txtSGSTAmount.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@IGSTAmount", txtIGSTAmount.Text).DbType = DbType.Decimal;
@@ -283,7 +298,7 @@ namespace FinalProject
             cmd.Parameters.AddWithValue("@NetAmount", txtNetAmount.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@PaymentMode", comboBoxPaymentMode.Text).DbType = DbType.String;
             cmd.Parameters.AddWithValue("@Remark", txtRemark.Text).DbType = DbType.String;
-            
+
 
 
 
@@ -293,30 +308,32 @@ namespace FinalProject
             MessageBox.Show("Total Amounts Updated to Purchase Master Successfully");
 
             SQLQueryClass.con.Close();
+
         }
 
-        private void DeleteFromPurchaseDetailTable()
+        private void DeleteFromPurchaseReturnDetailTable()
         {
             SQLQueryClass.con.Open();
-            SqlCommand cmd = new SqlCommand("DeleteFromPurchaseDetailTable", SQLQueryClass.con);
+            SqlCommand cmd = new SqlCommand("DeleteFromPurchaseReturnDetailTable", SQLQueryClass.con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@PurchasedetailID", PurchaseDetailsID).DbType = DbType.Int32;
-           
+            cmd.Parameters.AddWithValue("@PurchaseReturnDetailID", PurchaseReturnDetailsID).DbType = DbType.Int32;
+
             cmd.ExecuteNonQuery();
 
 
-            MessageBox.Show("Purchase Detail Entry Deleted Successfully");
+            MessageBox.Show("PurchaseReturn Detail Entry Deleted Successfully");
 
             SQLQueryClass.con.Close();
-            this.getPurchaseDetailsTableAdapter.Fill(this.dSGetPurchaseDetail.GetPurchaseDetails, PurchaseMasterID);
+            this.getPurchaseReturnDetailsTableAdapter.Fill(this.dSGetPurchaseReturnDetail.GetPurchaseReturnDetails, PurchaseReturnMasterID);
+
         }
 
 
         private void GetTotalAmount()
         {
-            SqlCommand cmd = new SqlCommand("GetTotalAmount",SQLQueryClass.con);
+            SqlCommand cmd = new SqlCommand("GetPurchaseReturnTotalAmount", SQLQueryClass.con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@PurchaseMasterID",PurchaseMasterID);
+            cmd.Parameters.AddWithValue("@PurchaseReturnMasterID", PurchaseReturnMasterID);
             DataSet ds = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(ds);
@@ -331,60 +348,64 @@ namespace FinalProject
                 txtTotalIGSTAmount.Text = ds.Tables[0].Rows[0]["IGSTAmount"].ToString();
                 txtTotalNetAmount.Text = ds.Tables[0].Rows[0]["TotalNetAmount"].ToString();
             }
-            else {
-                ResetPurchasedetailDefaultValue();
+            else
+            {
+                ResetPurchasedetailReturnDefaultValue();
 
             }
 
 
         }
 
-        private void ResetPurchaseMaster()
+        private void ResetPurchaseReturnMaster()
         {
             SQLQueryClass.con.Open();
-            SqlCommand cmd = new SqlCommand("ResetPurchaseMaster", SQLQueryClass.con);
+            SqlCommand cmd = new SqlCommand("ResetPurchaseReturnMaster", SQLQueryClass.con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@PurchaseMasterID", PurchaseMasterID).DbType = DbType.Int32;
+            cmd.Parameters.AddWithValue("@PurchaseReturnMasterID", PurchaseReturnMasterID).DbType = DbType.Int32;
 
             cmd.ExecuteNonQuery();
 
 
-            MessageBox.Show("Purchase Master Reseted Successfully");
+            MessageBox.Show("PurchaseReturn Master Reseted Successfully");
 
             SQLQueryClass.con.Close();
-            this.getPurchaseDetailsTableAdapter.Fill(this.dSGetPurchaseDetail.GetPurchaseDetails, PurchaseMasterID);
+           
 
         }
 
-        private void ResetPurchaseDetails()
+        private void ResetPurchaseReturnDetails()
         {
             SQLQueryClass.con.Open();
-            SqlCommand cmd = new SqlCommand("ResetPurchaseDetails", SQLQueryClass.con);
+            SqlCommand cmd = new SqlCommand("ResetPurchaseReturnDetails", SQLQueryClass.con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@PurchaseMasterID", PurchaseMasterID).DbType = DbType.Int32;
+            cmd.Parameters.AddWithValue("@PurchaseReturnMasterID", PurchaseReturnMasterID).DbType = DbType.Int32;
 
             cmd.ExecuteNonQuery();
 
 
-            MessageBox.Show("Purchase Details Reseted Successfully");
+            MessageBox.Show("PurchaseReturn Details Reseted Successfully");
 
             SQLQueryClass.con.Close();
-            this.getPurchaseDetailsTableAdapter.Fill(this.dSGetPurchaseDetail.GetPurchaseDetails, PurchaseMasterID);
         }
 
         private void ResetForm()
         {
-            PurchaseDetailsID = 0;
-            PurchaseMasterID = 0;
-            ResetPurchasedetailDefaultValue();
+            PurchaseReturnDetailsID = 0;
+            PurchaseReturnMasterID = 0;
+            
             ResetTotalAmountDefaultValue();
-            ResetPurchaseDetails();
-            ResetPurchaseMaster();
-            this.getPurchaseDetailsTableAdapter.Fill(this.dSGetPurchaseDetail.GetPurchaseDetails, PurchaseMasterID);
+            ResetPurchaseReturnDetails();
+            ResetPurchaseReturnMaster();
+            ResetPurchasedetailReturnDefaultValue();
+            ResetTotalAmountDefaultValue();
+
             dateTimePickerPurchaseDate.Value = DateTime.Now;
             comboBoxSupplierName.SelectedValue = 0;
             txtInvoiceNo.Clear();
             EnablePanelContent();
+
+            this.getPurchaseReturnDetailsTableAdapter.Fill(this.dSGetPurchaseReturnDetail.GetPurchaseReturnDetails,PurchaseReturnMasterID);
         }
 
         private void OtherCharges()
@@ -393,11 +414,10 @@ namespace FinalProject
                                 + Convert.ToDecimal(txtFreighCharges.Text) + Convert.ToDecimal(txtLabourCharges.Text));
         }
 
-       
         private void FillData()
         {
-            PurchaseDetailsID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
-            
+            PurchaseReturnDetailsID = Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value.ToString());
+
             comboBoxProductName.SelectedValue = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             isExpire = Convert.ToBoolean(dataGridView1.CurrentRow.Cells[4].Value.ToString());
             if (isExpire == true)
@@ -406,7 +426,7 @@ namespace FinalProject
                 checkBoxNo.Checked = false;
             }
             else if (isExpire == false)
-            { 
+            {
                 checkBoxNo.Checked = true;
                 checkBoxYes.Checked = false;
             }
@@ -418,79 +438,93 @@ namespace FinalProject
             txtHSNCode.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
             txtTotal.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
             txtDiscountPercentage.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
-             txtDiscountAmount.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
+            txtDiscountAmount.Text = dataGridView1.CurrentRow.Cells[11].Value.ToString();
             txtTaxableAmount.Text = dataGridView1.CurrentRow.Cells[12].Value.ToString();
             txtCGSTPercentage.Text = dataGridView1.CurrentRow.Cells[13].Value.ToString();
             txtCGSTAmount.Text = dataGridView1.CurrentRow.Cells[14].Value.ToString();
-            txtSGSTPercentage .Text = dataGridView1.CurrentRow.Cells[15].Value.ToString();
+            txtSGSTPercentage.Text = dataGridView1.CurrentRow.Cells[15].Value.ToString();
             txtSGSTAmount.Text = dataGridView1.CurrentRow.Cells[16].Value.ToString();
             txtIGSTPercentage.Text = dataGridView1.CurrentRow.Cells[17].Value.ToString();
             txtIGSTAmount.Text = dataGridView1.CurrentRow.Cells[18].Value.ToString();
             txtNetAmount.Text = dataGridView1.CurrentRow.Cells[19].Value.ToString();
 
         }
-       
 
-        private void PurchaseMaterialMaster_Load(object sender, EventArgs e)
+        private void ResetPurchaseReturnDetailDefaultValue()
+        {
+
+            comboBoxProductName.SelectedIndex = 0;
+            checkBoxYes.Checked = false;
+            checkBoxNo.Checked = false;
+            dateTimePickerExpireDate.Text = "";
+            txtRate.Text = "0";
+            txtQty.Text = "0";
+            txtHSNCode.Text = "0";
+            txtTotal.Text = "0";
+            txtDiscountPercentage.Text = "0";
+            txtDiscountAmount.Text = "0";
+            txtTaxableAmount.Text = "0";
+            txtCGSTPercentage.Text = "0";
+            txtCGSTAmount.Text = "0";
+            txtSGSTPercentage.Text = "0";
+            txtSGSTAmount.Text = "0";
+            txtIGSTPercentage.Text = "0";
+            txtIGSTAmount.Text = "0";
+            txtNetAmount.Text = "0";
+            PurchaseReturnDetailsID = 0;
+
+        }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            FillData();
+        }
+
+        private void FrmPurchaseReturn_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dSListProductMasterDetails.ListProductMasterDetails' table. You can move, or remove it, as needed.
             this.listProductMasterDetailsTableAdapter.Fill(this.dSListProductMasterDetails.ListProductMasterDetails);
             // TODO: This line of code loads data into the 'dSListSupplierMasterDetails.ListSupplierDetails' table. You can move, or remove it, as needed.
             this.listSupplierDetailsTableAdapter.Fill(this.dSListSupplierMasterDetails.ListSupplierDetails);
-            // TODO: This line of code loads data into the 'dSListSupplierMasterDetails.ListSupplierDetails' table. You can move, or remove it, as needed.
 
-            this.getPurchaseDetailsTableAdapter.Fill(this.dSGetPurchaseDetail.GetPurchaseDetails,PurchaseMasterID);
+            this.getPurchaseReturnDetailsTableAdapter.Fill(this.dSGetPurchaseReturnDetail.GetPurchaseReturnDetails,PurchaseReturnMasterID);
 
             ResetTotalAmountDefaultValue();
 
             EnablePanelContent();
-
-        }
-
-        private void btnOk_Click(object sender, EventArgs e)
-        {
-            if (comboBoxSupplierName.SelectedIndex > 0 && txtInvoiceNo.Text != null)
-            {
-                InsertIntoPurchaseMaster();
-
-            }
-            if (PurchaseMasterID > 0)
-            {
-                EnablePanelContent();
-                comboBoxProductName.Focus();
-            }
-           
         }
 
         private void checkBoxYes_CheckedChanged(object sender, EventArgs e)
         {
             checkBoxNo.Checked = false;
             AllCalculation();
-
-            
         }
 
         private void checkBoxNo_CheckedChanged(object sender, EventArgs e)
         {
             checkBoxYes.Checked = false;
             AllCalculation();
-            
-            
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (PurchaseDetailsID != 0)
+            if (PurchaseReturnDetailsID != 0)
             {
-                UpdatePurchaseDetails();
-                ResetPurchasedetailDefaultValue();
+                UpdatePurchaseReturnDetails();
+                ResetPurchasedetailReturnDefaultValue();
 
-            }else if(Convert.ToInt32(comboBoxProductName.SelectedValue) > 0 )
+            }
+            else if(Convert.ToInt32(comboBoxProductName.SelectedValue) > 0)
             {
-                InsertIntoPurchaseDetailTable();
-                ResetPurchasedetailDefaultValue();
+                InsertIntoPurchaseReturnDetailTable();
+                ResetPurchasedetailReturnDefaultValue();
             }
             GetTotalAmount();
+        }
+
+        private void txtCGSTPercentage_Leave(object sender, EventArgs e)
+        {
+            AllCalculation();
         }
 
         private void txtRate_Leave(object sender, EventArgs e)
@@ -503,17 +537,7 @@ namespace FinalProject
             AllCalculation();
         }
 
-        private void txtTotal_Leave(object sender, EventArgs e)
-        {
-            AllCalculation();
-        }
-
         private void txtDiscountPercentage_Leave(object sender, EventArgs e)
-        {
-            AllCalculation();
-        }
-
-        private void txtCGSTPercentage_Leave(object sender, EventArgs e)
         {
             AllCalculation();
         }
@@ -528,47 +552,43 @@ namespace FinalProject
             AllCalculation();
         }
 
-        private void txtNetAmount_Leave(object sender, EventArgs e)
-        {
-            AllCalculation();
-        }
-
         private void btnClear_Click(object sender, EventArgs e)
         {
-            ResetPurchasedetailDefaultValue();
-        }
+            ResetPurchasedetailReturnDefaultValue();
 
-        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            FillData();
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            if(PurchaseDetailsID >0)
-            {
-                DeleteFromPurchaseDetailTable();
-                ResetPurchasedetailDefaultValue();
-
-            }
-             
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            UpdatePurchaseMasterTable();
-            PurchaseDetailsID = 0;
-            PurchaseMasterID = 0;
+            UpdatePurchaseReturnMasterTable();
+            PurchaseReturnDetailsID = 0;
+            PurchaseReturnMasterID = 0;
             ResetTotalAmountDefaultValue();
-            this.getPurchaseDetailsTableAdapter.Fill(this.dSGetPurchaseDetail.GetPurchaseDetails, PurchaseMasterID);
+            this.getPurchaseReturnDetailsTableAdapter.Fill(this.dSGetPurchaseReturnDetail.GetPurchaseReturnDetails, PurchaseReturnMasterID);
             comboBoxSupplierName.SelectedIndex = 0;
             txtInvoiceNo.Text = "0";
             dateTimePickerPurchaseDate.Text = "";
             EnablePanelContent();
 
+
         }
 
-        private void txtTradeDiscAmt_Leave(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (PurchaseReturnDetailsID > 0)
+            {
+                DeleteFromPurchaseReturnDetailTable();
+                ResetPurchaseReturnDetailDefaultValue();
+
+            }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            ResetForm();
+        }
+
+        private void txtFreighCharges_Leave(object sender, EventArgs e)
         {
             OtherCharges();
         }
@@ -578,7 +598,12 @@ namespace FinalProject
             OtherCharges();
         }
 
-        private void txtFreighCharges_Leave(object sender, EventArgs e)
+        private void txtFinalNetAmount_Leave(object sender, EventArgs e)
+        {
+            OtherCharges();
+        }
+
+        private void txtTradeDiscAmt_Leave(object sender, EventArgs e)
         {
             OtherCharges();
         }
@@ -586,28 +611,6 @@ namespace FinalProject
         private void txtCashDiscAmt_Leave(object sender, EventArgs e)
         {
             OtherCharges();
-        }
-
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            ResetForm();
-
-            
-        }
-
-        private void panelPurchaseDetail_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void comboBoxProductName_Leave(object sender, EventArgs e)
-        {
-
         }
     }
 }

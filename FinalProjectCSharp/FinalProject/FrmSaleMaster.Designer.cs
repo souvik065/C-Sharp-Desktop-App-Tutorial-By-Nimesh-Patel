@@ -1,6 +1,6 @@
 ﻿namespace FinalProject
 {
-    partial class PurchaseMaterialMaster
+    partial class FrmSaleMaster
     {
         /// <summary>
         /// Required designer variable.
@@ -34,18 +34,14 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.PurchaseMasterpanel = new System.Windows.Forms.Panel();
+            this.SalesMasterpanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnOk = new System.Windows.Forms.Button();
-            this.dateTimePickerPurchaseDate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerSalesDate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxSupplierName = new System.Windows.Forms.ComboBox();
-            this.listSupplierDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dSListSupplierMasterDetails = new FinalProject.FinalProjectDataSets.DSListSupplierMasterDetails();
             this.label2 = new System.Windows.Forms.Label();
             this.txtInvoiceNo = new System.Windows.Forms.TextBox();
-            this.panelPurchaseDetail = new System.Windows.Forms.Panel();
+            this.panelSalesDetail = new System.Windows.Forms.Panel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.btnClear = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
@@ -76,23 +72,49 @@
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.txtHSNCode = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.dateTimePickerExpireDate = new System.Windows.Forms.DateTimePicker();
             this.comboBoxProductName = new System.Windows.Forms.ComboBox();
             this.listProductMasterDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dSListProductMasterDetails = new FinalProject.FinalProjectDataSets.DSListProductMasterDetails();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.checkBoxYes = new System.Windows.Forms.CheckBox();
-            this.checkBoxNo = new System.Windows.Forms.CheckBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.panelTotalAmounts = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBoxPaymentMode = new System.Windows.Forms.ComboBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.txtRemark = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtCustomerName = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txtTotalIGSTAmount = new System.Windows.Forms.TextBox();
+            this.txtTotalSGSTAmount = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.txtMobileNo = new System.Windows.Forms.TextBox();
+            this.txtTotalNetAmount = new System.Windows.Forms.TextBox();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtTotalDiscountAmount = new System.Windows.Forms.TextBox();
+            this.txtGrossAmount = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtTotalCGSTAmount = new System.Windows.Forms.TextBox();
+            this.txtTotalTaxableAmount = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.purchasedetailIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.purchaseIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesDetailIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.salesIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pRODUCTNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isExpireDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.expireDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.qtyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hSNCodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -107,70 +129,32 @@
             this.iGSTPercentageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iGSTAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.netAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.getPurchaseDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dSGetPurchaseDetail = new FinalProject.FinalProjectDataSets.DSGetPurchaseDetail();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.panelTotalAmounts = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBoxPaymentMode = new System.Windows.Forms.ComboBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.txtRemark = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtFreighCharges = new System.Windows.Forms.TextBox();
-            this.txtCashDiscAmt = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.txtFinalNetAmount = new System.Windows.Forms.TextBox();
-            this.txtLabourCharges = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.txtTotalIGSTAmount = new System.Windows.Forms.TextBox();
-            this.txtTotalSGSTAmount = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.txtTradeDiscAmt = new System.Windows.Forms.TextBox();
-            this.txtTotalNetAmount = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtTotalDiscountAmount = new System.Windows.Forms.TextBox();
-            this.txtGrossAmount = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtTotalCGSTAmount = new System.Windows.Forms.TextBox();
-            this.txtTotalTaxableAmount = new System.Windows.Forms.TextBox();
-            this.listSupplierDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSListSupplierMasterDetailsTableAdapters.ListSupplierDetailsTableAdapter();
+            this.getSalesDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dSGetSalesDetailBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dSGetSalesDetail = new FinalProject.FinalProjectDataSets.DSGetSalesDetail();
             this.listProductMasterDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSListProductMasterDetailsTableAdapters.ListProductMasterDetailsTableAdapter();
-            this.getPurchaseDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSGetPurchaseDetailTableAdapters.GetPurchaseDetailsTableAdapter();
+            this.getSalesDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSGetSalesDetailTableAdapters.GetSalesDetailsTableAdapter();
             this.Headerpanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.PurchaseMasterpanel.SuspendLayout();
+            this.SalesMasterpanel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listSupplierDetailsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSListSupplierMasterDetails)).BeginInit();
-            this.panelPurchaseDetail.SuspendLayout();
+            this.panelSalesDetail.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listProductMasterDetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSListProductMasterDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.getPurchaseDetailsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSGetPurchaseDetail)).BeginInit();
             this.panel4.SuspendLayout();
             this.panelTotalAmounts.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.getSalesDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetSalesDetailBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetSalesDetail)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -180,7 +164,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1904, 5);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 2;
             // 
             // Headerpanel
             // 
@@ -191,7 +175,7 @@
             this.Headerpanel.Location = new System.Drawing.Point(0, 5);
             this.Headerpanel.Name = "Headerpanel";
             this.Headerpanel.Size = new System.Drawing.Size(1904, 64);
-            this.Headerpanel.TabIndex = 2;
+            this.Headerpanel.TabIndex = 3;
             // 
             // tableLayoutPanel1
             // 
@@ -207,7 +191,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1902, 50);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // label3
             // 
@@ -215,11 +198,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(738, 4);
+            this.label3.Location = new System.Drawing.Point(770, 4);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(293, 41);
+            this.label3.Size = new System.Drawing.Size(229, 41);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Purchase Master";
+            this.label3.Text = "Sales Master";
             // 
             // panel3
             // 
@@ -228,29 +211,29 @@
             this.panel3.Location = new System.Drawing.Point(0, 69);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1904, 5);
-            this.panel3.TabIndex = 3;
+            this.panel3.TabIndex = 4;
             // 
-            // PurchaseMasterpanel
+            // SalesMasterpanel
             // 
-            this.PurchaseMasterpanel.BackColor = System.Drawing.Color.White;
-            this.PurchaseMasterpanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PurchaseMasterpanel.Controls.Add(this.tableLayoutPanel2);
-            this.PurchaseMasterpanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PurchaseMasterpanel.Location = new System.Drawing.Point(0, 74);
-            this.PurchaseMasterpanel.Name = "PurchaseMasterpanel";
-            this.PurchaseMasterpanel.Size = new System.Drawing.Size(1904, 60);
-            this.PurchaseMasterpanel.TabIndex = 4;
+            this.SalesMasterpanel.BackColor = System.Drawing.Color.White;
+            this.SalesMasterpanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SalesMasterpanel.Controls.Add(this.tableLayoutPanel2);
+            this.SalesMasterpanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SalesMasterpanel.Location = new System.Drawing.Point(0, 74);
+            this.SalesMasterpanel.Name = "SalesMasterpanel";
+            this.SalesMasterpanel.Size = new System.Drawing.Size(1904, 60);
+            this.SalesMasterpanel.TabIndex = 5;
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 12;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 181F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 242F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 450F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 107F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 235F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 152F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 17F));
@@ -259,12 +242,10 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel2.Controls.Add(this.btnOk, 10, 0);
-            this.tableLayoutPanel2.Controls.Add(this.dateTimePickerPurchaseDate, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.dateTimePickerSalesDate, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.label5, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.comboBoxSupplierName, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label2, 7, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txtInvoiceNo, 8, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label2, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtInvoiceNo, 5, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -289,13 +270,13 @@
             this.btnOk.UseVisualStyleBackColor = false;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
-            // dateTimePickerPurchaseDate
+            // dateTimePickerSalesDate
             // 
-            this.dateTimePickerPurchaseDate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerPurchaseDate.Location = new System.Drawing.Point(270, 14);
-            this.dateTimePickerPurchaseDate.Name = "dateTimePickerPurchaseDate";
-            this.dateTimePickerPurchaseDate.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerPurchaseDate.TabIndex = 0;
+            this.dateTimePickerSalesDate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimePickerSalesDate.Location = new System.Drawing.Point(257, 14);
+            this.dateTimePickerSalesDate.Name = "dateTimePickerSalesDate";
+            this.dateTimePickerSalesDate.Size = new System.Drawing.Size(219, 20);
+            this.dateTimePickerSalesDate.TabIndex = 0;
             // 
             // label5
             // 
@@ -303,48 +284,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label5.Location = new System.Drawing.Point(79, 13);
+            this.label5.Location = new System.Drawing.Point(118, 13);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(158, 22);
+            this.label5.Size = new System.Drawing.Size(120, 22);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Purchase Date :";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(552, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 22);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Supplier Name :";
-            // 
-            // comboBoxSupplierName
-            // 
-            this.comboBoxSupplierName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBoxSupplierName.BackColor = System.Drawing.Color.Gainsboro;
-            this.comboBoxSupplierName.DataSource = this.listSupplierDetailsBindingSource;
-            this.comboBoxSupplierName.DisplayMember = "SUPPLIERNAME";
-            this.comboBoxSupplierName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBoxSupplierName.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxSupplierName.FormattingEnabled = true;
-            this.comboBoxSupplierName.Location = new System.Drawing.Point(724, 9);
-            this.comboBoxSupplierName.Name = "comboBoxSupplierName";
-            this.comboBoxSupplierName.Size = new System.Drawing.Size(428, 30);
-            this.comboBoxSupplierName.TabIndex = 1;
-            this.comboBoxSupplierName.ValueMember = "SUPPLIERID";
-            // 
-            // listSupplierDetailsBindingSource
-            // 
-            this.listSupplierDetailsBindingSource.DataMember = "ListSupplierDetails";
-            this.listSupplierDetailsBindingSource.DataSource = this.dSListSupplierMasterDetails;
-            // 
-            // dSListSupplierMasterDetails
-            // 
-            this.dSListSupplierMasterDetails.DataSetName = "DSListSupplierMasterDetails";
-            this.dSListSupplierMasterDetails.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.label5.Text = "Sales Date :";
             // 
             // label2
             // 
@@ -352,7 +296,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(1187, 13);
+            this.label2.Location = new System.Drawing.Point(589, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 22);
             this.label2.TabIndex = 7;
@@ -364,26 +308,25 @@
             this.txtInvoiceNo.BackColor = System.Drawing.Color.Gainsboro;
             this.txtInvoiceNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtInvoiceNo.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInvoiceNo.Location = new System.Drawing.Point(1320, 13);
+            this.txtInvoiceNo.Location = new System.Drawing.Point(722, 13);
             this.txtInvoiceNo.Name = "txtInvoiceNo";
-            this.txtInvoiceNo.Size = new System.Drawing.Size(136, 22);
+            this.txtInvoiceNo.Size = new System.Drawing.Size(151, 22);
             this.txtInvoiceNo.TabIndex = 2;
             this.txtInvoiceNo.Text = "0";
             // 
-            // panelPurchaseDetail
+            // panelSalesDetail
             // 
-            this.panelPurchaseDetail.BackColor = System.Drawing.Color.White;
-            this.panelPurchaseDetail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelPurchaseDetail.Controls.Add(this.tableLayoutPanel6);
-            this.panelPurchaseDetail.Controls.Add(this.tableLayoutPanel5);
-            this.panelPurchaseDetail.Controls.Add(this.tableLayoutPanel4);
-            this.panelPurchaseDetail.Controls.Add(this.tableLayoutPanel3);
-            this.panelPurchaseDetail.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelPurchaseDetail.Location = new System.Drawing.Point(0, 134);
-            this.panelPurchaseDetail.Name = "panelPurchaseDetail";
-            this.panelPurchaseDetail.Size = new System.Drawing.Size(1904, 242);
-            this.panelPurchaseDetail.TabIndex = 5;
-            this.panelPurchaseDetail.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPurchaseDetail_Paint);
+            this.panelSalesDetail.BackColor = System.Drawing.Color.White;
+            this.panelSalesDetail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelSalesDetail.Controls.Add(this.tableLayoutPanel6);
+            this.panelSalesDetail.Controls.Add(this.tableLayoutPanel5);
+            this.panelSalesDetail.Controls.Add(this.tableLayoutPanel4);
+            this.panelSalesDetail.Controls.Add(this.tableLayoutPanel3);
+            this.panelSalesDetail.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSalesDetail.Location = new System.Drawing.Point(0, 134);
+            this.panelSalesDetail.Name = "panelSalesDetail";
+            this.panelSalesDetail.Size = new System.Drawing.Size(1904, 225);
+            this.panelSalesDetail.TabIndex = 6;
             // 
             // tableLayoutPanel6
             // 
@@ -689,15 +632,15 @@
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel4.ColumnCount = 13;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 170F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 185F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 82F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 179F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 66F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 61F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 232F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 127F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 222F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 219F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 233F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 206F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 214F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 223F));
@@ -723,7 +666,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label7.Location = new System.Drawing.Point(828, 15);
+            this.label7.Location = new System.Drawing.Point(829, 15);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(115, 22);
             this.label7.TabIndex = 7;
@@ -735,7 +678,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(176, 15);
+            this.label4.Location = new System.Drawing.Point(179, 15);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 22);
             this.label4.TabIndex = 7;
@@ -760,7 +703,7 @@
             this.txtRate.BackColor = System.Drawing.Color.Gainsboro;
             this.txtRate.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtRate.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRate.Location = new System.Drawing.Point(256, 15);
+            this.txtRate.Location = new System.Drawing.Point(259, 15);
             this.txtRate.Name = "txtRate";
             this.txtRate.Size = new System.Drawing.Size(164, 22);
             this.txtRate.TabIndex = 0;
@@ -810,7 +753,7 @@
             this.txtHSNCode.BackColor = System.Drawing.Color.Gainsboro;
             this.txtHSNCode.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHSNCode.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHSNCode.Location = new System.Drawing.Point(959, 15);
+            this.txtHSNCode.Location = new System.Drawing.Point(966, 15);
             this.txtHSNCode.Name = "txtHSNCode";
             this.txtHSNCode.Size = new System.Drawing.Size(202, 22);
             this.txtHSNCode.TabIndex = 2;
@@ -819,25 +762,15 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.BackColor = System.Drawing.Color.White;
-            this.tableLayoutPanel3.ColumnCount = 11;
+            this.tableLayoutPanel3.ColumnCount = 6;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 342F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 187F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 61F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 58F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 317F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 215F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 224F));
-            this.tableLayoutPanel3.Controls.Add(this.dateTimePickerExpireDate, 9, 0);
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 1427F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 68F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
             this.tableLayoutPanel3.Controls.Add(this.comboBoxProductName, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.label8, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label9, 4, 0);
-            this.tableLayoutPanel3.Controls.Add(this.checkBoxYes, 5, 0);
-            this.tableLayoutPanel3.Controls.Add(this.checkBoxNo, 6, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label10, 8, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -845,14 +778,6 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(1902, 50);
             this.tableLayoutPanel3.TabIndex = 0;
-            // 
-            // dateTimePickerExpireDate
-            // 
-            this.dateTimePickerExpireDate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePickerExpireDate.Location = new System.Drawing.Point(1470, 15);
-            this.dateTimePickerExpireDate.Name = "dateTimePickerExpireDate";
-            this.dateTimePickerExpireDate.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerExpireDate.TabIndex = 3;
             // 
             // comboBoxProductName
             // 
@@ -863,9 +788,9 @@
             this.comboBoxProductName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxProductName.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxProductName.FormattingEnabled = true;
-            this.comboBoxProductName.Location = new System.Drawing.Point(262, 10);
+            this.comboBoxProductName.Location = new System.Drawing.Point(258, 10);
             this.comboBoxProductName.Name = "comboBoxProductName";
-            this.comboBoxProductName.Size = new System.Drawing.Size(321, 30);
+            this.comboBoxProductName.Size = new System.Drawing.Size(1415, 30);
             this.comboBoxProductName.TabIndex = 0;
             this.comboBoxProductName.ValueMember = "PRODUCTID";
             this.comboBoxProductName.Leave += new System.EventHandler(this.comboBoxProductName_Leave);
@@ -892,250 +817,14 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "Product Name :";
             // 
-            // label9
-            // 
-            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label9.Location = new System.Drawing.Point(794, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 22);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Is Exp :";
-            // 
-            // checkBoxYes
-            // 
-            this.checkBoxYes.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBoxYes.AutoSize = true;
-            this.checkBoxYes.Location = new System.Drawing.Point(894, 16);
-            this.checkBoxYes.Name = "checkBoxYes";
-            this.checkBoxYes.Size = new System.Drawing.Size(44, 17);
-            this.checkBoxYes.TabIndex = 1;
-            this.checkBoxYes.Text = "Yes";
-            this.checkBoxYes.UseVisualStyleBackColor = true;
-            this.checkBoxYes.CheckedChanged += new System.EventHandler(this.checkBoxYes_CheckedChanged);
-            // 
-            // checkBoxNo
-            // 
-            this.checkBoxNo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.checkBoxNo.AutoSize = true;
-            this.checkBoxNo.Location = new System.Drawing.Point(956, 16);
-            this.checkBoxNo.Name = "checkBoxNo";
-            this.checkBoxNo.Size = new System.Drawing.Size(40, 17);
-            this.checkBoxNo.TabIndex = 2;
-            this.checkBoxNo.Text = "No";
-            this.checkBoxNo.UseVisualStyleBackColor = true;
-            this.checkBoxNo.CheckedChanged += new System.EventHandler(this.checkBoxNo_CheckedChanged);
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label10.Location = new System.Drawing.Point(1328, 14);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(129, 22);
-            this.label10.TabIndex = 7;
-            this.label10.Text = "Expire Date :";
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 376);
+            this.panel2.Location = new System.Drawing.Point(0, 359);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1904, 4);
-            this.panel2.TabIndex = 6;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.purchasedetailIDDataGridViewTextBoxColumn,
-            this.purchaseIDDataGridViewTextBoxColumn,
-            this.productIDDataGridViewTextBoxColumn,
-            this.pRODUCTNAMEDataGridViewTextBoxColumn,
-            this.isExpireDataGridViewCheckBoxColumn,
-            this.expireDateDataGridViewTextBoxColumn,
-            this.rateDataGridViewTextBoxColumn,
-            this.qtyDataGridViewTextBoxColumn,
-            this.hSNCodeDataGridViewTextBoxColumn,
-            this.totalDataGridViewTextBoxColumn,
-            this.discountPercentageDataGridViewTextBoxColumn,
-            this.discountAmountDataGridViewTextBoxColumn,
-            this.taxableAmountDataGridViewTextBoxColumn,
-            this.cGSTPercentageDataGridViewTextBoxColumn,
-            this.cGSTAmountDataGridViewTextBoxColumn,
-            this.sGSTPercentageDataGridViewTextBoxColumn,
-            this.sGSTAmountDataGridViewTextBoxColumn,
-            this.iGSTPercentageDataGridViewTextBoxColumn,
-            this.iGSTAmountDataGridViewTextBoxColumn,
-            this.netAmountDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.getPurchaseDetailsBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 380);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(1904, 601);
-            this.dataGridView1.TabIndex = 7;
-            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
-            // 
-            // purchasedetailIDDataGridViewTextBoxColumn
-            // 
-            this.purchasedetailIDDataGridViewTextBoxColumn.DataPropertyName = "PurchasedetailID";
-            this.purchasedetailIDDataGridViewTextBoxColumn.HeaderText = "PurchasedetailID";
-            this.purchasedetailIDDataGridViewTextBoxColumn.Name = "purchasedetailIDDataGridViewTextBoxColumn";
-            this.purchasedetailIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // purchaseIDDataGridViewTextBoxColumn
-            // 
-            this.purchaseIDDataGridViewTextBoxColumn.DataPropertyName = "PurchaseID";
-            this.purchaseIDDataGridViewTextBoxColumn.HeaderText = "PurchaseID";
-            this.purchaseIDDataGridViewTextBoxColumn.Name = "purchaseIDDataGridViewTextBoxColumn";
-            this.purchaseIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // productIDDataGridViewTextBoxColumn
-            // 
-            this.productIDDataGridViewTextBoxColumn.DataPropertyName = "ProductID";
-            this.productIDDataGridViewTextBoxColumn.HeaderText = "ProductID";
-            this.productIDDataGridViewTextBoxColumn.Name = "productIDDataGridViewTextBoxColumn";
-            this.productIDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pRODUCTNAMEDataGridViewTextBoxColumn
-            // 
-            this.pRODUCTNAMEDataGridViewTextBoxColumn.DataPropertyName = "PRODUCTNAME";
-            this.pRODUCTNAMEDataGridViewTextBoxColumn.HeaderText = "PRODUCTNAME";
-            this.pRODUCTNAMEDataGridViewTextBoxColumn.Name = "pRODUCTNAMEDataGridViewTextBoxColumn";
-            this.pRODUCTNAMEDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // isExpireDataGridViewCheckBoxColumn
-            // 
-            this.isExpireDataGridViewCheckBoxColumn.DataPropertyName = "IsExpire";
-            this.isExpireDataGridViewCheckBoxColumn.HeaderText = "IsExpire";
-            this.isExpireDataGridViewCheckBoxColumn.Name = "isExpireDataGridViewCheckBoxColumn";
-            this.isExpireDataGridViewCheckBoxColumn.ReadOnly = true;
-            // 
-            // expireDateDataGridViewTextBoxColumn
-            // 
-            this.expireDateDataGridViewTextBoxColumn.DataPropertyName = "ExpireDate";
-            this.expireDateDataGridViewTextBoxColumn.HeaderText = "ExpireDate";
-            this.expireDateDataGridViewTextBoxColumn.Name = "expireDateDataGridViewTextBoxColumn";
-            this.expireDateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // rateDataGridViewTextBoxColumn
-            // 
-            this.rateDataGridViewTextBoxColumn.DataPropertyName = "Rate";
-            this.rateDataGridViewTextBoxColumn.HeaderText = "Rate";
-            this.rateDataGridViewTextBoxColumn.Name = "rateDataGridViewTextBoxColumn";
-            this.rateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // qtyDataGridViewTextBoxColumn
-            // 
-            this.qtyDataGridViewTextBoxColumn.DataPropertyName = "Qty";
-            this.qtyDataGridViewTextBoxColumn.HeaderText = "Qty";
-            this.qtyDataGridViewTextBoxColumn.Name = "qtyDataGridViewTextBoxColumn";
-            this.qtyDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // hSNCodeDataGridViewTextBoxColumn
-            // 
-            this.hSNCodeDataGridViewTextBoxColumn.DataPropertyName = "HSNCode";
-            this.hSNCodeDataGridViewTextBoxColumn.HeaderText = "HSNCode";
-            this.hSNCodeDataGridViewTextBoxColumn.Name = "hSNCodeDataGridViewTextBoxColumn";
-            this.hSNCodeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // totalDataGridViewTextBoxColumn
-            // 
-            this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
-            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
-            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
-            this.totalDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // discountPercentageDataGridViewTextBoxColumn
-            // 
-            this.discountPercentageDataGridViewTextBoxColumn.DataPropertyName = "DiscountPercentage";
-            this.discountPercentageDataGridViewTextBoxColumn.HeaderText = "DiscountPercentage";
-            this.discountPercentageDataGridViewTextBoxColumn.Name = "discountPercentageDataGridViewTextBoxColumn";
-            this.discountPercentageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // discountAmountDataGridViewTextBoxColumn
-            // 
-            this.discountAmountDataGridViewTextBoxColumn.DataPropertyName = "DiscountAmount";
-            this.discountAmountDataGridViewTextBoxColumn.HeaderText = "DiscountAmount";
-            this.discountAmountDataGridViewTextBoxColumn.Name = "discountAmountDataGridViewTextBoxColumn";
-            this.discountAmountDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // taxableAmountDataGridViewTextBoxColumn
-            // 
-            this.taxableAmountDataGridViewTextBoxColumn.DataPropertyName = "TaxableAmount";
-            this.taxableAmountDataGridViewTextBoxColumn.HeaderText = "TaxableAmount";
-            this.taxableAmountDataGridViewTextBoxColumn.Name = "taxableAmountDataGridViewTextBoxColumn";
-            this.taxableAmountDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cGSTPercentageDataGridViewTextBoxColumn
-            // 
-            this.cGSTPercentageDataGridViewTextBoxColumn.DataPropertyName = "CGSTPercentage";
-            this.cGSTPercentageDataGridViewTextBoxColumn.HeaderText = "CGSTPercentage";
-            this.cGSTPercentageDataGridViewTextBoxColumn.Name = "cGSTPercentageDataGridViewTextBoxColumn";
-            this.cGSTPercentageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cGSTAmountDataGridViewTextBoxColumn
-            // 
-            this.cGSTAmountDataGridViewTextBoxColumn.DataPropertyName = "CGSTAmount";
-            this.cGSTAmountDataGridViewTextBoxColumn.HeaderText = "CGSTAmount";
-            this.cGSTAmountDataGridViewTextBoxColumn.Name = "cGSTAmountDataGridViewTextBoxColumn";
-            this.cGSTAmountDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sGSTPercentageDataGridViewTextBoxColumn
-            // 
-            this.sGSTPercentageDataGridViewTextBoxColumn.DataPropertyName = "SGSTPercentage";
-            this.sGSTPercentageDataGridViewTextBoxColumn.HeaderText = "SGSTPercentage";
-            this.sGSTPercentageDataGridViewTextBoxColumn.Name = "sGSTPercentageDataGridViewTextBoxColumn";
-            this.sGSTPercentageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sGSTAmountDataGridViewTextBoxColumn
-            // 
-            this.sGSTAmountDataGridViewTextBoxColumn.DataPropertyName = "SGSTAmount";
-            this.sGSTAmountDataGridViewTextBoxColumn.HeaderText = "SGSTAmount";
-            this.sGSTAmountDataGridViewTextBoxColumn.Name = "sGSTAmountDataGridViewTextBoxColumn";
-            this.sGSTAmountDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // iGSTPercentageDataGridViewTextBoxColumn
-            // 
-            this.iGSTPercentageDataGridViewTextBoxColumn.DataPropertyName = "IGSTPercentage";
-            this.iGSTPercentageDataGridViewTextBoxColumn.HeaderText = "IGSTPercentage";
-            this.iGSTPercentageDataGridViewTextBoxColumn.Name = "iGSTPercentageDataGridViewTextBoxColumn";
-            this.iGSTPercentageDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // iGSTAmountDataGridViewTextBoxColumn
-            // 
-            this.iGSTAmountDataGridViewTextBoxColumn.DataPropertyName = "IGSTAmount";
-            this.iGSTAmountDataGridViewTextBoxColumn.HeaderText = "IGSTAmount";
-            this.iGSTAmountDataGridViewTextBoxColumn.Name = "iGSTAmountDataGridViewTextBoxColumn";
-            this.iGSTAmountDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // netAmountDataGridViewTextBoxColumn
-            // 
-            this.netAmountDataGridViewTextBoxColumn.DataPropertyName = "NetAmount";
-            this.netAmountDataGridViewTextBoxColumn.HeaderText = "NetAmount";
-            this.netAmountDataGridViewTextBoxColumn.Name = "netAmountDataGridViewTextBoxColumn";
-            this.netAmountDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // getPurchaseDetailsBindingSource
-            // 
-            this.getPurchaseDetailsBindingSource.DataMember = "GetPurchaseDetails";
-            this.getPurchaseDetailsBindingSource.DataSource = this.dSGetPurchaseDetail;
-            // 
-            // dSGetPurchaseDetail
-            // 
-            this.dSGetPurchaseDetail.DataSetName = "DSGetPurchaseDetail";
-            this.dSGetPurchaseDetail.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.panel2.Size = new System.Drawing.Size(1904, 5);
+            this.panel2.TabIndex = 7;
             // 
             // panel4
             // 
@@ -1148,7 +837,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 917);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1904, 64);
-            this.panel4.TabIndex = 8;
+            this.panel4.TabIndex = 9;
             // 
             // btnSave
             // 
@@ -1207,10 +896,10 @@
             this.panelTotalAmounts.Controls.Add(this.tableLayoutPanel8);
             this.panelTotalAmounts.Controls.Add(this.tableLayoutPanel7);
             this.panelTotalAmounts.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelTotalAmounts.Location = new System.Drawing.Point(0, 696);
+            this.panelTotalAmounts.Location = new System.Drawing.Point(0, 722);
             this.panelTotalAmounts.Name = "panelTotalAmounts";
-            this.panelTotalAmounts.Size = new System.Drawing.Size(1904, 221);
-            this.panelTotalAmounts.TabIndex = 9;
+            this.panelTotalAmounts.Size = new System.Drawing.Size(1904, 195);
+            this.panelTotalAmounts.TabIndex = 10;
             // 
             // tableLayoutPanel10
             // 
@@ -1244,13 +933,14 @@
             this.comboBoxPaymentMode.FormattingEnabled = true;
             this.comboBoxPaymentMode.Items.AddRange(new object[] {
             "-- Select Mode --",
+            "Cash",
             "UPI",
             "NEFT",
             "RTGS"});
             this.comboBoxPaymentMode.Location = new System.Drawing.Point(257, 4);
             this.comboBoxPaymentMode.Name = "comboBoxPaymentMode";
             this.comboBoxPaymentMode.Size = new System.Drawing.Size(250, 30);
-            this.comboBoxPaymentMode.TabIndex = 10;
+            this.comboBoxPaymentMode.TabIndex = 0;
             this.comboBoxPaymentMode.ValueMember = "CATEGORYID";
             // 
             // label31
@@ -1274,7 +964,7 @@
             this.txtRemark.Location = new System.Drawing.Point(672, 8);
             this.txtRemark.Name = "txtRemark";
             this.txtRemark.Size = new System.Drawing.Size(949, 22);
-            this.txtRemark.TabIndex = 3;
+            this.txtRemark.TabIndex = 1;
             // 
             // label32
             // 
@@ -1290,28 +980,18 @@
             // 
             // tableLayoutPanel9
             // 
-            this.tableLayoutPanel9.ColumnCount = 13;
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 172F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 88F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 173F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.tableLayoutPanel9.ColumnCount = 7;
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 179F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 654F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 166F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 271F));
-            this.tableLayoutPanel9.Controls.Add(this.label26, 7, 0);
-            this.tableLayoutPanel9.Controls.Add(this.label27, 1, 0);
-            this.tableLayoutPanel9.Controls.Add(this.txtFreighCharges, 5, 0);
-            this.tableLayoutPanel9.Controls.Add(this.txtCashDiscAmt, 2, 0);
-            this.tableLayoutPanel9.Controls.Add(this.label28, 4, 0);
-            this.tableLayoutPanel9.Controls.Add(this.label29, 10, 0);
-            this.tableLayoutPanel9.Controls.Add(this.txtFinalNetAmount, 11, 0);
-            this.tableLayoutPanel9.Controls.Add(this.txtLabourCharges, 8, 0);
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 592F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 270F));
+            this.tableLayoutPanel9.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel9.Controls.Add(this.txtAddress, 5, 0);
+            this.tableLayoutPanel9.Controls.Add(this.label9, 4, 0);
+            this.tableLayoutPanel9.Controls.Add(this.txtCustomerName, 2, 0);
             this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel9.Location = new System.Drawing.Point(0, 92);
             this.tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -1319,105 +999,53 @@
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel9.Size = new System.Drawing.Size(1902, 39);
             this.tableLayoutPanel9.TabIndex = 9;
+            this.tableLayoutPanel9.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel9_Paint);
             // 
-            // label26
+            // label1
             // 
-            this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label26.Location = new System.Drawing.Point(865, 8);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(173, 22);
-            this.label26.TabIndex = 7;
-            this.label26.Text = "Labour Charges :";
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(74, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(170, 22);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Customer Name :";
             // 
-            // label27
+            // txtAddress
             // 
-            this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label27.Location = new System.Drawing.Point(85, 8);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(156, 22);
-            this.label27.TabIndex = 7;
-            this.label27.Text = "Cash Disc Amt :";
+            this.txtAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtAddress.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAddress.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(1047, 8);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(577, 22);
+            this.txtAddress.TabIndex = 2;
             // 
-            // txtFreighCharges
+            // label9
             // 
-            this.txtFreighCharges.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtFreighCharges.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtFreighCharges.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtFreighCharges.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFreighCharges.Location = new System.Drawing.Point(669, 8);
-            this.txtFreighCharges.Name = "txtFreighCharges";
-            this.txtFreighCharges.Size = new System.Drawing.Size(142, 22);
-            this.txtFreighCharges.TabIndex = 3;
-            this.txtFreighCharges.Text = "0";
-            this.txtFreighCharges.Leave += new System.EventHandler(this.txtFreighCharges_Leave);
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.label9.Location = new System.Drawing.Point(929, 8);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(100, 22);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Address :";
             // 
-            // txtCashDiscAmt
+            // txtCustomerName
             // 
-            this.txtCashDiscAmt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtCashDiscAmt.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtCashDiscAmt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCashDiscAmt.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCashDiscAmt.Location = new System.Drawing.Point(258, 8);
-            this.txtCashDiscAmt.Name = "txtCashDiscAmt";
-            this.txtCashDiscAmt.Size = new System.Drawing.Size(134, 22);
-            this.txtCashDiscAmt.TabIndex = 3;
-            this.txtCashDiscAmt.Text = "0";
-            this.txtCashDiscAmt.Leave += new System.EventHandler(this.txtCashDiscAmt_Leave);
-            // 
-            // label28
-            // 
-            this.label28.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label28.Location = new System.Drawing.Point(493, 8);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(166, 22);
-            this.label28.TabIndex = 7;
-            this.label28.Text = "Freigh Charges :";
-            // 
-            // label29
-            // 
-            this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label29.Location = new System.Drawing.Point(1331, 8);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(128, 22);
-            this.label29.TabIndex = 7;
-            this.label29.Text = "Net Amount :";
-            // 
-            // txtFinalNetAmount
-            // 
-            this.txtFinalNetAmount.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtFinalNetAmount.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtFinalNetAmount.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtFinalNetAmount.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFinalNetAmount.Location = new System.Drawing.Point(1471, 8);
-            this.txtFinalNetAmount.Name = "txtFinalNetAmount";
-            this.txtFinalNetAmount.Size = new System.Drawing.Size(153, 22);
-            this.txtFinalNetAmount.TabIndex = 3;
-            this.txtFinalNetAmount.Text = "0";
-            // 
-            // txtLabourCharges
-            // 
-            this.txtLabourCharges.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtLabourCharges.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtLabourCharges.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLabourCharges.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLabourCharges.Location = new System.Drawing.Point(1049, 8);
-            this.txtLabourCharges.Name = "txtLabourCharges";
-            this.txtLabourCharges.Size = new System.Drawing.Size(146, 22);
-            this.txtLabourCharges.TabIndex = 3;
-            this.txtLabourCharges.Text = "0";
-            this.txtLabourCharges.Leave += new System.EventHandler(this.txtLabourCharges_Leave);
+            this.txtCustomerName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCustomerName.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtCustomerName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCustomerName.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCustomerName.Location = new System.Drawing.Point(259, 8);
+            this.txtCustomerName.Name = "txtCustomerName";
+            this.txtCustomerName.Size = new System.Drawing.Size(633, 22);
+            this.txtCustomerName.TabIndex = 1;
             // 
             // tableLayoutPanel8
             // 
@@ -1429,8 +1057,8 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 154F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 138F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177F));
@@ -1442,7 +1070,7 @@
             this.tableLayoutPanel8.Controls.Add(this.txtTotalSGSTAmount, 2, 0);
             this.tableLayoutPanel8.Controls.Add(this.label24, 4, 0);
             this.tableLayoutPanel8.Controls.Add(this.label25, 10, 0);
-            this.tableLayoutPanel8.Controls.Add(this.txtTradeDiscAmt, 11, 0);
+            this.tableLayoutPanel8.Controls.Add(this.txtMobileNo, 11, 0);
             this.tableLayoutPanel8.Controls.Add(this.txtTotalNetAmount, 8, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(0, 46);
@@ -1458,11 +1086,11 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label22.Location = new System.Drawing.Point(893, 12);
+            this.label22.Location = new System.Drawing.Point(907, 12);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(144, 22);
+            this.label22.Size = new System.Drawing.Size(128, 22);
             this.label22.TabIndex = 7;
-            this.label22.Text = "Total Amount :";
+            this.label22.Text = "Net Amount :";
             // 
             // label23
             // 
@@ -1499,6 +1127,7 @@
             this.txtTotalSGSTAmount.Size = new System.Drawing.Size(134, 22);
             this.txtTotalSGSTAmount.TabIndex = 3;
             this.txtTotalSGSTAmount.Text = "0";
+            this.txtTotalSGSTAmount.TextChanged += new System.EventHandler(this.txtTotalSGSTAmount_TextChanged);
             // 
             // label24
             // 
@@ -1518,24 +1147,22 @@
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.label25.Location = new System.Drawing.Point(1295, 12);
+            this.label25.Location = new System.Drawing.Point(1319, 12);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(162, 22);
+            this.label25.Size = new System.Drawing.Size(114, 22);
             this.label25.TabIndex = 7;
-            this.label25.Text = "Trade Disc Amt :";
+            this.label25.Text = "Mobile No :";
             // 
-            // txtTradeDiscAmt
+            // txtMobileNo
             // 
-            this.txtTradeDiscAmt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTradeDiscAmt.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtTradeDiscAmt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTradeDiscAmt.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTradeDiscAmt.Location = new System.Drawing.Point(1474, 12);
-            this.txtTradeDiscAmt.Name = "txtTradeDiscAmt";
-            this.txtTradeDiscAmt.Size = new System.Drawing.Size(150, 22);
-            this.txtTradeDiscAmt.TabIndex = 3;
-            this.txtTradeDiscAmt.Text = "0";
-            this.txtTradeDiscAmt.Leave += new System.EventHandler(this.txtTradeDiscAmt_Leave);
+            this.txtMobileNo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtMobileNo.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtMobileNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMobileNo.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMobileNo.Location = new System.Drawing.Point(1474, 12);
+            this.txtMobileNo.Name = "txtMobileNo";
+            this.txtMobileNo.Size = new System.Drawing.Size(150, 22);
+            this.txtMobileNo.TabIndex = 0;
             // 
             // txtTotalNetAmount
             // 
@@ -1664,7 +1291,6 @@
             this.txtTotalCGSTAmount.Name = "txtTotalCGSTAmount";
             this.txtTotalCGSTAmount.Size = new System.Drawing.Size(145, 22);
             this.txtTotalCGSTAmount.TabIndex = 3;
-            this.txtTotalCGSTAmount.Text = "0";
             // 
             // txtTotalTaxableAmount
             // 
@@ -1678,44 +1304,216 @@
             this.txtTotalTaxableAmount.TabIndex = 3;
             this.txtTotalTaxableAmount.Text = "0";
             // 
-            // listSupplierDetailsTableAdapter
+            // dataGridView1
             // 
-            this.listSupplierDetailsTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.salesDetailIDDataGridViewTextBoxColumn,
+            this.salesIDDataGridViewTextBoxColumn,
+            this.productIDDataGridViewTextBoxColumn,
+            this.pRODUCTNAMEDataGridViewTextBoxColumn,
+            this.rateDataGridViewTextBoxColumn,
+            this.qtyDataGridViewTextBoxColumn,
+            this.hSNCodeDataGridViewTextBoxColumn,
+            this.totalDataGridViewTextBoxColumn,
+            this.discountPercentageDataGridViewTextBoxColumn,
+            this.discountAmountDataGridViewTextBoxColumn,
+            this.taxableAmountDataGridViewTextBoxColumn,
+            this.cGSTPercentageDataGridViewTextBoxColumn,
+            this.cGSTAmountDataGridViewTextBoxColumn,
+            this.sGSTPercentageDataGridViewTextBoxColumn,
+            this.sGSTAmountDataGridViewTextBoxColumn,
+            this.iGSTPercentageDataGridViewTextBoxColumn,
+            this.iGSTAmountDataGridViewTextBoxColumn,
+            this.netAmountDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.getSalesDetailsBindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 364);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(1904, 358);
+            this.dataGridView1.TabIndex = 11;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
+            // 
+            // salesDetailIDDataGridViewTextBoxColumn
+            // 
+            this.salesDetailIDDataGridViewTextBoxColumn.DataPropertyName = "SalesDetailID";
+            this.salesDetailIDDataGridViewTextBoxColumn.HeaderText = "SalesDetailID";
+            this.salesDetailIDDataGridViewTextBoxColumn.Name = "salesDetailIDDataGridViewTextBoxColumn";
+            this.salesDetailIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // salesIDDataGridViewTextBoxColumn
+            // 
+            this.salesIDDataGridViewTextBoxColumn.DataPropertyName = "SalesID";
+            this.salesIDDataGridViewTextBoxColumn.HeaderText = "SalesID";
+            this.salesIDDataGridViewTextBoxColumn.Name = "salesIDDataGridViewTextBoxColumn";
+            this.salesIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productIDDataGridViewTextBoxColumn
+            // 
+            this.productIDDataGridViewTextBoxColumn.DataPropertyName = "ProductID";
+            this.productIDDataGridViewTextBoxColumn.HeaderText = "ProductID";
+            this.productIDDataGridViewTextBoxColumn.Name = "productIDDataGridViewTextBoxColumn";
+            this.productIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // pRODUCTNAMEDataGridViewTextBoxColumn
+            // 
+            this.pRODUCTNAMEDataGridViewTextBoxColumn.DataPropertyName = "PRODUCTNAME";
+            this.pRODUCTNAMEDataGridViewTextBoxColumn.HeaderText = "PRODUCTNAME";
+            this.pRODUCTNAMEDataGridViewTextBoxColumn.Name = "pRODUCTNAMEDataGridViewTextBoxColumn";
+            this.pRODUCTNAMEDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // rateDataGridViewTextBoxColumn
+            // 
+            this.rateDataGridViewTextBoxColumn.DataPropertyName = "Rate";
+            this.rateDataGridViewTextBoxColumn.HeaderText = "Rate";
+            this.rateDataGridViewTextBoxColumn.Name = "rateDataGridViewTextBoxColumn";
+            this.rateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // qtyDataGridViewTextBoxColumn
+            // 
+            this.qtyDataGridViewTextBoxColumn.DataPropertyName = "Qty";
+            this.qtyDataGridViewTextBoxColumn.HeaderText = "Qty";
+            this.qtyDataGridViewTextBoxColumn.Name = "qtyDataGridViewTextBoxColumn";
+            this.qtyDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // hSNCodeDataGridViewTextBoxColumn
+            // 
+            this.hSNCodeDataGridViewTextBoxColumn.DataPropertyName = "HSNCode";
+            this.hSNCodeDataGridViewTextBoxColumn.HeaderText = "HSNCode";
+            this.hSNCodeDataGridViewTextBoxColumn.Name = "hSNCodeDataGridViewTextBoxColumn";
+            this.hSNCodeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // totalDataGridViewTextBoxColumn
+            // 
+            this.totalDataGridViewTextBoxColumn.DataPropertyName = "Total";
+            this.totalDataGridViewTextBoxColumn.HeaderText = "Total";
+            this.totalDataGridViewTextBoxColumn.Name = "totalDataGridViewTextBoxColumn";
+            this.totalDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // discountPercentageDataGridViewTextBoxColumn
+            // 
+            this.discountPercentageDataGridViewTextBoxColumn.DataPropertyName = "DiscountPercentage";
+            this.discountPercentageDataGridViewTextBoxColumn.HeaderText = "DiscountPercentage";
+            this.discountPercentageDataGridViewTextBoxColumn.Name = "discountPercentageDataGridViewTextBoxColumn";
+            this.discountPercentageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // discountAmountDataGridViewTextBoxColumn
+            // 
+            this.discountAmountDataGridViewTextBoxColumn.DataPropertyName = "DiscountAmount";
+            this.discountAmountDataGridViewTextBoxColumn.HeaderText = "DiscountAmount";
+            this.discountAmountDataGridViewTextBoxColumn.Name = "discountAmountDataGridViewTextBoxColumn";
+            this.discountAmountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // taxableAmountDataGridViewTextBoxColumn
+            // 
+            this.taxableAmountDataGridViewTextBoxColumn.DataPropertyName = "TaxableAmount";
+            this.taxableAmountDataGridViewTextBoxColumn.HeaderText = "TaxableAmount";
+            this.taxableAmountDataGridViewTextBoxColumn.Name = "taxableAmountDataGridViewTextBoxColumn";
+            this.taxableAmountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cGSTPercentageDataGridViewTextBoxColumn
+            // 
+            this.cGSTPercentageDataGridViewTextBoxColumn.DataPropertyName = "CGSTPercentage";
+            this.cGSTPercentageDataGridViewTextBoxColumn.HeaderText = "CGSTPercentage";
+            this.cGSTPercentageDataGridViewTextBoxColumn.Name = "cGSTPercentageDataGridViewTextBoxColumn";
+            this.cGSTPercentageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cGSTAmountDataGridViewTextBoxColumn
+            // 
+            this.cGSTAmountDataGridViewTextBoxColumn.DataPropertyName = "CGSTAmount";
+            this.cGSTAmountDataGridViewTextBoxColumn.HeaderText = "CGSTAmount";
+            this.cGSTAmountDataGridViewTextBoxColumn.Name = "cGSTAmountDataGridViewTextBoxColumn";
+            this.cGSTAmountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sGSTPercentageDataGridViewTextBoxColumn
+            // 
+            this.sGSTPercentageDataGridViewTextBoxColumn.DataPropertyName = "SGSTPercentage";
+            this.sGSTPercentageDataGridViewTextBoxColumn.HeaderText = "SGSTPercentage";
+            this.sGSTPercentageDataGridViewTextBoxColumn.Name = "sGSTPercentageDataGridViewTextBoxColumn";
+            this.sGSTPercentageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sGSTAmountDataGridViewTextBoxColumn
+            // 
+            this.sGSTAmountDataGridViewTextBoxColumn.DataPropertyName = "SGSTAmount";
+            this.sGSTAmountDataGridViewTextBoxColumn.HeaderText = "SGSTAmount";
+            this.sGSTAmountDataGridViewTextBoxColumn.Name = "sGSTAmountDataGridViewTextBoxColumn";
+            this.sGSTAmountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // iGSTPercentageDataGridViewTextBoxColumn
+            // 
+            this.iGSTPercentageDataGridViewTextBoxColumn.DataPropertyName = "IGSTPercentage";
+            this.iGSTPercentageDataGridViewTextBoxColumn.HeaderText = "IGSTPercentage";
+            this.iGSTPercentageDataGridViewTextBoxColumn.Name = "iGSTPercentageDataGridViewTextBoxColumn";
+            this.iGSTPercentageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // iGSTAmountDataGridViewTextBoxColumn
+            // 
+            this.iGSTAmountDataGridViewTextBoxColumn.DataPropertyName = "IGSTAmount";
+            this.iGSTAmountDataGridViewTextBoxColumn.HeaderText = "IGSTAmount";
+            this.iGSTAmountDataGridViewTextBoxColumn.Name = "iGSTAmountDataGridViewTextBoxColumn";
+            this.iGSTAmountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // netAmountDataGridViewTextBoxColumn
+            // 
+            this.netAmountDataGridViewTextBoxColumn.DataPropertyName = "NetAmount";
+            this.netAmountDataGridViewTextBoxColumn.HeaderText = "NetAmount";
+            this.netAmountDataGridViewTextBoxColumn.Name = "netAmountDataGridViewTextBoxColumn";
+            this.netAmountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // getSalesDetailsBindingSource
+            // 
+            this.getSalesDetailsBindingSource.DataMember = "GetSalesDetails";
+            this.getSalesDetailsBindingSource.DataSource = this.dSGetSalesDetailBindingSource;
+            // 
+            // dSGetSalesDetailBindingSource
+            // 
+            this.dSGetSalesDetailBindingSource.DataSource = this.dSGetSalesDetail;
+            this.dSGetSalesDetailBindingSource.Position = 0;
+            // 
+            // dSGetSalesDetail
+            // 
+            this.dSGetSalesDetail.DataSetName = "DSGetSalesDetail";
+            this.dSGetSalesDetail.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // listProductMasterDetailsTableAdapter
             // 
             this.listProductMasterDetailsTableAdapter.ClearBeforeFill = true;
             // 
-            // getPurchaseDetailsTableAdapter
+            // getSalesDetailsTableAdapter
             // 
-            this.getPurchaseDetailsTableAdapter.ClearBeforeFill = true;
+            this.getSalesDetailsTableAdapter.ClearBeforeFill = true;
             // 
-            // PurchaseMaterialMaster
+            // FrmSaleMaster
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 981);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panelTotalAmounts);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panelPurchaseDetail);
-            this.Controls.Add(this.PurchaseMasterpanel);
+            this.Controls.Add(this.panelSalesDetail);
+            this.Controls.Add(this.SalesMasterpanel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.Headerpanel);
             this.Controls.Add(this.panel1);
-            this.Name = "PurchaseMaterialMaster";
-            this.Text = "PurchaseMaterialMaster";
-            this.Load += new System.EventHandler(this.PurchaseMaterialMaster_Load);
+            this.Name = "FrmSaleMaster";
+            this.Text = "FrmSaleMaster";
+            this.Load += new System.EventHandler(this.FrmSaleMaster_Load);
             this.Headerpanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            this.PurchaseMasterpanel.ResumeLayout(false);
+            this.SalesMasterpanel.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listSupplierDetailsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSListSupplierMasterDetails)).EndInit();
-            this.panelPurchaseDetail.ResumeLayout(false);
+            this.panelSalesDetail.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
@@ -1726,9 +1524,6 @@
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listProductMasterDetailsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSListProductMasterDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.getPurchaseDetailsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSGetPurchaseDetail)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panelTotalAmounts.ResumeLayout(false);
             this.tableLayoutPanel10.ResumeLayout(false);
@@ -1739,6 +1534,10 @@
             this.tableLayoutPanel8.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.getSalesDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetSalesDetailBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetSalesDetail)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1747,76 +1546,68 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel Headerpanel;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel PurchaseMasterpanel;
-        private System.Windows.Forms.Panel panelPurchaseDetail;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel SalesMasterpanel;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.DateTimePicker dateTimePickerPurchaseDate;
+        private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.DateTimePicker dateTimePickerSalesDate;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBoxSupplierName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtInvoiceNo;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePickerExpireDate;
-        private System.Windows.Forms.ComboBox comboBoxProductName;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.CheckBox checkBoxYes;
-        private System.Windows.Forms.CheckBox checkBoxNo;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtRate;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtQty;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtCGSTAmount;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtTotal;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
-        private System.Windows.Forms.Label txtDoiscount;
-        private System.Windows.Forms.TextBox txtDiscountPercentage;
-        private System.Windows.Forms.TextBox txtDiscountAmount;
-        private System.Windows.Forms.TextBox txtTaxableAmount;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtCGSTPercentage;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtSGSTAmount;
-        private System.Windows.Forms.TextBox txtSGSTPercentage;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtHSNCode;
+        private System.Windows.Forms.Panel panelSalesDetail;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtIGSTPercentage;
         private System.Windows.Forms.TextBox txtIGSTAmount;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtNetAmount;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.TextBox txtCGSTAmount;
+        private System.Windows.Forms.TextBox txtCGSTPercentage;
+        private System.Windows.Forms.Label txtDoiscount;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtDiscountPercentage;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtDiscountAmount;
+        private System.Windows.Forms.TextBox txtSGSTAmount;
+        private System.Windows.Forms.TextBox txtSGSTPercentage;
+        private System.Windows.Forms.TextBox txtTaxableAmount;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtQty;
+        private System.Windows.Forms.TextBox txtRate;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.TextBox txtHSNCode;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.ComboBox comboBoxProductName;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Panel panelTotalAmounts;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
+        private System.Windows.Forms.ComboBox comboBoxPaymentMode;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox txtRemark;
+        private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox txtFreighCharges;
-        private System.Windows.Forms.TextBox txtCashDiscAmt;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox txtFinalNetAmount;
-        private System.Windows.Forms.TextBox txtLabourCharges;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox txtTotalIGSTAmount;
         private System.Windows.Forms.TextBox txtTotalSGSTAmount;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox txtTradeDiscAmt;
+        private System.Windows.Forms.TextBox txtMobileNo;
         private System.Windows.Forms.TextBox txtTotalNetAmount;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.Label label18;
@@ -1827,27 +1618,15 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtTotalCGSTAmount;
         private System.Windows.Forms.TextBox txtTotalTaxableAmount;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox txtRemark;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.ComboBox comboBoxPaymentMode;
-        private System.Windows.Forms.Button btnOk;
-        private FinalProjectDataSets.DSListSupplierMasterDetails dSListSupplierMasterDetails;
-        private System.Windows.Forms.BindingSource listSupplierDetailsBindingSource;
-        private FinalProjectDataSets.DSListSupplierMasterDetailsTableAdapters.ListSupplierDetailsTableAdapter listSupplierDetailsTableAdapter;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private FinalProjectDataSets.DSListProductMasterDetails dSListProductMasterDetails;
         private System.Windows.Forms.BindingSource listProductMasterDetailsBindingSource;
         private FinalProjectDataSets.DSListProductMasterDetailsTableAdapters.ListProductMasterDetailsTableAdapter listProductMasterDetailsTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn purchasedetailIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn purchaseIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salesDetailIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn salesIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pRODUCTNAMEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn isExpireDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn expireDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn rateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn qtyDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hSNCodeDataGridViewTextBoxColumn;
@@ -1862,8 +1641,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iGSTPercentageDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iGSTAmountDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn netAmountDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource getPurchaseDetailsBindingSource;
-        private FinalProjectDataSets.DSGetPurchaseDetail dSGetPurchaseDetail;
-        private FinalProjectDataSets.DSGetPurchaseDetailTableAdapters.GetPurchaseDetailsTableAdapter getPurchaseDetailsTableAdapter;
+        private System.Windows.Forms.BindingSource getSalesDetailsBindingSource;
+        private System.Windows.Forms.BindingSource dSGetSalesDetailBindingSource;
+        private FinalProjectDataSets.DSGetSalesDetail dSGetSalesDetail;
+        private FinalProjectDataSets.DSGetSalesDetailTableAdapters.GetSalesDetailsTableAdapter getSalesDetailsTableAdapter;
+        private System.Windows.Forms.TextBox txtCustomerName;
+        private System.Windows.Forms.TextBox txtAddress;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label1;
     }
 }
