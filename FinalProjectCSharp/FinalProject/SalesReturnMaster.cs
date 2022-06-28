@@ -499,6 +499,8 @@ namespace FinalProject
         private void btnDelete_Click(object sender, EventArgs e)
         {
             DeleteFromSalesReturnDetailTable();
+            ResetSalesReturnDetailDefaultValue();
+            ResetSalesReturnMasterTotalAmountDefaultValue();
         }
 
         private void btnReset_Click(object sender, EventArgs e)

@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FinalProject.Report_Forms;
+using FinalProject.ReportForm;
+
 
 namespace FinalProject
 {
@@ -33,6 +34,9 @@ namespace FinalProject
         {
             if (MastersSubPanel.Visible == true)
                 MastersSubPanel.Visible = false;
+
+            if (Reportpanel.Visible == true)
+                Reportpanel.Visible = false;
         }
 
         public void ShowSubMenu(Panel SubMenu)
@@ -46,6 +50,8 @@ namespace FinalProject
             {
                 SubMenu.Visible = false;
             }
+
+            
         }
 
         private Form activeForm = null;
@@ -166,16 +172,39 @@ namespace FinalProject
 
         private void btnSalesReturn_Click(object sender, EventArgs e)
         {
-           // OpenChildForm();
+           OpenChildForm( new SalesReturnMaster());
             HideSubMenu();
         }
 
         private void btnCategoryRPT_Click(object sender, EventArgs e)
         {
             
-           OpenChildForm(new FrmRPTCategoryList());
+          OpenChildForm(new FrmRPTCategoryList());
            HideSubMenu();
            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        
+
+        private void btnCategoryRPT_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmRPTCategoryList());
+            HideSubMenu();
+        }
+
+        private void btnSubCategoryRPT_Click(object sender, EventArgs e)
+        {
+           OpenChildForm(new FrmRPTSubCategoryList());
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            ShowSubMenu(Reportpanel);
         }
     }
 }

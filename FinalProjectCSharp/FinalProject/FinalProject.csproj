@@ -102,8 +102,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSListSupplierMasterDetails.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FinalProjectDataSets\DSRPTCategoryList.cs" />
-    <Compile Include="FinalProjectDataSets\DSRPTCategoryListTableAdapters.cs" />
+    <Compile Include="FinalProjectDataSets\ListCategoryDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListCategoryDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalProjectDataSets\ListFInancialYear.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListFInancialYear.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTCategoryList.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -114,15 +122,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSRPTSubCategoryList.xsd</DependentUpon>
     </Compile>
-    <Compile Include="FinalProjectDataSets\ListCategoryDetails.Designer.cs">
+    <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTSupplierList.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ListCategoryDetails.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="FinalProjectDataSets\ListFInancialYear.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ListFInancialYear.xsd</DependentUpon>
+      <DependentUpon>DSRPTSupplierList.xsd</DependentUpon>
     </Compile>
     <Compile Include="FinalProjectDataSets\SubCategoryDetails.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -191,11 +194,23 @@
     <Compile Include="PurchaseMaterialMaster.Designer.cs">
       <DependentUpon>PurchaseMaterialMaster.cs</DependentUpon>
     </Compile>
-    <Compile Include="Report Forms\FrmRPTCategoryList.cs">
+    <Compile Include="ReportForm\FrmRPTCategoryList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Report Forms\FrmRPTCategoryList.Designer.cs">
+    <Compile Include="ReportForm\FrmRPTCategoryList.Designer.cs">
       <DependentUpon>FrmRPTCategoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTSubCategoryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTSubCategoryList.Designer.cs">
+      <DependentUpon>FrmRPTSubCategoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTSupplier.Designer.cs">
+      <DependentUpon>FrmRPTSupplier.cs</DependentUpon>
     </Compile>
     <Compile Include="SalesReturnMaster.cs">
       <SubType>Form</SubType>
@@ -245,8 +260,16 @@
       <DependentUpon>PurchaseMaterialMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RDLC\RPTCategoryList.rdlc" />
-    <EmbeddedResource Include="Report Forms\FrmRPTCategoryList.resx">
+    <EmbeddedResource Include="RDLC\RPTSubCategoryList.rdlc" />
+    <EmbeddedResource Include="RDLC\RPTSupplierList.rdlc" />
+    <EmbeddedResource Include="ReportForm\FrmRPTCategoryList.resx">
       <DependentUpon>FrmRPTCategoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\FrmRPTSubCategoryList.resx">
+      <DependentUpon>FrmRPTSubCategoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\FrmRPTSupplier.resx">
+      <DependentUpon>FrmRPTSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SalesReturnMaster.resx">
       <DependentUpon>SalesReturnMaster.cs</DependentUpon>
@@ -361,6 +384,28 @@
     <None Include="FinalProjectDataSets\DSListSupplierMasterDetails.xss">
       <DependentUpon>DSListSupplierMasterDetails.xsd</DependentUpon>
     </None>
+    <None Include="FinalProjectDataSets\ListCategoryDetails.xsc">
+      <DependentUpon>ListCategoryDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\ListCategoryDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListCategoryDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\ListCategoryDetails.xss">
+      <DependentUpon>ListCategoryDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\ListFInancialYear.xsc">
+      <DependentUpon>ListFInancialYear.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\ListFInancialYear.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListFInancialYear.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\ListFInancialYear.xss">
+      <DependentUpon>ListFInancialYear.xsd</DependentUpon>
+    </None>
     <None Include="FinalProjectDataSets\RPTDataset\DSRPTCategoryList.xsc">
       <DependentUpon>DSRPTCategoryList.xsd</DependentUpon>
     </None>
@@ -383,27 +428,16 @@
     <None Include="FinalProjectDataSets\RPTDataset\DSRPTSubCategoryList.xss">
       <DependentUpon>DSRPTSubCategoryList.xsd</DependentUpon>
     </None>
-    <None Include="FinalProjectDataSets\ListCategoryDetails.xsc">
-      <DependentUpon>ListCategoryDetails.xsd</DependentUpon>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSupplierList.xsc">
+      <DependentUpon>DSRPTSupplierList.xsd</DependentUpon>
     </None>
-    <None Include="FinalProjectDataSets\ListCategoryDetails.xsd">
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSupplierList.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ListCategoryDetails.Designer.cs</LastGenOutput>
+      <LastGenOutput>DSRPTSupplierList.Designer.cs</LastGenOutput>
     </None>
-    <None Include="FinalProjectDataSets\ListCategoryDetails.xss">
-      <DependentUpon>ListCategoryDetails.xsd</DependentUpon>
-    </None>
-    <None Include="FinalProjectDataSets\ListFInancialYear.xsc">
-      <DependentUpon>ListFInancialYear.xsd</DependentUpon>
-    </None>
-    <None Include="FinalProjectDataSets\ListFInancialYear.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ListFInancialYear.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="FinalProjectDataSets\ListFInancialYear.xss">
-      <DependentUpon>ListFInancialYear.xsd</DependentUpon>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSupplierList.xss">
+      <DependentUpon>DSRPTSupplierList.xsd</DependentUpon>
     </None>
     <None Include="FinalProjectDataSets\SubCategoryDetails.xsc">
       <DependentUpon>SubCategoryDetails.xsd</DependentUpon>
