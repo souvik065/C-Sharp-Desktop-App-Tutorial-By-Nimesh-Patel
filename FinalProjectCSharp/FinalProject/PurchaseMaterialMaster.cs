@@ -280,7 +280,7 @@ namespace FinalProject
             cmd.Parameters.AddWithValue("@CashDiscountAmount", txtCashDiscAmt.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@FreighCharges", txtFreighCharges.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@LabourCharges", txtLabourCharges.Text).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@NetAmount", txtNetAmount.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@NetAmount", txtFinalNetAmount.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@PaymentMode", comboBoxPaymentMode.Text).DbType = DbType.String;
             cmd.Parameters.AddWithValue("@Remark", txtRemark.Text).DbType = DbType.String;
             

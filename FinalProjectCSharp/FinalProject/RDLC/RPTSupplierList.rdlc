@@ -497,7 +497,7 @@
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
         <Height>1.2cm</Height>
-        <Width>19cm</Width>
+        <Width>19.00002cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -506,9 +506,13 @@
       </Tablix>
     </ReportItems>
     <Height>2in</Height>
-    <Style />
+    <Style>
+      <Border>
+        <Style>Solid</Style>
+      </Border>
+    </Style>
   </Body>
-  <Width>19cm</Width>
+  <Width>19.00002cm</Width>
   <Page>
     <PageHeader>
       <Height>1.28792cm</Height>
@@ -522,7 +526,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Sub -Category List</Value>
+                  <Value>Supplier List</Value>
                   <Style>
                     <FontSize>26pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -530,7 +534,9 @@
                   </Style>
                 </TextRun>
               </TextRuns>
-              <Style />
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>

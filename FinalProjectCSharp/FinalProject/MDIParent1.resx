@@ -120,10 +120,10 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnReports.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAACASURBVDhPYxg8QHHa5/9AHAqlCWKoNgQACoaqTPomA6KJwVBtCAASJMYAkBqoFlQAlAQ5DaQI
-        w7loGNN2qgDF6Z9XK0z7aAGisWGlaV+KoEqxA5AiigygGMACCCmw4BiqBD8AKsQZjVAl+AFIIboBOOMc
-        GwBqwOYFGsU59QADAwBVe8sJs1ZILgAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAIBJREFUOE9j
+        GDxAcdrn/0AcCqUJYqg2BAAKhqpM+iYDoonBUG0IABIkxgCQGqgWVACUBDkNpAjDuWgY03aqAMXpn1cr
+        TPtoAaKxYaVpX4qgSrEDkCKKDKAYwAIIKbDgGKoEPwAqxBmNUCX4AUghugE44xwbAGrA5gUaxTn1AAMD
+        AFV7ywmzVkguAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="btnMaster.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

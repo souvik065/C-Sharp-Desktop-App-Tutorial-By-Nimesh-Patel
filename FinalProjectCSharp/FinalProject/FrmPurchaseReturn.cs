@@ -288,14 +288,14 @@ namespace FinalProject
             cmd.Parameters.AddWithValue("@TotalGrossAmount", txtGrossAmount.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@TotalDiscountAmount", txtTotalDiscountAmount.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@CGSTAmount", txtTotalCGSTAmount.Text).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@SGSTAmount", txtSGSTAmount.Text).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@IGSTAmount", txtIGSTAmount.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@SGSTAmount", txtTotalCGSTAmount.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@IGSTAmount", txtTotalIGSTAmount.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@TotalNetAmount", txtTotalNetAmount.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@TradeDiscountAmount", txtTradeDiscAmt.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@CashDiscountAmount", txtCashDiscAmt.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@FreighCharges", txtFreighCharges.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@LabourCharges", txtLabourCharges.Text).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@NetAmount", txtNetAmount.Text).DbType = DbType.Decimal;
+            cmd.Parameters.AddWithValue("@NetAmount", txtTotalNetAmount.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@PaymentMode", comboBoxPaymentMode.Text).DbType = DbType.String;
             cmd.Parameters.AddWithValue("@Remark", txtRemark.Text).DbType = DbType.String;
 

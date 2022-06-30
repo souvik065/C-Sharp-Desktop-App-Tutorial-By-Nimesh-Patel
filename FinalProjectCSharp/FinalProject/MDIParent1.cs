@@ -206,5 +206,44 @@ namespace FinalProject
         {
             ShowSubMenu(Reportpanel);
         }
+
+        private void btnSupplierRPT_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmRPTSupplier());
+            HideSubMenu();
+
+        }
+
+        private void btnProductDetailsRPT_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmRPTProductDetails());
+            HideSubMenu();
+        }
+
+        private void btnPurchaseRPT_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmRPTPurchaseDetails());
+            HideSubMenu();
+        }
+
+        private void btnPurchaseReturnRPT_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmRPTPurchaseReturnDetails());
+            HideSubMenu();
+
+        
+        }
+
+        private void btnSalesRPT_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmRPTSalesDetails());
+            HideSubMenu();
+        }
+
+        private void btnSaleReturnRPT_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmRPTSalesReturnDetails());
+            HideSubMenu();
+        }
     }
 }

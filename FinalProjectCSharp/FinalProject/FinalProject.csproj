@@ -117,6 +117,31 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSRPTCategoryList.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTGetPurchaseDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRPTGetPurchaseDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTProductDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRPTProductDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTPurchaseReturnDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRPTPurchaseReturnDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTSalesDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRPTSalesDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTSalesReturnDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRPTSalesReturnDetails.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTSubCategoryList.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -200,6 +225,36 @@
     <Compile Include="ReportForm\FrmRPTCategoryList.Designer.cs">
       <DependentUpon>FrmRPTCategoryList.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportForm\FrmRPTProductDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTProductDetails.Designer.cs">
+      <DependentUpon>FrmRPTProductDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTPurchaseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTPurchaseDetails.Designer.cs">
+      <DependentUpon>FrmRPTPurchaseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTPurchaseReturnDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTPurchaseReturnDetails.Designer.cs">
+      <DependentUpon>FrmRPTPurchaseReturnDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTSalesDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTSalesDetails.Designer.cs">
+      <DependentUpon>FrmRPTSalesDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTSalesReturnDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTSalesReturnDetails.Designer.cs">
+      <DependentUpon>FrmRPTSalesReturnDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportForm\FrmRPTSubCategoryList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -260,10 +315,30 @@
       <DependentUpon>PurchaseMaterialMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RDLC\RPTCategoryList.rdlc" />
+    <EmbeddedResource Include="RDLC\RPTGetPurchaseDetails.rdlc" />
+    <EmbeddedResource Include="RDLC\RPTProductDetails.rdlc" />
+    <EmbeddedResource Include="RDLC\RPTPurchaseReturnDetails.rdlc" />
+    <EmbeddedResource Include="RDLC\RPTSalesDetails.rdlc" />
+    <EmbeddedResource Include="RDLC\RPTSalesReturnDetails.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSubCategoryList.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSupplierList.rdlc" />
     <EmbeddedResource Include="ReportForm\FrmRPTCategoryList.resx">
       <DependentUpon>FrmRPTCategoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\FrmRPTProductDetails.resx">
+      <DependentUpon>FrmRPTProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\FrmRPTPurchaseDetails.resx">
+      <DependentUpon>FrmRPTPurchaseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\FrmRPTPurchaseReturnDetails.resx">
+      <DependentUpon>FrmRPTPurchaseReturnDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\FrmRPTSalesDetails.resx">
+      <DependentUpon>FrmRPTSalesDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\FrmRPTSalesReturnDetails.resx">
+      <DependentUpon>FrmRPTSalesReturnDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportForm\FrmRPTSubCategoryList.resx">
       <DependentUpon>FrmRPTSubCategoryList.cs</DependentUpon>
@@ -416,6 +491,61 @@
     </None>
     <None Include="FinalProjectDataSets\RPTDataset\DSRPTCategoryList.xss">
       <DependentUpon>DSRPTCategoryList.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTGetPurchaseDetails.xsc">
+      <DependentUpon>DSRPTGetPurchaseDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTGetPurchaseDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRPTGetPurchaseDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTGetPurchaseDetails.xss">
+      <DependentUpon>DSRPTGetPurchaseDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTProductDetails.xsc">
+      <DependentUpon>DSRPTProductDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTProductDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRPTProductDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTProductDetails.xss">
+      <DependentUpon>DSRPTProductDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTPurchaseReturnDetails.xsc">
+      <DependentUpon>DSRPTPurchaseReturnDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTPurchaseReturnDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRPTPurchaseReturnDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTPurchaseReturnDetails.xss">
+      <DependentUpon>DSRPTPurchaseReturnDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSalesDetails.xsc">
+      <DependentUpon>DSRPTSalesDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSalesDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRPTSalesDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSalesDetails.xss">
+      <DependentUpon>DSRPTSalesDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSalesReturnDetails.xsc">
+      <DependentUpon>DSRPTSalesReturnDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSalesReturnDetails.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRPTSalesReturnDetails.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSalesReturnDetails.xss">
+      <DependentUpon>DSRPTSalesReturnDetails.xsd</DependentUpon>
     </None>
     <None Include="FinalProjectDataSets\RPTDataset\DSRPTSubCategoryList.xsc">
       <DependentUpon>DSRPTSubCategoryList.xsd</DependentUpon>

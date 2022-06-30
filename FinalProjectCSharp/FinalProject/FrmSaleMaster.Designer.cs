@@ -1163,6 +1163,7 @@
             this.txtMobileNo.Name = "txtMobileNo";
             this.txtMobileNo.Size = new System.Drawing.Size(150, 22);
             this.txtMobileNo.TabIndex = 0;
+            this.txtMobileNo.Text = "0";
             // 
             // txtTotalNetAmount
             // 
@@ -1291,6 +1292,7 @@
             this.txtTotalCGSTAmount.Name = "txtTotalCGSTAmount";
             this.txtTotalCGSTAmount.Size = new System.Drawing.Size(145, 22);
             this.txtTotalCGSTAmount.TabIndex = 3;
+            this.txtTotalCGSTAmount.Text = "0";
             // 
             // txtTotalTaxableAmount
             // 

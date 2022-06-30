@@ -53,3 +53,8 @@ D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\Fina
 D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\RdlCompile.compiled
 D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTSubCategoryList.resources
 D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTSupplier.resources
+D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTProductDetails.resources
+D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTPurchaseDetails.resources
+D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTPurchaseReturnDetails.resources
+D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTSalesDetails.resources
+D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTSalesReturnDetails.resources

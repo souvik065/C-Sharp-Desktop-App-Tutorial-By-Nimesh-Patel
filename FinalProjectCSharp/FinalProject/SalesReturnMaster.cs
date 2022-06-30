@@ -179,9 +179,9 @@ namespace FinalProject
             cmd.Parameters.AddWithValue("@SGSTAmount", txtSGSTAmount.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@IGSTAmount", txtIGSTAmount.Text).DbType = DbType.Decimal;
             cmd.Parameters.AddWithValue("@TotalNetAmount", txtTotalNetAmount.Text).DbType = DbType.Decimal;
-            cmd.Parameters.AddWithValue("@MobileNo", txtNetAmount.Text).DbType = DbType.Int32;
-            cmd.Parameters.AddWithValue("@CustomerName", txtNetAmount.Text).DbType = DbType.String;
-            cmd.Parameters.AddWithValue("@Address", txtNetAmount.Text).DbType = DbType.String;
+            cmd.Parameters.AddWithValue("@MobileNo", txtMobileNo.Text).DbType = DbType.Int32;
+            cmd.Parameters.AddWithValue("@CustomerName", txtCustomerName.Text).DbType = DbType.String;
+            cmd.Parameters.AddWithValue("@Address", txtAddress.Text).DbType = DbType.String;
             cmd.Parameters.AddWithValue("@PaymentMode", comboBoxPaymentMode.Text).DbType = DbType.String;
             cmd.Parameters.AddWithValue("@Remark", txtRemark.Text).DbType = DbType.String;
 

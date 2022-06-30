@@ -19,6 +19,8 @@ namespace FinalProject.ReportForm
 
         private void FrmRPTSupplier_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dSRPTSupplierList.RPTSupplierMasterList' table. You can move, or remove it, as needed.
+            this.rPTSupplierMasterListTableAdapter.Fill(this.dSRPTSupplierList.RPTSupplierMasterList);
 
             this.reportViewer1.RefreshReport();
         }
