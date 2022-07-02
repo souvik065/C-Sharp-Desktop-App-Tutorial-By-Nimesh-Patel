@@ -480,6 +480,62 @@ namespace FinalProject
 
         }
 
+
+        private void SaveEvent()
+        {
+            UpdatePurchaseReturnMasterTable();
+            PurchaseReturnDetailsID = 0;
+            PurchaseReturnMasterID = 0;
+            ResetTotalAmountDefaultValue();
+            this.getPurchaseReturnDetailsTableAdapter.Fill(this.dSGetPurchaseReturnDetail.GetPurchaseReturnDetails, PurchaseReturnMasterID);
+            comboBoxSupplierName.SelectedIndex = 0;
+            txtInvoiceNo.Text = "0";
+            dateTimePickerPurchaseDate.Text = "";
+            EnablePanelContent();
+        }
+
+        private void FormClosingValidation()
+        {
+
+            SqlDataAdapter da;
+            DataSet ds = new DataSet();
+
+            SQLQueryClass.con.Open();
+            SqlCommand cmd = new SqlCommand("GetPurchaseReturnDetails", SQLQueryClass.con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@PurchaseReturnId", PurchaseReturnMasterID);
+
+            SQLQueryClass.con.Close();
+            da = new SqlDataAdapter(cmd);
+            da.Fill(ds);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                DialogResult dia = MessageBox.Show("Do you want to save.", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dia == DialogResult.Yes)
+                {
+                    SaveEvent();
+                    MessageBox.Show("Saving...");
+                }
+                else if (dia == DialogResult.No)
+                {
+                    ResetForm();
+                    MessageBox.Show("Reseting Form...");
+                }
+            }
+
+
+            if (PurchaseReturnMasterID > 0)
+            {
+                DialogResult dia = MessageBox.Show("Are you sure you want to exit.", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dia == DialogResult.Yes)
+                {
+                    ResetPurchaseReturnMaster();
+                    MessageBox.Show("PurchaseReturnMasterID Deleted");
+                }
+
+            }
+        }
+
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             FillData();
@@ -563,17 +619,11 @@ namespace FinalProject
 
         }
 
+
+
         private void btnSave_Click(object sender, EventArgs e)
         {
-            UpdatePurchaseReturnMasterTable();
-            PurchaseReturnDetailsID = 0;
-            PurchaseReturnMasterID = 0;
-            ResetTotalAmountDefaultValue();
-            this.getPurchaseReturnDetailsTableAdapter.Fill(this.dSGetPurchaseReturnDetail.GetPurchaseReturnDetails, PurchaseReturnMasterID);
-            comboBoxSupplierName.SelectedIndex = 0;
-            txtInvoiceNo.Text = "0";
-            dateTimePickerPurchaseDate.Text = "";
-            EnablePanelContent();
+            SaveEvent();
 
 
         }
@@ -620,57 +670,8 @@ namespace FinalProject
 
         private void FrmPurchaseReturn_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
-
-
-
-            SqlDataAdapter da; 
-            DataSet ds = new DataSet();
-
-            SQLQueryClass.con.Open();
-            SqlCommand cmd = new SqlCommand("GetPurchaseReturnDetails",SQLQueryClass.con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@PurchaseReturnId",PurchaseReturnMasterID);
-
-            SQLQueryClass.con.Close();
-           da = new SqlDataAdapter(cmd);
-           da.Fill(ds);
-           if (ds.Tables[0].Rows.Count > 0)
-           {
-               DialogResult dia = MessageBox.Show("Do you want to save.", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-               if (dia == DialogResult.Yes)
-               {
-                   UpdatePurchaseReturnMasterTable();
-                   PurchaseReturnDetailsID = 0;
-                   PurchaseReturnMasterID = 0;
-                   ResetTotalAmountDefaultValue();
-                   this.getPurchaseReturnDetailsTableAdapter.Fill(this.dSGetPurchaseReturnDetail.GetPurchaseReturnDetails, PurchaseReturnMasterID);
-                   comboBoxSupplierName.SelectedIndex = 0;
-                   txtInvoiceNo.Text = "0";
-                   dateTimePickerPurchaseDate.Text = "";
-                   EnablePanelContent();
-                   MessageBox.Show("Saving...");
-               }
-               else if (dia == DialogResult.No)
-               {
-                   ResetForm();
-                   MessageBox.Show("Reseting Form...");
-               }
-           }
-
-
-           if (PurchaseReturnMasterID > 0)
-           {
-               DialogResult dia = MessageBox.Show("Are you sure you want to exit.", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-               if (dia == DialogResult.Yes)
-               {
-                   ResetPurchaseReturnMaster();
-                   MessageBox.Show("PurchaseReturnMasterID Deleted");
-               }
-               
-           }
+            FormClosingValidation();
            
-
               
             
         }
