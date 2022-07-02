@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDIParent1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Reportpanel = new System.Windows.Forms.Panel();
+            this.btnSaleReturnRPT = new System.Windows.Forms.Button();
+            this.btnSalesRPT = new System.Windows.Forms.Button();
+            this.btnPurchaseReturnRPT = new System.Windows.Forms.Button();
             this.btnPurchaseRPT = new System.Windows.Forms.Button();
             this.btnProductDetailsRPT = new System.Windows.Forms.Button();
             this.btnSupplierRPT = new System.Windows.Forms.Button();
@@ -49,9 +52,7 @@
             this.btnMaster = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Bodypanel = new System.Windows.Forms.Panel();
-            this.btnPurchaseReturnRPT = new System.Windows.Forms.Button();
-            this.btnSalesRPT = new System.Windows.Forms.Button();
-            this.btnSaleReturnRPT = new System.Windows.Forms.Button();
+            this.btnSubCategoryByCategory = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.Reportpanel.SuspendLayout();
             this.MastersSubPanel.SuspendLayout();
@@ -76,6 +77,7 @@
             // Reportpanel
             // 
             this.Reportpanel.BackColor = System.Drawing.Color.White;
+            this.Reportpanel.Controls.Add(this.btnSubCategoryByCategory);
             this.Reportpanel.Controls.Add(this.btnSaleReturnRPT);
             this.Reportpanel.Controls.Add(this.btnSalesRPT);
             this.Reportpanel.Controls.Add(this.btnPurchaseReturnRPT);
@@ -87,8 +89,50 @@
             this.Reportpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Reportpanel.Location = new System.Drawing.Point(0, 637);
             this.Reportpanel.Name = "Reportpanel";
-            this.Reportpanel.Size = new System.Drawing.Size(181, 480);
+            this.Reportpanel.Size = new System.Drawing.Size(181, 597);
             this.Reportpanel.TabIndex = 11;
+            // 
+            // btnSaleReturnRPT
+            // 
+            this.btnSaleReturnRPT.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnSaleReturnRPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSaleReturnRPT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaleReturnRPT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnSaleReturnRPT.Location = new System.Drawing.Point(-7, 350);
+            this.btnSaleReturnRPT.Name = "btnSaleReturnRPT";
+            this.btnSaleReturnRPT.Size = new System.Drawing.Size(200, 44);
+            this.btnSaleReturnRPT.TabIndex = 1;
+            this.btnSaleReturnRPT.Text = "SalesReturn RPT";
+            this.btnSaleReturnRPT.UseVisualStyleBackColor = true;
+            this.btnSaleReturnRPT.Click += new System.EventHandler(this.btnSaleReturnRPT_Click);
+            // 
+            // btnSalesRPT
+            // 
+            this.btnSalesRPT.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnSalesRPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalesRPT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalesRPT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnSalesRPT.Location = new System.Drawing.Point(-7, 300);
+            this.btnSalesRPT.Name = "btnSalesRPT";
+            this.btnSalesRPT.Size = new System.Drawing.Size(200, 44);
+            this.btnSalesRPT.TabIndex = 1;
+            this.btnSalesRPT.Text = "Sales RPT";
+            this.btnSalesRPT.UseVisualStyleBackColor = true;
+            this.btnSalesRPT.Click += new System.EventHandler(this.btnSalesRPT_Click);
+            // 
+            // btnPurchaseReturnRPT
+            // 
+            this.btnPurchaseReturnRPT.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnPurchaseReturnRPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPurchaseReturnRPT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseReturnRPT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnPurchaseReturnRPT.Location = new System.Drawing.Point(-7, 250);
+            this.btnPurchaseReturnRPT.Name = "btnPurchaseReturnRPT";
+            this.btnPurchaseReturnRPT.Size = new System.Drawing.Size(200, 44);
+            this.btnPurchaseReturnRPT.TabIndex = 1;
+            this.btnPurchaseReturnRPT.Text = "PurchaseReturn RPT";
+            this.btnPurchaseReturnRPT.UseVisualStyleBackColor = true;
+            this.btnPurchaseReturnRPT.Click += new System.EventHandler(this.btnPurchaseReturnRPT_Click);
             // 
             // btnPurchaseRPT
             // 
@@ -341,47 +385,19 @@
             this.Bodypanel.Size = new System.Drawing.Size(1070, 808);
             this.Bodypanel.TabIndex = 8;
             // 
-            // btnPurchaseReturnRPT
+            // btnSubCategoryByCategory
             // 
-            this.btnPurchaseReturnRPT.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnPurchaseReturnRPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPurchaseReturnRPT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPurchaseReturnRPT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.btnPurchaseReturnRPT.Location = new System.Drawing.Point(-7, 250);
-            this.btnPurchaseReturnRPT.Name = "btnPurchaseReturnRPT";
-            this.btnPurchaseReturnRPT.Size = new System.Drawing.Size(200, 44);
-            this.btnPurchaseReturnRPT.TabIndex = 1;
-            this.btnPurchaseReturnRPT.Text = "PurchaseReturn RPT";
-            this.btnPurchaseReturnRPT.UseVisualStyleBackColor = true;
-            this.btnPurchaseReturnRPT.Click += new System.EventHandler(this.btnPurchaseReturnRPT_Click);
-            // 
-            // btnSalesRPT
-            // 
-            this.btnSalesRPT.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnSalesRPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalesRPT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalesRPT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.btnSalesRPT.Location = new System.Drawing.Point(-7, 300);
-            this.btnSalesRPT.Name = "btnSalesRPT";
-            this.btnSalesRPT.Size = new System.Drawing.Size(200, 44);
-            this.btnSalesRPT.TabIndex = 1;
-            this.btnSalesRPT.Text = "Sales RPT";
-            this.btnSalesRPT.UseVisualStyleBackColor = true;
-            this.btnSalesRPT.Click += new System.EventHandler(this.btnSalesRPT_Click);
-            // 
-            // btnSaleReturnRPT
-            // 
-            this.btnSaleReturnRPT.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnSaleReturnRPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSaleReturnRPT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaleReturnRPT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.btnSaleReturnRPT.Location = new System.Drawing.Point(-7, 350);
-            this.btnSaleReturnRPT.Name = "btnSaleReturnRPT";
-            this.btnSaleReturnRPT.Size = new System.Drawing.Size(200, 44);
-            this.btnSaleReturnRPT.TabIndex = 1;
-            this.btnSaleReturnRPT.Text = "SalesReturn RPT";
-            this.btnSaleReturnRPT.UseVisualStyleBackColor = true;
-            this.btnSaleReturnRPT.Click += new System.EventHandler(this.btnSaleReturnRPT_Click);
+            this.btnSubCategoryByCategory.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnSubCategoryByCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubCategoryByCategory.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSubCategoryByCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnSubCategoryByCategory.Location = new System.Drawing.Point(-7, 400);
+            this.btnSubCategoryByCategory.Name = "btnSubCategoryByCategory";
+            this.btnSubCategoryByCategory.Size = new System.Drawing.Size(200, 56);
+            this.btnSubCategoryByCategory.TabIndex = 1;
+            this.btnSubCategoryByCategory.Text = "Category RPT By Parameter";
+            this.btnSubCategoryByCategory.UseVisualStyleBackColor = true;
+            this.btnSubCategoryByCategory.Click += new System.EventHandler(this.btnSubCategoryByCategory_Click);
             // 
             // MDIParent1
             // 
@@ -427,6 +443,7 @@
         private System.Windows.Forms.Button btnSaleReturnRPT;
         private System.Windows.Forms.Button btnSalesRPT;
         private System.Windows.Forms.Button btnPurchaseReturnRPT;
+        private System.Windows.Forms.Button btnSubCategoryByCategory;
     }
 }
 

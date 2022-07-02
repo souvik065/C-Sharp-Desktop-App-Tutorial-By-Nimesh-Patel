@@ -142,6 +142,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSRPTSalesReturnDetails.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTSubCategoryByCategory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRPTSubCategoryByCategory.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTSubCategoryList.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -255,6 +260,12 @@
     <Compile Include="ReportForm\FrmRPTSalesReturnDetails.Designer.cs">
       <DependentUpon>FrmRPTSalesReturnDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportForm\FrmRPTSubCategoryByCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTSubCategoryByCategory.Designer.cs">
+      <DependentUpon>FrmRPTSubCategoryByCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportForm\FrmRPTSubCategoryList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -321,6 +332,7 @@
     <EmbeddedResource Include="RDLC\RPTSalesDetails.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSalesReturnDetails.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSubCategoryList.rdlc" />
+    <EmbeddedResource Include="RDLC\RPTSubCatgeoryByCategory.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSupplierList.rdlc" />
     <EmbeddedResource Include="ReportForm\FrmRPTCategoryList.resx">
       <DependentUpon>FrmRPTCategoryList.cs</DependentUpon>
@@ -339,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReportForm\FrmRPTSalesReturnDetails.resx">
       <DependentUpon>FrmRPTSalesReturnDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\FrmRPTSubCategoryByCategory.resx">
+      <DependentUpon>FrmRPTSubCategoryByCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportForm\FrmRPTSubCategoryList.resx">
       <DependentUpon>FrmRPTSubCategoryList.cs</DependentUpon>
@@ -546,6 +561,17 @@
     </None>
     <None Include="FinalProjectDataSets\RPTDataset\DSRPTSalesReturnDetails.xss">
       <DependentUpon>DSRPTSalesReturnDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSubCategoryByCategory.xsc">
+      <DependentUpon>DSRPTSubCategoryByCategory.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSubCategoryByCategory.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRPTSubCategoryByCategory.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSubCategoryByCategory.xss">
+      <DependentUpon>DSRPTSubCategoryByCategory.xsd</DependentUpon>
     </None>
     <None Include="FinalProjectDataSets\RPTDataset\DSRPTSubCategoryList.xsc">
       <DependentUpon>DSRPTSubCategoryList.xsd</DependentUpon>
