@@ -1691,6 +1691,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmPurchaseReturn";
             this.Text = "FrmPurchaseReturn";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmPurchaseReturn_FormClosing);
             this.Load += new System.EventHandler(this.FrmPurchaseReturn_Load);
             this.tableLayoutPanel10.ResumeLayout(false);
             this.tableLayoutPanel10.PerformLayout();

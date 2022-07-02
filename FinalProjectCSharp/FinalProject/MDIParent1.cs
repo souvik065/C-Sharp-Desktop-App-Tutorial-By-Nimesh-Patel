@@ -15,10 +15,13 @@ namespace FinalProject
     public partial class MDIParent1 : Form
     {
         private int childFormNumber = 0;
-
+        
         public MDIParent1()
         {
             InitializeComponent();
+         
+       
+
         }
 
 
@@ -186,7 +189,7 @@ namespace FinalProject
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+           
         }
 
         
