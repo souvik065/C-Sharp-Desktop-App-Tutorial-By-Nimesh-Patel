@@ -59,3 +59,4 @@ D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\Fina
 D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTSalesDetails.resources
 D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTSalesReturnDetails.resources
 D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTSubCategoryByCategory.resources
+D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTProductReportByParameters.resources

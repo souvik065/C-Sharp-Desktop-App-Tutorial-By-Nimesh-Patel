@@ -127,6 +127,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSRPTProductDetails.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTProductDetialByParameters.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRPTProductDetialByParameters.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTPurchaseReturnDetails.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -236,6 +241,12 @@
     <Compile Include="ReportForm\FrmRPTProductDetails.Designer.cs">
       <DependentUpon>FrmRPTProductDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportForm\FrmRPTProductReportByParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTProductReportByParameters.Designer.cs">
+      <DependentUpon>FrmRPTProductReportByParameters.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportForm\FrmRPTPurchaseDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -328,6 +339,7 @@
     <EmbeddedResource Include="RDLC\RPTCategoryList.rdlc" />
     <EmbeddedResource Include="RDLC\RPTGetPurchaseDetails.rdlc" />
     <EmbeddedResource Include="RDLC\RPTProductDetails.rdlc" />
+    <EmbeddedResource Include="RDLC\RPTProductReportByParameter.rdlc" />
     <EmbeddedResource Include="RDLC\RPTPurchaseReturnDetails.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSalesDetails.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSalesReturnDetails.rdlc" />
@@ -339,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReportForm\FrmRPTProductDetails.resx">
       <DependentUpon>FrmRPTProductDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\FrmRPTProductReportByParameters.resx">
+      <DependentUpon>FrmRPTProductReportByParameters.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportForm\FrmRPTPurchaseDetails.resx">
       <DependentUpon>FrmRPTPurchaseDetails.cs</DependentUpon>
@@ -528,6 +543,17 @@
     </None>
     <None Include="FinalProjectDataSets\RPTDataset\DSRPTProductDetails.xss">
       <DependentUpon>DSRPTProductDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTProductDetialByParameters.xsc">
+      <DependentUpon>DSRPTProductDetialByParameters.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTProductDetialByParameters.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRPTProductDetialByParameters.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTProductDetialByParameters.xss">
+      <DependentUpon>DSRPTProductDetialByParameters.xsd</DependentUpon>
     </None>
     <None Include="FinalProjectDataSets\RPTDataset\DSRPTPurchaseReturnDetails.xsc">
       <DependentUpon>DSRPTPurchaseReturnDetails.xsd</DependentUpon>
