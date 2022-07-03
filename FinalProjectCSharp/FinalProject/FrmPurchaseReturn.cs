@@ -624,8 +624,6 @@ namespace FinalProject
         private void btnSave_Click(object sender, EventArgs e)
         {
             SaveEvent();
-
-
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

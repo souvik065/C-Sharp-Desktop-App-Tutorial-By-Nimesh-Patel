@@ -1705,7 +1705,7 @@
             this.Controls.Add(this.Headerpanel);
             this.Controls.Add(this.panel1);
             this.Name = "PurchaseMaterialMaster";
-            this.Text = "PurchaseMaterialMaster";
+            this.Text = "-";
             this.Load += new System.EventHandler(this.PurchaseMaterialMaster_Load);
             this.Headerpanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

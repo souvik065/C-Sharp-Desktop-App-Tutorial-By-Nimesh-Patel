@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MDIParent1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Reportpanel = new System.Windows.Forms.Panel();
+            this.btnProductReportByParameters = new System.Windows.Forms.Button();
             this.btnSubCategoryByCategory = new System.Windows.Forms.Button();
             this.btnSaleReturnRPT = new System.Windows.Forms.Button();
             this.btnSalesRPT = new System.Windows.Forms.Button();
@@ -53,7 +54,7 @@
             this.btnMaster = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Bodypanel = new System.Windows.Forms.Panel();
-            this.btnProductReportByParameters = new System.Windows.Forms.Button();
+            this.btnPurchaseRPTByParamater = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.Reportpanel.SuspendLayout();
             this.MastersSubPanel.SuspendLayout();
@@ -78,6 +79,7 @@
             // Reportpanel
             // 
             this.Reportpanel.BackColor = System.Drawing.Color.White;
+            this.Reportpanel.Controls.Add(this.btnPurchaseRPTByParamater);
             this.Reportpanel.Controls.Add(this.btnProductReportByParameters);
             this.Reportpanel.Controls.Add(this.btnSubCategoryByCategory);
             this.Reportpanel.Controls.Add(this.btnSaleReturnRPT);
@@ -91,8 +93,22 @@
             this.Reportpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Reportpanel.Location = new System.Drawing.Point(0, 637);
             this.Reportpanel.Name = "Reportpanel";
-            this.Reportpanel.Size = new System.Drawing.Size(181, 597);
+            this.Reportpanel.Size = new System.Drawing.Size(181, 836);
             this.Reportpanel.TabIndex = 11;
+            // 
+            // btnProductReportByParameters
+            // 
+            this.btnProductReportByParameters.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnProductReportByParameters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProductReportByParameters.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProductReportByParameters.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnProductReportByParameters.Location = new System.Drawing.Point(-7, 462);
+            this.btnProductReportByParameters.Name = "btnProductReportByParameters";
+            this.btnProductReportByParameters.Size = new System.Drawing.Size(200, 56);
+            this.btnProductReportByParameters.TabIndex = 1;
+            this.btnProductReportByParameters.Text = "Product RPT By Parameter";
+            this.btnProductReportByParameters.UseVisualStyleBackColor = true;
+            this.btnProductReportByParameters.Click += new System.EventHandler(this.btnProductReportByParameters_Click);
             // 
             // btnSubCategoryByCategory
             // 
@@ -401,19 +417,19 @@
             this.Bodypanel.Size = new System.Drawing.Size(1070, 808);
             this.Bodypanel.TabIndex = 8;
             // 
-            // btnProductReportByParameters
+            // btnPurchaseRPTByParamater
             // 
-            this.btnProductReportByParameters.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnProductReportByParameters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProductReportByParameters.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductReportByParameters.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
-            this.btnProductReportByParameters.Location = new System.Drawing.Point(-7, 462);
-            this.btnProductReportByParameters.Name = "btnProductReportByParameters";
-            this.btnProductReportByParameters.Size = new System.Drawing.Size(200, 56);
-            this.btnProductReportByParameters.TabIndex = 1;
-            this.btnProductReportByParameters.Text = "Product RPT By Parameter";
-            this.btnProductReportByParameters.UseVisualStyleBackColor = true;
-            this.btnProductReportByParameters.Click += new System.EventHandler(this.btnProductReportByParameters_Click);
+            this.btnPurchaseRPTByParamater.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnPurchaseRPTByParamater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPurchaseRPTByParamater.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPurchaseRPTByParamater.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(150)))), ((int)(((byte)(255)))));
+            this.btnPurchaseRPTByParamater.Location = new System.Drawing.Point(-7, 524);
+            this.btnPurchaseRPTByParamater.Name = "btnPurchaseRPTByParamater";
+            this.btnPurchaseRPTByParamater.Size = new System.Drawing.Size(200, 56);
+            this.btnPurchaseRPTByParamater.TabIndex = 1;
+            this.btnPurchaseRPTByParamater.Text = "Purchase RPT By Parameter";
+            this.btnPurchaseRPTByParamater.UseVisualStyleBackColor = true;
+            this.btnPurchaseRPTByParamater.Click += new System.EventHandler(this.btnPurchaseRPTByParamater_Click);
             // 
             // MDIParent1
             // 
@@ -461,6 +477,7 @@
         private System.Windows.Forms.Button btnPurchaseReturnRPT;
         private System.Windows.Forms.Button btnSubCategoryByCategory;
         private System.Windows.Forms.Button btnProductReportByParameters;
+        private System.Windows.Forms.Button btnPurchaseRPTByParamater;
     }
 }
 
