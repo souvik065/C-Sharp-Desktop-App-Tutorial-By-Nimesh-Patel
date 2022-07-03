@@ -266,5 +266,11 @@ namespace FinalProject
             OpenChildForm(new FrmRPTPurchaseReportByParamters());
             HideSubMenu();
         }
+
+        private void btnPurchaseReturnRPTByParameter_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FrmRPTPurchaseReturnReportByParameter());
+            HideSubMenu();
+        }
     }
 }

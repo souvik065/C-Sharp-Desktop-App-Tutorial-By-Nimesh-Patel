@@ -112,8 +112,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxSupplierName = new System.Windows.Forms.ComboBox();
-            this.listSupplierDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dSListSupplierMasterDetails = new FinalProject.FinalProjectDataSets.DSListSupplierMasterDetails();
             this.btnClear = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
@@ -145,9 +143,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.Headerpanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.listSupplierDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSListSupplierMasterDetailsTableAdapters.ListSupplierDetailsTableAdapter();
             this.listProductMasterDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSListProductMasterDetailsTableAdapters.ListProductMasterDetailsTableAdapter();
             this.getPurchaseReturnDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSGetPurchaseReturnDetailTableAdapters.GetPurchaseReturnDetailsTableAdapter();
+            this.listSupplierDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSListSupplierMasterDetailsTableAdapters.ListSupplierDetailsTableAdapter();
+            this.listSupplierDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dSListSupplierMasterDetails = new FinalProject.FinalProjectDataSets.DSListSupplierMasterDetails();
             this.tableLayoutPanel10.SuspendLayout();
             this.panelTotalAmounts.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
@@ -158,8 +158,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.getPurchaseReturnDetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSGetPurchaseReturnDetail)).BeginInit();
             this.tableLayoutPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listSupplierDetailsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSListSupplierMasterDetails)).BeginInit();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -170,6 +168,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dSListProductMasterDetails)).BeginInit();
             this.PurchaseMasterpanel.SuspendLayout();
             this.Headerpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listSupplierDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSListSupplierMasterDetails)).BeginInit();
             this.SuspendLayout();
             // 
             // label31
@@ -1206,7 +1206,6 @@
             this.comboBoxSupplierName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBoxSupplierName.BackColor = System.Drawing.Color.Gainsboro;
             this.comboBoxSupplierName.DataSource = this.listSupplierDetailsBindingSource;
-            this.comboBoxSupplierName.DisplayMember = "SUPPLIERNAME";
             this.comboBoxSupplierName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBoxSupplierName.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxSupplierName.FormattingEnabled = true;
@@ -1215,16 +1214,6 @@
             this.comboBoxSupplierName.Size = new System.Drawing.Size(428, 30);
             this.comboBoxSupplierName.TabIndex = 1;
             this.comboBoxSupplierName.ValueMember = "SUPPLIERID";
-            // 
-            // listSupplierDetailsBindingSource
-            // 
-            this.listSupplierDetailsBindingSource.DataMember = "ListSupplierDetails";
-            this.listSupplierDetailsBindingSource.DataSource = this.dSListSupplierMasterDetails;
-            // 
-            // dSListSupplierMasterDetails
-            // 
-            this.dSListSupplierMasterDetails.DataSetName = "DSListSupplierMasterDetails";
-            this.dSListSupplierMasterDetails.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnClear
             // 
@@ -1664,10 +1653,6 @@
             this.panel1.Size = new System.Drawing.Size(1904, 5);
             this.panel1.TabIndex = 10;
             // 
-            // listSupplierDetailsTableAdapter
-            // 
-            this.listSupplierDetailsTableAdapter.ClearBeforeFill = true;
-            // 
             // listProductMasterDetailsTableAdapter
             // 
             this.listProductMasterDetailsTableAdapter.ClearBeforeFill = true;
@@ -1675,6 +1660,19 @@
             // getPurchaseReturnDetailsTableAdapter
             // 
             this.getPurchaseReturnDetailsTableAdapter.ClearBeforeFill = true;
+            // 
+            // listSupplierDetailsTableAdapter
+            // 
+            this.listSupplierDetailsTableAdapter.ClearBeforeFill = true;
+            // 
+            // listSupplierDetailsBindingSource
+            // 
+            this.listSupplierDetailsBindingSource.DataMember = "ListSupplierDetails";
+            // 
+            // dSListSupplierMasterDetails
+            // 
+            this.dSListSupplierMasterDetails.DataSetName = "DSListSupplierMasterDetails";
+            this.dSListSupplierMasterDetails.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // FrmPurchaseReturn
             // 
@@ -1708,8 +1706,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dSGetPurchaseReturnDetail)).EndInit();
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.listSupplierDetailsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dSListSupplierMasterDetails)).EndInit();
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -1725,6 +1721,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dSListProductMasterDetails)).EndInit();
             this.PurchaseMasterpanel.ResumeLayout(false);
             this.Headerpanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.listSupplierDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSListSupplierMasterDetails)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1821,9 +1819,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel Headerpanel;
         private System.Windows.Forms.Panel panel1;
-        private FinalProjectDataSets.DSListSupplierMasterDetails dSListSupplierMasterDetails;
-        private System.Windows.Forms.BindingSource listSupplierDetailsBindingSource;
-        private FinalProjectDataSets.DSListSupplierMasterDetailsTableAdapters.ListSupplierDetailsTableAdapter listSupplierDetailsTableAdapter;
         private FinalProjectDataSets.DSListProductMasterDetails dSListProductMasterDetails;
         private System.Windows.Forms.BindingSource listProductMasterDetailsBindingSource;
         private FinalProjectDataSets.DSListProductMasterDetailsTableAdapters.ListProductMasterDetailsTableAdapter listProductMasterDetailsTableAdapter;
@@ -1850,5 +1845,8 @@
         private System.Windows.Forms.BindingSource getPurchaseReturnDetailsBindingSource;
         private FinalProjectDataSets.DSGetPurchaseReturnDetail dSGetPurchaseReturnDetail;
         private FinalProjectDataSets.DSGetPurchaseReturnDetailTableAdapters.GetPurchaseReturnDetailsTableAdapter getPurchaseReturnDetailsTableAdapter;
+        private System.Windows.Forms.BindingSource listSupplierDetailsBindingSource;
+        private FinalProjectDataSets.DSListSupplierMasterDetailsTableAdapters.ListSupplierDetailsTableAdapter listSupplierDetailsTableAdapter;
+        private FinalProjectDataSets.DSListSupplierMasterDetails dSListSupplierMasterDetails;
     }
 }

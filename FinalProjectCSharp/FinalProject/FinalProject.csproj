@@ -142,6 +142,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSRPTPurchaseReturnDetails.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTPurchaseReturnReportByParameter.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRPTPurchaseReturnReportByParameter.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTSalesDetails.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -359,6 +364,7 @@
     <EmbeddedResource Include="RDLC\RPTProductReportByParameter.rdlc" />
     <EmbeddedResource Include="RDLC\RPTPurchaseReportByParameter.rdlc" />
     <EmbeddedResource Include="RDLC\RPTPurchaseReturnDetails.rdlc" />
+    <EmbeddedResource Include="RDLC\RPTPurchaseReturnReportByParameter.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSalesDetails.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSalesReturnDetails.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSubCategoryList.rdlc" />
@@ -600,6 +606,17 @@
     </None>
     <None Include="FinalProjectDataSets\RPTDataset\DSRPTPurchaseReturnDetails.xss">
       <DependentUpon>DSRPTPurchaseReturnDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTPurchaseReturnReportByParameter.xsc">
+      <DependentUpon>DSRPTPurchaseReturnReportByParameter.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTPurchaseReturnReportByParameter.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRPTPurchaseReturnReportByParameter.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTPurchaseReturnReportByParameter.xss">
+      <DependentUpon>DSRPTPurchaseReturnReportByParameter.xsd</DependentUpon>
     </None>
     <None Include="FinalProjectDataSets\RPTDataset\DSRPTSalesDetails.xsc">
       <DependentUpon>DSRPTSalesDetails.xsd</DependentUpon>
