@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource11 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource12 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.rPTPurchaseReturnReportByParameterBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dSRPTPurchaseReturnReportByParameter = new FinalProject.FinalProjectDataSets.RPTDataset.DSRPTPurchaseReturnReportByParameter();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -40,6 +39,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxSupplierName = new System.Windows.Forms.ComboBox();
+            this.getSupplierMasterDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dSGetSupplierDetails = new FinalProject.FinalProjectDataSets.DSGetSupplierDetails();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.StartDateEndDatePanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,22 +52,19 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Headerpanel = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.rPTPurchaseReturnReportByParameterTableAdapter = new FinalProject.FinalProjectDataSets.RPTDataset.DSRPTPurchaseReturnReportByParameterTableAdapters.RPTPurchaseReturnReportByParameterTableAdapter();
-            this.dSGetSupplierDetails = new FinalProject.FinalProjectDataSets.DSGetSupplierDetails();
-            this.getSupplierMasterDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.getSupplierMasterDetailsTableAdapter = new FinalProject.FinalProjectDataSets.DSGetSupplierDetailsTableAdapters.GetSupplierMasterDetailsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.rPTPurchaseReturnReportByParameterBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSRPTPurchaseReturnReportByParameter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.getSupplierMasterDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetSupplierDetails)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             this.StartDateEndDatePanel.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SupplierAndInvoicePanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.Headerpanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dSGetSupplierDetails)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.getSupplierMasterDetailsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // rPTPurchaseReturnReportByParameterBindingSource
@@ -157,6 +155,16 @@
             this.comboBoxSupplierName.TabIndex = 1;
             this.comboBoxSupplierName.ValueMember = "SUPPLIERID";
             this.comboBoxSupplierName.SelectedIndexChanged += new System.EventHandler(this.comboBoxSupplierName_SelectedIndexChanged);
+            // 
+            // getSupplierMasterDetailsBindingSource
+            // 
+            this.getSupplierMasterDetailsBindingSource.DataMember = "GetSupplierMasterDetails";
+            this.getSupplierMasterDetailsBindingSource.DataSource = this.dSGetSupplierDetails;
+            // 
+            // dSGetSupplierDetails
+            // 
+            this.dSGetSupplierDetails.DataSetName = "DSGetSupplierDetails";
+            this.dSGetSupplierDetails.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tableLayoutPanel3
             // 
@@ -319,24 +327,12 @@
             this.panel1.Size = new System.Drawing.Size(1904, 5);
             this.panel1.TabIndex = 9;
             // 
-            // reportViewer1
-            // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource11.Name = "DSRPTPurchaseReportByParameter";
-            reportDataSource11.Value = null;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource11);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "FinalProject.RDLC.RPTPurchaseReportByParameter.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(1904, 981);
-            this.reportViewer1.TabIndex = 15;
-            // 
             // reportViewer2
             // 
             this.reportViewer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource12.Name = "DSRPTPurchaseReturnReportByParameter";
-            reportDataSource12.Value = this.rPTPurchaseReturnReportByParameterBindingSource;
-            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource12);
+            reportDataSource1.Name = "DSRPTPurchaseReturnReportByParameter";
+            reportDataSource1.Value = this.rPTPurchaseReturnReportByParameterBindingSource;
+            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer2.LocalReport.ReportEmbeddedResource = "FinalProject.RDLC.RPTPurchaseReturnReportByParameter.rdlc";
             this.reportViewer2.Location = new System.Drawing.Point(0, 199);
             this.reportViewer2.Name = "reportViewer2";
@@ -346,16 +342,6 @@
             // rPTPurchaseReturnReportByParameterTableAdapter
             // 
             this.rPTPurchaseReturnReportByParameterTableAdapter.ClearBeforeFill = true;
-            // 
-            // dSGetSupplierDetails
-            // 
-            this.dSGetSupplierDetails.DataSetName = "DSGetSupplierDetails";
-            this.dSGetSupplierDetails.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // getSupplierMasterDetailsBindingSource
-            // 
-            this.getSupplierMasterDetailsBindingSource.DataMember = "GetSupplierMasterDetails";
-            this.getSupplierMasterDetailsBindingSource.DataSource = this.dSGetSupplierDetails;
             // 
             // getSupplierMasterDetailsTableAdapter
             // 
@@ -373,12 +359,13 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.Headerpanel);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.reportViewer1);
             this.Name = "FrmRPTPurchaseReturnReportByParameter";
             this.Text = "FrmRPTPurchaseReturnReportByParameter";
             this.Load += new System.EventHandler(this.FrmRPTPurchaseReturnReportByParameter_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rPTPurchaseReturnReportByParameterBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSRPTPurchaseReturnReportByParameter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.getSupplierMasterDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSGetSupplierDetails)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             this.StartDateEndDatePanel.ResumeLayout(false);
@@ -388,8 +375,6 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.Headerpanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dSGetSupplierDetails)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.getSupplierMasterDetailsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -414,7 +399,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel Headerpanel;
         private System.Windows.Forms.Panel panel1;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
         private System.Windows.Forms.BindingSource rPTPurchaseReturnReportByParameterBindingSource;
         private FinalProjectDataSets.RPTDataset.DSRPTPurchaseReturnReportByParameter dSRPTPurchaseReturnReportByParameter;

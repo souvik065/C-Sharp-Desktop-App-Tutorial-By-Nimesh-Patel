@@ -152,6 +152,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSRPTSalesDetails.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTSalesReportByParameter.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSRPTSalesReportByParameter.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FinalProjectDataSets\RPTDataset\DSRPTSalesReturnDetails.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -287,6 +292,12 @@
     <Compile Include="ReportForm\FrmRPTSalesDetails.Designer.cs">
       <DependentUpon>FrmRPTSalesDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportForm\FrmRPTSalesReportByParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTSalesReportByParameter.Designer.cs">
+      <DependentUpon>FrmRPTSalesReportByParameter.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportForm\FrmRPTSalesReturnDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -366,6 +377,7 @@
     <EmbeddedResource Include="RDLC\RPTPurchaseReturnDetails.rdlc" />
     <EmbeddedResource Include="RDLC\RPTPurchaseReturnReportByParameter.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSalesDetails.rdlc" />
+    <EmbeddedResource Include="RDLC\RPTSalesReportByParameter.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSalesReturnDetails.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSubCategoryList.rdlc" />
     <EmbeddedResource Include="RDLC\RPTSubCatgeoryByCategory.rdlc" />
@@ -393,6 +405,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ReportForm\FrmRPTSalesDetails.resx">
       <DependentUpon>FrmRPTSalesDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\FrmRPTSalesReportByParameter.resx">
+      <DependentUpon>FrmRPTSalesReportByParameter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportForm\FrmRPTSalesReturnDetails.resx">
       <DependentUpon>FrmRPTSalesReturnDetails.cs</DependentUpon>
@@ -628,6 +643,17 @@
     </None>
     <None Include="FinalProjectDataSets\RPTDataset\DSRPTSalesDetails.xss">
       <DependentUpon>DSRPTSalesDetails.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSalesReportByParameter.xsc">
+      <DependentUpon>DSRPTSalesReportByParameter.xsd</DependentUpon>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSalesReportByParameter.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSRPTSalesReportByParameter.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FinalProjectDataSets\RPTDataset\DSRPTSalesReportByParameter.xss">
+      <DependentUpon>DSRPTSalesReportByParameter.xsd</DependentUpon>
     </None>
     <None Include="FinalProjectDataSets\RPTDataset\DSRPTSalesReturnDetails.xsc">
       <DependentUpon>DSRPTSalesReturnDetails.xsd</DependentUpon>
