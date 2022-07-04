@@ -369,6 +369,63 @@ namespace FinalProject
 
         }
 
+        private void SaveEvent()
+        {
+            UpdateSalesMasterTable();
+            SalesDetailID = 0;
+            SalesMasterID = 0;
+            ResetSalesMasterTotalAmountDefaultValue();
+            ResetSalesDetailDefaultValue();
+            txtInvoiceNo.Text = "0";
+            dateTimePickerSalesDate.Text = "";
+            EnablePanelContent();
+            this.getSalesDetailsTableAdapter.Fill(this.dSGetSalesDetail.GetSalesDetails, SalesMasterID);
+        }
+
+
+
+        private void FormClosingValidation()
+        {
+
+            SqlDataAdapter da;
+            DataSet ds = new DataSet();
+
+            SQLQueryClass.con.Open();
+            SqlCommand cmd = new SqlCommand("GetSalesDetails", SQLQueryClass.con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@SalesId", SalesMasterID);
+
+            SQLQueryClass.con.Close();
+            da = new SqlDataAdapter(cmd);
+            da.Fill(ds);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                DialogResult dia = MessageBox.Show("Do you want to save.", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dia == DialogResult.Yes)
+                {
+                    SaveEvent();
+                    MessageBox.Show("Saving...");
+                }
+                else if (dia == DialogResult.No)
+                {
+                    ResetForm();
+                    MessageBox.Show("Reseting Form...");
+                }
+            }
+
+
+            if (SalesMasterID > 0)
+            {
+                DialogResult dia = MessageBox.Show("Are you sure you want to exit.", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dia == DialogResult.Yes)
+                {
+                    ResetSalesMaster();
+                    MessageBox.Show("SalesMasterID Deleted");
+                }
+
+            }
+        }
+
 
 
         private void btnOk_Click(object sender, EventArgs e)
@@ -471,15 +528,7 @@ namespace FinalProject
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            UpdateSalesMasterTable();
-            SalesDetailID = 0;
-            SalesMasterID = 0;
-            ResetSalesMasterTotalAmountDefaultValue();
-            ResetSalesDetailDefaultValue();
-            txtInvoiceNo.Text = "0";
-            dateTimePickerSalesDate.Text = "";
-            EnablePanelContent();
-            this.getSalesDetailsTableAdapter.Fill(this.dSGetSalesDetail.GetSalesDetails, SalesMasterID);
+            
         }
 
 
@@ -523,6 +572,11 @@ namespace FinalProject
         private void comboBoxProductName_Leave(object sender, EventArgs e)
         {
             LoadProductRate();
+        }
+
+        private void FrmSaleMaster_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
         }
     }
 }

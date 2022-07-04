@@ -67,7 +67,7 @@ namespace FinalProject
 
         }
 
-        public void SaveDetails()
+        public void SaveEvent()
         {
             DialogResult dialogResult =  MessageBox.Show("Alert", "Do you want to save the Details.", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
 
@@ -299,6 +299,8 @@ namespace FinalProject
             txtMRP.Text = dataGridView1.CurrentRow.Cells[13].Value.ToString();
         }
       
+
+
         
         public void GSTCAl()
         {
@@ -326,6 +328,50 @@ namespace FinalProject
             }
 
             
+        }
+
+
+        private void FormClosingValidation()
+        {
+
+            SqlDataAdapter da;
+            DataSet ds = new DataSet();
+
+            SQLQueryClass.con.Open();
+            SqlCommand cmd = new SqlCommand("GetProductDetails", SQLQueryClass.con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@PRODUCTID", productID);
+
+            SQLQueryClass.con.Close();
+            da = new SqlDataAdapter(cmd);
+            da.Fill(ds);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                DialogResult dia = MessageBox.Show("Do you want to save.", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dia == DialogResult.Yes)
+                {
+                    SaveEvent();
+                    MessageBox.Show("Saving...");
+                }
+                else if (dia == DialogResult.No)
+                {
+                    ResetForm();
+                    MessageBox.Show("Reseting Form...");
+                }
+            }
+
+
+            if (productID > 0)
+            {
+                DialogResult dia = MessageBox.Show("Are you sure you want to exit.", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dia == DialogResult.Yes)
+                {
+                    DeleteIntoProductMaster();
+                    
+                    MessageBox.Show("ProductID Deleted");
+                }
+
+            }
         }
 
 
@@ -426,7 +472,7 @@ namespace FinalProject
         private void btnSave_Click(object sender, EventArgs e)
         {
 
-            SaveDetails();
+            SaveEvent();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -485,6 +531,11 @@ namespace FinalProject
         private void txtBasicRate_Leave(object sender, EventArgs e)
         {
             
+        }
+
+        private void FrmProductMasterAndDetails_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormClosingValidation();
         }
     }
     }

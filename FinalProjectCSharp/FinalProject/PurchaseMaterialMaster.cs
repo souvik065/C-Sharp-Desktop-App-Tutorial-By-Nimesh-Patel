@@ -429,6 +429,63 @@ namespace FinalProject
             txtNetAmount.Text = dataGridView1.CurrentRow.Cells[19].Value.ToString();
 
         }
+
+
+        private void SaveEvent()
+        {
+            UpdatePurchaseMasterTable();
+            PurchaseDetailsID = 0;
+            PurchaseMasterID = 0;
+            ResetTotalAmountDefaultValue();
+            this.getPurchaseDetailsTableAdapter.Fill(this.dSGetPurchaseDetail.GetPurchaseDetails, PurchaseMasterID);
+            comboBoxSupplierName.SelectedIndex = 0;
+            txtInvoiceNo.Text = "0";
+            dateTimePickerPurchaseDate.Text = "";
+            EnablePanelContent();
+        }
+
+
+        private void FormClosingValidation()
+        {
+
+            SqlDataAdapter da;
+            DataSet ds = new DataSet();
+
+            SQLQueryClass.con.Open();
+            SqlCommand cmd = new SqlCommand("GetPurchaseDetails", SQLQueryClass.con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@PurchaseId", PurchaseMasterID);
+
+            SQLQueryClass.con.Close();
+            da = new SqlDataAdapter(cmd);
+            da.Fill(ds);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                DialogResult dia = MessageBox.Show("Do you want to save.", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dia == DialogResult.Yes)
+                {
+                    SaveEvent();
+                    MessageBox.Show("Saving...");
+                }
+                else if (dia == DialogResult.No)
+                {
+                    ResetForm();
+                    MessageBox.Show("Reseting Form...");
+                }
+            }
+
+
+            if (PurchaseMasterID > 0)
+            {
+                DialogResult dia = MessageBox.Show("Are you sure you want to exit.", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dia == DialogResult.Yes)
+                {
+                    ResetPurchaseMaster();
+                    MessageBox.Show("PurchaseMasterID Deleted");
+                }
+
+            }
+        }
        
 
         private void PurchaseMaterialMaster_Load(object sender, EventArgs e)
@@ -556,15 +613,7 @@ namespace FinalProject
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            UpdatePurchaseMasterTable();
-            PurchaseDetailsID = 0;
-            PurchaseMasterID = 0;
-            ResetTotalAmountDefaultValue();
-            this.getPurchaseDetailsTableAdapter.Fill(this.dSGetPurchaseDetail.GetPurchaseDetails, PurchaseMasterID);
-            comboBoxSupplierName.SelectedIndex = 0;
-            txtInvoiceNo.Text = "0";
-            dateTimePickerPurchaseDate.Text = "";
-            EnablePanelContent();
+            SaveEvent();
 
         }
 
@@ -608,6 +657,11 @@ namespace FinalProject
         private void comboBoxProductName_Leave(object sender, EventArgs e)
         {
 
+        }
+
+        private void PurchaseMaterialMaster_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormClosingValidation();
         }
     }
 }

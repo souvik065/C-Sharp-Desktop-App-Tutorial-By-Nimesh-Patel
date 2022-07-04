@@ -1508,6 +1508,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmSaleMaster";
             this.Text = "FrmSaleMaster";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmSaleMaster_FormClosing);
             this.Load += new System.EventHandler(this.FrmSaleMaster_Load);
             this.Headerpanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

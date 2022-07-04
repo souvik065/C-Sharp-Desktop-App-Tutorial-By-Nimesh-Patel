@@ -378,10 +378,50 @@ namespace FinalProject
 
             MessageBox.Show("SalesReturn Details Reseted Successfully");
 
+            SQLQueryClass.con.Close();     
+
+        }
+
+        private void FormClosingValidation()
+        {
+
+            SqlDataAdapter da;
+            DataSet ds = new DataSet();
+
+            SQLQueryClass.con.Open();
+            SqlCommand cmd = new SqlCommand("GetSalesReturnDetails", SQLQueryClass.con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@SalesReturnId", SalesReturnMasterID);
+
             SQLQueryClass.con.Close();
+            da = new SqlDataAdapter(cmd);
+            da.Fill(ds);
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                DialogResult dia = MessageBox.Show("Do you want to save.", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dia == DialogResult.Yes)
+                {
+                    SaveEvent();
+                    MessageBox.Show("Saving...");
+                }
+                else if (dia == DialogResult.No)
+                {
+                    ResetForm();
+                    MessageBox.Show("Reseting Form...");
+                }
+            }
 
-          
 
+            if (SalesReturnMasterID > 0)
+            {
+                DialogResult dia = MessageBox.Show("Are you sure you want to exit.", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dia == DialogResult.Yes)
+                {
+                    ResetSalesMaster();
+                    MessageBox.Show("SalesReturnMasterID Deleted");
+                }
+
+            }
         }
 
         private void LoadProductRate()
@@ -400,6 +440,20 @@ namespace FinalProject
             {
                 txtRate.Text = ds.Tables[0].Rows[0]["SALESRATE"].ToString();
             }
+        }
+
+
+        private void SaveEvent()
+        {
+            UpdateSalesReturnMasterTable();
+            SalesReturnDetailID = 0;
+            SalesReturnMasterID = 0;
+            ResetSalesReturnMasterTotalAmountDefaultValue();
+            ResetSalesReturnDetailDefaultValue();
+            txtInvoiceNo.Text = "0";
+            dateTimePickerSalesDate.Text = "";
+            EnablePanelContent();
+            this.getSalesReturnDetailsTableAdapter.Fill(this.dSGetSalesReturndetails.GetSalesReturnDetails, SalesReturnMasterID);
         }
 
 
@@ -485,15 +539,7 @@ namespace FinalProject
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            UpdateSalesReturnMasterTable();
-            SalesReturnDetailID = 0;
-            SalesReturnMasterID = 0;
-            ResetSalesReturnMasterTotalAmountDefaultValue();
-            ResetSalesReturnDetailDefaultValue();
-            txtInvoiceNo.Text = "0";
-            dateTimePickerSalesDate.Text = "";
-            EnablePanelContent();
-            this.getSalesReturnDetailsTableAdapter.Fill(this.dSGetSalesReturndetails.GetSalesReturnDetails, SalesReturnMasterID);
+           
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -517,6 +563,11 @@ namespace FinalProject
         private void txtRate_Leave(object sender, EventArgs e)
         {
             AllCalculation();
+        }
+
+        private void SalesReturnMaster_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FormClosingValidation();
         }
     }
 }

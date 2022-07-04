@@ -1706,6 +1706,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "PurchaseMaterialMaster";
             this.Text = "-";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PurchaseMaterialMaster_FormClosing);
             this.Load += new System.EventHandler(this.PurchaseMaterialMaster_Load);
             this.Headerpanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

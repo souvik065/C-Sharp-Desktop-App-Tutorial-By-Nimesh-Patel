@@ -1496,6 +1496,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "SalesReturnMaster";
             this.Text = "SalesReturnMaster";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SalesReturnMaster_FormClosing);
             this.Load += new System.EventHandler(this.SalesReturnMaster_Load);
             this.Headerpanel.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
