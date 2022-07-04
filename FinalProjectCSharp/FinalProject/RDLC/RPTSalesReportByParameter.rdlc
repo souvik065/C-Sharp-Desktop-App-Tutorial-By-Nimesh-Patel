@@ -6,57 +6,57 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.71437cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>1.5475cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.84667cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.7273cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.99187cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.80729cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.78021cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.78021cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.80729cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.85959cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.85959cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.88604cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.93896cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.9125cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.9125cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.5cm</Width>
+              <Width>0.93896cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.6cm</Height>
+              <Height>1.48584cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -67,16 +67,17 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Sales Detail ID</Value>
+                              <Value>SalesDe ID</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox2</rd:DefaultName>
@@ -85,7 +86,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -105,14 +106,15 @@
                             <TextRun>
                               <Value>PRODUCTNAME</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox3</rd:DefaultName>
@@ -121,7 +123,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -141,14 +143,15 @@
                             <TextRun>
                               <Value>Rate</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox5</rd:DefaultName>
@@ -157,7 +160,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -177,14 +180,15 @@
                             <TextRun>
                               <Value>Qty</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox7</rd:DefaultName>
@@ -193,7 +197,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -211,16 +215,32 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>HSNCode</Value>
+                              <Value>HSN</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Code</Value>
+                              <Style>
+                                <FontFamily>Calibri</FontFamily>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>White</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox9</rd:DefaultName>
@@ -229,7 +249,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -249,14 +269,15 @@
                             <TextRun>
                               <Value>Total</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox11</rd:DefaultName>
@@ -265,7 +286,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -283,16 +304,17 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Discount Percentage</Value>
+                              <Value>Disc%</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox13</rd:DefaultName>
@@ -301,7 +323,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -319,16 +341,17 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Discount Amount</Value>
+                              <Value>Disc Amt</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox15</rd:DefaultName>
@@ -337,7 +360,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -355,16 +378,17 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Taxable Amount</Value>
+                              <Value>Tax Amt</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox17</rd:DefaultName>
@@ -373,7 +397,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -391,16 +415,17 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>CGSTPercentage</Value>
+                              <Value>CGST%</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox19</rd:DefaultName>
@@ -409,7 +434,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -427,16 +452,17 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>CGSTAmount</Value>
+                              <Value>CGSTAmt</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox21</rd:DefaultName>
@@ -445,7 +471,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -463,16 +489,17 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>SGSTPercentage</Value>
+                              <Value>SGST%</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox23</rd:DefaultName>
@@ -481,7 +508,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -499,16 +526,17 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>SGSTAmount</Value>
+                              <Value>SGSTAmt</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox25</rd:DefaultName>
@@ -517,7 +545,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -535,16 +563,17 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>IGSTPercentage</Value>
+                              <Value>IGST%</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox27</rd:DefaultName>
@@ -553,7 +582,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -571,16 +600,17 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>IGSTAmount</Value>
+                              <Value>IGSTAmt</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox29</rd:DefaultName>
@@ -589,7 +619,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -607,16 +637,17 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Net Amount</Value>
+                              <Value>Net Amt</Value>
                               <Style>
                                 <FontFamily>Tahoma</FontFamily>
-                                <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox31</rd:DefaultName>
@@ -625,7 +656,7 @@
                           <Color>#7292cc</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>#4c68a2</BackgroundColor>
+                        <BackgroundColor>#4796ff</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -650,12 +681,14 @@
                             <TextRun>
                               <Value>=Fields!SalesDetailID.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>SalesDetailID</rd:DefaultName>
@@ -683,12 +716,14 @@
                             <TextRun>
                               <Value>=Fields!PRODUCTNAME.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>PRODUCTNAME</rd:DefaultName>
@@ -716,12 +751,14 @@
                             <TextRun>
                               <Value>=Fields!Rate.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Rate</rd:DefaultName>
@@ -749,12 +786,14 @@
                             <TextRun>
                               <Value>=Fields!Qty.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Qty</rd:DefaultName>
@@ -782,12 +821,14 @@
                             <TextRun>
                               <Value>=Fields!HSNCode.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>HSNCode</rd:DefaultName>
@@ -815,12 +856,14 @@
                             <TextRun>
                               <Value>=Fields!Total.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Total</rd:DefaultName>
@@ -848,12 +891,14 @@
                             <TextRun>
                               <Value>=Fields!DiscountPercentage.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>DiscountPercentage</rd:DefaultName>
@@ -881,12 +926,14 @@
                             <TextRun>
                               <Value>=Fields!DiscountAmount.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>DiscountAmount</rd:DefaultName>
@@ -914,12 +961,14 @@
                             <TextRun>
                               <Value>=Fields!TaxableAmount.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>TaxableAmount</rd:DefaultName>
@@ -947,12 +996,14 @@
                             <TextRun>
                               <Value>=Fields!CGSTPercentage.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>CGSTPercentage</rd:DefaultName>
@@ -980,12 +1031,14 @@
                             <TextRun>
                               <Value>=Fields!CGSTAmount.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>CGSTAmount</rd:DefaultName>
@@ -1013,12 +1066,14 @@
                             <TextRun>
                               <Value>=Fields!SGSTPercentage.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>SGSTPercentage</rd:DefaultName>
@@ -1046,12 +1101,14 @@
                             <TextRun>
                               <Value>=Fields!SGSTAmount.Value</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <Color>#4d4d4d</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>SGSTAmount</rd:DefaultName>
@@ -1084,7 +1141,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>IGSTPercentage</rd:DefaultName>
@@ -1117,7 +1176,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>IGSTAmount</rd:DefaultName>
@@ -1150,7 +1211,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>NetAmount</rd:DefaultName>
@@ -1183,13 +1246,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!SalesDetailID.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox105</rd:DefaultName>
@@ -1218,13 +1283,15 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox106</rd:DefaultName>
@@ -1253,13 +1320,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!Rate.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox107</rd:DefaultName>
@@ -1288,13 +1357,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!Qty.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox108</rd:DefaultName>
@@ -1323,13 +1394,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!HSNCode.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox109</rd:DefaultName>
@@ -1358,13 +1431,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!Total.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox110</rd:DefaultName>
@@ -1393,13 +1468,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!DiscountPercentage.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox111</rd:DefaultName>
@@ -1428,13 +1505,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!DiscountAmount.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox112</rd:DefaultName>
@@ -1463,13 +1542,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!TaxableAmount.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox113</rd:DefaultName>
@@ -1498,13 +1579,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!CGSTPercentage.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox114</rd:DefaultName>
@@ -1533,13 +1616,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!CGSTAmount.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox115</rd:DefaultName>
@@ -1568,13 +1653,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!SGSTPercentage.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox116</rd:DefaultName>
@@ -1603,13 +1690,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!SGSTAmount.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>#465678</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox117</rd:DefaultName>
@@ -1644,7 +1733,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox118</rd:DefaultName>
@@ -1679,7 +1770,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox119</rd:DefaultName>
@@ -1714,7 +1807,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox120</rd:DefaultName>
@@ -1748,13 +1843,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!SalesDetailID.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox75</rd:DefaultName>
@@ -1783,13 +1880,15 @@
                             <TextRun>
                               <Value />
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox76</rd:DefaultName>
@@ -1818,13 +1917,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!Rate.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox77</rd:DefaultName>
@@ -1853,13 +1954,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!Qty.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox78</rd:DefaultName>
@@ -1888,13 +1991,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!HSNCode.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox79</rd:DefaultName>
@@ -1923,13 +2028,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!Total.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox80</rd:DefaultName>
@@ -1958,13 +2065,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!DiscountPercentage.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox81</rd:DefaultName>
@@ -1993,13 +2102,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!DiscountAmount.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox82</rd:DefaultName>
@@ -2028,13 +2139,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!TaxableAmount.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox83</rd:DefaultName>
@@ -2063,13 +2176,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!CGSTPercentage.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox84</rd:DefaultName>
@@ -2098,13 +2213,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!CGSTAmount.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox85</rd:DefaultName>
@@ -2133,13 +2250,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!SGSTPercentage.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox86</rd:DefaultName>
@@ -2168,13 +2287,15 @@
                             <TextRun>
                               <Value>=Sum(Fields!SGSTAmount.Value)</Value>
                               <Style>
-                                <FontFamily>Tahoma</FontFamily>
+                                <FontFamily>Calibri</FontFamily>
                                 <FontWeight>Bold</FontWeight>
                                 <Color>White</Color>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox87</rd:DefaultName>
@@ -2209,7 +2330,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox88</rd:DefaultName>
@@ -2244,7 +2367,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox89</rd:DefaultName>
@@ -2279,7 +2404,9 @@
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox90</rd:DefaultName>
@@ -2325,7 +2452,7 @@
           <TablixMembers>
             <TablixMember>
               <TablixHeader>
-                <Size>2.5cm</Size>
+                <Size>0.96724cm</Size>
                 <CellContents>
                   <Textbox Name="Textbox59">
                     <CanGrow>true</CanGrow>
@@ -2336,14 +2463,15 @@
                           <TextRun>
                             <Value>Sales Date</Value>
                             <Style>
-                              <FontFamily>Tahoma</FontFamily>
-                              <FontSize>11pt</FontSize>
+                              <FontFamily>Calibri</FontFamily>
                               <FontWeight>Bold</FontWeight>
                               <Color>White</Color>
                             </Style>
                           </TextRun>
                         </TextRuns>
-                        <Style />
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox59</rd:DefaultName>
@@ -2352,7 +2480,7 @@
                         <Color>#7292cc</Color>
                         <Style>Solid</Style>
                       </Border>
-                      <BackgroundColor>#4c68a2</BackgroundColor>
+                      <BackgroundColor>#4796ff</BackgroundColor>
                       <PaddingLeft>2pt</PaddingLeft>
                       <PaddingRight>2pt</PaddingRight>
                       <PaddingTop>2pt</PaddingTop>
@@ -2364,7 +2492,7 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>2.5cm</Size>
+                    <Size>0.83313cm</Size>
                     <CellContents>
                       <Textbox Name="Textbox57">
                         <CanGrow>true</CanGrow>
@@ -2375,14 +2503,15 @@
                               <TextRun>
                                 <Value>Invoice No</Value>
                                 <Style>
-                                  <FontFamily>Tahoma</FontFamily>
-                                  <FontSize>11pt</FontSize>
+                                  <FontFamily>Calibri</FontFamily>
                                   <FontWeight>Bold</FontWeight>
                                   <Color>White</Color>
                                 </Style>
                               </TextRun>
                             </TextRuns>
-                            <Style />
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox57</rd:DefaultName>
@@ -2391,7 +2520,7 @@
                             <Color>#7292cc</Color>
                             <Style>Solid</Style>
                           </Border>
-                          <BackgroundColor>#4c68a2</BackgroundColor>
+                          <BackgroundColor>#4796ff</BackgroundColor>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
@@ -2403,7 +2532,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>2.5cm</Size>
+                        <Size>1.03188cm</Size>
                         <CellContents>
                           <Textbox Name="Textbox55">
                             <CanGrow>true</CanGrow>
@@ -2412,16 +2541,17 @@
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>Total Gross Amount</Value>
+                                    <Value>Total Gross Amt</Value>
                                     <Style>
-                                      <FontFamily>Tahoma</FontFamily>
-                                      <FontSize>11pt</FontSize>
+                                      <FontFamily>Calibri</FontFamily>
                                       <FontWeight>Bold</FontWeight>
                                       <Color>White</Color>
                                     </Style>
                                   </TextRun>
                                 </TextRuns>
-                                <Style />
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
                               </Paragraph>
                             </Paragraphs>
                             <rd:DefaultName>Textbox55</rd:DefaultName>
@@ -2430,7 +2560,7 @@
                                 <Color>#7292cc</Color>
                                 <Style>Solid</Style>
                               </Border>
-                              <BackgroundColor>#4c68a2</BackgroundColor>
+                              <BackgroundColor>#4796ff</BackgroundColor>
                               <PaddingLeft>2pt</PaddingLeft>
                               <PaddingRight>2pt</PaddingRight>
                               <PaddingTop>2pt</PaddingTop>
@@ -2442,7 +2572,7 @@
                       <TablixMembers>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>2.5cm</Size>
+                            <Size>0.88604cm</Size>
                             <CellContents>
                               <Textbox Name="Textbox53">
                                 <CanGrow>true</CanGrow>
@@ -2451,16 +2581,17 @@
                                   <Paragraph>
                                     <TextRuns>
                                       <TextRun>
-                                        <Value>Total Discount Amount</Value>
+                                        <Value>Total Disc Amt</Value>
                                         <Style>
-                                          <FontFamily>Tahoma</FontFamily>
-                                          <FontSize>11pt</FontSize>
+                                          <FontFamily>Calibri</FontFamily>
                                           <FontWeight>Bold</FontWeight>
                                           <Color>White</Color>
                                         </Style>
                                       </TextRun>
                                     </TextRuns>
-                                    <Style />
+                                    <Style>
+                                      <TextAlign>Center</TextAlign>
+                                    </Style>
                                   </Paragraph>
                                 </Paragraphs>
                                 <rd:DefaultName>Textbox53</rd:DefaultName>
@@ -2469,7 +2600,7 @@
                                     <Color>#7292cc</Color>
                                     <Style>Solid</Style>
                                   </Border>
-                                  <BackgroundColor>#4c68a2</BackgroundColor>
+                                  <BackgroundColor>#4796ff</BackgroundColor>
                                   <PaddingLeft>2pt</PaddingLeft>
                                   <PaddingRight>2pt</PaddingRight>
                                   <PaddingTop>2pt</PaddingTop>
@@ -2481,7 +2612,7 @@
                           <TablixMembers>
                             <TablixMember>
                               <TablixHeader>
-                                <Size>2.5cm</Size>
+                                <Size>0.89959cm</Size>
                                 <CellContents>
                                   <Textbox Name="Textbox51">
                                     <CanGrow>true</CanGrow>
@@ -2490,16 +2621,17 @@
                                       <Paragraph>
                                         <TextRuns>
                                           <TextRun>
-                                            <Value>Total Taxable AMT</Value>
+                                            <Value>Total Tax AMT</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
-                                              <FontSize>11pt</FontSize>
+                                              <FontFamily>Calibri</FontFamily>
                                               <FontWeight>Bold</FontWeight>
                                               <Color>White</Color>
                                             </Style>
                                           </TextRun>
                                         </TextRuns>
-                                        <Style />
+                                        <Style>
+                                          <TextAlign>Center</TextAlign>
+                                        </Style>
                                       </Paragraph>
                                     </Paragraphs>
                                     <rd:DefaultName>Textbox51</rd:DefaultName>
@@ -2508,7 +2640,7 @@
                                         <Color>#7292cc</Color>
                                         <Style>Solid</Style>
                                       </Border>
-                                      <BackgroundColor>#4c68a2</BackgroundColor>
+                                      <BackgroundColor>#4796ff</BackgroundColor>
                                       <PaddingLeft>2pt</PaddingLeft>
                                       <PaddingRight>2pt</PaddingRight>
                                       <PaddingTop>2pt</PaddingTop>
@@ -2520,7 +2652,7 @@
                               <TablixMembers>
                                 <TablixMember>
                                   <TablixHeader>
-                                    <Size>2.5cm</Size>
+                                    <Size>0.88605cm</Size>
                                     <CellContents>
                                       <Textbox Name="Textbox49">
                                         <CanGrow>true</CanGrow>
@@ -2531,14 +2663,15 @@
                                               <TextRun>
                                                 <Value>Total CGSTAMT</Value>
                                                 <Style>
-                                                  <FontFamily>Tahoma</FontFamily>
-                                                  <FontSize>11pt</FontSize>
+                                                  <FontFamily>Calibri</FontFamily>
                                                   <FontWeight>Bold</FontWeight>
                                                   <Color>White</Color>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>Textbox49</rd:DefaultName>
@@ -2547,7 +2680,7 @@
                                             <Color>#7292cc</Color>
                                             <Style>Solid</Style>
                                           </Border>
-                                          <BackgroundColor>#4c68a2</BackgroundColor>
+                                          <BackgroundColor>#4796ff</BackgroundColor>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
                                           <PaddingTop>2pt</PaddingTop>
@@ -2559,7 +2692,7 @@
                                   <TablixMembers>
                                     <TablixMember>
                                       <TablixHeader>
-                                        <Size>2.5cm</Size>
+                                        <Size>0.88604cm</Size>
                                         <CellContents>
                                           <Textbox Name="Textbox47">
                                             <CanGrow>true</CanGrow>
@@ -2570,14 +2703,15 @@
                                                   <TextRun>
                                                     <Value>Total SGSTAMT</Value>
                                                     <Style>
-                                                      <FontFamily>Tahoma</FontFamily>
-                                                      <FontSize>11pt</FontSize>
+                                                      <FontFamily>Calibri</FontFamily>
                                                       <FontWeight>Bold</FontWeight>
                                                       <Color>White</Color>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Textbox47</rd:DefaultName>
@@ -2586,7 +2720,7 @@
                                                 <Color>#7292cc</Color>
                                                 <Style>Solid</Style>
                                               </Border>
-                                              <BackgroundColor>#4c68a2</BackgroundColor>
+                                              <BackgroundColor>#4796ff</BackgroundColor>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
@@ -2598,7 +2732,7 @@
                                       <TablixMembers>
                                         <TablixMember>
                                           <TablixHeader>
-                                            <Size>2.5cm</Size>
+                                            <Size>0.85959cm</Size>
                                             <CellContents>
                                               <Textbox Name="Textbox45">
                                                 <CanGrow>true</CanGrow>
@@ -2609,14 +2743,15 @@
                                                       <TextRun>
                                                         <Value>Total IGSTAMT</Value>
                                                         <Style>
-                                                          <FontFamily>Tahoma</FontFamily>
-                                                          <FontSize>11pt</FontSize>
+                                                          <FontFamily>Calibri</FontFamily>
                                                           <FontWeight>Bold</FontWeight>
                                                           <Color>White</Color>
                                                         </Style>
                                                       </TextRun>
                                                     </TextRuns>
-                                                    <Style />
+                                                    <Style>
+                                                      <TextAlign>Center</TextAlign>
+                                                    </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
                                                 <rd:DefaultName>Textbox45</rd:DefaultName>
@@ -2625,7 +2760,7 @@
                                                     <Color>#7292cc</Color>
                                                     <Style>Solid</Style>
                                                   </Border>
-                                                  <BackgroundColor>#4c68a2</BackgroundColor>
+                                                  <BackgroundColor>#4796ff</BackgroundColor>
                                                   <PaddingLeft>2pt</PaddingLeft>
                                                   <PaddingRight>2pt</PaddingRight>
                                                   <PaddingTop>2pt</PaddingTop>
@@ -2637,7 +2772,7 @@
                                           <TablixMembers>
                                             <TablixMember>
                                               <TablixHeader>
-                                                <Size>2.5cm</Size>
+                                                <Size>0.99188cm</Size>
                                                 <CellContents>
                                                   <Textbox Name="Textbox43">
                                                     <CanGrow>true</CanGrow>
@@ -2646,16 +2781,17 @@
                                                       <Paragraph>
                                                         <TextRuns>
                                                           <TextRun>
-                                                            <Value>Total Amount</Value>
+                                                            <Value>Total Amt</Value>
                                                             <Style>
-                                                              <FontFamily>Tahoma</FontFamily>
-                                                              <FontSize>11pt</FontSize>
+                                                              <FontFamily>Calibri</FontFamily>
                                                               <FontWeight>Bold</FontWeight>
                                                               <Color>White</Color>
                                                             </Style>
                                                           </TextRun>
                                                         </TextRuns>
-                                                        <Style />
+                                                        <Style>
+                                                          <TextAlign>Center</TextAlign>
+                                                        </Style>
                                                       </Paragraph>
                                                     </Paragraphs>
                                                     <rd:DefaultName>Textbox43</rd:DefaultName>
@@ -2664,7 +2800,7 @@
                                                         <Color>#7292cc</Color>
                                                         <Style>Solid</Style>
                                                       </Border>
-                                                      <BackgroundColor>#4c68a2</BackgroundColor>
+                                                      <BackgroundColor>#4796ff</BackgroundColor>
                                                       <PaddingLeft>2pt</PaddingLeft>
                                                       <PaddingRight>2pt</PaddingRight>
                                                       <PaddingTop>2pt</PaddingTop>
@@ -2676,7 +2812,7 @@
                                               <TablixMembers>
                                                 <TablixMember>
                                                   <TablixHeader>
-                                                    <Size>2.5cm</Size>
+                                                    <Size>0.9125cm</Size>
                                                     <CellContents>
                                                       <Textbox Name="Textbox41">
                                                         <CanGrow>true</CanGrow>
@@ -2687,14 +2823,15 @@
                                                               <TextRun>
                                                                 <Value>Total Net AMT</Value>
                                                                 <Style>
-                                                                  <FontFamily>Tahoma</FontFamily>
-                                                                  <FontSize>11pt</FontSize>
+                                                                  <FontFamily>Calibri</FontFamily>
                                                                   <FontWeight>Bold</FontWeight>
                                                                   <Color>White</Color>
                                                                 </Style>
                                                               </TextRun>
                                                             </TextRuns>
-                                                            <Style />
+                                                            <Style>
+                                                              <TextAlign>Center</TextAlign>
+                                                            </Style>
                                                           </Paragraph>
                                                         </Paragraphs>
                                                         <rd:DefaultName>Textbox41</rd:DefaultName>
@@ -2703,7 +2840,7 @@
                                                             <Color>#7292cc</Color>
                                                             <Style>Solid</Style>
                                                           </Border>
-                                                          <BackgroundColor>#4c68a2</BackgroundColor>
+                                                          <BackgroundColor>#4796ff</BackgroundColor>
                                                           <PaddingLeft>2pt</PaddingLeft>
                                                           <PaddingRight>2pt</PaddingRight>
                                                           <PaddingTop>2pt</PaddingTop>
@@ -2715,7 +2852,7 @@
                                                   <TablixMembers>
                                                     <TablixMember>
                                                       <TablixHeader>
-                                                        <Size>2.5cm</Size>
+                                                        <Size>0.93896cm</Size>
                                                         <CellContents>
                                                           <Textbox Name="Textbox39">
                                                             <CanGrow>true</CanGrow>
@@ -2726,14 +2863,15 @@
                                                                   <TextRun>
                                                                     <Value>Mobile No</Value>
                                                                     <Style>
-                                                                      <FontFamily>Tahoma</FontFamily>
-                                                                      <FontSize>11pt</FontSize>
+                                                                      <FontFamily>Calibri</FontFamily>
                                                                       <FontWeight>Bold</FontWeight>
                                                                       <Color>White</Color>
                                                                     </Style>
                                                                   </TextRun>
                                                                 </TextRuns>
-                                                                <Style />
+                                                                <Style>
+                                                                  <TextAlign>Center</TextAlign>
+                                                                </Style>
                                                               </Paragraph>
                                                             </Paragraphs>
                                                             <rd:DefaultName>Textbox39</rd:DefaultName>
@@ -2742,7 +2880,7 @@
                                                                 <Color>#7292cc</Color>
                                                                 <Style>Solid</Style>
                                                               </Border>
-                                                              <BackgroundColor>#4c68a2</BackgroundColor>
+                                                              <BackgroundColor>#4796ff</BackgroundColor>
                                                               <PaddingLeft>2pt</PaddingLeft>
                                                               <PaddingRight>2pt</PaddingRight>
                                                               <PaddingTop>2pt</PaddingTop>
@@ -2754,7 +2892,7 @@
                                                       <TablixMembers>
                                                         <TablixMember>
                                                           <TablixHeader>
-                                                            <Size>2.5cm</Size>
+                                                            <Size>1.96732cm</Size>
                                                             <CellContents>
                                                               <Textbox Name="Textbox37">
                                                                 <CanGrow>true</CanGrow>
@@ -2765,14 +2903,15 @@
                                                                       <TextRun>
                                                                         <Value>Customer Name</Value>
                                                                         <Style>
-                                                                          <FontFamily>Tahoma</FontFamily>
-                                                                          <FontSize>11pt</FontSize>
+                                                                          <FontFamily>Calibri</FontFamily>
                                                                           <FontWeight>Bold</FontWeight>
                                                                           <Color>White</Color>
                                                                         </Style>
                                                                       </TextRun>
                                                                     </TextRuns>
-                                                                    <Style />
+                                                                    <Style>
+                                                                      <TextAlign>Center</TextAlign>
+                                                                    </Style>
                                                                   </Paragraph>
                                                                 </Paragraphs>
                                                                 <rd:DefaultName>Textbox37</rd:DefaultName>
@@ -2781,7 +2920,7 @@
                                                                     <Color>#7292cc</Color>
                                                                     <Style>Solid</Style>
                                                                   </Border>
-                                                                  <BackgroundColor>#4c68a2</BackgroundColor>
+                                                                  <BackgroundColor>#4796ff</BackgroundColor>
                                                                   <PaddingLeft>2pt</PaddingLeft>
                                                                   <PaddingRight>2pt</PaddingRight>
                                                                   <PaddingTop>2pt</PaddingTop>
@@ -2793,7 +2932,7 @@
                                                           <TablixMembers>
                                                             <TablixMember>
                                                               <TablixHeader>
-                                                                <Size>2.5cm</Size>
+                                                                <Size>1.33708cm</Size>
                                                                 <CellContents>
                                                                   <Textbox Name="Textbox35">
                                                                     <CanGrow>true</CanGrow>
@@ -2804,14 +2943,15 @@
                                                                           <TextRun>
                                                                             <Value>Address</Value>
                                                                             <Style>
-                                                                              <FontFamily>Tahoma</FontFamily>
-                                                                              <FontSize>11pt</FontSize>
+                                                                              <FontFamily>Calibri</FontFamily>
                                                                               <FontWeight>Bold</FontWeight>
                                                                               <Color>White</Color>
                                                                             </Style>
                                                                           </TextRun>
                                                                         </TextRuns>
-                                                                        <Style />
+                                                                        <Style>
+                                                                          <TextAlign>Center</TextAlign>
+                                                                        </Style>
                                                                       </Paragraph>
                                                                     </Paragraphs>
                                                                     <rd:DefaultName>Textbox35</rd:DefaultName>
@@ -2820,7 +2960,7 @@
                                                                         <Color>#7292cc</Color>
                                                                         <Style>Solid</Style>
                                                                       </Border>
-                                                                      <BackgroundColor>#4c68a2</BackgroundColor>
+                                                                      <BackgroundColor>#4796ff</BackgroundColor>
                                                                       <PaddingLeft>2pt</PaddingLeft>
                                                                       <PaddingRight>2pt</PaddingRight>
                                                                       <PaddingTop>2pt</PaddingTop>
@@ -2832,7 +2972,7 @@
                                                               <TablixMembers>
                                                                 <TablixMember>
                                                                   <TablixHeader>
-                                                                    <Size>2.5cm</Size>
+                                                                    <Size>0.99188cm</Size>
                                                                     <CellContents>
                                                                       <Textbox Name="Textbox33">
                                                                         <CanGrow>true</CanGrow>
@@ -2843,14 +2983,15 @@
                                                                               <TextRun>
                                                                                 <Value>Payment Mode</Value>
                                                                                 <Style>
-                                                                                  <FontFamily>Tahoma</FontFamily>
-                                                                                  <FontSize>11pt</FontSize>
+                                                                                  <FontFamily>Calibri</FontFamily>
                                                                                   <FontWeight>Bold</FontWeight>
                                                                                   <Color>White</Color>
                                                                                 </Style>
                                                                               </TextRun>
                                                                             </TextRuns>
-                                                                            <Style />
+                                                                            <Style>
+                                                                              <TextAlign>Center</TextAlign>
+                                                                            </Style>
                                                                           </Paragraph>
                                                                         </Paragraphs>
                                                                         <rd:DefaultName>Textbox33</rd:DefaultName>
@@ -2859,7 +3000,7 @@
                                                                             <Color>#7292cc</Color>
                                                                             <Style>Solid</Style>
                                                                           </Border>
-                                                                          <BackgroundColor>#4c68a2</BackgroundColor>
+                                                                          <BackgroundColor>#4796ff</BackgroundColor>
                                                                           <PaddingLeft>2pt</PaddingLeft>
                                                                           <PaddingRight>2pt</PaddingRight>
                                                                           <PaddingTop>2pt</PaddingTop>
@@ -2911,7 +3052,7 @@
                 </SortExpression>
               </SortExpressions>
               <TablixHeader>
-                <Size>2.5cm</Size>
+                <Size>0.96724cm</Size>
                 <CellContents>
                   <Textbox Name="SalesDate">
                     <CanGrow>true</CanGrow>
@@ -2922,13 +3063,15 @@
                           <TextRun>
                             <Value>=Fields!SalesDate.Value</Value>
                             <Style>
-                              <FontFamily>Tahoma</FontFamily>
+                              <FontFamily>Calibri</FontFamily>
                               <FontWeight>Bold</FontWeight>
                               <Color>#465678</Color>
                             </Style>
                           </TextRun>
                         </TextRuns>
-                        <Style />
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>SalesDate</rd:DefaultName>
@@ -2959,7 +3102,7 @@
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>2.5cm</Size>
+                    <Size>0.83313cm</Size>
                     <CellContents>
                       <Textbox Name="InvoiceNo">
                         <CanGrow>true</CanGrow>
@@ -2970,13 +3113,15 @@
                               <TextRun>
                                 <Value>=Fields!InvoiceNo.Value</Value>
                                 <Style>
-                                  <FontFamily>Tahoma</FontFamily>
+                                  <FontFamily>Calibri</FontFamily>
                                   <FontWeight>Bold</FontWeight>
                                   <Color>#4c68a2</Color>
                                 </Style>
                               </TextRun>
                             </TextRuns>
-                            <Style />
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>InvoiceNo</rd:DefaultName>
@@ -3007,7 +3152,7 @@
                         </SortExpression>
                       </SortExpressions>
                       <TablixHeader>
-                        <Size>2.5cm</Size>
+                        <Size>1.03188cm</Size>
                         <CellContents>
                           <Textbox Name="TotalGrossAmount">
                             <CanGrow>true</CanGrow>
@@ -3018,13 +3163,15 @@
                                   <TextRun>
                                     <Value>=Fields!TotalGrossAmount.Value</Value>
                                     <Style>
-                                      <FontFamily>Tahoma</FontFamily>
+                                      <FontFamily>Calibri</FontFamily>
                                       <FontWeight>Bold</FontWeight>
                                       <Color>#4c68a2</Color>
                                     </Style>
                                   </TextRun>
                                 </TextRuns>
-                                <Style />
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
                               </Paragraph>
                             </Paragraphs>
                             <rd:DefaultName>TotalGrossAmount</rd:DefaultName>
@@ -3055,7 +3202,7 @@
                             </SortExpression>
                           </SortExpressions>
                           <TablixHeader>
-                            <Size>2.5cm</Size>
+                            <Size>0.88604cm</Size>
                             <CellContents>
                               <Textbox Name="TotalDiscountAmount">
                                 <CanGrow>true</CanGrow>
@@ -3066,13 +3213,15 @@
                                       <TextRun>
                                         <Value>=Fields!TotalDiscountAmount.Value</Value>
                                         <Style>
-                                          <FontFamily>Tahoma</FontFamily>
+                                          <FontFamily>Calibri</FontFamily>
                                           <FontWeight>Bold</FontWeight>
                                           <Color>#4c68a2</Color>
                                         </Style>
                                       </TextRun>
                                     </TextRuns>
-                                    <Style />
+                                    <Style>
+                                      <TextAlign>Center</TextAlign>
+                                    </Style>
                                   </Paragraph>
                                 </Paragraphs>
                                 <rd:DefaultName>TotalDiscountAmount</rd:DefaultName>
@@ -3103,7 +3252,7 @@
                                 </SortExpression>
                               </SortExpressions>
                               <TablixHeader>
-                                <Size>2.5cm</Size>
+                                <Size>0.89959cm</Size>
                                 <CellContents>
                                   <Textbox Name="TotalTaxableAMT">
                                     <CanGrow>true</CanGrow>
@@ -3114,13 +3263,15 @@
                                           <TextRun>
                                             <Value>=Fields!TotalTaxableAMT.Value</Value>
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>Calibri</FontFamily>
                                               <FontWeight>Bold</FontWeight>
                                               <Color>#4c68a2</Color>
                                             </Style>
                                           </TextRun>
                                         </TextRuns>
-                                        <Style />
+                                        <Style>
+                                          <TextAlign>Center</TextAlign>
+                                        </Style>
                                       </Paragraph>
                                     </Paragraphs>
                                     <rd:DefaultName>TotalTaxableAMT</rd:DefaultName>
@@ -3151,7 +3302,7 @@
                                     </SortExpression>
                                   </SortExpressions>
                                   <TablixHeader>
-                                    <Size>2.5cm</Size>
+                                    <Size>0.88605cm</Size>
                                     <CellContents>
                                       <Textbox Name="TotalCGSTAMT">
                                         <CanGrow>true</CanGrow>
@@ -3162,13 +3313,15 @@
                                               <TextRun>
                                                 <Value>=Fields!TotalCGSTAMT.Value</Value>
                                                 <Style>
-                                                  <FontFamily>Tahoma</FontFamily>
+                                                  <FontFamily>Calibri</FontFamily>
                                                   <FontWeight>Bold</FontWeight>
                                                   <Color>#4c68a2</Color>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>TotalCGSTAMT</rd:DefaultName>
@@ -3199,7 +3352,7 @@
                                         </SortExpression>
                                       </SortExpressions>
                                       <TablixHeader>
-                                        <Size>2.5cm</Size>
+                                        <Size>0.88604cm</Size>
                                         <CellContents>
                                           <Textbox Name="TotalSGSTAMT">
                                             <CanGrow>true</CanGrow>
@@ -3210,13 +3363,15 @@
                                                   <TextRun>
                                                     <Value>=Fields!TotalSGSTAMT.Value</Value>
                                                     <Style>
-                                                      <FontFamily>Tahoma</FontFamily>
+                                                      <FontFamily>Calibri</FontFamily>
                                                       <FontWeight>Bold</FontWeight>
                                                       <Color>#4c68a2</Color>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>TotalSGSTAMT</rd:DefaultName>
@@ -3247,7 +3402,7 @@
                                             </SortExpression>
                                           </SortExpressions>
                                           <TablixHeader>
-                                            <Size>2.5cm</Size>
+                                            <Size>0.85959cm</Size>
                                             <CellContents>
                                               <Textbox Name="TotalIGSTAMT">
                                                 <CanGrow>true</CanGrow>
@@ -3258,13 +3413,15 @@
                                                       <TextRun>
                                                         <Value>=Fields!TotalIGSTAMT.Value</Value>
                                                         <Style>
-                                                          <FontFamily>Tahoma</FontFamily>
+                                                          <FontFamily>Calibri</FontFamily>
                                                           <FontWeight>Bold</FontWeight>
                                                           <Color>#4c68a2</Color>
                                                         </Style>
                                                       </TextRun>
                                                     </TextRuns>
-                                                    <Style />
+                                                    <Style>
+                                                      <TextAlign>Center</TextAlign>
+                                                    </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
                                                 <rd:DefaultName>TotalIGSTAMT</rd:DefaultName>
@@ -3295,7 +3452,7 @@
                                                 </SortExpression>
                                               </SortExpressions>
                                               <TablixHeader>
-                                                <Size>2.5cm</Size>
+                                                <Size>0.99188cm</Size>
                                                 <CellContents>
                                                   <Textbox Name="TotalAmount">
                                                     <CanGrow>true</CanGrow>
@@ -3306,13 +3463,15 @@
                                                           <TextRun>
                                                             <Value>=Fields!TotalAmount.Value</Value>
                                                             <Style>
-                                                              <FontFamily>Tahoma</FontFamily>
+                                                              <FontFamily>Calibri</FontFamily>
                                                               <FontWeight>Bold</FontWeight>
                                                               <Color>#4c68a2</Color>
                                                             </Style>
                                                           </TextRun>
                                                         </TextRuns>
-                                                        <Style />
+                                                        <Style>
+                                                          <TextAlign>Center</TextAlign>
+                                                        </Style>
                                                       </Paragraph>
                                                     </Paragraphs>
                                                     <rd:DefaultName>TotalAmount</rd:DefaultName>
@@ -3343,7 +3502,7 @@
                                                     </SortExpression>
                                                   </SortExpressions>
                                                   <TablixHeader>
-                                                    <Size>2.5cm</Size>
+                                                    <Size>0.9125cm</Size>
                                                     <CellContents>
                                                       <Textbox Name="TotalNetAMT">
                                                         <CanGrow>true</CanGrow>
@@ -3354,13 +3513,15 @@
                                                               <TextRun>
                                                                 <Value>=Fields!TotalNetAMT.Value</Value>
                                                                 <Style>
-                                                                  <FontFamily>Tahoma</FontFamily>
+                                                                  <FontFamily>Calibri</FontFamily>
                                                                   <FontWeight>Bold</FontWeight>
                                                                   <Color>#4c68a2</Color>
                                                                 </Style>
                                                               </TextRun>
                                                             </TextRuns>
-                                                            <Style />
+                                                            <Style>
+                                                              <TextAlign>Center</TextAlign>
+                                                            </Style>
                                                           </Paragraph>
                                                         </Paragraphs>
                                                         <rd:DefaultName>TotalNetAMT</rd:DefaultName>
@@ -3391,7 +3552,7 @@
                                                         </SortExpression>
                                                       </SortExpressions>
                                                       <TablixHeader>
-                                                        <Size>2.5cm</Size>
+                                                        <Size>0.93896cm</Size>
                                                         <CellContents>
                                                           <Textbox Name="MobileNo">
                                                             <CanGrow>true</CanGrow>
@@ -3402,13 +3563,15 @@
                                                                   <TextRun>
                                                                     <Value>=Fields!MobileNo.Value</Value>
                                                                     <Style>
-                                                                      <FontFamily>Tahoma</FontFamily>
+                                                                      <FontFamily>Calibri</FontFamily>
                                                                       <FontWeight>Bold</FontWeight>
                                                                       <Color>#4c68a2</Color>
                                                                     </Style>
                                                                   </TextRun>
                                                                 </TextRuns>
-                                                                <Style />
+                                                                <Style>
+                                                                  <TextAlign>Center</TextAlign>
+                                                                </Style>
                                                               </Paragraph>
                                                             </Paragraphs>
                                                             <rd:DefaultName>MobileNo</rd:DefaultName>
@@ -3439,7 +3602,7 @@
                                                             </SortExpression>
                                                           </SortExpressions>
                                                           <TablixHeader>
-                                                            <Size>2.5cm</Size>
+                                                            <Size>1.96732cm</Size>
                                                             <CellContents>
                                                               <Textbox Name="CustomerName">
                                                                 <CanGrow>true</CanGrow>
@@ -3450,13 +3613,15 @@
                                                                       <TextRun>
                                                                         <Value>=Fields!CustomerName.Value</Value>
                                                                         <Style>
-                                                                          <FontFamily>Tahoma</FontFamily>
+                                                                          <FontFamily>Calibri</FontFamily>
                                                                           <FontWeight>Bold</FontWeight>
                                                                           <Color>#4c68a2</Color>
                                                                         </Style>
                                                                       </TextRun>
                                                                     </TextRuns>
-                                                                    <Style />
+                                                                    <Style>
+                                                                      <TextAlign>Center</TextAlign>
+                                                                    </Style>
                                                                   </Paragraph>
                                                                 </Paragraphs>
                                                                 <rd:DefaultName>CustomerName</rd:DefaultName>
@@ -3487,7 +3652,7 @@
                                                                 </SortExpression>
                                                               </SortExpressions>
                                                               <TablixHeader>
-                                                                <Size>2.5cm</Size>
+                                                                <Size>1.33708cm</Size>
                                                                 <CellContents>
                                                                   <Textbox Name="Address">
                                                                     <CanGrow>true</CanGrow>
@@ -3498,13 +3663,15 @@
                                                                           <TextRun>
                                                                             <Value>=Fields!Address.Value</Value>
                                                                             <Style>
-                                                                              <FontFamily>Tahoma</FontFamily>
+                                                                              <FontFamily>Calibri</FontFamily>
                                                                               <FontWeight>Bold</FontWeight>
                                                                               <Color>#4c68a2</Color>
                                                                             </Style>
                                                                           </TextRun>
                                                                         </TextRuns>
-                                                                        <Style />
+                                                                        <Style>
+                                                                          <TextAlign>Center</TextAlign>
+                                                                        </Style>
                                                                       </Paragraph>
                                                                     </Paragraphs>
                                                                     <rd:DefaultName>Address</rd:DefaultName>
@@ -3535,7 +3702,7 @@
                                                                     </SortExpression>
                                                                   </SortExpressions>
                                                                   <TablixHeader>
-                                                                    <Size>2.5cm</Size>
+                                                                    <Size>0.99188cm</Size>
                                                                     <CellContents>
                                                                       <Textbox Name="PaymentMode">
                                                                         <CanGrow>true</CanGrow>
@@ -3546,13 +3713,15 @@
                                                                               <TextRun>
                                                                                 <Value>=Fields!PaymentMode.Value</Value>
                                                                                 <Style>
-                                                                                  <FontFamily>Tahoma</FontFamily>
+                                                                                  <FontFamily>Calibri</FontFamily>
                                                                                   <FontWeight>Bold</FontWeight>
                                                                                   <Color>#4c68a2</Color>
                                                                                 </Style>
                                                                               </TextRun>
                                                                             </TextRuns>
-                                                                            <Style />
+                                                                            <Style>
+                                                                              <TextAlign>Center</TextAlign>
+                                                                            </Style>
                                                                           </Paragraph>
                                                                         </Paragraphs>
                                                                         <rd:DefaultName>PaymentMode</rd:DefaultName>
@@ -3602,7 +3771,7 @@
                 </TablixMember>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>2.5cm</Size>
+                    <Size>0.83313cm</Size>
                     <CellContents>
                       <Textbox Name="Textbox92">
                         <CanGrow>true</CanGrow>
@@ -3613,13 +3782,15 @@
                               <TextRun>
                                 <Value>Total</Value>
                                 <Style>
-                                  <FontFamily>Tahoma</FontFamily>
+                                  <FontFamily>Calibri</FontFamily>
                                   <FontWeight>Bold</FontWeight>
                                   <Color>#465678</Color>
                                 </Style>
                               </TextRun>
                             </TextRuns>
-                            <Style />
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox92</rd:DefaultName>
@@ -3640,7 +3811,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>2.5cm</Size>
+                        <Size>1.03188cm</Size>
                         <CellContents>
                           <Textbox Name="Textbox93">
                             <CanGrow>true</CanGrow>
@@ -3651,13 +3822,15 @@
                                   <TextRun>
                                     <Value />
                                     <Style>
-                                      <FontFamily>Tahoma</FontFamily>
+                                      <FontFamily>Calibri</FontFamily>
                                       <FontWeight>Bold</FontWeight>
                                       <Color>#465678</Color>
                                     </Style>
                                   </TextRun>
                                 </TextRuns>
-                                <Style />
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
                               </Paragraph>
                             </Paragraphs>
                             <rd:DefaultName>Textbox93</rd:DefaultName>
@@ -3678,7 +3851,7 @@
                       <TablixMembers>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>2.5cm</Size>
+                            <Size>0.88604cm</Size>
                             <CellContents>
                               <Textbox Name="Textbox94">
                                 <CanGrow>true</CanGrow>
@@ -3689,13 +3862,15 @@
                                       <TextRun>
                                         <Value />
                                         <Style>
-                                          <FontFamily>Tahoma</FontFamily>
+                                          <FontFamily>Calibri</FontFamily>
                                           <FontWeight>Bold</FontWeight>
                                           <Color>#465678</Color>
                                         </Style>
                                       </TextRun>
                                     </TextRuns>
-                                    <Style />
+                                    <Style>
+                                      <TextAlign>Center</TextAlign>
+                                    </Style>
                                   </Paragraph>
                                 </Paragraphs>
                                 <rd:DefaultName>Textbox94</rd:DefaultName>
@@ -3716,7 +3891,7 @@
                           <TablixMembers>
                             <TablixMember>
                               <TablixHeader>
-                                <Size>2.5cm</Size>
+                                <Size>0.89959cm</Size>
                                 <CellContents>
                                   <Textbox Name="Textbox95">
                                     <CanGrow>true</CanGrow>
@@ -3727,13 +3902,15 @@
                                           <TextRun>
                                             <Value />
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>Calibri</FontFamily>
                                               <FontWeight>Bold</FontWeight>
                                               <Color>#465678</Color>
                                             </Style>
                                           </TextRun>
                                         </TextRuns>
-                                        <Style />
+                                        <Style>
+                                          <TextAlign>Center</TextAlign>
+                                        </Style>
                                       </Paragraph>
                                     </Paragraphs>
                                     <rd:DefaultName>Textbox95</rd:DefaultName>
@@ -3754,7 +3931,7 @@
                               <TablixMembers>
                                 <TablixMember>
                                   <TablixHeader>
-                                    <Size>2.5cm</Size>
+                                    <Size>0.88605cm</Size>
                                     <CellContents>
                                       <Textbox Name="Textbox96">
                                         <CanGrow>true</CanGrow>
@@ -3765,13 +3942,15 @@
                                               <TextRun>
                                                 <Value />
                                                 <Style>
-                                                  <FontFamily>Tahoma</FontFamily>
+                                                  <FontFamily>Calibri</FontFamily>
                                                   <FontWeight>Bold</FontWeight>
                                                   <Color>#465678</Color>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>Textbox96</rd:DefaultName>
@@ -3792,7 +3971,7 @@
                                   <TablixMembers>
                                     <TablixMember>
                                       <TablixHeader>
-                                        <Size>2.5cm</Size>
+                                        <Size>0.88604cm</Size>
                                         <CellContents>
                                           <Textbox Name="Textbox97">
                                             <CanGrow>true</CanGrow>
@@ -3803,13 +3982,15 @@
                                                   <TextRun>
                                                     <Value />
                                                     <Style>
-                                                      <FontFamily>Tahoma</FontFamily>
+                                                      <FontFamily>Calibri</FontFamily>
                                                       <FontWeight>Bold</FontWeight>
                                                       <Color>#465678</Color>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Textbox97</rd:DefaultName>
@@ -3830,7 +4011,7 @@
                                       <TablixMembers>
                                         <TablixMember>
                                           <TablixHeader>
-                                            <Size>2.5cm</Size>
+                                            <Size>0.85959cm</Size>
                                             <CellContents>
                                               <Textbox Name="Textbox98">
                                                 <CanGrow>true</CanGrow>
@@ -3841,13 +4022,15 @@
                                                       <TextRun>
                                                         <Value />
                                                         <Style>
-                                                          <FontFamily>Tahoma</FontFamily>
+                                                          <FontFamily>Calibri</FontFamily>
                                                           <FontWeight>Bold</FontWeight>
                                                           <Color>#465678</Color>
                                                         </Style>
                                                       </TextRun>
                                                     </TextRuns>
-                                                    <Style />
+                                                    <Style>
+                                                      <TextAlign>Center</TextAlign>
+                                                    </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
                                                 <rd:DefaultName>Textbox98</rd:DefaultName>
@@ -3868,7 +4051,7 @@
                                           <TablixMembers>
                                             <TablixMember>
                                               <TablixHeader>
-                                                <Size>2.5cm</Size>
+                                                <Size>0.99188cm</Size>
                                                 <CellContents>
                                                   <Textbox Name="Textbox99">
                                                     <CanGrow>true</CanGrow>
@@ -3879,13 +4062,15 @@
                                                           <TextRun>
                                                             <Value />
                                                             <Style>
-                                                              <FontFamily>Tahoma</FontFamily>
+                                                              <FontFamily>Calibri</FontFamily>
                                                               <FontWeight>Bold</FontWeight>
                                                               <Color>#465678</Color>
                                                             </Style>
                                                           </TextRun>
                                                         </TextRuns>
-                                                        <Style />
+                                                        <Style>
+                                                          <TextAlign>Center</TextAlign>
+                                                        </Style>
                                                       </Paragraph>
                                                     </Paragraphs>
                                                     <rd:DefaultName>Textbox99</rd:DefaultName>
@@ -3906,7 +4091,7 @@
                                               <TablixMembers>
                                                 <TablixMember>
                                                   <TablixHeader>
-                                                    <Size>2.5cm</Size>
+                                                    <Size>0.9125cm</Size>
                                                     <CellContents>
                                                       <Textbox Name="Textbox100">
                                                         <CanGrow>true</CanGrow>
@@ -3917,13 +4102,15 @@
                                                               <TextRun>
                                                                 <Value />
                                                                 <Style>
-                                                                  <FontFamily>Tahoma</FontFamily>
+                                                                  <FontFamily>Calibri</FontFamily>
                                                                   <FontWeight>Bold</FontWeight>
                                                                   <Color>#465678</Color>
                                                                 </Style>
                                                               </TextRun>
                                                             </TextRuns>
-                                                            <Style />
+                                                            <Style>
+                                                              <TextAlign>Center</TextAlign>
+                                                            </Style>
                                                           </Paragraph>
                                                         </Paragraphs>
                                                         <rd:DefaultName>Textbox100</rd:DefaultName>
@@ -3944,7 +4131,7 @@
                                                   <TablixMembers>
                                                     <TablixMember>
                                                       <TablixHeader>
-                                                        <Size>2.5cm</Size>
+                                                        <Size>0.93896cm</Size>
                                                         <CellContents>
                                                           <Textbox Name="Textbox101">
                                                             <CanGrow>true</CanGrow>
@@ -3955,13 +4142,15 @@
                                                                   <TextRun>
                                                                     <Value />
                                                                     <Style>
-                                                                      <FontFamily>Tahoma</FontFamily>
+                                                                      <FontFamily>Calibri</FontFamily>
                                                                       <FontWeight>Bold</FontWeight>
                                                                       <Color>#465678</Color>
                                                                     </Style>
                                                                   </TextRun>
                                                                 </TextRuns>
-                                                                <Style />
+                                                                <Style>
+                                                                  <TextAlign>Center</TextAlign>
+                                                                </Style>
                                                               </Paragraph>
                                                             </Paragraphs>
                                                             <rd:DefaultName>Textbox101</rd:DefaultName>
@@ -3982,7 +4171,7 @@
                                                       <TablixMembers>
                                                         <TablixMember>
                                                           <TablixHeader>
-                                                            <Size>2.5cm</Size>
+                                                            <Size>1.96732cm</Size>
                                                             <CellContents>
                                                               <Textbox Name="Textbox102">
                                                                 <CanGrow>true</CanGrow>
@@ -3993,13 +4182,15 @@
                                                                       <TextRun>
                                                                         <Value />
                                                                         <Style>
-                                                                          <FontFamily>Tahoma</FontFamily>
+                                                                          <FontFamily>Calibri</FontFamily>
                                                                           <FontWeight>Bold</FontWeight>
                                                                           <Color>#465678</Color>
                                                                         </Style>
                                                                       </TextRun>
                                                                     </TextRuns>
-                                                                    <Style />
+                                                                    <Style>
+                                                                      <TextAlign>Center</TextAlign>
+                                                                    </Style>
                                                                   </Paragraph>
                                                                 </Paragraphs>
                                                                 <rd:DefaultName>Textbox102</rd:DefaultName>
@@ -4020,7 +4211,7 @@
                                                           <TablixMembers>
                                                             <TablixMember>
                                                               <TablixHeader>
-                                                                <Size>2.5cm</Size>
+                                                                <Size>1.33708cm</Size>
                                                                 <CellContents>
                                                                   <Textbox Name="Textbox103">
                                                                     <CanGrow>true</CanGrow>
@@ -4031,13 +4222,15 @@
                                                                           <TextRun>
                                                                             <Value />
                                                                             <Style>
-                                                                              <FontFamily>Tahoma</FontFamily>
+                                                                              <FontFamily>Calibri</FontFamily>
                                                                               <FontWeight>Bold</FontWeight>
                                                                               <Color>#465678</Color>
                                                                             </Style>
                                                                           </TextRun>
                                                                         </TextRuns>
-                                                                        <Style />
+                                                                        <Style>
+                                                                          <TextAlign>Center</TextAlign>
+                                                                        </Style>
                                                                       </Paragraph>
                                                                     </Paragraphs>
                                                                     <rd:DefaultName>Textbox103</rd:DefaultName>
@@ -4058,7 +4251,7 @@
                                                               <TablixMembers>
                                                                 <TablixMember>
                                                                   <TablixHeader>
-                                                                    <Size>2.5cm</Size>
+                                                                    <Size>0.99188cm</Size>
                                                                     <CellContents>
                                                                       <Textbox Name="Textbox104">
                                                                         <CanGrow>true</CanGrow>
@@ -4069,13 +4262,15 @@
                                                                               <TextRun>
                                                                                 <Value />
                                                                                 <Style>
-                                                                                  <FontFamily>Tahoma</FontFamily>
+                                                                                  <FontFamily>Calibri</FontFamily>
                                                                                   <FontWeight>Bold</FontWeight>
                                                                                   <Color>#465678</Color>
                                                                                 </Style>
                                                                               </TextRun>
                                                                             </TextRuns>
-                                                                            <Style />
+                                                                            <Style>
+                                                                              <TextAlign>Center</TextAlign>
+                                                                            </Style>
                                                                           </Paragraph>
                                                                         </Paragraphs>
                                                                         <rd:DefaultName>Textbox104</rd:DefaultName>
@@ -4123,7 +4318,7 @@
             </TablixMember>
             <TablixMember>
               <TablixHeader>
-                <Size>2.5cm</Size>
+                <Size>0.96724cm</Size>
                 <CellContents>
                   <Textbox Name="Textbox61">
                     <CanGrow>true</CanGrow>
@@ -4134,13 +4329,15 @@
                           <TextRun>
                             <Value>Total</Value>
                             <Style>
-                              <FontFamily>Tahoma</FontFamily>
+                              <FontFamily>Calibri</FontFamily>
                               <FontWeight>Bold</FontWeight>
                               <Color>White</Color>
                             </Style>
                           </TextRun>
                         </TextRuns>
-                        <Style />
+                        <Style>
+                          <TextAlign>Center</TextAlign>
+                        </Style>
                       </Paragraph>
                     </Paragraphs>
                     <rd:DefaultName>Textbox61</rd:DefaultName>
@@ -4161,7 +4358,7 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>2.5cm</Size>
+                    <Size>0.83313cm</Size>
                     <CellContents>
                       <Textbox Name="Textbox62">
                         <CanGrow>true</CanGrow>
@@ -4172,13 +4369,15 @@
                               <TextRun>
                                 <Value />
                                 <Style>
-                                  <FontFamily>Tahoma</FontFamily>
+                                  <FontFamily>Calibri</FontFamily>
                                   <FontWeight>Bold</FontWeight>
                                   <Color>White</Color>
                                 </Style>
                               </TextRun>
                             </TextRuns>
-                            <Style />
+                            <Style>
+                              <TextAlign>Center</TextAlign>
+                            </Style>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Textbox62</rd:DefaultName>
@@ -4199,7 +4398,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>2.5cm</Size>
+                        <Size>1.03188cm</Size>
                         <CellContents>
                           <Textbox Name="Textbox63">
                             <CanGrow>true</CanGrow>
@@ -4210,13 +4409,15 @@
                                   <TextRun>
                                     <Value />
                                     <Style>
-                                      <FontFamily>Tahoma</FontFamily>
+                                      <FontFamily>Calibri</FontFamily>
                                       <FontWeight>Bold</FontWeight>
                                       <Color>White</Color>
                                     </Style>
                                   </TextRun>
                                 </TextRuns>
-                                <Style />
+                                <Style>
+                                  <TextAlign>Center</TextAlign>
+                                </Style>
                               </Paragraph>
                             </Paragraphs>
                             <rd:DefaultName>Textbox63</rd:DefaultName>
@@ -4237,7 +4438,7 @@
                       <TablixMembers>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>2.5cm</Size>
+                            <Size>0.88604cm</Size>
                             <CellContents>
                               <Textbox Name="Textbox64">
                                 <CanGrow>true</CanGrow>
@@ -4248,13 +4449,15 @@
                                       <TextRun>
                                         <Value />
                                         <Style>
-                                          <FontFamily>Tahoma</FontFamily>
+                                          <FontFamily>Calibri</FontFamily>
                                           <FontWeight>Bold</FontWeight>
                                           <Color>White</Color>
                                         </Style>
                                       </TextRun>
                                     </TextRuns>
-                                    <Style />
+                                    <Style>
+                                      <TextAlign>Center</TextAlign>
+                                    </Style>
                                   </Paragraph>
                                 </Paragraphs>
                                 <rd:DefaultName>Textbox64</rd:DefaultName>
@@ -4275,7 +4478,7 @@
                           <TablixMembers>
                             <TablixMember>
                               <TablixHeader>
-                                <Size>2.5cm</Size>
+                                <Size>0.89959cm</Size>
                                 <CellContents>
                                   <Textbox Name="Textbox65">
                                     <CanGrow>true</CanGrow>
@@ -4286,13 +4489,15 @@
                                           <TextRun>
                                             <Value />
                                             <Style>
-                                              <FontFamily>Tahoma</FontFamily>
+                                              <FontFamily>Calibri</FontFamily>
                                               <FontWeight>Bold</FontWeight>
                                               <Color>White</Color>
                                             </Style>
                                           </TextRun>
                                         </TextRuns>
-                                        <Style />
+                                        <Style>
+                                          <TextAlign>Center</TextAlign>
+                                        </Style>
                                       </Paragraph>
                                     </Paragraphs>
                                     <rd:DefaultName>Textbox65</rd:DefaultName>
@@ -4313,7 +4518,7 @@
                               <TablixMembers>
                                 <TablixMember>
                                   <TablixHeader>
-                                    <Size>2.5cm</Size>
+                                    <Size>0.88605cm</Size>
                                     <CellContents>
                                       <Textbox Name="Textbox66">
                                         <CanGrow>true</CanGrow>
@@ -4324,13 +4529,15 @@
                                               <TextRun>
                                                 <Value />
                                                 <Style>
-                                                  <FontFamily>Tahoma</FontFamily>
+                                                  <FontFamily>Calibri</FontFamily>
                                                   <FontWeight>Bold</FontWeight>
                                                   <Color>White</Color>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
-                                            <Style />
+                                            <Style>
+                                              <TextAlign>Center</TextAlign>
+                                            </Style>
                                           </Paragraph>
                                         </Paragraphs>
                                         <rd:DefaultName>Textbox66</rd:DefaultName>
@@ -4351,7 +4558,7 @@
                                   <TablixMembers>
                                     <TablixMember>
                                       <TablixHeader>
-                                        <Size>2.5cm</Size>
+                                        <Size>0.88604cm</Size>
                                         <CellContents>
                                           <Textbox Name="Textbox67">
                                             <CanGrow>true</CanGrow>
@@ -4362,13 +4569,15 @@
                                                   <TextRun>
                                                     <Value />
                                                     <Style>
-                                                      <FontFamily>Tahoma</FontFamily>
+                                                      <FontFamily>Calibri</FontFamily>
                                                       <FontWeight>Bold</FontWeight>
                                                       <Color>White</Color>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Textbox67</rd:DefaultName>
@@ -4389,7 +4598,7 @@
                                       <TablixMembers>
                                         <TablixMember>
                                           <TablixHeader>
-                                            <Size>2.5cm</Size>
+                                            <Size>0.85959cm</Size>
                                             <CellContents>
                                               <Textbox Name="Textbox68">
                                                 <CanGrow>true</CanGrow>
@@ -4400,13 +4609,15 @@
                                                       <TextRun>
                                                         <Value />
                                                         <Style>
-                                                          <FontFamily>Tahoma</FontFamily>
+                                                          <FontFamily>Calibri</FontFamily>
                                                           <FontWeight>Bold</FontWeight>
                                                           <Color>White</Color>
                                                         </Style>
                                                       </TextRun>
                                                     </TextRuns>
-                                                    <Style />
+                                                    <Style>
+                                                      <TextAlign>Center</TextAlign>
+                                                    </Style>
                                                   </Paragraph>
                                                 </Paragraphs>
                                                 <rd:DefaultName>Textbox68</rd:DefaultName>
@@ -4427,7 +4638,7 @@
                                           <TablixMembers>
                                             <TablixMember>
                                               <TablixHeader>
-                                                <Size>2.5cm</Size>
+                                                <Size>0.99188cm</Size>
                                                 <CellContents>
                                                   <Textbox Name="Textbox69">
                                                     <CanGrow>true</CanGrow>
@@ -4438,13 +4649,15 @@
                                                           <TextRun>
                                                             <Value />
                                                             <Style>
-                                                              <FontFamily>Tahoma</FontFamily>
+                                                              <FontFamily>Calibri</FontFamily>
                                                               <FontWeight>Bold</FontWeight>
                                                               <Color>White</Color>
                                                             </Style>
                                                           </TextRun>
                                                         </TextRuns>
-                                                        <Style />
+                                                        <Style>
+                                                          <TextAlign>Center</TextAlign>
+                                                        </Style>
                                                       </Paragraph>
                                                     </Paragraphs>
                                                     <rd:DefaultName>Textbox69</rd:DefaultName>
@@ -4465,7 +4678,7 @@
                                               <TablixMembers>
                                                 <TablixMember>
                                                   <TablixHeader>
-                                                    <Size>2.5cm</Size>
+                                                    <Size>0.9125cm</Size>
                                                     <CellContents>
                                                       <Textbox Name="Textbox70">
                                                         <CanGrow>true</CanGrow>
@@ -4476,13 +4689,15 @@
                                                               <TextRun>
                                                                 <Value />
                                                                 <Style>
-                                                                  <FontFamily>Tahoma</FontFamily>
+                                                                  <FontFamily>Calibri</FontFamily>
                                                                   <FontWeight>Bold</FontWeight>
                                                                   <Color>White</Color>
                                                                 </Style>
                                                               </TextRun>
                                                             </TextRuns>
-                                                            <Style />
+                                                            <Style>
+                                                              <TextAlign>Center</TextAlign>
+                                                            </Style>
                                                           </Paragraph>
                                                         </Paragraphs>
                                                         <rd:DefaultName>Textbox70</rd:DefaultName>
@@ -4503,7 +4718,7 @@
                                                   <TablixMembers>
                                                     <TablixMember>
                                                       <TablixHeader>
-                                                        <Size>2.5cm</Size>
+                                                        <Size>0.93896cm</Size>
                                                         <CellContents>
                                                           <Textbox Name="Textbox71">
                                                             <CanGrow>true</CanGrow>
@@ -4514,13 +4729,15 @@
                                                                   <TextRun>
                                                                     <Value />
                                                                     <Style>
-                                                                      <FontFamily>Tahoma</FontFamily>
+                                                                      <FontFamily>Calibri</FontFamily>
                                                                       <FontWeight>Bold</FontWeight>
                                                                       <Color>White</Color>
                                                                     </Style>
                                                                   </TextRun>
                                                                 </TextRuns>
-                                                                <Style />
+                                                                <Style>
+                                                                  <TextAlign>Center</TextAlign>
+                                                                </Style>
                                                               </Paragraph>
                                                             </Paragraphs>
                                                             <rd:DefaultName>Textbox71</rd:DefaultName>
@@ -4541,7 +4758,7 @@
                                                       <TablixMembers>
                                                         <TablixMember>
                                                           <TablixHeader>
-                                                            <Size>2.5cm</Size>
+                                                            <Size>1.96732cm</Size>
                                                             <CellContents>
                                                               <Textbox Name="Textbox72">
                                                                 <CanGrow>true</CanGrow>
@@ -4552,13 +4769,15 @@
                                                                       <TextRun>
                                                                         <Value />
                                                                         <Style>
-                                                                          <FontFamily>Tahoma</FontFamily>
+                                                                          <FontFamily>Calibri</FontFamily>
                                                                           <FontWeight>Bold</FontWeight>
                                                                           <Color>White</Color>
                                                                         </Style>
                                                                       </TextRun>
                                                                     </TextRuns>
-                                                                    <Style />
+                                                                    <Style>
+                                                                      <TextAlign>Center</TextAlign>
+                                                                    </Style>
                                                                   </Paragraph>
                                                                 </Paragraphs>
                                                                 <rd:DefaultName>Textbox72</rd:DefaultName>
@@ -4579,7 +4798,7 @@
                                                           <TablixMembers>
                                                             <TablixMember>
                                                               <TablixHeader>
-                                                                <Size>2.5cm</Size>
+                                                                <Size>1.33708cm</Size>
                                                                 <CellContents>
                                                                   <Textbox Name="Textbox73">
                                                                     <CanGrow>true</CanGrow>
@@ -4590,13 +4809,15 @@
                                                                           <TextRun>
                                                                             <Value />
                                                                             <Style>
-                                                                              <FontFamily>Tahoma</FontFamily>
+                                                                              <FontFamily>Calibri</FontFamily>
                                                                               <FontWeight>Bold</FontWeight>
                                                                               <Color>White</Color>
                                                                             </Style>
                                                                           </TextRun>
                                                                         </TextRuns>
-                                                                        <Style />
+                                                                        <Style>
+                                                                          <TextAlign>Center</TextAlign>
+                                                                        </Style>
                                                                       </Paragraph>
                                                                     </Paragraphs>
                                                                     <rd:DefaultName>Textbox73</rd:DefaultName>
@@ -4617,7 +4838,7 @@
                                                               <TablixMembers>
                                                                 <TablixMember>
                                                                   <TablixHeader>
-                                                                    <Size>2.5cm</Size>
+                                                                    <Size>0.99188cm</Size>
                                                                     <CellContents>
                                                                       <Textbox Name="Textbox74">
                                                                         <CanGrow>true</CanGrow>
@@ -4628,13 +4849,15 @@
                                                                               <TextRun>
                                                                                 <Value />
                                                                                 <Style>
-                                                                                  <FontFamily>Tahoma</FontFamily>
+                                                                                  <FontFamily>Calibri</FontFamily>
                                                                                   <FontWeight>Bold</FontWeight>
                                                                                   <Color>White</Color>
                                                                                 </Style>
                                                                               </TextRun>
                                                                             </TextRuns>
-                                                                            <Style />
+                                                                            <Style>
+                                                                              <TextAlign>Center</TextAlign>
+                                                                            </Style>
                                                                           </Paragraph>
                                                                         </Paragraphs>
                                                                         <rd:DefaultName>Textbox74</rd:DefaultName>
@@ -4683,8 +4906,8 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DSRPTSalesReportByParameter</DataSetName>
-        <Height>2.4cm</Height>
-        <Width>75cm</Width>
+        <Height>3.28584cm</Height>
+        <Width>28.7cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -4692,18 +4915,59 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>1.20325in</Height>
-    <Style />
+    <Height>1.43947in</Height>
+    <Style>
+      <Border>
+        <Style>Solid</Style>
+      </Border>
+    </Style>
   </Body>
-  <Width>29.52756in</Width>
+  <Width>28.7cm</Width>
   <Page>
     <PageHeader>
-      <Height>2.54cm</Height>
+      <Height>1.93146cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox4">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Sales Report</Value>
+                  <Style>
+                    <FontFamily>Calibri</FontFamily>
+                    <FontSize>26pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <Color>#4796ff</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox4</rd:DefaultName>
+          <Top>0.69646cm</Top>
+          <Height>1.12917cm</Height>
+          <Width>28.7cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
       <Style>
         <Border>
-          <Style>None</Style>
+          <Style>Solid</Style>
         </Border>
       </Style>
     </PageHeader>
@@ -4711,18 +4975,88 @@
       <Height>2.54cm</Height>
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox6">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!ExecutionTime</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                    <Color>#4796ff</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox6</rd:DefaultName>
+          <Top>0.41515cm</Top>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox8">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!PageNumber</Value>
+                  <Style>
+                    <FontWeight>Bold</FontWeight>
+                    <Color>#4796ff</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox8</rd:DefaultName>
+          <Top>0.41515cm</Top>
+          <Left>26.2cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
       <Style>
         <Border>
-          <Style>None</Style>
+          <Style>Solid</Style>
         </Border>
       </Style>
     </PageFooter>
-    <PageHeight>29.7cm</PageHeight>
-    <PageWidth>21cm</PageWidth>
-    <LeftMargin>2cm</LeftMargin>
-    <RightMargin>2cm</RightMargin>
-    <TopMargin>2cm</TopMargin>
-    <BottomMargin>2cm</BottomMargin>
+    <PageHeight>21cm</PageHeight>
+    <PageWidth>29.7cm</PageWidth>
+    <LeftMargin>0.5cm</LeftMargin>
+    <RightMargin>0.5cm</RightMargin>
+    <TopMargin>0.5cm</TopMargin>
+    <BottomMargin>0.5cm</BottomMargin>
     <ColumnSpacing>0.13cm</ColumnSpacing>
     <Style />
   </Page>
