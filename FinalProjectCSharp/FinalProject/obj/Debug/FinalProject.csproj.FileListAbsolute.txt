@@ -64,3 +64,4 @@ D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\Fina
 D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTPurchaseReturnReportByParameter.resources
 D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTSalesReportByParameter.resources
 D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTSalesReturnReportByParameter.resources
+D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\FinalProjectCSharp\FinalProject\obj\Debug\FinalProject.ReportForm.FrmRPTGeneralReport.resources

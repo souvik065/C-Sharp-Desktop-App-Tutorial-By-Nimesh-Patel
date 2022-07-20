@@ -40,5 +40,10 @@ namespace FinalProject.ReportForm
             this.rPTSalesReturnReportByParameterTableAdapter.Fill(this.dSRPTSalesReturnReportByParameter.RPTSalesReturnReportByParameter, Convert.ToInt32(txtInvoiceNo.Text), Convert.ToDateTime(dateTimePickerStartDate.Text), Convert.ToDateTime(dateTimePickerEndDate.Text));
             this.reportViewer1.RefreshReport();
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

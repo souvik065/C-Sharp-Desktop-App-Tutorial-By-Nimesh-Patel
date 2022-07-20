@@ -255,6 +255,12 @@
     <Compile Include="ReportForm\FrmRPTCategoryList.Designer.cs">
       <DependentUpon>FrmRPTCategoryList.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportForm\FrmRPTGeneralReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm\FrmRPTGeneralReport.Designer.cs">
+      <DependentUpon>FrmRPTGeneralReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportForm\FrmRPTProductDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -381,6 +387,7 @@
       <DependentUpon>PurchaseMaterialMaster.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RDLC\RPTCategoryList.rdlc" />
+    <EmbeddedResource Include="RDLC\RPTGeneralReport.rdlc" />
     <EmbeddedResource Include="RDLC\RPTGetPurchaseDetails.rdlc" />
     <EmbeddedResource Include="RDLC\RPTProductDetails.rdlc" />
     <EmbeddedResource Include="RDLC\RPTProductReportByParameter.rdlc" />
@@ -396,6 +403,9 @@
     <EmbeddedResource Include="RDLC\RPTSupplierList.rdlc" />
     <EmbeddedResource Include="ReportForm\FrmRPTCategoryList.resx">
       <DependentUpon>FrmRPTCategoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm\FrmRPTGeneralReport.resx">
+      <DependentUpon>FrmRPTGeneralReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportForm\FrmRPTProductDetails.resx">
       <DependentUpon>FrmRPTProductDetails.cs</DependentUpon>
