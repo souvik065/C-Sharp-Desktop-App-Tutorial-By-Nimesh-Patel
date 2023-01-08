@@ -9,3 +9,6 @@ D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\SPPracticeSession2\SPPracticeSession2\obj\
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\SPPracticeSession2\SPPracticeSession2\obj\Debug\SPPracticeSession2.csproj.GenerateResource.Cache
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\SPPracticeSession2\SPPracticeSession2\obj\Debug\SPPracticeSession2.exe
 D:\BCA\C#(.Net)\C-Sharp-.Net-Tutorial\SPPracticeSession2\SPPracticeSession2\obj\Debug\SPPracticeSession2.pdb
+D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\SPPracticeSession2\SPPracticeSession2\bin\Debug\SPPracticeSession2.exe.config
+D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\SPPracticeSession2\SPPracticeSession2\obj\Debug\SPPracticeSession2.exe
+D:\BCA\C#(.Net)\C-Sharp-Dot-Net-Tutorial-By-Nimesh-Patel\SPPracticeSession2\SPPracticeSession2\obj\Debug\SPPracticeSession2.pdb
